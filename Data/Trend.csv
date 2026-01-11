@@ -1,0 +1,170 @@
+"Notes","Multiple Cause of death","Multiple Cause of death Code","Year","Year Code",Deaths,Population,Crude Rate
+,"Acute renal failure with tubular necrosis","N17.0","2018","2018",1765,327167434,0.5
+,"Acute renal failure with tubular necrosis","N17.0","2019","2019",1790,328239523,0.5
+,"Acute renal failure with tubular necrosis","N17.0","2020","2020",2456,329484123,0.7
+,"Acute renal failure with tubular necrosis","N17.0","2021","2021",2839,331893745,0.9
+,"Acute renal failure with tubular necrosis","N17.0","2022","2022",2435,333287557,0.7
+,"Acute renal failure with tubular necrosis","N17.0","2023","2023",2211,334914895,0.7
+,"Acute renal failure with tubular necrosis","N17.0","2024 (provisional)","2024",2396,334914895,0.7
+,"Acute renal failure with tubular necrosis","N17.0","2025 (provisional and partial)","2025",2070,334914895,0.6
+,"Acute renal failure with acute cortical necrosis","N17.1","2018","2018",17,327167434,Unreliable
+,"Acute renal failure with acute cortical necrosis","N17.1","2019","2019",14,328239523,Unreliable
+,"Acute renal failure with acute cortical necrosis","N17.1","2020","2020",18,329484123,Unreliable
+,"Acute renal failure with acute cortical necrosis","N17.1","2021","2021",14,331893745,Unreliable
+,"Acute renal failure with acute cortical necrosis","N17.1","2022","2022",19,333287557,Unreliable
+,"Acute renal failure with acute cortical necrosis","N17.1","2023","2023",13,334914895,Unreliable
+,"Acute renal failure with acute cortical necrosis","N17.1","2025 (provisional and partial)","2025",13,334914895,Unreliable
+,"Acute renal failure with medullary necrosis","N17.2","2019","2019",10,328239523,Unreliable
+,"Acute renal failure with medullary necrosis","N17.2","2021","2021",13,331893745,Unreliable
+,"Other acute renal failure","N17.8","2022","2022",10,333287557,Unreliable
+,"Other acute renal failure","N17.8","2023","2023",14,334914895,Unreliable
+,"Other acute renal failure","N17.8","2024 (provisional)","2024",17,334914895,Unreliable
+,"Acute renal failure, unspecified","N17.9","2018","2018",62251,327167434,19.0
+,"Acute renal failure, unspecified","N17.9","2019","2019",60834,328239523,18.5
+,"Acute renal failure, unspecified","N17.9","2020","2020",80943,329484123,24.6
+,"Acute renal failure, unspecified","N17.9","2021","2021",116948,331893745,35.2
+,"Acute renal failure, unspecified","N17.9","2022","2022",128496,333287557,38.6
+,"Acute renal failure, unspecified","N17.9","2023","2023",113030,334914895,33.7
+,"Acute renal failure, unspecified","N17.9","2024 (provisional)","2024",110166,334914895,32.9
+,"Acute renal failure, unspecified","N17.9","2025 (provisional and partial)","2025",98374,334914895,29.4
+,"Chronic kidney disease, stage 1","N18.1","2018","2018",24,327167434,0.0
+,"Chronic kidney disease, stage 1","N18.1","2019","2019",28,328239523,0.0
+,"Chronic kidney disease, stage 1","N18.1","2020","2020",40,329484123,0.0
+,"Chronic kidney disease, stage 1","N18.1","2021","2021",38,331893745,0.0
+,"Chronic kidney disease, stage 1","N18.1","2022","2022",24,333287557,0.0
+,"Chronic kidney disease, stage 1","N18.1","2023","2023",13,334914895,Unreliable
+,"Chronic kidney disease, stage 1","N18.1","2024 (provisional)","2024",20,334914895,0.0
+,"Chronic kidney disease, stage 2","N18.2","2018","2018",272,327167434,0.1
+,"Chronic kidney disease, stage 2","N18.2","2019","2019",324,328239523,0.1
+,"Chronic kidney disease, stage 2","N18.2","2020","2020",437,329484123,0.1
+,"Chronic kidney disease, stage 2","N18.2","2021","2021",407,331893745,0.1
+,"Chronic kidney disease, stage 2","N18.2","2022","2022",362,333287557,0.1
+,"Chronic kidney disease, stage 2","N18.2","2023","2023",382,334914895,0.1
+,"Chronic kidney disease, stage 2","N18.2","2024 (provisional)","2024",439,334914895,0.1
+,"Chronic kidney disease, stage 2","N18.2","2025 (provisional and partial)","2025",405,334914895,0.1
+,"Chronic kidney disease, stage 3","N18.3","2018","2018",6250,327167434,1.9
+,"Chronic kidney disease, stage 3","N18.3","2019","2019",7051,328239523,2.1
+,"Chronic kidney disease, stage 3","N18.3","2020","2020",9707,329484123,2.9
+,"Chronic kidney disease, stage 3","N18.3","2021","2021",10132,331893745,3.1
+,"Chronic kidney disease, stage 3","N18.3","2022","2022",10300,333287557,3.1
+,"Chronic kidney disease, stage 3","N18.3","2023","2023",9988,334914895,3.0
+,"Chronic kidney disease, stage 3","N18.3","2024 (provisional)","2024",10385,334914895,3.1
+,"Chronic kidney disease, stage 3","N18.3","2025 (provisional and partial)","2025",10104,334914895,3.0
+,"Chronic kidney disease, stage 4","N18.4","2018","2018",4881,327167434,1.5
+,"Chronic kidney disease, stage 4","N18.4","2019","2019",5543,328239523,1.7
+,"Chronic kidney disease, stage 4","N18.4","2020","2020",6855,329484123,2.1
+,"Chronic kidney disease, stage 4","N18.4","2021","2021",7118,331893745,2.1
+,"Chronic kidney disease, stage 4","N18.4","2022","2022",6619,333287557,2.0
+,"Chronic kidney disease, stage 4","N18.4","2023","2023",6442,334914895,1.9
+,"Chronic kidney disease, stage 4","N18.4","2024 (provisional)","2024",6655,334914895,2.0
+,"Chronic kidney disease, stage 4","N18.4","2025 (provisional and partial)","2025",6578,334914895,2.0
+,"Chronic kidney disease, stage 5","N18.5","2018","2018",48440,327167434,14.8
+,"Chronic kidney disease, stage 5","N18.5","2019","2019",49739,328239523,15.2
+,"Chronic kidney disease, stage 5","N18.5","2020","2020",56207,329484123,17.1
+,"Chronic kidney disease, stage 5","N18.5","2021","2021",57562,331893745,17.3
+,"Chronic kidney disease, stage 5","N18.5","2022","2022",55184,333287557,16.6
+,"Chronic kidney disease, stage 5","N18.5","2023","2023",51889,334914895,15.5
+,"Chronic kidney disease, stage 5","N18.5","2024 (provisional)","2024",52327,334914895,15.6
+,"Chronic kidney disease, stage 5","N18.5","2025 (provisional and partial)","2025",48297,334914895,14.4
+,"Chronic renal failure, unspecified","N18.9","2018","2018",51395,327167434,15.7
+,"Chronic renal failure, unspecified","N18.9","2019","2019",53406,328239523,16.3
+,"Chronic renal failure, unspecified","N18.9","2020","2020",63265,329484123,19.2
+,"Chronic renal failure, unspecified","N18.9","2021","2021",64557,331893745,19.5
+,"Chronic renal failure, unspecified","N18.9","2022","2022",58806,333287557,17.6
+,"Chronic renal failure, unspecified","N18.9","2023","2023",55944,334914895,16.7
+,"Chronic renal failure, unspecified","N18.9","2024 (provisional)","2024",57440,334914895,17.2
+,"Chronic renal failure, unspecified","N18.9","2025 (provisional and partial)","2025",54460,334914895,16.3
+,"Unspecified renal failure","N19","2018","2018",32769,327167434,10.0
+,"Unspecified renal failure","N19","2019","2019",30714,328239523,9.4
+,"Unspecified renal failure","N19","2020","2020",32625,329484123,9.9
+,"Unspecified renal failure","N19","2021","2021",33660,331893745,10.1
+,"Unspecified renal failure","N19","2022","2022",28222,333287557,8.5
+,"Unspecified renal failure","N19","2023","2023",24343,334914895,7.3
+,"Unspecified renal failure","N19","2024 (provisional)","2024",23151,334914895,6.9
+,"Unspecified renal failure","N19","2025 (provisional and partial)","2025",20103,334914895,6.0
+"---"
+"Dataset: Provisional Mortality Statistics, 2018 through Last Week"
+"Query Parameters:"
+"MCD - ICD-10 Codes: N17-N19 (Renal failure)"
+"Group By: Multiple Cause of death; Year"
+"Show Totals: Disabled"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/mcd-provisional.html for more information."
+"---"
+"Query Date: Jan 11, 2026 4:27:51 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Provisional Mortality on CDC WONDER Online Database. Data are from the final Multiple Cause of Death Files, 2018-2023,"
+"and from provisional data for years 2024 and later, as compiled from data provided by the 57 vital statistics jurisdictions"
+"through the Vital Statistics Cooperative Program. Accessed at http://wonder.cdc.gov/mcd-icd10-provisional.html on Jan 11, 2026"
+"4:27:51 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"2. Rows with zero Deaths are hidden. Use Quick Options above to show zero rows."
+"3. Rows with suppressed Deaths are hidden. Use Quick Options above to show suppressed rows."
+"---"
+Footnotes:
+"1. Totals and sub-totals show the frequency of the selected causes of death, which may be greater than the number of deaths."
+"Note that any single death record may have up to 20 causes. More information."
+"---"
+Caveats:
+"1. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Assurance of Confidentiality."
+"2. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Unreliable."
+"3. The population figures for years 2023 and later are single-race estimates of the July 1 resident population, from the Vintage"
+"2023 postcensal series released by the Census Bureau on June 27, 2024. The population figures for years 2022 and later are"
+"single-race estimates of the July 1 resident population, from the Vintage 2022 postcensal series released by the Census Bureau"
+"on June 22, 2023. The 2022 and 2023 series is based on the Modified Blended Base produced by the US Census Bureau in lieu of the"
+"April 1, 2020 decennial population count. The Modified Blended Base consists of the blend of Vintage 2020 postcensal population"
+"estimates for April 1, 2020, 2020 Demographic Analysis Estimates, and 2020 Census data from the internal Census Edited File"
+"(CEF). The population figures for years 2021 are single-race estimates of the July 1 resident population, based on the Blended"
+"Base produced by the US Census Bureau in lieu of the April 1, 2020 decennial population count, from the Vintage 2021 postcensal"
+"series released by the Census Bureau on June 30, 2022. The population figures for year 2020 are single-race estimates of the"
+"July 1 resident population, from the Vintage 2020 postcensal series based on April 2010 Census, released by the Census Bureau on"
+"July 27, 2021. The population figures for year 2019 are single-race estimates of the July 1 resident population, from the"
+"Vintage 2019 postcensal series based on April 2010 Census, released by the Census Bureau on June 25, 2020. The population"
+"figures for year 2018 are single-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series based"
+"on April 2010 Census, released by the Census Bureau on June 20, 2019. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Population Data."
+"4. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Age"
+"Group."
+"5. Beginning with the 2018 data, changes have been implemented that affect the counts for ICD-10 cause of death codes O00-O99"
+"compared to previous practice. In addition, data for the cause of death codes O00-O99 for 2003 through 2017 reflect differences"
+"in information available to individual states and probable errors. Deaths with the underlying cause classified with O00-O99 are"
+"subject to further processing before these deaths records are considered final. Provisional deaths have not undergone full"
+"processing and review and therefore should not be considered final for statistical purposes. Caution should be used in"
+"interpreting these data. More information can be found at: https://www.cdc.gov/nchs/maternal-mortality/."
+"6. On March 11, 2021, the 2019 mortality data on CDC WONDER was updated with the 2019 mortality data updated by NCHS on March 4,"
+"2021 to include corrected information for residents of Texas affecting 5 records previously coded to cause code *U01.4,"
+"Terrorism involving firearms (homicide). The underlying and multiple cause of death codes for 5 records were corrected in the"
+"2019 data. Underlying and multiple cause of death codes for those 5 records were recoded to Assault (homicide) by other and"
+"unspecified firearm discharge, ICD-10 code X95. The corrected final death records replaces the data released on December 22,"
+"2020."
+"7. Connecticut population estimates for 2022 and later years are reported for 9 planning regions as county equivalent areas,"
+"instead of the former 8 legacy counties in the Vintage 2022 postcensal series released by the Census Bureau on June 22, 2023,"
+"and in the Vintage 2023 postcensal series released by the Census Bureau on June 27, 2024. Populations estimates for the former"
+"counties are not available for 2022 and later years. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Connecticut-2022."
+"8. After the creation of the final 2023 dataset, North Carolina updated the cause of death information for over 900 death"
+"certificates to include a cause of death code indicating drug overdose (ICD-10 underlying cause-of-death codes: X40-X44,"
+"X60-X64, X85, and Y10-Y14). Jurisdictions can continue to update death certificates after the closing of the mortality file. As"
+"a result, users should consider that the actual death count for drug overdose deaths for North Carolina in 2023 is over 4,400"
+"deaths, with a crude rate of approximately 41.0 per 100,000 population, and an age-adjusted rate of approximately 42.1 per"
+"100,000 population. These deaths will not be updated on the final mortality datasets."
+"9. Changes to cause of death classification affect reporting trends. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd-provisional.html#ICD-10 Changes."
+"10. Deaths related to external causes of injury or sudden death: In the provisional mortality data, causes of death classified"
+"as external causes of injury (ICD-10 codes V01-Y89), sudden deaths (ICD-10 codes R95 and R96), or drug poisoning (ICD-10 codes"
+"T36-T50), have the cause of death labeled as 'Data not shown due to 6 month lag to account for delays in death certificate"
+"completion for certain causes of death.' For these deaths occurring 24 weeks prior to the final date in the provisional data,"
+"the number of deaths and related statistics are not available by specific cause of death for ICD-10 codes V01-Y89, R95, R96, or"
+"T36-T50. More information: http://wonder.cdc.gov/wonder/help/mcd-provisional.html#999."
+"11. Deaths occurring through December 6, 2025 as of December 14, 2025."

@@ -1,0 +1,240 @@
+"Notes","Year","Year Code","Multiple Cause of death","Multiple Cause of death Code",Deaths,Population,Crude Rate
+,"2010","2010","Septicaemia due to streptococcus, group A","A40.0",16,308745538,Unreliable
+,"2010","2010","Septicaemia due to streptococcus, group B","A40.1",13,308745538,Unreliable
+,"2010","2010","Septicaemia due to streptococcus, group D","A40.2",121,308745538,0.0
+,"2010","2010","Septicaemia due to Streptococcus pneumoniae","A40.3",77,308745538,0.0
+,"2010","2010","Other streptococcal septicaemia","A40.8",12,308745538,Unreliable
+,"2010","2010","Streptococcal septicaemia, unspecified","A40.9",68,308745538,0.0
+,"2010","2010","Septicaemia due to Staphylococcus aureus","A41.0",579,308745538,0.2
+,"2010","2010","Septicaemia due to other specified staphylococcus","A41.1",12,308745538,Unreliable
+,"2010","2010","Septicaemia due to unspecified staphylococcus","A41.2",293,308745538,0.1
+,"2010","2010","Septicaemia due to anaerobes","A41.4",72,308745538,0.0
+,"2010","2010","Septicaemia due to other Gram-negative organisms","A41.5",794,308745538,0.3
+,"2010","2010","Other specified septicaemia","A41.8",49,308745538,0.0
+,"2010","2010","Septicaemia, unspecified","A41.9",32017,308745538,10.4
+,"2010","2010","Acute renal failure with tubular necrosis","N17.0",206,308745538,0.1
+,"2010","2010","Acute renal failure, unspecified","N17.9",15371,308745538,5.0
+,"2010","2010","End-stage renal disease","N18.0",6444,308745538,2.1
+,"2010","2010","Other chronic renal failure","N18.8",10,308745538,Unreliable
+,"2010","2010","Chronic renal failure, unspecified","N18.9",2727,308745538,0.9
+,"2010","2010","Unspecified renal failure","N19",10290,308745538,3.3
+"Total","2010","2010",,,69178,308745538,22.4
+,"2011","2011","Septicaemia due to streptococcus, group B","A40.1",12,311591917,Unreliable
+,"2011","2011","Septicaemia due to streptococcus, group D","A40.2",121,311591917,0.0
+,"2011","2011","Septicaemia due to Streptococcus pneumoniae","A40.3",85,311591917,0.0
+,"2011","2011","Streptococcal septicaemia, unspecified","A40.9",85,311591917,0.0
+,"2011","2011","Septicaemia due to Staphylococcus aureus","A41.0",665,311591917,0.2
+,"2011","2011","Septicaemia due to other specified staphylococcus","A41.1",13,311591917,Unreliable
+,"2011","2011","Septicaemia due to unspecified staphylococcus","A41.2",299,311591917,0.1
+,"2011","2011","Septicaemia due to anaerobes","A41.4",69,311591917,0.0
+,"2011","2011","Septicaemia due to other Gram-negative organisms","A41.5",843,311591917,0.3
+,"2011","2011","Other specified septicaemia","A41.8",57,311591917,0.0
+,"2011","2011","Septicaemia, unspecified","A41.9",36289,311591917,11.6
+,"2011","2011","Acute renal failure with tubular necrosis","N17.0",283,311591917,0.1
+,"2011","2011","Acute renal failure, unspecified","N17.9",15821,311591917,5.1
+,"2011","2011","Chronic kidney disease, stage 2","N18.2",17,311591917,Unreliable
+,"2011","2011","Chronic kidney disease, stage 3","N18.3",178,311591917,0.1
+,"2011","2011","Chronic kidney disease, stage 4","N18.4",158,311591917,0.1
+,"2011","2011","Chronic kidney disease, stage 5","N18.5",8018,311591917,2.6
+,"2011","2011","Chronic renal failure, unspecified","N18.9",5353,311591917,1.7
+,"2011","2011","Unspecified renal failure","N19",10224,311591917,3.3
+"Total","2011","2011",,,78616,311591917,25.2
+,"2012","2012","Septicaemia due to streptococcus, group A","A40.0",11,313914040,Unreliable
+,"2012","2012","Septicaemia due to streptococcus, group D","A40.2",107,313914040,0.0
+,"2012","2012","Septicaemia due to Streptococcus pneumoniae","A40.3",70,313914040,0.0
+,"2012","2012","Streptococcal septicaemia, unspecified","A40.9",90,313914040,0.0
+,"2012","2012","Septicaemia due to Staphylococcus aureus","A41.0",614,313914040,0.2
+,"2012","2012","Septicaemia due to other specified staphylococcus","A41.1",12,313914040,Unreliable
+,"2012","2012","Septicaemia due to unspecified staphylococcus","A41.2",268,313914040,0.1
+,"2012","2012","Septicaemia due to anaerobes","A41.4",70,313914040,0.0
+,"2012","2012","Septicaemia due to other Gram-negative organisms","A41.5",875,313914040,0.3
+,"2012","2012","Other specified septicaemia","A41.8",51,313914040,0.0
+,"2012","2012","Septicaemia, unspecified","A41.9",35599,313914040,11.3
+,"2012","2012","Acute renal failure with tubular necrosis","N17.0",295,313914040,0.1
+,"2012","2012","Acute renal failure, unspecified","N17.9",15381,313914040,4.9
+,"2012","2012","Chronic kidney disease, stage 2","N18.2",30,313914040,0.0
+,"2012","2012","Chronic kidney disease, stage 3","N18.3",227,313914040,0.1
+,"2012","2012","Chronic kidney disease, stage 4","N18.4",177,313914040,0.1
+,"2012","2012","Chronic kidney disease, stage 5","N18.5",7964,313914040,2.5
+,"2012","2012","Chronic renal failure, unspecified","N18.9",5547,313914040,1.8
+,"2012","2012","Unspecified renal failure","N19",9709,313914040,3.1
+"Total","2012","2012",,,77121,313914040,24.6
+,"2013","2013","Septicaemia due to streptococcus, group A","A40.0",12,316128839,Unreliable
+,"2013","2013","Septicaemia due to streptococcus, group B","A40.1",12,316128839,Unreliable
+,"2013","2013","Septicaemia due to streptococcus, group D","A40.2",88,316128839,0.0
+,"2013","2013","Septicaemia due to Streptococcus pneumoniae","A40.3",56,316128839,0.0
+,"2013","2013","Streptococcal septicaemia, unspecified","A40.9",80,316128839,0.0
+,"2013","2013","Septicaemia due to Staphylococcus aureus","A41.0",434,316128839,0.1
+,"2013","2013","Septicaemia due to unspecified staphylococcus","A41.2",201,316128839,0.1
+,"2013","2013","Septicaemia due to anaerobes","A41.4",74,316128839,0.0
+,"2013","2013","Septicaemia due to other Gram-negative organisms","A41.5",737,316128839,0.2
+,"2013","2013","Other specified septicaemia","A41.8",44,316128839,0.0
+,"2013","2013","Septicaemia, unspecified","A41.9",31328,316128839,9.9
+,"2013","2013","Acute renal failure with tubular necrosis","N17.0",338,316128839,0.1
+,"2013","2013","Acute renal failure, unspecified","N17.9",16226,316128839,5.1
+,"2013","2013","Chronic kidney disease, stage 3","N18.3",180,316128839,0.1
+,"2013","2013","Chronic kidney disease, stage 4","N18.4",144,316128839,0.0
+,"2013","2013","Chronic kidney disease, stage 5","N18.5",5802,316128839,1.8
+,"2013","2013","Chronic renal failure, unspecified","N18.9",3792,316128839,1.2
+,"2013","2013","Unspecified renal failure","N19",7748,316128839,2.5
+"Total","2013","2013",,,67331,316128839,21.3
+,"2014","2014","Septicaemia due to streptococcus, group B","A40.1",10,318857056,Unreliable
+,"2014","2014","Septicaemia due to streptococcus, group D","A40.2",64,318857056,0.0
+,"2014","2014","Septicaemia due to Streptococcus pneumoniae","A40.3",35,318857056,0.0
+,"2014","2014","Streptococcal septicaemia, unspecified","A40.9",74,318857056,0.0
+,"2014","2014","Septicaemia due to Staphylococcus aureus","A41.0",416,318857056,0.1
+,"2014","2014","Septicaemia due to unspecified staphylococcus","A41.2",159,318857056,0.0
+,"2014","2014","Septicaemia due to anaerobes","A41.4",54,318857056,0.0
+,"2014","2014","Septicaemia due to other Gram-negative organisms","A41.5",709,318857056,0.2
+,"2014","2014","Other specified septicaemia","A41.8",48,318857056,0.0
+,"2014","2014","Septicaemia, unspecified","A41.9",32048,318857056,10.1
+,"2014","2014","Acute renal failure with tubular necrosis","N17.0",362,318857056,0.1
+,"2014","2014","Acute renal failure, unspecified","N17.9",16830,318857056,5.3
+,"2014","2014","Chronic kidney disease, stage 2","N18.2",14,318857056,Unreliable
+,"2014","2014","Chronic kidney disease, stage 3","N18.3",206,318857056,0.1
+,"2014","2014","Chronic kidney disease, stage 4","N18.4",181,318857056,0.1
+,"2014","2014","Chronic kidney disease, stage 5","N18.5",6108,318857056,1.9
+,"2014","2014","Chronic renal failure, unspecified","N18.9",3922,318857056,1.2
+,"2014","2014","Unspecified renal failure","N19",7287,318857056,2.3
+"Total","2014","2014",,,68559,318857056,21.5
+,"2015","2015","Septicaemia due to streptococcus, group B","A40.1",13,321418820,Unreliable
+,"2015","2015","Septicaemia due to streptococcus, group D","A40.2",101,321418820,0.0
+,"2015","2015","Septicaemia due to Streptococcus pneumoniae","A40.3",62,321418820,0.0
+,"2015","2015","Streptococcal septicaemia, unspecified","A40.9",81,321418820,0.0
+,"2015","2015","Septicaemia due to Staphylococcus aureus","A41.0",442,321418820,0.1
+,"2015","2015","Septicaemia due to other specified staphylococcus","A41.1",12,321418820,Unreliable
+,"2015","2015","Septicaemia due to unspecified staphylococcus","A41.2",180,321418820,0.1
+,"2015","2015","Septicaemia due to Haemophilus influenzae","A41.3",10,321418820,Unreliable
+,"2015","2015","Septicaemia due to anaerobes","A41.4",45,321418820,0.0
+,"2015","2015","Septicaemia due to other Gram-negative organisms","A41.5",769,321418820,0.2
+,"2015","2015","Other specified septicaemia","A41.8",27,321418820,0.0
+,"2015","2015","Septicaemia, unspecified","A41.9",33782,321418820,10.5
+,"2015","2015","Acute renal failure with tubular necrosis","N17.0",504,321418820,0.2
+,"2015","2015","Acute renal failure, unspecified","N17.9",17815,321418820,5.5
+,"2015","2015","Chronic kidney disease, stage 2","N18.2",17,321418820,Unreliable
+,"2015","2015","Chronic kidney disease, stage 3","N18.3",329,321418820,0.1
+,"2015","2015","Chronic kidney disease, stage 4","N18.4",223,321418820,0.1
+,"2015","2015","Chronic kidney disease, stage 5","N18.5",6641,321418820,2.1
+,"2015","2015","Chronic renal failure, unspecified","N18.9",4455,321418820,1.4
+,"2015","2015","Unspecified renal failure","N19",7109,321418820,2.2
+"Total","2015","2015",,,72631,321418820,22.6
+,"2016","2016","Septicaemia due to streptococcus, group B","A40.1",17,323127513,Unreliable
+,"2016","2016","Septicaemia due to streptococcus, group D","A40.2",118,323127513,0.0
+,"2016","2016","Septicaemia due to Streptococcus pneumoniae","A40.3",47,323127513,0.0
+,"2016","2016","Other streptococcal septicaemia","A40.8",12,323127513,Unreliable
+,"2016","2016","Streptococcal septicaemia, unspecified","A40.9",95,323127513,0.0
+,"2016","2016","Septicaemia due to Staphylococcus aureus","A41.0",438,323127513,0.1
+,"2016","2016","Septicaemia due to other specified staphylococcus","A41.1",10,323127513,Unreliable
+,"2016","2016","Septicaemia due to unspecified staphylococcus","A41.2",165,323127513,0.1
+,"2016","2016","Septicaemia due to anaerobes","A41.4",75,323127513,0.0
+,"2016","2016","Septicaemia due to other Gram-negative organisms","A41.5",873,323127513,0.3
+,"2016","2016","Other specified septicaemia","A41.8",46,323127513,0.0
+,"2016","2016","Septicaemia, unspecified","A41.9",33164,323127513,10.3
+,"2016","2016","Acute renal failure with tubular necrosis","N17.0",587,323127513,0.2
+,"2016","2016","Acute renal failure, unspecified","N17.9",17598,323127513,5.4
+,"2016","2016","Chronic kidney disease, stage 2","N18.2",25,323127513,0.0
+,"2016","2016","Chronic kidney disease, stage 3","N18.3",431,323127513,0.1
+,"2016","2016","Chronic kidney disease, stage 4","N18.4",334,323127513,0.1
+,"2016","2016","Chronic kidney disease, stage 5","N18.5",6868,323127513,2.1
+,"2016","2016","Chronic renal failure, unspecified","N18.9",4654,323127513,1.4
+,"2016","2016","Unspecified renal failure","N19",6257,323127513,1.9
+"Total","2016","2016",,,71834,323127513,22.2
+,"2017","2017","Septicaemia due to streptococcus, group D","A40.2",75,325719178,0.0
+,"2017","2017","Septicaemia due to Streptococcus pneumoniae","A40.3",43,325719178,0.0
+,"2017","2017","Streptococcal septicaemia, unspecified","A40.9",102,325719178,0.0
+,"2017","2017","Septicaemia due to Staphylococcus aureus","A41.0",390,325719178,0.1
+,"2017","2017","Septicaemia due to unspecified staphylococcus","A41.2",118,325719178,0.0
+,"2017","2017","Septicaemia due to Haemophilus influenzae","A41.3",10,325719178,Unreliable
+,"2017","2017","Septicaemia due to anaerobes","A41.4",65,325719178,0.0
+,"2017","2017","Septicaemia due to other Gram-negative organisms","A41.5",734,325719178,0.2
+,"2017","2017","Other specified septicaemia","A41.8",31,325719178,0.0
+,"2017","2017","Septicaemia, unspecified","A41.9",33984,325719178,10.4
+,"2017","2017","Acute renal failure with tubular necrosis","N17.0",685,325719178,0.2
+,"2017","2017","Acute renal failure, unspecified","N17.9",17824,325719178,5.5
+,"2017","2017","Chronic kidney disease, stage 2","N18.2",31,325719178,0.0
+,"2017","2017","Chronic kidney disease, stage 3","N18.3",529,325719178,0.2
+,"2017","2017","Chronic kidney disease, stage 4","N18.4",356,325719178,0.1
+,"2017","2017","Chronic kidney disease, stage 5","N18.5",6977,325719178,2.1
+,"2017","2017","Chronic renal failure, unspecified","N18.9",4838,325719178,1.5
+,"2017","2017","Unspecified renal failure","N19",6131,325719178,1.9
+"Total","2017","2017",,,72961,325719178,22.4
+"Total",,,,,578231,2539502901,22.8
+"---"
+"Dataset: Multiple Cause of Death, 1999-2020"
+"Query Parameters:"
+"MCD - ICD-10 Codes: N17-N19 (Renal failure)"
+"MCD - ICD-10 Codes: AND"
+"MCD - ICD-10 Codes: A40.0 (Septicaemia due to streptococcus, group A); A40.1 (Septicaemia due to streptococcus, group B); A40.2"
+"(Septicaemia due to streptococcus, group D); A40.3 (Septicaemia due to Streptococcus pneumoniae); A40.8 (Other streptococcal"
+"septicaemia); A40.9 (Streptococcal septicaemia, unspecified); A41.0 (Septicaemia due to Staphylococcus aureus); A41.1"
+"(Septicaemia due to other specified staphylococcus); A41.2 (Septicaemia due to unspecified staphylococcus); A41.3 (Septicaemia"
+"due to Haemophilus influenzae); A41.4 (Septicaemia due to anaerobes); A41.5 (Septicaemia due to other Gram-negative organisms);"
+"A41.8 (Other specified septicaemia); A41.9 (Septicaemia, unspecified)"
+"Year/Month: 2010; 2011; 2012; 2013; 2014; 2015; 2016; 2017"
+"Group By: Year; Multiple Cause of death"
+"Show Totals: True"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/mcd.html for more information."
+"---"
+"Query Date: Jan 8, 2026 7:31:30 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/mcd-icd10.html on Jan 8, 2026 7:31:30 PM"
+"---"
+Messages:
+"1. Rows with zero Deaths are hidden, but the Population values in those rows are included in the totals. Use Quick Options above"
+"to show zero rows."
+"2. Rows with suppressed Deaths are hidden, but the Deaths and Population values in those rows are included in the totals. Use"
+"Quick Options above to show suppressed rows."
+"---"
+Footnotes:
+"1. Totals and sub-totals show the frequency of the selected causes of death, which may be greater than the number of deaths."
+"Note that any single death record may have up to 20 causes. More information."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#2014-Revision."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#Unreliable."
+"4. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. Population figures for 2011 are bridged-race estimates of the July 1"
+"resident population, from the county-level postcensal Vintage 2011 series released by NCHS on July 18, 2012. Population figures"
+"for 2010 are April 1 Census counts. The population figures for years 2001 - 2009, are bridged-race estimates of the July 1"
+"resident population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012."
+"Population figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of"
+"July 1 estimates. Population figures for Infant Age Groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"5. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/mcd.html#Age Group."
+"6. Beginning with the 2018 data, changes have been implemented that affect the counts for ICD-10 cause of death codes O00-O99"
+"compared to previous practice. In addition, data for the cause of death codes O00-O99 for 2003 through 2017 reflect differences"
+"in information available to individual states and probable errors. Caution should be used in interpreting these data. More"
+"information can be found at: https://www.cdc.gov/nchs/maternal-mortality/."
+"7. On March 11, 2021, the 2019 mortality data on CDC WONDER was updated with the 2019 mortality data updated by NCHS on March 4,"
+"2021 to include corrected information for residents of Texas affecting 5 records previously coded to cause code *U01.4,"
+"Terrorism involving firearms (homicide). The underlying and multiple cause of death codes for 5 records were corrected in the"
+"2019 data. Underlying and multiple cause of death codes for those 5 records were recoded to Assault (homicide) by other and"
+"unspecified firearm discharge, ICD-10 code X95. The corrected final death records replaces the data released on December 22,"
+"2020."
+"8. Changes to cause of death classification affect reporting trends. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#ICD-10 Changes."
