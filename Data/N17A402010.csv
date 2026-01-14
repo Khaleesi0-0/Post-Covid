@@ -1,0 +1,836 @@
+"Notes","MCD - ICD Sub-Chapter","MCD - ICD Sub-Chapter Code","Year","Year Code","Sex","Sex Code","Race","Race Code","Ten-Year Age Groups","Ten-Year Age Groups Code",Deaths,Population,Crude Rate
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",11,273464,Unreliable
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",11,178582,Unreliable
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",17,87469,Unreliable
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",16,40892,Unreliable
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","American Indian or Alaska Native","1002-5","85+ years","85+",11,14001,Unreliable
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",14,919792,Unreliable
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",24,490802,4.9
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",71,266935,26.6
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",65,92921,70.0
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","Black or African American","2054-5","25-34 years","25-34",13,3066086,Unreliable
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","Black or African American","2054-5","35-44 years","35-44",35,2961585,1.2
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","Black or African American","2054-5","45-54 years","45-54",104,3056411,3.4
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","Black or African American","2054-5","55-64 years","55-64",172,2196805,7.8
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","Black or African American","2054-5","65-74 years","65-74",202,1192148,16.9
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","Black or African American","2054-5","75-84 years","75-84",305,675432,45.2
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","Black or African American","2054-5","85+ years","85+",306,282385,108.4
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","White","2106-3","25-34 years","25-34",44,15551936,0.3
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","White","2106-3","35-44 years","35-44",93,15940784,0.6
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","White","2106-3","45-54 years","45-54",339,18311038,1.9
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","White","2106-3","55-64 years","55-64",677,15586402,4.3
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","White","2106-3","65-74 years","65-74",1141,9846491,11.6
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","White","2106-3","75-84 years","75-84",1851,6601101,28.0
+,"Other bacterial diseases","A30-A49","2010","2010","Female","F","White","2106-3","85+ years","85+",2291,3314447,69.1
+,"Other bacterial diseases","A30-A49","2010","2010","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",13,167158,Unreliable
+,"Other bacterial diseases","A30-A49","2010","2010","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",10,76459,Unreliable
+,"Other bacterial diseases","A30-A49","2010","2010","Male","M","American Indian or Alaska Native","1002-5","75-84 years","75-84",10,29157,Unreliable
+,"Other bacterial diseases","A30-A49","2010","2010","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",19,1074756,Unreliable
+,"Other bacterial diseases","A30-A49","2010","2010","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",32,761268,4.2
+,"Other bacterial diseases","A30-A49","2010","2010","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",46,408568,11.3
+,"Other bacterial diseases","A30-A49","2010","2010","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",70,185737,37.7
+,"Other bacterial diseases","A30-A49","2010","2010","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",48,54709,87.7
+,"Other bacterial diseases","A30-A49","2010","2010","Male","M","Black or African American","2054-5","25-34 years","25-34",15,2801017,Unreliable
+,"Other bacterial diseases","A30-A49","2010","2010","Male","M","Black or African American","2054-5","35-44 years","35-44",29,2639054,1.1
+,"Other bacterial diseases","A30-A49","2010","2010","Male","M","Black or African American","2054-5","45-54 years","45-54",119,2707520,4.4
+,"Other bacterial diseases","A30-A49","2010","2010","Male","M","Black or African American","2054-5","55-64 years","55-64",214,1832463,11.7
+,"Other bacterial diseases","A30-A49","2010","2010","Male","M","Black or African American","2054-5","65-74 years","65-74",230,885780,26.0
+,"Other bacterial diseases","A30-A49","2010","2010","Male","M","Black or African American","2054-5","75-84 years","75-84",239,395774,60.4
+,"Other bacterial diseases","A30-A49","2010","2010","Male","M","Black or African American","2054-5","85+ years","85+",161,110382,145.9
+,"Other bacterial diseases","A30-A49","2010","2010","Male","M","White","2106-3","25-34 years","25-34",39,16138835,0.2
+,"Other bacterial diseases","A30-A49","2010","2010","Male","M","White","2106-3","35-44 years","35-44",130,16208232,0.8
+,"Other bacterial diseases","A30-A49","2010","2010","Male","M","White","2106-3","45-54 years","45-54",464,18095800,2.6
+,"Other bacterial diseases","A30-A49","2010","2010","Male","M","White","2106-3","55-64 years","55-64",899,14840259,6.1
+,"Other bacterial diseases","A30-A49","2010","2010","Male","M","White","2106-3","65-74 years","65-74",1333,8725712,15.3
+,"Other bacterial diseases","A30-A49","2010","2010","Male","M","White","2106-3","75-84 years","75-84",1946,4866094,40.0
+,"Other bacterial diseases","A30-A49","2010","2010","Male","M","White","2106-3","85+ years","85+",1545,1617352,95.5
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",12,276312,Unreliable
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",15,192307,Unreliable
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",22,93453,23.5
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",19,43747,Unreliable
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","Asian or Pacific Islander","A-PI","45-54 years","45-54",13,1247324,Unreliable
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",23,979140,2.3
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",44,525453,8.4
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",64,282420,22.7
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",73,105055,69.5
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","Black or African American","2054-5","25-34 years","25-34",11,3122987,Unreliable
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","Black or African American","2054-5","35-44 years","35-44",34,2934906,1.2
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","Black or African American","2054-5","45-54 years","45-54",118,3066612,3.8
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","Black or African American","2054-5","55-64 years","55-64",190,2331287,8.2
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","Black or African American","2054-5","65-74 years","65-74",228,1237777,18.4
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","Black or African American","2054-5","75-84 years","75-84",289,696468,41.5
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","Black or African American","2054-5","85+ years","85+",280,292691,95.7
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","White","2106-3","25-34 years","25-34",39,15778153,0.2
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","White","2106-3","35-44 years","35-44",108,15695797,0.7
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","White","2106-3","45-54 years","45-54",307,18108708,1.7
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","White","2106-3","55-64 years","55-64",708,16201201,4.4
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","White","2106-3","65-74 years","65-74",1175,10148742,11.6
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","White","2106-3","75-84 years","75-84",1937,6579562,29.4
+,"Other bacterial diseases","A30-A49","2011","2011","Female","F","White","2106-3","85+ years","85+",2323,3429955,67.7
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","American Indian or Alaska Native","1002-5","45-54 years","45-54",13,269072,Unreliable
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",13,179489,Unreliable
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",10,82279,Unreliable
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","American Indian or Alaska Native","1002-5","75-84 years","75-84",10,31812,Unreliable
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",10,1101754,Unreliable
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",38,809532,4.7
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",45,436536,10.3
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",68,200623,33.9
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",63,61242,102.9
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","Black or African American","2054-5","25-34 years","25-34",25,2876283,0.9
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","Black or African American","2054-5","35-44 years","35-44",43,2612286,1.6
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","Black or African American","2054-5","45-54 years","45-54",117,2717303,4.3
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","Black or African American","2054-5","55-64 years","55-64",187,1946428,9.6
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","Black or African American","2054-5","65-74 years","65-74",224,924403,24.2
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","Black or African American","2054-5","75-84 years","75-84",225,414645,54.3
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","Black or African American","2054-5","85+ years","85+",147,114793,128.1
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","White","2106-3","25-34 years","25-34",57,16433075,0.3
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","White","2106-3","35-44 years","35-44",159,15984681,1.0
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","White","2106-3","45-54 years","45-54",483,17931118,2.7
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","White","2106-3","55-64 years","55-64",980,15422756,6.4
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","White","2106-3","65-74 years","65-74",1323,9033095,14.6
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","White","2106-3","75-84 years","75-84",2009,4925953,40.8
+,"Other bacterial diseases","A30-A49","2011","2011","Male","M","White","2106-3","85+ years","85+",1648,1709767,96.4
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",13,276700,Unreliable
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",13,200285,Unreliable
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",14,100409,Unreliable
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",21,45258,46.4
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","American Indian or Alaska Native","1002-5","85+ years","85+",11,16376,Unreliable
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","Asian or Pacific Islander","A-PI","45-54 years","45-54",13,1275996,Unreliable
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",24,1023275,2.3
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",39,568687,6.9
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",63,297516,21.2
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",88,115055,76.5
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","Black or African American","2054-5","35-44 years","35-44",25,2941200,0.8
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","Black or African American","2054-5","45-54 years","45-54",86,3055924,2.8
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","Black or African American","2054-5","55-64 years","55-64",196,2419636,8.1
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","Black or African American","2054-5","65-74 years","65-74",190,1304676,14.6
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","Black or African American","2054-5","75-84 years","75-84",234,706069,33.1
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","Black or African American","2054-5","85+ years","85+",282,307270,91.8
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","White","2106-3","25-34 years","25-34",35,15892849,0.2
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","White","2106-3","35-44 years","35-44",103,15573096,0.7
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","White","2106-3","45-54 years","45-54",319,17853248,1.8
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","White","2106-3","55-64 years","55-64",755,16340112,4.6
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","White","2106-3","65-74 years","65-74",1177,10808758,10.9
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","White","2106-3","75-84 years","75-84",1870,6575641,28.4
+,"Other bacterial diseases","A30-A49","2012","2012","Female","F","White","2106-3","85+ years","85+",2208,3484596,63.4
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","American Indian or Alaska Native","1002-5","45-54 years","45-54",11,269981,Unreliable
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",17,185911,Unreliable
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",17,88818,Unreliable
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","American Indian or Alaska Native","1002-5","75-84 years","75-84",17,33101,Unreliable
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",14,1128254,Unreliable
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",31,846795,3.7
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",37,468808,7.9
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",63,214358,29.4
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",66,66110,99.8
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","Black or African American","2054-5","25-34 years","25-34",19,2944482,Unreliable
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","Black or African American","2054-5","35-44 years","35-44",43,2619646,1.6
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","Black or African American","2054-5","45-54 years","45-54",107,2707346,4.0
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","Black or African American","2054-5","55-64 years","55-64",220,2021385,10.9
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","Black or African American","2054-5","65-74 years","65-74",208,978519,21.3
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","Black or African American","2054-5","75-84 years","75-84",227,424153,53.5
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","Black or African American","2054-5","85+ years","85+",171,123493,138.5
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","White","2106-3","25-34 years","25-34",47,16593734,0.3
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","White","2106-3","35-44 years","35-44",136,15882055,0.9
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","White","2106-3","45-54 years","45-54",486,17701289,2.7
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","White","2106-3","55-64 years","55-64",1012,15548803,6.5
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","White","2106-3","65-74 years","65-74",1407,9666717,14.6
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","White","2106-3","75-84 years","75-84",1836,4976538,36.9
+,"Other bacterial diseases","A30-A49","2012","2012","Male","M","White","2106-3","85+ years","85+",1544,1765739,87.4
+,"Other bacterial diseases","A30-A49","2013","2013","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",16,276505,Unreliable
+,"Other bacterial diseases","A30-A49","2013","2013","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",16,208893,Unreliable
+,"Other bacterial diseases","A30-A49","2013","2013","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",12,107248,Unreliable
+,"Other bacterial diseases","A30-A49","2013","2013","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",13,47550,Unreliable
+,"Other bacterial diseases","A30-A49","2013","2013","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",22,1064048,2.1
+,"Other bacterial diseases","A30-A49","2013","2013","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",35,614960,5.7
+,"Other bacterial diseases","A30-A49","2013","2013","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",72,312870,23.0
+,"Other bacterial diseases","A30-A49","2013","2013","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",77,126827,60.7
+,"Other bacterial diseases","A30-A49","2013","2013","Female","F","Black or African American","2054-5","25-34 years","25-34",23,3224131,0.7
+,"Other bacterial diseases","A30-A49","2013","2013","Female","F","Black or African American","2054-5","35-44 years","35-44",33,2950264,1.1
+,"Other bacterial diseases","A30-A49","2013","2013","Female","F","Black or African American","2054-5","45-54 years","45-54",96,3043355,3.2
+,"Other bacterial diseases","A30-A49","2013","2013","Female","F","Black or African American","2054-5","55-64 years","55-64",205,2498661,8.2
+,"Other bacterial diseases","A30-A49","2013","2013","Female","F","Black or African American","2054-5","65-74 years","65-74",237,1378030,17.2
+,"Other bacterial diseases","A30-A49","2013","2013","Female","F","Black or African American","2054-5","75-84 years","75-84",290,722525,40.1
+,"Other bacterial diseases","A30-A49","2013","2013","Female","F","Black or African American","2054-5","85+ years","85+",303,317960,95.3
+,"Other bacterial diseases","A30-A49","2013","2013","Female","F","White","2106-3","25-34 years","25-34",46,16021255,0.3
+,"Other bacterial diseases","A30-A49","2013","2013","Female","F","White","2106-3","35-44 years","35-44",121,15488957,0.8
+,"Other bacterial diseases","A30-A49","2013","2013","Female","F","White","2106-3","45-54 years","45-54",398,17569134,2.3
+,"Other bacterial diseases","A30-A49","2013","2013","Female","F","White","2106-3","55-64 years","55-64",791,16588074,4.8
+,"Other bacterial diseases","A30-A49","2013","2013","Female","F","White","2106-3","65-74 years","65-74",1308,11318886,11.6
+,"Other bacterial diseases","A30-A49","2013","2013","Female","F","White","2106-3","75-84 years","75-84",1959,6603057,29.7
+,"Other bacterial diseases","A30-A49","2013","2013","Female","F","White","2106-3","85+ years","85+",2186,3536701,61.8
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","American Indian or Alaska Native","1002-5","45-54 years","45-54",16,271530,Unreliable
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",20,193548,10.3
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",10,95237,Unreliable
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","American Indian or Alaska Native","1002-5","75-84 years","75-84",12,35081,Unreliable
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","American Indian or Alaska Native","1002-5","85+ years","85+",10,9475,Unreliable
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","Asian or Pacific Islander","A-PI","35-44 years","35-44",14,1405065,Unreliable
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",14,1157519,Unreliable
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",42,883729,4.8
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",60,504244,11.9
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",71,229913,30.9
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",70,72810,96.1
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","Black or African American","2054-5","25-34 years","25-34",10,3018776,Unreliable
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","Black or African American","2054-5","35-44 years","35-44",51,2628985,1.9
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","Black or African American","2054-5","45-54 years","45-54",111,2693002,4.1
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","Black or African American","2054-5","55-64 years","55-64",245,2092483,11.7
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","Black or African American","2054-5","65-74 years","65-74",250,1038392,24.1
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","Black or African American","2054-5","75-84 years","75-84",220,439331,50.1
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","Black or African American","2054-5","85+ years","85+",163,129339,126.0
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","White","2106-3","25-34 years","25-34",56,16763513,0.3
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","White","2106-3","35-44 years","35-44",142,15812520,0.9
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","White","2106-3","45-54 years","45-54",491,17447033,2.8
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","White","2106-3","55-64 years","55-64",1098,15786995,7.0
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","White","2106-3","65-74 years","65-74",1469,10159769,14.5
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","White","2106-3","75-84 years","75-84",1940,5056192,38.4
+,"Other bacterial diseases","A30-A49","2013","2013","Male","M","White","2106-3","85+ years","85+",1538,1830158,84.0
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",15,277173,Unreliable
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",21,217910,9.6
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",18,114498,Unreliable
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",19,50208,Unreliable
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","American Indian or Alaska Native","1002-5","85+ years","85+",13,18585,Unreliable
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","Asian or Pacific Islander","A-PI","35-44 years","35-44",10,1634483,Unreliable
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",23,1111024,2.1
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",38,669694,5.7
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",60,331448,18.1
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",89,137805,64.6
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","Black or African American","2054-5","25-34 years","25-34",13,3304914,Unreliable
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","Black or African American","2054-5","35-44 years","35-44",42,2984282,1.4
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","Black or African American","2054-5","45-54 years","45-54",105,3028774,3.5
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","Black or African American","2054-5","55-64 years","55-64",191,2577838,7.4
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","Black or African American","2054-5","65-74 years","65-74",248,1460270,17.0
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","Black or African American","2054-5","75-84 years","75-84",259,740614,35.0
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","Black or African American","2054-5","85+ years","85+",279,327938,85.1
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","White","2106-3","25-34 years","25-34",46,16204311,0.3
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","White","2106-3","35-44 years","35-44",125,15444065,0.8
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","White","2106-3","45-54 years","45-54",372,17361561,2.1
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","White","2106-3","55-64 years","55-64",885,16848927,5.3
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","White","2106-3","65-74 years","65-74",1440,11804783,12.2
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","White","2106-3","75-84 years","75-84",1905,6667042,28.6
+,"Other bacterial diseases","A30-A49","2014","2014","Female","F","White","2106-3","85+ years","85+",2217,3569034,62.1
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","American Indian or Alaska Native","1002-5","45-54 years","45-54",15,274161,Unreliable
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",19,201175,Unreliable
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",18,101793,Unreliable
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","American Indian or Alaska Native","1002-5","75-84 years","75-84",16,37312,Unreliable
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",11,1204948,Unreliable
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",43,924813,4.6
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",67,545296,12.3
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",63,248143,25.4
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",78,79563,98.0
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","Black or African American","2054-5","25-34 years","25-34",16,3122333,Unreliable
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","Black or African American","2054-5","35-44 years","35-44",28,2661111,1.1
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","Black or African American","2054-5","45-54 years","45-54",104,2680947,3.9
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","Black or African American","2054-5","55-64 years","55-64",233,2162149,10.8
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","Black or African American","2054-5","65-74 years","65-74",247,1099266,22.5
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","Black or African American","2054-5","75-84 years","75-84",227,456225,49.8
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","Black or African American","2054-5","85+ years","85+",159,136175,116.8
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","White","2106-3","25-34 years","25-34",59,16906536,0.3
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","White","2106-3","35-44 years","35-44",180,15746894,1.1
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","White","2106-3","45-54 years","45-54",567,17264988,3.3
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","White","2106-3","55-64 years","55-64",1193,16033745,7.4
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","White","2106-3","65-74 years","65-74",1609,10602690,15.2
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","White","2106-3","75-84 years","75-84",1868,5151698,36.3
+,"Other bacterial diseases","A30-A49","2014","2014","Male","M","White","2106-3","85+ years","85+",1712,1882783,90.9
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",13,277510,Unreliable
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",19,226940,Unreliable
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",17,122035,Unreliable
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",17,52843,Unreliable
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","American Indian or Alaska Native","1002-5","85+ years","85+",17,20022,Unreliable
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","Asian or Pacific Islander","A-PI","35-44 years","35-44",10,1683702,Unreliable
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",21,1155370,1.8
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",45,725572,6.2
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",60,350343,17.1
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",95,150073,63.3
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","Black or African American","2054-5","25-34 years","25-34",21,3382985,0.6
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","Black or African American","2054-5","35-44 years","35-44",39,3013072,1.3
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","Black or African American","2054-5","45-54 years","45-54",121,3021717,4.0
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","Black or African American","2054-5","55-64 years","55-64",220,2654398,8.3
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","Black or African American","2054-5","65-74 years","65-74",253,1543609,16.4
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","Black or African American","2054-5","75-84 years","75-84",308,762579,40.4
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","Black or African American","2054-5","85+ years","85+",288,338522,85.1
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","White","2106-3","25-34 years","25-34",35,16343612,0.2
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","White","2106-3","35-44 years","35-44",131,15394921,0.9
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","White","2106-3","45-54 years","45-54",421,17173379,2.5
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","White","2106-3","55-64 years","55-64",930,17126364,5.4
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","White","2106-3","65-74 years","65-74",1517,12266953,12.4
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","White","2106-3","75-84 years","75-84",2039,6733838,30.3
+,"Other bacterial diseases","A30-A49","2015","2015","Female","F","White","2106-3","85+ years","85+",2344,3604246,65.0
+,"Other bacterial diseases","A30-A49","2015","2015","Male","M","American Indian or Alaska Native","1002-5","45-54 years","45-54",14,275803,Unreliable
+,"Other bacterial diseases","A30-A49","2015","2015","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",24,209714,11.4
+,"Other bacterial diseases","A30-A49","2015","2015","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",32,108443,29.5
+,"Other bacterial diseases","A30-A49","2015","2015","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",17,1248191,Unreliable
+,"Other bacterial diseases","A30-A49","2015","2015","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",40,965484,4.1
+,"Other bacterial diseases","A30-A49","2015","2015","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",70,586368,11.9
+,"Other bacterial diseases","A30-A49","2015","2015","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",70,266500,26.3
+,"Other bacterial diseases","A30-A49","2015","2015","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",88,86681,101.5
+,"Other bacterial diseases","A30-A49","2015","2015","Male","M","Black or African American","2054-5","25-34 years","25-34",11,3224785,Unreliable
+,"Other bacterial diseases","A30-A49","2015","2015","Male","M","Black or African American","2054-5","35-44 years","35-44",32,2690744,1.2
+,"Other bacterial diseases","A30-A49","2015","2015","Male","M","Black or African American","2054-5","45-54 years","45-54",117,2673905,4.4
+,"Other bacterial diseases","A30-A49","2015","2015","Male","M","Black or African American","2054-5","55-64 years","55-64",249,2230799,11.2
+,"Other bacterial diseases","A30-A49","2015","2015","Male","M","Black or African American","2054-5","65-74 years","65-74",305,1164256,26.2
+,"Other bacterial diseases","A30-A49","2015","2015","Male","M","Black or African American","2054-5","75-84 years","75-84",237,473171,50.1
+,"Other bacterial diseases","A30-A49","2015","2015","Male","M","Black or African American","2054-5","85+ years","85+",149,142359,104.7
+,"Other bacterial diseases","A30-A49","2015","2015","Male","M","White","2106-3","25-34 years","25-34",59,17051627,0.3
+,"Other bacterial diseases","A30-A49","2015","2015","Male","M","White","2106-3","35-44 years","35-44",166,15715677,1.1
+,"Other bacterial diseases","A30-A49","2015","2015","Male","M","White","2106-3","45-54 years","45-54",483,17100877,2.8
+,"Other bacterial diseases","A30-A49","2015","2015","Male","M","White","2106-3","55-64 years","55-64",1273,16308750,7.8
+,"Other bacterial diseases","A30-A49","2015","2015","Male","M","White","2106-3","65-74 years","65-74",1754,11033281,15.9
+,"Other bacterial diseases","A30-A49","2015","2015","Male","M","White","2106-3","75-84 years","75-84",2101,5244077,40.1
+,"Other bacterial diseases","A30-A49","2015","2015","Male","M","White","2106-3","85+ years","85+",1756,1933950,90.8
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",20,277646,7.2
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",23,235033,9.8
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",24,129801,18.5
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",12,55662,Unreliable
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","American Indian or Alaska Native","1002-5","85+ years","85+",14,21195,Unreliable
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","Asian or Pacific Islander","A-PI","45-54 years","45-54",12,1446459,Unreliable
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",38,1178042,3.2
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",42,764332,5.5
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",76,365597,20.8
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",75,159716,47.0
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","Black or African American","2054-5","25-34 years","25-34",16,3466922,Unreliable
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","Black or African American","2054-5","35-44 years","35-44",29,3017848,1.0
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","Black or African American","2054-5","45-54 years","45-54",102,3018481,3.4
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","Black or African American","2054-5","55-64 years","55-64",233,2712845,8.6
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","Black or African American","2054-5","65-74 years","65-74",277,1626680,17.0
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","Black or African American","2054-5","75-84 years","75-84",276,785828,35.1
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","Black or African American","2054-5","85+ years","85+",269,346391,77.7
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","White","2106-3","25-34 years","25-34",63,16465489,0.4
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","White","2106-3","35-44 years","35-44",131,15304617,0.9
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","White","2106-3","45-54 years","45-54",407,16937954,2.4
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","White","2106-3","55-64 years","55-64",942,17338186,5.4
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","White","2106-3","65-74 years","65-74",1495,12718408,11.8
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","White","2106-3","75-84 years","75-84",1972,6849573,28.8
+,"Other bacterial diseases","A30-A49","2016","2016","Female","F","White","2106-3","85+ years","85+",2132,3628186,58.8
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","American Indian or Alaska Native","1002-5","45-54 years","45-54",13,277098,Unreliable
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",19,216738,Unreliable
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",16,114778,Unreliable
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","American Indian or Alaska Native","1002-5","75-84 years","75-84",16,42459,Unreliable
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","Asian or Pacific Islander","A-PI","35-44 years","35-44",10,1504147,Unreliable
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",23,1272640,1.8
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",41,985505,4.2
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",69,612074,11.3
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",78,280882,27.8
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",77,92994,82.8
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","Black or African American","2054-5","25-34 years","25-34",17,3338882,Unreliable
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","Black or African American","2054-5","35-44 years","35-44",27,2702577,1.0
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","Black or African American","2054-5","45-54 years","45-54",111,2666665,4.2
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","Black or African American","2054-5","55-64 years","55-64",267,2284809,11.7
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","Black or African American","2054-5","65-74 years","65-74",300,1228135,24.4
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","Black or African American","2054-5","75-84 years","75-84",233,490623,47.5
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","Black or African American","2054-5","85+ years","85+",153,147306,103.9
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","White","2106-3","25-34 years","25-34",55,17186128,0.3
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","White","2106-3","35-44 years","35-44",209,15636470,1.3
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","White","2106-3","45-54 years","45-54",538,16889736,3.2
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","White","2106-3","55-64 years","55-64",1330,16511986,8.1
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","White","2106-3","65-74 years","65-74",1834,11436122,16.0
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","White","2106-3","75-84 years","75-84",2028,5362910,37.8
+,"Other bacterial diseases","A30-A49","2016","2016","Male","M","White","2106-3","85+ years","85+",1707,1972484,86.5
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",19,277424,Unreliable
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",13,242608,Unreliable
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",26,137585,18.9
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",22,58651,37.5
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","American Indian or Alaska Native","1002-5","85+ years","85+",10,22588,Unreliable
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","Asian or Pacific Islander","A-PI","45-54 years","45-54",12,1507028,Unreliable
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",37,1224600,3.0
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",64,819417,7.8
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",77,390555,19.7
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",94,172121,54.6
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","Black or African American","2054-5","25-34 years","25-34",18,3560406,Unreliable
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","Black or African American","2054-5","35-44 years","35-44",52,3055368,1.7
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","Black or African American","2054-5","45-54 years","45-54",97,3016004,3.2
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","Black or African American","2054-5","55-64 years","55-64",222,2777624,8.0
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","Black or African American","2054-5","65-74 years","65-74",270,1709818,15.8
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","Black or African American","2054-5","75-84 years","75-84",271,814516,33.3
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","Black or African American","2054-5","85+ years","85+",243,356668,68.1
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","White","2106-3","25-34 years","25-34",45,16576425,0.3
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","White","2106-3","35-44 years","35-44",139,15392623,0.9
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","White","2106-3","45-54 years","45-54",376,16668139,2.3
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","White","2106-3","55-64 years","55-64",993,17493023,5.7
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","White","2106-3","65-74 years","65-74",1574,13139486,12.0
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","White","2106-3","75-84 years","75-84",1976,7034954,28.1
+,"Other bacterial diseases","A30-A49","2017","2017","Female","F","White","2106-3","85+ years","85+",2169,3637636,59.6
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","American Indian or Alaska Native","1002-5","35-44 years","35-44",10,314647,Unreliable
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","American Indian or Alaska Native","1002-5","45-54 years","45-54",13,277853,Unreliable
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",22,224532,9.8
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",22,121253,18.1
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","American Indian or Alaska Native","1002-5","75-84 years","75-84",18,45396,Unreliable
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",17,1325041,Unreliable
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",44,1025701,4.3
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",73,653648,11.2
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",83,301045,27.6
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",72,100678,71.5
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","Black or African American","2054-5","25-34 years","25-34",24,3465087,0.7
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","Black or African American","2054-5","35-44 years","35-44",36,2743658,1.3
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","Black or African American","2054-5","45-54 years","45-54",117,2660679,4.4
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","Black or African American","2054-5","55-64 years","55-64",271,2341639,11.6
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","Black or African American","2054-5","65-74 years","65-74",305,1289007,23.7
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","Black or African American","2054-5","75-84 years","75-84",261,511629,51.0
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","Black or African American","2054-5","85+ years","85+",158,153683,102.8
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","White","2106-3","25-34 years","25-34",83,17369406,0.5
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","White","2106-3","35-44 years","35-44",179,15751313,1.1
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","White","2106-3","45-54 years","45-54",533,16642784,3.2
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","White","2106-3","55-64 years","55-64",1284,16665931,7.7
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","White","2106-3","65-74 years","65-74",1907,11813232,16.1
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","White","2106-3","75-84 years","75-84",2035,5549805,36.7
+,"Other bacterial diseases","A30-A49","2017","2017","Male","M","White","2106-3","85+ years","85+",1755,2012338,87.2
+,"Renal failure","N17-N19","2010","2010","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",11,273464,Unreliable
+,"Renal failure","N17-N19","2010","2010","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",11,178582,Unreliable
+,"Renal failure","N17-N19","2010","2010","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",17,87469,Unreliable
+,"Renal failure","N17-N19","2010","2010","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",16,40892,Unreliable
+,"Renal failure","N17-N19","2010","2010","Female","F","American Indian or Alaska Native","1002-5","85+ years","85+",11,14001,Unreliable
+,"Renal failure","N17-N19","2010","2010","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",14,919792,Unreliable
+,"Renal failure","N17-N19","2010","2010","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",24,490802,4.9
+,"Renal failure","N17-N19","2010","2010","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",69,266935,25.8
+,"Renal failure","N17-N19","2010","2010","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",66,92921,71.0
+,"Renal failure","N17-N19","2010","2010","Female","F","Black or African American","2054-5","25-34 years","25-34",13,3066086,Unreliable
+,"Renal failure","N17-N19","2010","2010","Female","F","Black or African American","2054-5","35-44 years","35-44",35,2961585,1.2
+,"Renal failure","N17-N19","2010","2010","Female","F","Black or African American","2054-5","45-54 years","45-54",105,3056411,3.4
+,"Renal failure","N17-N19","2010","2010","Female","F","Black or African American","2054-5","55-64 years","55-64",172,2196805,7.8
+,"Renal failure","N17-N19","2010","2010","Female","F","Black or African American","2054-5","65-74 years","65-74",203,1192148,17.0
+,"Renal failure","N17-N19","2010","2010","Female","F","Black or African American","2054-5","75-84 years","75-84",305,675432,45.2
+,"Renal failure","N17-N19","2010","2010","Female","F","Black or African American","2054-5","85+ years","85+",309,282385,109.4
+,"Renal failure","N17-N19","2010","2010","Female","F","White","2106-3","25-34 years","25-34",44,15551936,0.3
+,"Renal failure","N17-N19","2010","2010","Female","F","White","2106-3","35-44 years","35-44",93,15940784,0.6
+,"Renal failure","N17-N19","2010","2010","Female","F","White","2106-3","45-54 years","45-54",343,18311038,1.9
+,"Renal failure","N17-N19","2010","2010","Female","F","White","2106-3","55-64 years","55-64",682,15586402,4.4
+,"Renal failure","N17-N19","2010","2010","Female","F","White","2106-3","65-74 years","65-74",1148,9846491,11.7
+,"Renal failure","N17-N19","2010","2010","Female","F","White","2106-3","75-84 years","75-84",1863,6601101,28.2
+,"Renal failure","N17-N19","2010","2010","Female","F","White","2106-3","85+ years","85+",2299,3314447,69.4
+,"Renal failure","N17-N19","2010","2010","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",13,167158,Unreliable
+,"Renal failure","N17-N19","2010","2010","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",11,76459,Unreliable
+,"Renal failure","N17-N19","2010","2010","Male","M","American Indian or Alaska Native","1002-5","75-84 years","75-84",10,29157,Unreliable
+,"Renal failure","N17-N19","2010","2010","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",19,1074756,Unreliable
+,"Renal failure","N17-N19","2010","2010","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",32,761268,4.2
+,"Renal failure","N17-N19","2010","2010","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",46,408568,11.3
+,"Renal failure","N17-N19","2010","2010","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",70,185737,37.7
+,"Renal failure","N17-N19","2010","2010","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",48,54709,87.7
+,"Renal failure","N17-N19","2010","2010","Male","M","Black or African American","2054-5","25-34 years","25-34",15,2801017,Unreliable
+,"Renal failure","N17-N19","2010","2010","Male","M","Black or African American","2054-5","35-44 years","35-44",29,2639054,1.1
+,"Renal failure","N17-N19","2010","2010","Male","M","Black or African American","2054-5","45-54 years","45-54",119,2707520,4.4
+,"Renal failure","N17-N19","2010","2010","Male","M","Black or African American","2054-5","55-64 years","55-64",214,1832463,11.7
+,"Renal failure","N17-N19","2010","2010","Male","M","Black or African American","2054-5","65-74 years","65-74",232,885780,26.2
+,"Renal failure","N17-N19","2010","2010","Male","M","Black or African American","2054-5","75-84 years","75-84",239,395774,60.4
+,"Renal failure","N17-N19","2010","2010","Male","M","Black or African American","2054-5","85+ years","85+",162,110382,146.8
+,"Renal failure","N17-N19","2010","2010","Male","M","White","2106-3","25-34 years","25-34",39,16138835,0.2
+,"Renal failure","N17-N19","2010","2010","Male","M","White","2106-3","35-44 years","35-44",130,16208232,0.8
+,"Renal failure","N17-N19","2010","2010","Male","M","White","2106-3","45-54 years","45-54",467,18095800,2.6
+,"Renal failure","N17-N19","2010","2010","Male","M","White","2106-3","55-64 years","55-64",900,14840259,6.1
+,"Renal failure","N17-N19","2010","2010","Male","M","White","2106-3","65-74 years","65-74",1341,8725712,15.4
+,"Renal failure","N17-N19","2010","2010","Male","M","White","2106-3","75-84 years","75-84",1954,4866094,40.2
+,"Renal failure","N17-N19","2010","2010","Male","M","White","2106-3","85+ years","85+",1546,1617352,95.6
+,"Renal failure","N17-N19","2011","2011","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",12,276312,Unreliable
+,"Renal failure","N17-N19","2011","2011","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",15,192307,Unreliable
+,"Renal failure","N17-N19","2011","2011","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",22,93453,23.5
+,"Renal failure","N17-N19","2011","2011","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",19,43747,Unreliable
+,"Renal failure","N17-N19","2011","2011","Female","F","Asian or Pacific Islander","A-PI","45-54 years","45-54",13,1247324,Unreliable
+,"Renal failure","N17-N19","2011","2011","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",23,979140,2.3
+,"Renal failure","N17-N19","2011","2011","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",45,525453,8.6
+,"Renal failure","N17-N19","2011","2011","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",64,282420,22.7
+,"Renal failure","N17-N19","2011","2011","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",73,105055,69.5
+,"Renal failure","N17-N19","2011","2011","Female","F","Black or African American","2054-5","25-34 years","25-34",11,3122987,Unreliable
+,"Renal failure","N17-N19","2011","2011","Female","F","Black or African American","2054-5","35-44 years","35-44",34,2934906,1.2
+,"Renal failure","N17-N19","2011","2011","Female","F","Black or African American","2054-5","45-54 years","45-54",120,3066612,3.9
+,"Renal failure","N17-N19","2011","2011","Female","F","Black or African American","2054-5","55-64 years","55-64",191,2331287,8.2
+,"Renal failure","N17-N19","2011","2011","Female","F","Black or African American","2054-5","65-74 years","65-74",231,1237777,18.7
+,"Renal failure","N17-N19","2011","2011","Female","F","Black or African American","2054-5","75-84 years","75-84",291,696468,41.8
+,"Renal failure","N17-N19","2011","2011","Female","F","Black or African American","2054-5","85+ years","85+",281,292691,96.0
+,"Renal failure","N17-N19","2011","2011","Female","F","White","2106-3","25-34 years","25-34",39,15778153,0.2
+,"Renal failure","N17-N19","2011","2011","Female","F","White","2106-3","35-44 years","35-44",110,15695797,0.7
+,"Renal failure","N17-N19","2011","2011","Female","F","White","2106-3","45-54 years","45-54",308,18108708,1.7
+,"Renal failure","N17-N19","2011","2011","Female","F","White","2106-3","55-64 years","55-64",712,16201201,4.4
+,"Renal failure","N17-N19","2011","2011","Female","F","White","2106-3","65-74 years","65-74",1183,10148742,11.7
+,"Renal failure","N17-N19","2011","2011","Female","F","White","2106-3","75-84 years","75-84",1950,6579562,29.6
+,"Renal failure","N17-N19","2011","2011","Female","F","White","2106-3","85+ years","85+",2335,3429955,68.1
+,"Renal failure","N17-N19","2011","2011","Male","M","American Indian or Alaska Native","1002-5","45-54 years","45-54",13,269072,Unreliable
+,"Renal failure","N17-N19","2011","2011","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",13,179489,Unreliable
+,"Renal failure","N17-N19","2011","2011","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",10,82279,Unreliable
+,"Renal failure","N17-N19","2011","2011","Male","M","American Indian or Alaska Native","1002-5","75-84 years","75-84",11,31812,Unreliable
+,"Renal failure","N17-N19","2011","2011","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",10,1101754,Unreliable
+,"Renal failure","N17-N19","2011","2011","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",38,809532,4.7
+,"Renal failure","N17-N19","2011","2011","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",46,436536,10.5
+,"Renal failure","N17-N19","2011","2011","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",68,200623,33.9
+,"Renal failure","N17-N19","2011","2011","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",64,61242,104.5
+,"Renal failure","N17-N19","2011","2011","Male","M","Black or African American","2054-5","25-34 years","25-34",25,2876283,0.9
+,"Renal failure","N17-N19","2011","2011","Male","M","Black or African American","2054-5","35-44 years","35-44",43,2612286,1.6
+,"Renal failure","N17-N19","2011","2011","Male","M","Black or African American","2054-5","45-54 years","45-54",119,2717303,4.4
+,"Renal failure","N17-N19","2011","2011","Male","M","Black or African American","2054-5","55-64 years","55-64",189,1946428,9.7
+,"Renal failure","N17-N19","2011","2011","Male","M","Black or African American","2054-5","65-74 years","65-74",225,924403,24.3
+,"Renal failure","N17-N19","2011","2011","Male","M","Black or African American","2054-5","75-84 years","75-84",225,414645,54.3
+,"Renal failure","N17-N19","2011","2011","Male","M","Black or African American","2054-5","85+ years","85+",149,114793,129.8
+,"Renal failure","N17-N19","2011","2011","Male","M","White","2106-3","25-34 years","25-34",58,16433075,0.4
+,"Renal failure","N17-N19","2011","2011","Male","M","White","2106-3","35-44 years","35-44",159,15984681,1.0
+,"Renal failure","N17-N19","2011","2011","Male","M","White","2106-3","45-54 years","45-54",483,17931118,2.7
+,"Renal failure","N17-N19","2011","2011","Male","M","White","2106-3","55-64 years","55-64",989,15422756,6.4
+,"Renal failure","N17-N19","2011","2011","Male","M","White","2106-3","65-74 years","65-74",1328,9033095,14.7
+,"Renal failure","N17-N19","2011","2011","Male","M","White","2106-3","75-84 years","75-84",2017,4925953,40.9
+,"Renal failure","N17-N19","2011","2011","Male","M","White","2106-3","85+ years","85+",1662,1709767,97.2
+,"Renal failure","N17-N19","2012","2012","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",13,276700,Unreliable
+,"Renal failure","N17-N19","2012","2012","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",13,200285,Unreliable
+,"Renal failure","N17-N19","2012","2012","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",14,100409,Unreliable
+,"Renal failure","N17-N19","2012","2012","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",21,45258,46.4
+,"Renal failure","N17-N19","2012","2012","Female","F","American Indian or Alaska Native","1002-5","85+ years","85+",11,16376,Unreliable
+,"Renal failure","N17-N19","2012","2012","Female","F","Asian or Pacific Islander","A-PI","45-54 years","45-54",13,1275996,Unreliable
+,"Renal failure","N17-N19","2012","2012","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",24,1023275,2.3
+,"Renal failure","N17-N19","2012","2012","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",39,568687,6.9
+,"Renal failure","N17-N19","2012","2012","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",63,297516,21.2
+,"Renal failure","N17-N19","2012","2012","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",90,115055,78.2
+,"Renal failure","N17-N19","2012","2012","Female","F","Black or African American","2054-5","35-44 years","35-44",26,2941200,0.9
+,"Renal failure","N17-N19","2012","2012","Female","F","Black or African American","2054-5","45-54 years","45-54",87,3055924,2.8
+,"Renal failure","N17-N19","2012","2012","Female","F","Black or African American","2054-5","55-64 years","55-64",197,2419636,8.1
+,"Renal failure","N17-N19","2012","2012","Female","F","Black or African American","2054-5","65-74 years","65-74",192,1304676,14.7
+,"Renal failure","N17-N19","2012","2012","Female","F","Black or African American","2054-5","75-84 years","75-84",235,706069,33.3
+,"Renal failure","N17-N19","2012","2012","Female","F","Black or African American","2054-5","85+ years","85+",285,307270,92.8
+,"Renal failure","N17-N19","2012","2012","Female","F","White","2106-3","25-34 years","25-34",35,15892849,0.2
+,"Renal failure","N17-N19","2012","2012","Female","F","White","2106-3","35-44 years","35-44",103,15573096,0.7
+,"Renal failure","N17-N19","2012","2012","Female","F","White","2106-3","45-54 years","45-54",323,17853248,1.8
+,"Renal failure","N17-N19","2012","2012","Female","F","White","2106-3","55-64 years","55-64",755,16340112,4.6
+,"Renal failure","N17-N19","2012","2012","Female","F","White","2106-3","65-74 years","65-74",1183,10808758,10.9
+,"Renal failure","N17-N19","2012","2012","Female","F","White","2106-3","75-84 years","75-84",1885,6575641,28.7
+,"Renal failure","N17-N19","2012","2012","Female","F","White","2106-3","85+ years","85+",2215,3484596,63.6
+,"Renal failure","N17-N19","2012","2012","Male","M","American Indian or Alaska Native","1002-5","45-54 years","45-54",11,269981,Unreliable
+,"Renal failure","N17-N19","2012","2012","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",17,185911,Unreliable
+,"Renal failure","N17-N19","2012","2012","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",17,88818,Unreliable
+,"Renal failure","N17-N19","2012","2012","Male","M","American Indian or Alaska Native","1002-5","75-84 years","75-84",17,33101,Unreliable
+,"Renal failure","N17-N19","2012","2012","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",14,1128254,Unreliable
+,"Renal failure","N17-N19","2012","2012","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",31,846795,3.7
+,"Renal failure","N17-N19","2012","2012","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",37,468808,7.9
+,"Renal failure","N17-N19","2012","2012","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",63,214358,29.4
+,"Renal failure","N17-N19","2012","2012","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",66,66110,99.8
+,"Renal failure","N17-N19","2012","2012","Male","M","Black or African American","2054-5","25-34 years","25-34",20,2944482,0.7
+,"Renal failure","N17-N19","2012","2012","Male","M","Black or African American","2054-5","35-44 years","35-44",44,2619646,1.7
+,"Renal failure","N17-N19","2012","2012","Male","M","Black or African American","2054-5","45-54 years","45-54",107,2707346,4.0
+,"Renal failure","N17-N19","2012","2012","Male","M","Black or African American","2054-5","55-64 years","55-64",221,2021385,10.9
+,"Renal failure","N17-N19","2012","2012","Male","M","Black or African American","2054-5","65-74 years","65-74",208,978519,21.3
+,"Renal failure","N17-N19","2012","2012","Male","M","Black or African American","2054-5","75-84 years","75-84",227,424153,53.5
+,"Renal failure","N17-N19","2012","2012","Male","M","Black or African American","2054-5","85+ years","85+",172,123493,139.3
+,"Renal failure","N17-N19","2012","2012","Male","M","White","2106-3","25-34 years","25-34",48,16593734,0.3
+,"Renal failure","N17-N19","2012","2012","Male","M","White","2106-3","35-44 years","35-44",135,15882055,0.9
+,"Renal failure","N17-N19","2012","2012","Male","M","White","2106-3","45-54 years","45-54",493,17701289,2.8
+,"Renal failure","N17-N19","2012","2012","Male","M","White","2106-3","55-64 years","55-64",1023,15548803,6.6
+,"Renal failure","N17-N19","2012","2012","Male","M","White","2106-3","65-74 years","65-74",1409,9666717,14.6
+,"Renal failure","N17-N19","2012","2012","Male","M","White","2106-3","75-84 years","75-84",1844,4976538,37.1
+,"Renal failure","N17-N19","2012","2012","Male","M","White","2106-3","85+ years","85+",1552,1765739,87.9
+,"Renal failure","N17-N19","2013","2013","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",16,276505,Unreliable
+,"Renal failure","N17-N19","2013","2013","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",16,208893,Unreliable
+,"Renal failure","N17-N19","2013","2013","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",12,107248,Unreliable
+,"Renal failure","N17-N19","2013","2013","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",13,47550,Unreliable
+,"Renal failure","N17-N19","2013","2013","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",22,1064048,2.1
+,"Renal failure","N17-N19","2013","2013","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",35,614960,5.7
+,"Renal failure","N17-N19","2013","2013","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",73,312870,23.3
+,"Renal failure","N17-N19","2013","2013","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",78,126827,61.5
+,"Renal failure","N17-N19","2013","2013","Female","F","Black or African American","2054-5","25-34 years","25-34",23,3224131,0.7
+,"Renal failure","N17-N19","2013","2013","Female","F","Black or African American","2054-5","35-44 years","35-44",34,2950264,1.2
+,"Renal failure","N17-N19","2013","2013","Female","F","Black or African American","2054-5","45-54 years","45-54",97,3043355,3.2
+,"Renal failure","N17-N19","2013","2013","Female","F","Black or African American","2054-5","55-64 years","55-64",205,2498661,8.2
+,"Renal failure","N17-N19","2013","2013","Female","F","Black or African American","2054-5","65-74 years","65-74",237,1378030,17.2
+,"Renal failure","N17-N19","2013","2013","Female","F","Black or African American","2054-5","75-84 years","75-84",291,722525,40.3
+,"Renal failure","N17-N19","2013","2013","Female","F","Black or African American","2054-5","85+ years","85+",303,317960,95.3
+,"Renal failure","N17-N19","2013","2013","Female","F","White","2106-3","25-34 years","25-34",48,16021255,0.3
+,"Renal failure","N17-N19","2013","2013","Female","F","White","2106-3","35-44 years","35-44",122,15488957,0.8
+,"Renal failure","N17-N19","2013","2013","Female","F","White","2106-3","45-54 years","45-54",401,17569134,2.3
+,"Renal failure","N17-N19","2013","2013","Female","F","White","2106-3","55-64 years","55-64",792,16588074,4.8
+,"Renal failure","N17-N19","2013","2013","Female","F","White","2106-3","65-74 years","65-74",1318,11318886,11.6
+,"Renal failure","N17-N19","2013","2013","Female","F","White","2106-3","75-84 years","75-84",1966,6603057,29.8
+,"Renal failure","N17-N19","2013","2013","Female","F","White","2106-3","85+ years","85+",2202,3536701,62.3
+,"Renal failure","N17-N19","2013","2013","Male","M","American Indian or Alaska Native","1002-5","45-54 years","45-54",16,271530,Unreliable
+,"Renal failure","N17-N19","2013","2013","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",20,193548,10.3
+,"Renal failure","N17-N19","2013","2013","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",10,95237,Unreliable
+,"Renal failure","N17-N19","2013","2013","Male","M","American Indian or Alaska Native","1002-5","75-84 years","75-84",12,35081,Unreliable
+,"Renal failure","N17-N19","2013","2013","Male","M","American Indian or Alaska Native","1002-5","85+ years","85+",10,9475,Unreliable
+,"Renal failure","N17-N19","2013","2013","Male","M","Asian or Pacific Islander","A-PI","35-44 years","35-44",14,1405065,Unreliable
+,"Renal failure","N17-N19","2013","2013","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",14,1157519,Unreliable
+,"Renal failure","N17-N19","2013","2013","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",42,883729,4.8
+,"Renal failure","N17-N19","2013","2013","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",60,504244,11.9
+,"Renal failure","N17-N19","2013","2013","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",71,229913,30.9
+,"Renal failure","N17-N19","2013","2013","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",70,72810,96.1
+,"Renal failure","N17-N19","2013","2013","Male","M","Black or African American","2054-5","25-34 years","25-34",10,3018776,Unreliable
+,"Renal failure","N17-N19","2013","2013","Male","M","Black or African American","2054-5","35-44 years","35-44",51,2628985,1.9
+,"Renal failure","N17-N19","2013","2013","Male","M","Black or African American","2054-5","45-54 years","45-54",111,2693002,4.1
+,"Renal failure","N17-N19","2013","2013","Male","M","Black or African American","2054-5","55-64 years","55-64",245,2092483,11.7
+,"Renal failure","N17-N19","2013","2013","Male","M","Black or African American","2054-5","65-74 years","65-74",253,1038392,24.4
+,"Renal failure","N17-N19","2013","2013","Male","M","Black or African American","2054-5","75-84 years","75-84",220,439331,50.1
+,"Renal failure","N17-N19","2013","2013","Male","M","Black or African American","2054-5","85+ years","85+",165,129339,127.6
+,"Renal failure","N17-N19","2013","2013","Male","M","White","2106-3","25-34 years","25-34",57,16763513,0.3
+,"Renal failure","N17-N19","2013","2013","Male","M","White","2106-3","35-44 years","35-44",143,15812520,0.9
+,"Renal failure","N17-N19","2013","2013","Male","M","White","2106-3","45-54 years","45-54",491,17447033,2.8
+,"Renal failure","N17-N19","2013","2013","Male","M","White","2106-3","55-64 years","55-64",1106,15786995,7.0
+,"Renal failure","N17-N19","2013","2013","Male","M","White","2106-3","65-74 years","65-74",1479,10159769,14.6
+,"Renal failure","N17-N19","2013","2013","Male","M","White","2106-3","75-84 years","75-84",1952,5056192,38.6
+,"Renal failure","N17-N19","2013","2013","Male","M","White","2106-3","85+ years","85+",1545,1830158,84.4
+,"Renal failure","N17-N19","2014","2014","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",15,277173,Unreliable
+,"Renal failure","N17-N19","2014","2014","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",20,217910,9.2
+,"Renal failure","N17-N19","2014","2014","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",18,114498,Unreliable
+,"Renal failure","N17-N19","2014","2014","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",19,50208,Unreliable
+,"Renal failure","N17-N19","2014","2014","Female","F","American Indian or Alaska Native","1002-5","85+ years","85+",13,18585,Unreliable
+,"Renal failure","N17-N19","2014","2014","Female","F","Asian or Pacific Islander","A-PI","35-44 years","35-44",10,1634483,Unreliable
+,"Renal failure","N17-N19","2014","2014","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",23,1111024,2.1
+,"Renal failure","N17-N19","2014","2014","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",38,669694,5.7
+,"Renal failure","N17-N19","2014","2014","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",60,331448,18.1
+,"Renal failure","N17-N19","2014","2014","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",90,137805,65.3
+,"Renal failure","N17-N19","2014","2014","Female","F","Black or African American","2054-5","25-34 years","25-34",13,3304914,Unreliable
+,"Renal failure","N17-N19","2014","2014","Female","F","Black or African American","2054-5","35-44 years","35-44",42,2984282,1.4
+,"Renal failure","N17-N19","2014","2014","Female","F","Black or African American","2054-5","45-54 years","45-54",105,3028774,3.5
+,"Renal failure","N17-N19","2014","2014","Female","F","Black or African American","2054-5","55-64 years","55-64",193,2577838,7.5
+,"Renal failure","N17-N19","2014","2014","Female","F","Black or African American","2054-5","65-74 years","65-74",250,1460270,17.1
+,"Renal failure","N17-N19","2014","2014","Female","F","Black or African American","2054-5","75-84 years","75-84",261,740614,35.2
+,"Renal failure","N17-N19","2014","2014","Female","F","Black or African American","2054-5","85+ years","85+",282,327938,86.0
+,"Renal failure","N17-N19","2014","2014","Female","F","White","2106-3","25-34 years","25-34",48,16204311,0.3
+,"Renal failure","N17-N19","2014","2014","Female","F","White","2106-3","35-44 years","35-44",126,15444065,0.8
+,"Renal failure","N17-N19","2014","2014","Female","F","White","2106-3","45-54 years","45-54",376,17361561,2.2
+,"Renal failure","N17-N19","2014","2014","Female","F","White","2106-3","55-64 years","55-64",892,16848927,5.3
+,"Renal failure","N17-N19","2014","2014","Female","F","White","2106-3","65-74 years","65-74",1453,11804783,12.3
+,"Renal failure","N17-N19","2014","2014","Female","F","White","2106-3","75-84 years","75-84",1914,6667042,28.7
+,"Renal failure","N17-N19","2014","2014","Female","F","White","2106-3","85+ years","85+",2230,3569034,62.5
+,"Renal failure","N17-N19","2014","2014","Male","M","American Indian or Alaska Native","1002-5","45-54 years","45-54",15,274161,Unreliable
+,"Renal failure","N17-N19","2014","2014","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",19,201175,Unreliable
+,"Renal failure","N17-N19","2014","2014","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",17,101793,Unreliable
+,"Renal failure","N17-N19","2014","2014","Male","M","American Indian or Alaska Native","1002-5","75-84 years","75-84",16,37312,Unreliable
+,"Renal failure","N17-N19","2014","2014","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",11,1204948,Unreliable
+,"Renal failure","N17-N19","2014","2014","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",44,924813,4.8
+,"Renal failure","N17-N19","2014","2014","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",67,545296,12.3
+,"Renal failure","N17-N19","2014","2014","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",64,248143,25.8
+,"Renal failure","N17-N19","2014","2014","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",78,79563,98.0
+,"Renal failure","N17-N19","2014","2014","Male","M","Black or African American","2054-5","25-34 years","25-34",16,3122333,Unreliable
+,"Renal failure","N17-N19","2014","2014","Male","M","Black or African American","2054-5","35-44 years","35-44",28,2661111,1.1
+,"Renal failure","N17-N19","2014","2014","Male","M","Black or African American","2054-5","45-54 years","45-54",106,2680947,4.0
+,"Renal failure","N17-N19","2014","2014","Male","M","Black or African American","2054-5","55-64 years","55-64",234,2162149,10.8
+,"Renal failure","N17-N19","2014","2014","Male","M","Black or African American","2054-5","65-74 years","65-74",250,1099266,22.7
+,"Renal failure","N17-N19","2014","2014","Male","M","Black or African American","2054-5","75-84 years","75-84",231,456225,50.6
+,"Renal failure","N17-N19","2014","2014","Male","M","Black or African American","2054-5","85+ years","85+",161,136175,118.2
+,"Renal failure","N17-N19","2014","2014","Male","M","White","2106-3","25-34 years","25-34",59,16906536,0.3
+,"Renal failure","N17-N19","2014","2014","Male","M","White","2106-3","35-44 years","35-44",181,15746894,1.1
+,"Renal failure","N17-N19","2014","2014","Male","M","White","2106-3","45-54 years","45-54",572,17264988,3.3
+,"Renal failure","N17-N19","2014","2014","Male","M","White","2106-3","55-64 years","55-64",1211,16033745,7.6
+,"Renal failure","N17-N19","2014","2014","Male","M","White","2106-3","65-74 years","65-74",1618,10602690,15.3
+,"Renal failure","N17-N19","2014","2014","Male","M","White","2106-3","75-84 years","75-84",1878,5151698,36.5
+,"Renal failure","N17-N19","2014","2014","Male","M","White","2106-3","85+ years","85+",1725,1882783,91.6
+,"Renal failure","N17-N19","2015","2015","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",14,277510,Unreliable
+,"Renal failure","N17-N19","2015","2015","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",19,226940,Unreliable
+,"Renal failure","N17-N19","2015","2015","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",18,122035,Unreliable
+,"Renal failure","N17-N19","2015","2015","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",17,52843,Unreliable
+,"Renal failure","N17-N19","2015","2015","Female","F","American Indian or Alaska Native","1002-5","85+ years","85+",17,20022,Unreliable
+,"Renal failure","N17-N19","2015","2015","Female","F","Asian or Pacific Islander","A-PI","35-44 years","35-44",10,1683702,Unreliable
+,"Renal failure","N17-N19","2015","2015","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",21,1155370,1.8
+,"Renal failure","N17-N19","2015","2015","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",45,725572,6.2
+,"Renal failure","N17-N19","2015","2015","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",60,350343,17.1
+,"Renal failure","N17-N19","2015","2015","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",95,150073,63.3
+,"Renal failure","N17-N19","2015","2015","Female","F","Black or African American","2054-5","25-34 years","25-34",22,3382985,0.7
+,"Renal failure","N17-N19","2015","2015","Female","F","Black or African American","2054-5","35-44 years","35-44",39,3013072,1.3
+,"Renal failure","N17-N19","2015","2015","Female","F","Black or African American","2054-5","45-54 years","45-54",125,3021717,4.1
+,"Renal failure","N17-N19","2015","2015","Female","F","Black or African American","2054-5","55-64 years","55-64",224,2654398,8.4
+,"Renal failure","N17-N19","2015","2015","Female","F","Black or African American","2054-5","65-74 years","65-74",256,1543609,16.6
+,"Renal failure","N17-N19","2015","2015","Female","F","Black or African American","2054-5","75-84 years","75-84",311,762579,40.8
+,"Renal failure","N17-N19","2015","2015","Female","F","Black or African American","2054-5","85+ years","85+",291,338522,86.0
+,"Renal failure","N17-N19","2015","2015","Female","F","White","2106-3","25-34 years","25-34",35,16343612,0.2
+,"Renal failure","N17-N19","2015","2015","Female","F","White","2106-3","35-44 years","35-44",132,15394921,0.9
+,"Renal failure","N17-N19","2015","2015","Female","F","White","2106-3","45-54 years","45-54",424,17173379,2.5
+,"Renal failure","N17-N19","2015","2015","Female","F","White","2106-3","55-64 years","55-64",936,17126364,5.5
+,"Renal failure","N17-N19","2015","2015","Female","F","White","2106-3","65-74 years","65-74",1526,12266953,12.4
+,"Renal failure","N17-N19","2015","2015","Female","F","White","2106-3","75-84 years","75-84",2065,6733838,30.7
+,"Renal failure","N17-N19","2015","2015","Female","F","White","2106-3","85+ years","85+",2366,3604246,65.6
+,"Renal failure","N17-N19","2015","2015","Male","M","American Indian or Alaska Native","1002-5","45-54 years","45-54",14,275803,Unreliable
+,"Renal failure","N17-N19","2015","2015","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",24,209714,11.4
+,"Renal failure","N17-N19","2015","2015","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",32,108443,29.5
+,"Renal failure","N17-N19","2015","2015","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",17,1248191,Unreliable
+,"Renal failure","N17-N19","2015","2015","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",41,965484,4.2
+,"Renal failure","N17-N19","2015","2015","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",72,586368,12.3
+,"Renal failure","N17-N19","2015","2015","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",70,266500,26.3
+,"Renal failure","N17-N19","2015","2015","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",89,86681,102.7
+,"Renal failure","N17-N19","2015","2015","Male","M","Black or African American","2054-5","25-34 years","25-34",11,3224785,Unreliable
+,"Renal failure","N17-N19","2015","2015","Male","M","Black or African American","2054-5","35-44 years","35-44",33,2690744,1.2
+,"Renal failure","N17-N19","2015","2015","Male","M","Black or African American","2054-5","45-54 years","45-54",118,2673905,4.4
+,"Renal failure","N17-N19","2015","2015","Male","M","Black or African American","2054-5","55-64 years","55-64",250,2230799,11.2
+,"Renal failure","N17-N19","2015","2015","Male","M","Black or African American","2054-5","65-74 years","65-74",308,1164256,26.5
+,"Renal failure","N17-N19","2015","2015","Male","M","Black or African American","2054-5","75-84 years","75-84",238,473171,50.3
+,"Renal failure","N17-N19","2015","2015","Male","M","Black or African American","2054-5","85+ years","85+",149,142359,104.7
+,"Renal failure","N17-N19","2015","2015","Male","M","White","2106-3","25-34 years","25-34",59,17051627,0.3
+,"Renal failure","N17-N19","2015","2015","Male","M","White","2106-3","35-44 years","35-44",168,15715677,1.1
+,"Renal failure","N17-N19","2015","2015","Male","M","White","2106-3","45-54 years","45-54",486,17100877,2.8
+,"Renal failure","N17-N19","2015","2015","Male","M","White","2106-3","55-64 years","55-64",1285,16308750,7.9
+,"Renal failure","N17-N19","2015","2015","Male","M","White","2106-3","65-74 years","65-74",1771,11033281,16.1
+,"Renal failure","N17-N19","2015","2015","Male","M","White","2106-3","75-84 years","75-84",2121,5244077,40.4
+,"Renal failure","N17-N19","2015","2015","Male","M","White","2106-3","85+ years","85+",1772,1933950,91.6
+,"Renal failure","N17-N19","2016","2016","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",20,277646,7.2
+,"Renal failure","N17-N19","2016","2016","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",23,235033,9.8
+,"Renal failure","N17-N19","2016","2016","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",25,129801,19.3
+,"Renal failure","N17-N19","2016","2016","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",12,55662,Unreliable
+,"Renal failure","N17-N19","2016","2016","Female","F","American Indian or Alaska Native","1002-5","85+ years","85+",15,21195,Unreliable
+,"Renal failure","N17-N19","2016","2016","Female","F","Asian or Pacific Islander","A-PI","45-54 years","45-54",13,1446459,Unreliable
+,"Renal failure","N17-N19","2016","2016","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",38,1178042,3.2
+,"Renal failure","N17-N19","2016","2016","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",43,764332,5.6
+,"Renal failure","N17-N19","2016","2016","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",76,365597,20.8
+,"Renal failure","N17-N19","2016","2016","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",76,159716,47.6
+,"Renal failure","N17-N19","2016","2016","Female","F","Black or African American","2054-5","25-34 years","25-34",16,3466922,Unreliable
+,"Renal failure","N17-N19","2016","2016","Female","F","Black or African American","2054-5","35-44 years","35-44",29,3017848,1.0
+,"Renal failure","N17-N19","2016","2016","Female","F","Black or African American","2054-5","45-54 years","45-54",102,3018481,3.4
+,"Renal failure","N17-N19","2016","2016","Female","F","Black or African American","2054-5","55-64 years","55-64",234,2712845,8.6
+,"Renal failure","N17-N19","2016","2016","Female","F","Black or African American","2054-5","65-74 years","65-74",280,1626680,17.2
+,"Renal failure","N17-N19","2016","2016","Female","F","Black or African American","2054-5","75-84 years","75-84",283,785828,36.0
+,"Renal failure","N17-N19","2016","2016","Female","F","Black or African American","2054-5","85+ years","85+",272,346391,78.5
+,"Renal failure","N17-N19","2016","2016","Female","F","White","2106-3","25-34 years","25-34",65,16465489,0.4
+,"Renal failure","N17-N19","2016","2016","Female","F","White","2106-3","35-44 years","35-44",136,15304617,0.9
+,"Renal failure","N17-N19","2016","2016","Female","F","White","2106-3","45-54 years","45-54",411,16937954,2.4
+,"Renal failure","N17-N19","2016","2016","Female","F","White","2106-3","55-64 years","55-64",957,17338186,5.5
+,"Renal failure","N17-N19","2016","2016","Female","F","White","2106-3","65-74 years","65-74",1510,12718408,11.9
+,"Renal failure","N17-N19","2016","2016","Female","F","White","2106-3","75-84 years","75-84",2000,6849573,29.2
+,"Renal failure","N17-N19","2016","2016","Female","F","White","2106-3","85+ years","85+",2150,3628186,59.3
+,"Renal failure","N17-N19","2016","2016","Male","M","American Indian or Alaska Native","1002-5","45-54 years","45-54",13,277098,Unreliable
+,"Renal failure","N17-N19","2016","2016","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",20,216738,9.2
+,"Renal failure","N17-N19","2016","2016","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",16,114778,Unreliable
+,"Renal failure","N17-N19","2016","2016","Male","M","American Indian or Alaska Native","1002-5","75-84 years","75-84",16,42459,Unreliable
+,"Renal failure","N17-N19","2016","2016","Male","M","Asian or Pacific Islander","A-PI","35-44 years","35-44",10,1504147,Unreliable
+,"Renal failure","N17-N19","2016","2016","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",23,1272640,1.8
+,"Renal failure","N17-N19","2016","2016","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",41,985505,4.2
+,"Renal failure","N17-N19","2016","2016","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",69,612074,11.3
+,"Renal failure","N17-N19","2016","2016","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",80,280882,28.5
+,"Renal failure","N17-N19","2016","2016","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",77,92994,82.8
+,"Renal failure","N17-N19","2016","2016","Male","M","Black or African American","2054-5","25-34 years","25-34",17,3338882,Unreliable
+,"Renal failure","N17-N19","2016","2016","Male","M","Black or African American","2054-5","35-44 years","35-44",28,2702577,1.0
+,"Renal failure","N17-N19","2016","2016","Male","M","Black or African American","2054-5","45-54 years","45-54",112,2666665,4.2
+,"Renal failure","N17-N19","2016","2016","Male","M","Black or African American","2054-5","55-64 years","55-64",270,2284809,11.8
+,"Renal failure","N17-N19","2016","2016","Male","M","Black or African American","2054-5","65-74 years","65-74",304,1228135,24.8
+,"Renal failure","N17-N19","2016","2016","Male","M","Black or African American","2054-5","75-84 years","75-84",233,490623,47.5
+,"Renal failure","N17-N19","2016","2016","Male","M","Black or African American","2054-5","85+ years","85+",155,147306,105.2
+,"Renal failure","N17-N19","2016","2016","Male","M","White","2106-3","25-34 years","25-34",55,17186128,0.3
+,"Renal failure","N17-N19","2016","2016","Male","M","White","2106-3","35-44 years","35-44",214,15636470,1.4
+,"Renal failure","N17-N19","2016","2016","Male","M","White","2106-3","45-54 years","45-54",543,16889736,3.2
+,"Renal failure","N17-N19","2016","2016","Male","M","White","2106-3","55-64 years","55-64",1343,16511986,8.1
+,"Renal failure","N17-N19","2016","2016","Male","M","White","2106-3","65-74 years","65-74",1861,11436122,16.3
+,"Renal failure","N17-N19","2016","2016","Male","M","White","2106-3","75-84 years","75-84",2059,5362910,38.4
+,"Renal failure","N17-N19","2016","2016","Male","M","White","2106-3","85+ years","85+",1724,1972484,87.4
+,"Renal failure","N17-N19","2017","2017","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",19,277424,Unreliable
+,"Renal failure","N17-N19","2017","2017","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",13,242608,Unreliable
+,"Renal failure","N17-N19","2017","2017","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",26,137585,18.9
+,"Renal failure","N17-N19","2017","2017","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",22,58651,37.5
+,"Renal failure","N17-N19","2017","2017","Female","F","American Indian or Alaska Native","1002-5","85+ years","85+",10,22588,Unreliable
+,"Renal failure","N17-N19","2017","2017","Female","F","Asian or Pacific Islander","A-PI","45-54 years","45-54",12,1507028,Unreliable
+,"Renal failure","N17-N19","2017","2017","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",39,1224600,3.2
+,"Renal failure","N17-N19","2017","2017","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",65,819417,7.9
+,"Renal failure","N17-N19","2017","2017","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",77,390555,19.7
+,"Renal failure","N17-N19","2017","2017","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",97,172121,56.4
+,"Renal failure","N17-N19","2017","2017","Female","F","Black or African American","2054-5","25-34 years","25-34",18,3560406,Unreliable
+,"Renal failure","N17-N19","2017","2017","Female","F","Black or African American","2054-5","35-44 years","35-44",54,3055368,1.8
+,"Renal failure","N17-N19","2017","2017","Female","F","Black or African American","2054-5","45-54 years","45-54",99,3016004,3.3
+,"Renal failure","N17-N19","2017","2017","Female","F","Black or African American","2054-5","55-64 years","55-64",225,2777624,8.1
+,"Renal failure","N17-N19","2017","2017","Female","F","Black or African American","2054-5","65-74 years","65-74",273,1709818,16.0
+,"Renal failure","N17-N19","2017","2017","Female","F","Black or African American","2054-5","75-84 years","75-84",280,814516,34.4
+,"Renal failure","N17-N19","2017","2017","Female","F","Black or African American","2054-5","85+ years","85+",246,356668,69.0
+,"Renal failure","N17-N19","2017","2017","Female","F","White","2106-3","25-34 years","25-34",46,16576425,0.3
+,"Renal failure","N17-N19","2017","2017","Female","F","White","2106-3","35-44 years","35-44",139,15392623,0.9
+,"Renal failure","N17-N19","2017","2017","Female","F","White","2106-3","45-54 years","45-54",384,16668139,2.3
+,"Renal failure","N17-N19","2017","2017","Female","F","White","2106-3","55-64 years","55-64",1010,17493023,5.8
+,"Renal failure","N17-N19","2017","2017","Female","F","White","2106-3","65-74 years","65-74",1593,13139486,12.1
+,"Renal failure","N17-N19","2017","2017","Female","F","White","2106-3","75-84 years","75-84",2005,7034954,28.5
+,"Renal failure","N17-N19","2017","2017","Female","F","White","2106-3","85+ years","85+",2204,3637636,60.6
+,"Renal failure","N17-N19","2017","2017","Male","M","American Indian or Alaska Native","1002-5","35-44 years","35-44",10,314647,Unreliable
+,"Renal failure","N17-N19","2017","2017","Male","M","American Indian or Alaska Native","1002-5","45-54 years","45-54",13,277853,Unreliable
+,"Renal failure","N17-N19","2017","2017","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",23,224532,10.2
+,"Renal failure","N17-N19","2017","2017","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",22,121253,18.1
+,"Renal failure","N17-N19","2017","2017","Male","M","American Indian or Alaska Native","1002-5","75-84 years","75-84",19,45396,Unreliable
+,"Renal failure","N17-N19","2017","2017","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",18,1325041,Unreliable
+,"Renal failure","N17-N19","2017","2017","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",44,1025701,4.3
+,"Renal failure","N17-N19","2017","2017","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",75,653648,11.5
+,"Renal failure","N17-N19","2017","2017","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",85,301045,28.2
+,"Renal failure","N17-N19","2017","2017","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",74,100678,73.5
+,"Renal failure","N17-N19","2017","2017","Male","M","Black or African American","2054-5","25-34 years","25-34",24,3465087,0.7
+,"Renal failure","N17-N19","2017","2017","Male","M","Black or African American","2054-5","35-44 years","35-44",37,2743658,1.3
+,"Renal failure","N17-N19","2017","2017","Male","M","Black or African American","2054-5","45-54 years","45-54",120,2660679,4.5
+,"Renal failure","N17-N19","2017","2017","Male","M","Black or African American","2054-5","55-64 years","55-64",274,2341639,11.7
+,"Renal failure","N17-N19","2017","2017","Male","M","Black or African American","2054-5","65-74 years","65-74",310,1289007,24.0
+,"Renal failure","N17-N19","2017","2017","Male","M","Black or African American","2054-5","75-84 years","75-84",264,511629,51.6
+,"Renal failure","N17-N19","2017","2017","Male","M","Black or African American","2054-5","85+ years","85+",158,153683,102.8
+,"Renal failure","N17-N19","2017","2017","Male","M","White","2106-3","25-34 years","25-34",84,17369406,0.5
+,"Renal failure","N17-N19","2017","2017","Male","M","White","2106-3","35-44 years","35-44",183,15751313,1.2
+,"Renal failure","N17-N19","2017","2017","Male","M","White","2106-3","45-54 years","45-54",541,16642784,3.3
+,"Renal failure","N17-N19","2017","2017","Male","M","White","2106-3","55-64 years","55-64",1313,16665931,7.9
+,"Renal failure","N17-N19","2017","2017","Male","M","White","2106-3","65-74 years","65-74",1932,11813232,16.4
+,"Renal failure","N17-N19","2017","2017","Male","M","White","2106-3","75-84 years","75-84",2055,5549805,37.0
+,"Renal failure","N17-N19","2017","2017","Male","M","White","2106-3","85+ years","85+",1773,2012338,88.1
+"---"
+"Dataset: Multiple Cause of Death, 1999-2020"
+"Query Parameters:"
+"MCD - ICD-10 Codes: N17.0 (Acute renal failure with tubular necrosis); N17.1 (Acute renal failure with acute cortical necrosis);"
+"N17.2 (Acute renal failure with medullary necrosis); N17.8 (Other acute renal failure); N17.9 (Acute renal failure, unspecified)"
+"MCD - ICD-10 Codes: AND"
+"MCD - ICD-10 Codes: A40.0 (Septicaemia due to streptococcus, group A); A40.1 (Septicaemia due to streptococcus, group B); A40.2"
+"(Septicaemia due to streptococcus, group D); A40.3 (Septicaemia due to Streptococcus pneumoniae); A40.8 (Other streptococcal"
+"septicaemia); A40.9 (Streptococcal septicaemia, unspecified); A41.0 (Septicaemia due to Staphylococcus aureus); A41.1"
+"(Septicaemia due to other specified staphylococcus); A41.2 (Septicaemia due to unspecified staphylococcus); A41.3 (Septicaemia"
+"due to Haemophilus influenzae); A41.4 (Septicaemia due to anaerobes); A41.5 (Septicaemia due to other Gram-negative organisms);"
+"A41.8 (Other specified septicaemia); A41.9 (Septicaemia, unspecified)"
+"Ten-Year Age Groups: 25-34 years; 35-44 years; 45-54 years; 55-64 years; 65-74 years; 75-84 years; 85+ years"
+"Year/Month: 2010; 2011; 2012; 2013; 2014; 2015; 2016; 2017"
+"Group By: MCD - ICD Sub-Chapter; Year; Sex; Race; Ten-Year Age Groups"
+"Show Totals: Disabled"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/mcd.html for more information."
+"---"
+"Query Date: Jan 14, 2026 1:46:59 AM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/mcd-icd10.html on Jan 14, 2026 1:46:59 AM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"2. Rows with zero Deaths are hidden. Use Quick Options above to show zero rows."
+"3. Rows with suppressed Deaths are hidden. Use Quick Options above to show suppressed rows."
+"---"
+Footnotes:
+"1. Totals and sub-totals show the frequency of the selected causes of death, which may be greater than the number of deaths."
+"Note that any single death record may have up to 20 causes. More information."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#2014-Revision."
+"2. These items in the results table are not fully selected: Other bacterial diseases, Renal failure. The Query Description lists"
+"the actual values selected."
+"3. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#Assurance of Confidentiality."
+"4. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#Unreliable."
+"5. Deaths of persons with Age ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among age groups,"
+"so are not included in age-specific counts, age-specific rates or in any age-adjusted rates. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#Not Stated."
+"6. Information included on the death certificate about the race and Hispanic ethnicity of the decedent is reported by the"
+"funeral director as provided by an informant, often the surviving next of kin, or, in the absence of an informant, on the basis"
+"of observation. Race and ethnicity information from the census is by self-report. To the extent that race and Hispanic origin"
+"are inconsistent between these two data sources, death rates will be biased. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#Racial Differences."
+"7. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. Population figures for 2011 are bridged-race estimates of the July 1"
+"resident population, from the county-level postcensal Vintage 2011 series released by NCHS on July 18, 2012. Population figures"
+"for 2010 are April 1 Census counts. The population figures for years 2001 - 2009, are bridged-race estimates of the July 1"
+"resident population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012."
+"Population figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of"
+"July 1 estimates. Population figures for Infant Age Groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"8. Beginning with the 2018 data, changes have been implemented that affect the counts for ICD-10 cause of death codes O00-O99"
+"compared to previous practice. In addition, data for the cause of death codes O00-O99 for 2003 through 2017 reflect differences"
+"in information available to individual states and probable errors. Caution should be used in interpreting these data. More"
+"information can be found at: https://www.cdc.gov/nchs/maternal-mortality/."
+"9. On March 11, 2021, the 2019 mortality data on CDC WONDER was updated with the 2019 mortality data updated by NCHS on March 4,"
+"2021 to include corrected information for residents of Texas affecting 5 records previously coded to cause code *U01.4,"
+"Terrorism involving firearms (homicide). The underlying and multiple cause of death codes for 5 records were corrected in the"
+"2019 data. Underlying and multiple cause of death codes for those 5 records were recoded to Assault (homicide) by other and"
+"unspecified firearm discharge, ICD-10 code X95. The corrected final death records replaces the data released on December 22,"
+"2020."
+"10. Changes to cause of death classification affect reporting trends. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#ICD-10 Changes."

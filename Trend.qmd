@@ -18,7 +18,23 @@ library(usmap)
 ```{r}
 Trend <- read_csv("Data/Trend.csv")
 X2010trend <- read_csv("Data/2010trend.csv")
-Trend_all <- bind_rows(X2010trend, Trend)
+clean_year <- function(df) {
+  df %>%
+    mutate(
+      Year_raw = as.character(Year),
+      # pull the first 4-digit year (e.g., "2024 (provisional)" -> 2024)
+      Year = readr::parse_number(Year_raw),
+      # keep any extra text as a note (optional)
+      Year_note = str_squish(str_remove(Year_raw, "^\\d{4}"))
+    )
+}
+
+Trend_all <- bind_rows(
+  clean_year(X2010trend),
+  clean_year(Trend)
+) %>%
+  select(-Year_raw)
+
 ```
 
 ```{r}
@@ -29,14 +45,34 @@ X2010_Sepsis <- read_csv("Data/2010 Sepsis.csv") %>%
 
 X2018Sepsis <- read_csv("Data/2018Sepsis.csv") %>%
   mutate(`Crude Rate` = as.character(`Crude Rate`))
-Sepsis <- bind_rows(X2010_Sepsis, X2018Sepsis)
+Sepsis <- bind_rows(  
+  clean_year(X2010_Sepsis),
+  clean_year(X2018Sepsis)) %>%
+  select(-Year_raw)
 ```
 
 ```{r}
 X2010_renal_s <- read_csv("Data/2010 renal&s.csv")
 X2018_renal_s <- read_csv("Data/2018 renal&s.csv")
-RenalS <-  bind_rows(X2010_renal_s , X2018_renal_s )
+RenalS  <- bind_rows(
+  clean_year(X2010_renal_s),
+  clean_year(X2018_renal_s )
+) %>%
+  select(-Year_raw)
+
 ```
+```{r}
+X2010race <- read_csv("Data/2010race.csv")
+X2018race <- read_csv("Data/2018race.csv")
+
+race  <- bind_rows(
+  clean_year(X2010race ),
+  clean_year(X2018race )
+) %>%
+  select(-Year_raw)
+
+```
+
 ## Trend All
 ```{r}
 glimpse(Trend_all)
@@ -45,7 +81,6 @@ glimpse(Trend_all)
 trend_plot_df <- Trend_all %>%
   mutate(
     crude_rate = parse_number(`Crude Rate`),   # "Unreliable" -> NA
-    aa_rate    = parse_number(`Age Adjusted Rate`),  # if present; otherwise NA
     cause      = `Multiple Cause of death`
   )
 ```
@@ -142,7 +177,64 @@ renal_plot <- ggplot(renal_by_group, aes(x = Year, y = crude_rate, color = renal
     legend.position = "top",
     legend.text = element_text(size = 11)
   )
+
+renal_plot
 ```
+```{r}
+renal_n17 <- renal_by_group %>%
+  filter(renal_group == "AKI (N17)")
+
+renal_plot_n17 <- ggplot(
+  renal_n17,
+  aes(x = Year, y = crude_rate)
+) +
+  # COVID shading
+  annotate(
+    "rect",
+    xmin = 2020, xmax = 2021.99,
+    ymin = -Inf, ymax = Inf,
+    fill = "grey70", alpha = 0.12
+  ) +
+  
+  # Trend line
+  geom_line(
+    linewidth = 1.3,
+    color = "#7570b3"
+  ) +
+  
+  # Axis formatting
+  scale_x_continuous(
+    breaks = seq(min(renal_n17$Year),
+                 max(renal_n17$Year), by = 2)
+  ) +
+  
+  labs(
+    x = NULL,
+    y = "Crude mortality rate (per 100,000 population)",
+    title = "Trends in acute kidney injury–related mortality in the United States",
+    subtitle = "AKI (N17)\nShaded region indicates the COVID-19 period (2020–2021)"
+  ) +
+  
+  theme_minimal(base_size = 13) +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    axis.text = element_text(color = "black"),
+    plot.title = element_text(face = "bold", size = 14),
+    legend.position = "none"
+  )
+
+renal_plot_n17
+ggsave(
+  filename = "figures/N17_cruderate_trend.png",
+  plot = renal_plot_n17,
+  width = 10,
+  height = 5,
+  dpi = 600,
+  bg = "white"
+)
+```
+
 ```{r}
 latest_year <- max(renal_by_group$Year, na.rm = TRUE)
 
@@ -246,6 +338,7 @@ sepsis_plot <- ggplot(sepsis_trend, aes(x = Year, y = crude_rate)) +
     plot.title = element_text(face = "bold", size = 14)
   )
 
+sepsis_plot 
 ```
 ## Renal & Sepsis
 
@@ -323,7 +416,7 @@ renal_sepsis_plot <- ggplot(renal_sepsis_trend, aes(x = Year, y = crude_rate, co
     legend.position = "top"
   )
 
-
+renal_sepsis_plot
 ```
 ## Covid
 ```{r}
@@ -527,21 +620,26 @@ ggsave(
   units = "in",
   compression = "lzw"
 )
+ggsave(
+  filename = "figures/fig_renal_trend.png",
+  plot = renal_plot,
+  width = 10,
+  height = 5,
+  dpi = 600,
+  bg = "white"
+)
 
 ```
 
 ```{r}
 ggsave(
-  filename = "figures/fig_sepsis_trend.tiff",
+  filename = "figures/fig_sepsis_trend.png",
   plot = sepsis_plot,
-  device = "tiff",
-  dpi = dpi_pub,
-  width = width,
-  height = height,
-  units = "in",
-  compression = "lzw"
+  width = 10,
+  height = 5,
+  dpi = 600,
+  bg = "white"
 )
-
 ```
 
 ```{r}
@@ -678,4 +776,428 @@ ggsave(
 
 ```
 
+## N17 Subgroup
+
+```{r}
+X2010_N17_Sepsis <- read_csv("Data/2010 N17 Sepsis.csv")
+X2018_N17_Sepsis <- read_csv("Data/2018 N17 Sepsis.csv")
+N17 <- bind_rows(
+  clean_year(X2010_N17_Sepsis),
+  clean_year(X2018_N17_Sepsis)
+) %>%
+  select(-Year_raw)
+glimpse(N17)
+```
+```{r}
+library(tidyverse)
+
+N17_age3 <- N17 %>%
+  # drop pre-aggregated rows so we can aggregate ourselves
+  filter(
+    is.na(Notes) | Notes != "Total",
+    !is.na(`Ten-Year Age Groups Code`),
+    `Ten-Year Age Groups Code` %in% c("25-34","35-44","45-54","55-64","65-74","75-84","85+")
+  ) %>%
+  mutate(
+    age3 = case_when(
+      `Ten-Year Age Groups Code` %in% c("25-34", "35-44") ~ "25–44",
+      `Ten-Year Age Groups Code` %in% c("45-54", "55-64") ~ "45–64",
+      `Ten-Year Age Groups Code` %in% c("65-74", "75-84", "85+") ~ "65+",
+      TRUE ~ NA_character_
+    ),
+    sex3 = case_when(
+      Sex %in% c("Female", "Male") ~ Sex,
+      TRUE ~ "All"   # if you decide to keep NA sex rows
+    )
+  ) %>%
+  filter(!is.na(age3))
+
+# Summarize to your new age groups (and compute rate from deaths/pop)
+N17_trend <- N17_age3 %>%
+  filter(Sex %in% c("Female", "Male")) %>%
+  group_by(Year, Sex, age3) %>%
+  summarise(
+    Deaths = sum(Deaths, na.rm = TRUE),
+    Population = sum(Population, na.rm = TRUE),
+    CrudeRate = (Deaths / Population) * 1e5,  # per 100,000
+    .groups = "drop"
+  )
+
+
+covid_band <- tibble(xmin = 2020, xmax = 2021, ymin = -Inf, ymax = Inf)
+
+p_rate <- ggplot(
+  N17_trend,
+  aes(x = Year, y = CrudeRate, color = age3)
+) +
+  # COVID shading (behind everything)
+  geom_rect(
+    data = covid_band,
+    aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+    inherit.aes = FALSE,
+    fill = "grey70",
+    alpha = 0.18
+  ) +
+  # subtle vertical reference line at 2020
+  geom_vline(xintercept = 2020, linewidth = 0.4, linetype = "dotted", color = "grey45") +
+  # lines + points
+  geom_line(linewidth = 1.05) +
+  geom_point(size = 1.8) +
+  facet_wrap(~ Sex, nrow = 1) +
+  scale_x_continuous(breaks = scales::pretty_breaks(n = 8)) +
+  scale_y_continuous(labels = scales::label_number(accuracy = 0.1)) +
+  scale_color_brewer(palette = "Dark2") +
+  labs(
+    title = "Crude rate trends by age group (N17 + Sepsis)",
+    subtitle = "Shaded region indicates COVID-era (2020–2021). Rates per 100,000 population.",
+    x = NULL,
+    y = "Crude rate (per 100,000)",
+    color = "Age group"
+  ) +
+  theme_classic(base_size = 13) +
+  theme(
+    legend.position = "top",
+    legend.title = element_text(size = 11),
+    legend.text = element_text(size = 11),
+    strip.background = element_rect(fill = "grey95", color = NA),
+    strip.text = element_text(face = "bold"),
+    axis.title.y = element_text(margin = margin(r = 8)),
+    plot.title = element_text(face = "bold"),
+    plot.subtitle = element_text(color = "grey25"),
+    panel.border = element_rect(color = "grey35", fill = NA, linewidth = 0.6),
+    axis.line = element_line(color = "grey35", linewidth = 0.4),
+    axis.ticks = element_line(color = "grey35", linewidth = 0.4)
+  )
+
+p_rate
+
+
+```
+```{r}
+ggsave(
+  filename = "figures/N17_sepsis_cruderate_trend_age3_sex_facet.png",
+  plot = p_rate,
+  width = 10,
+  height = 5,
+  dpi = 300,
+  bg = "white"
+)
+```
+
+```{r}
+N17_age3 <- N17 %>%
+  filter(
+    is.na(Notes) | Notes != "Total",
+    Sex %in% c("Female", "Male"),
+    !is.na(`Ten-Year Age Groups Code`)
+  ) %>%
+  mutate(
+    age3 = case_when(
+      `Ten-Year Age Groups Code` %in% c("25-34","35-44") ~ "25–44",
+      `Ten-Year Age Groups Code` %in% c("45-54","55-64") ~ "45–64",
+      `Ten-Year Age Groups Code` %in% c("65-74","75-84","85+") ~ "65+",
+      TRUE ~ NA_character_
+    ),
+    period = case_when(
+      Year %in% 2017:2019 ~ "Pre-COVID",
+      Year %in% 2020:2021 ~ "COVID",
+      TRUE ~ NA_character_
+    )
+  ) %>%
+  filter(!is.na(age3), !is.na(period))
+
+covid_growth_table <- N17_age3 %>%
+  mutate(
+    period = case_when(
+      Year %in% 2017:2019 ~ "Pre",
+      Year %in% 2020:2021 ~ "COVID",
+      TRUE ~ NA_character_
+    )
+  ) %>%
+  filter(!is.na(period)) %>%
+  group_by(Sex, age3, period) %>%
+  summarise(
+    Deaths = sum(Deaths, na.rm = TRUE),
+    Population = sum(Population, na.rm = TRUE),
+    CrudeRate = (Deaths / Population) * 1e5,
+    .groups = "drop"
+  ) %>%
+  pivot_wider(
+    names_from = period,
+    values_from = c(Deaths, Population, CrudeRate)
+  ) %>%
+  mutate(
+    rate_growth_pct = 100 * (CrudeRate_COVID / CrudeRate_Pre - 1)
+  ) %>%
+  transmute(
+    Sex,
+    `Age group` = age3,
+    `Pre-COVID rate (per 100k)` = round(CrudeRate_Pre, 2),
+    `COVID rate (per 100k)`     = round(CrudeRate_COVID, 2),
+    `Rate growth during COVID (%)` = round(rate_growth_pct, 1),
+    `Pre-COVID deaths (sum)` = Deaths_Pre,
+    `COVID deaths (sum)`     = Deaths_COVID
+  )
+
+covid_growth_table
+```
+
+### Methods: Trend analysis and COVID-era rate comparison
+
+Mortality data were obtained from the CDC Multiple Cause of Death files and included annual counts of deaths and corresponding population denominators by sex and ten-year age group. Analyses were restricted to records with non-missing sex and age information, and pre-aggregated “Total” rows were excluded to avoid double counting. Ten-year age groups were collapsed into three broader categories—25–44 years, 45–64 years, and 65 years and older—to improve interpretability and stability of estimates.
+
+Annual trends were visualized using year-specific crude death rates, calculated as deaths divided by population and expressed per 100,000 persons. To evaluate changes associated with the COVID-19 period, years were grouped into a pre-COVID baseline (2017–2019) and a COVID period (2020–2021). Period-specific crude death rates were calculated using pooled counts, defined as the sum of deaths divided by the sum of population across all years within each period, rather than averaging annual crude rates. This approach appropriately accounts for population size and avoids bias introduced by equal weighting of years.
+
+Percentage change in crude death rates during the COVID period was computed as:
+
+[
+\text{Rate growth (%)} = \left(\frac{\text{Crude Rate}*{\text{COVID}}}{\text{Crude Rate}*{\text{Pre-COVID}}} - 1\right) \times 100
+]
+
+All analyses were conducted separately by sex, and results are reported as crude rates per 100,000 population and percentage change relative to the pre-COVID period.
+
+
+```{r}
+important_numbers_cruderate <- N17 %>%
+  # remove pre-aggregated rows
+  filter(is.na(Notes) | Notes != "Total") %>%
+  # match the faceted figure
+  filter(Sex %in% c("Female", "Male")) %>%
+  # collapse age groups
+  filter(!is.na(`Ten-Year Age Groups Code`)) %>%
+  mutate(
+    age3 = case_when(
+      `Ten-Year Age Groups Code` %in% c("25-34","35-44") ~ "25–44",
+      `Ten-Year Age Groups Code` %in% c("45-54","55-64") ~ "45–64",
+      `Ten-Year Age Groups Code` %in% c("65-74","75-84","85+") ~ "65+",
+      TRUE ~ NA_character_
+    )
+  ) %>%
+  filter(
+    !is.na(age3),
+    Year %in% c(2010, 2019, 2020, 2021, 2025)
+  ) %>%
+  group_by(Sex, age3, Year) %>%
+  summarise(
+    # crude rate reported as number only
+    CrudeRate = sum(Deaths, na.rm = TRUE) /
+                sum(Population, na.rm = TRUE) * 1e5,
+    .groups = "drop"
+  ) %>%
+  pivot_wider(
+    names_from = Year,
+    values_from = CrudeRate
+  ) %>%
+  transmute(
+    Sex,
+    `Age group` = age3,
+    `2010 crude rate (per 100k)` = round(`2010`, 2),
+    `2019 crude rate (per 100k)` = round(`2019`, 2),
+    `2020 crude rate (per 100k)` = round(`2020`, 2),
+    `2021 crude rate (per 100k)` = round(`2021`, 2),
+    `2025 crude rate (per 100k)` = round(`2025`, 2)
+  ) %>%
+  arrange(
+    Sex,
+    factor(`Age group`, levels = c("25–44", "45–64", "65+"))
+  )
+
+important_numbers_cruderate
+```
+
+```{r}
+imp <- important_numbers_cruderate %>%
+  rename(`Age group` = `Age group`) %>%   # (keeps name explicit)
+  mutate(
+    Sex = as.character(Sex),
+    `Age group` = as.character(`Age group`)
+  )
+
+cov <- covid_growth_table %>%
+  # if your covid_growth_table has age3 instead of "Age group", uncomment:
+  # rename(`Age group` = age3) %>%
+  mutate(
+    Sex = as.character(Sex),
+    `Age group` = as.character(`Age group`)
+  )
+
+# 2) Combine (one row per Sex × Age group) --------------------------------
+
+combined_table <- imp %>%
+  left_join(cov, by = c("Sex", "Age group"))
+
+# optional: view
+combined_table
+
+# 3) Export ---------------------------------------------------------------
+
+# CSV
+write_csv(combined_table, "N17_sepsis_important_numbers_plus_covid_growth.csv")
+
+# Excel (nice for sharing)
+dir.create("tables", showWarnings = FALSE, recursive = TRUE)
+writexl::write_xlsx(
+  list(
+    important_numbers_cruderate = important_numbers_cruderate,
+    covid_growth_table = covid_growth_table,
+    combined = combined_table
+  ),
+  path = "N17_sepsis_important_numbers_plus_covid_growth.xlsx"
+)
+```
+
+## race
+
+```{r}
+glimpse(race)
+unique(race$Race)
+unique(race$`Single Race 6`)
+```
+```{r}
+library(tidyverse)
+
+race_clean <- race %>%
+  mutate(
+    race_unified = case_when(
+      # AIAN
+      Race == "American Indian or Alaska Native" |
+        `Single Race 6` == "American Indian or Alaska Native" ~
+        "American Indian or Alaska Native",
+
+      # Asian
+      Race == "Asian or Pacific Islander" |
+        `Single Race 6` == "Asian" ~
+        "Asian",
+
+      # NHPI
+      `Single Race 6` == "Native Hawaiian or Other Pacific Islander" ~
+        "Native Hawaiian or Other Pacific Islander",
+
+      # Black
+      Race == "Black or African American" |
+        `Single Race 6` == "Black or African American" ~
+        "Black or African American",
+
+      # White
+      Race == "White" |
+        `Single Race 6` == "White" ~
+        "White",
+
+      # Multiple race
+      `Single Race 6` == "More than one race" ~
+        "More than one race",
+
+      TRUE ~ "Unknown"
+    )
+  )
+race_clean <- race_clean %>%
+  mutate(
+    race_unified = factor(
+      race_unified,
+      levels = c(
+        "American Indian or Alaska Native",
+        "Asian",
+        "Native Hawaiian or Other Pacific Islander",
+        "Black or African American",
+        "White",
+        "More than one race",
+        "Unknown"
+      )
+    )
+  )
+race_trend <- race_clean %>%   # race_clean is the object where race_unified was created
+  filter(
+    race_unified != "Unknown",
+    !is.na(race_unified)
+  )
+
+```
+
+```{r}
+renal_race <- race %>%
+  mutate(
+    race_unified = case_when(
+      Race == "American Indian or Alaska Native" |
+        `Single Race 6` == "American Indian or Alaska Native" ~
+        "American Indian or Alaska Native",
+
+      Race == "Asian or Pacific Islander" |
+        `Single Race 6` == "Asian" ~
+        "Asian",
+
+      `Single Race 6` == "Native Hawaiian or Other Pacific Islander" ~
+        "Native Hawaiian or Other Pacific Islander",
+
+      Race == "Black or African American" |
+        `Single Race 6` == "Black or African American" ~
+        "Black or African American",
+
+      Race == "White" |
+        `Single Race 6` == "White" ~
+        "White",
+
+      `Single Race 6` == "More than one race" ~
+        "More than one race",
+
+      TRUE ~ "Unknown"
+    )
+  ) %>%
+  filter(
+    `MCD - ICD Sub-Chapter` == "Renal failure",
+    !is.na(race_unified),
+    race_unified != "Unknown",
+    is.na(Notes) | Notes != "Total"
+  ) %>%
+  mutate(
+    race_unified = factor(
+      race_unified,
+      levels = c(
+        "American Indian or Alaska Native",
+        "Asian",
+        "Native Hawaiian or Other Pacific Islander",
+        "Black or African American",
+        "White",
+        "More than one race"
+      )
+    )
+  )
+```
+
+```{r}
+renal_race_plot <- ggplot(
+  renal_race,
+  aes(x = Year, y = `Crude Rate`, color = race_unified)
+) +
+  annotate(
+    "rect",
+    xmin = 2020, xmax = 2021.99,
+    ymin = -Inf, ymax = Inf,
+    fill = "grey70", alpha = 0.12
+  ) +
+  geom_line(linewidth = 1.2) +
+  scale_x_continuous(
+    breaks = seq(min(renal_race$Year), max(renal_race$Year), by = 2)
+  ) +
+  scale_color_brewer(palette = "Dark2") +
+  labs(
+    x = NULL,
+    y = "Crude mortality rate (per 100,000 population)",
+    color = "Race",
+    title = "Race-stratified trends in renal failure mortality in the United States",
+    subtitle = "MCD ICD Sub-Chapter: Renal failure\nShaded region indicates the COVID-19 period (2020–2021)"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    axis.text = element_text(color = "black"),
+    plot.title = element_text(face = "bold", size = 14),
+    legend.position = "top",
+    legend.text = element_text(size = 11)
+  )
+
+renal_race_plot
+
+
+```
 

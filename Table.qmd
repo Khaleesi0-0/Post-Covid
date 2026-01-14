@@ -1,0 +1,1077 @@
+---
+title: "tables"
+format: html
+editor: visual
+---
+
+```{r}
+library(readr)
+library(tidyverse)
+library(lubridate)
+library(splines)
+library(broom)
+library(usmap)
+```
+## Join
+```{r}
+N172010 <- read_csv("Data/N172010.csv")
+N172018 <- read_csv("Data/N172018.csv")
+clean_year <- function(df) {
+  df %>%
+    mutate(
+      Year_raw = as.character(Year),
+      # pull the first 4-digit year (e.g., "2024 (provisional)" -> 2024)
+      Year = readr::parse_number(Year_raw),
+      # keep any extra text as a note (optional)
+      Year_note = str_squish(str_remove(Year_raw, "^\\d{4}"))
+    )
+}
+
+N17 <- bind_rows(
+  clean_year(N172010 ),
+  clean_year(N172018 )
+) %>%
+  select(-Year_raw)
+```
+
+```{r}
+A402010 <- read_csv("Data/A402010.csv")
+A402018 <- read_csv("Data/A402018.csv")
+A40 <- bind_rows(
+  clean_year(A402010 ),
+  clean_year(A402018 )
+) %>%
+  select(-Year_raw)
+```
+```{r}
+N17A402010 <- read_csv("Data/N17A402010.csv")
+N17A402018 <- read_csv("Data/N17A402018.csv")
+
+N17A40 <- bind_rows(
+  clean_year(N17A402010 ),
+  clean_year(N17A402018 )
+) %>%
+  select(-Year_raw)
+
+```
+## N17
+```{r}
+glimpse(N17)
+```
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(readr)
+```
+
+```{r}
+table_renal_year <- N17 %>%
+  # drop CDC WONDER "Total" rows if present
+  filter(is.na(Notes) | Notes != "Total") %>%
+  filter(`MCD - ICD Sub-Chapter` == "Renal failure",
+         Year >= 2010, Year <= 2025) %>%
+  mutate(
+    race_source = coalesce(`Single Race 6`, Race),
+    race_unified = case_when(
+      race_source == "American Indian or Alaska Native" ~ "American Indian or Alaska Native",
+      race_source == "Asian" ~ "Asian",
+      race_source == "Native Hawaiian or Other Pacific Islander" ~ "Native Hawaiian or Other Pacific Islander",
+      race_source == "Asian or Pacific Islander" ~
+        "Asian",  
+      race_source == "Black or African American" ~ "Black or African American",
+      race_source == "White" ~ "White",
+      race_source == "More than one race" ~ "More than one race",
+      TRUE ~ NA_character_
+    )
+  ) %>%
+  group_by(Year) %>%
+  summarise(
+    `Overall (n)` = sum(Deaths, na.rm = TRUE),
+    `Women (n)`   = sum(Deaths[Sex == "Female"], na.rm = TRUE),
+    `Men (n)`     = sum(Deaths[Sex == "Male"], na.rm = TRUE),
+
+    `American Indian or Alaska Native (n)` =
+      sum(Deaths[race_unified == "American Indian or Alaska Native"], na.rm = TRUE),
+
+    `Asian (n)` =
+      sum(Deaths[race_unified == "Asian"], na.rm = TRUE),
+
+    `Native Hawaiian or Other Pacific Islander (n)` =
+      sum(Deaths[race_unified == "Native Hawaiian or Other Pacific Islander"], na.rm = TRUE),
+
+    `Black or African American (n)` =
+      sum(Deaths[race_unified == "Black or African American"], na.rm = TRUE),
+
+    `White (n)` =
+      sum(Deaths[race_unified == "White"], na.rm = TRUE),
+
+    `More than one race (n)` =
+      sum(Deaths[race_unified == "More than one race"], na.rm = TRUE),
+
+    Population = sum(Population, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    `Crude rate (/100,000)` =
+      ifelse(Population > 0, round((`Overall (n)` / Population) * 1e5, 2), NA_real_)
+  ) %>%
+  mutate(Year = as.character(Year)) %>%
+  complete(
+    Year = as.character(2010:2025),
+    fill = list(
+      `Overall (n)` = NA_real_,
+      `Women (n)` = NA_real_,
+      `Men (n)` = NA_real_,
+      `American Indian or Alaska Native (n)` = NA_real_,
+      `Asian (n)` = NA_real_,
+      `Native Hawaiian or Other Pacific Islander (n)` = NA_real_,
+      `Black or African American (n)` = NA_real_,
+      `White (n)` = NA_real_,
+      `More than one race (n)` = NA_real_,
+      Population = NA_real_,
+      `Crude rate (/100,000)` = NA_real_
+    )
+  ) %>%
+  arrange(as.integer(Year))
+
+table_renal_year
+```
+```{r}
+arf_total <- table_renal_year %>%
+  summarise(
+    Year = "Total",
+    across(where(is.numeric), \(x) sum(x, na.rm = TRUE))
+  ) %>%
+  mutate(
+    `Crude rate (/100,000)` =
+      ifelse(Population > 0,
+             round((`Overall (n)` / Population) * 1e5, 2),
+             NA_real_)
+  )
+
+table_renal_year <- bind_rows(table_renal_year, arf_total)
+```
+
+# A40
+
+```{r}
+glimpse(A40)
+```
+```{r}
+
+table_sepsis_year <- A40 %>%
+  filter(
+    is.na(Notes) | Notes != "Total",
+    Year >= 2010, Year <= 2025
+  ) %>%
+  mutate(
+    race_source = coalesce(`Single Race 6`, Race),
+
+    race_unified = case_when(
+      race_source == "American Indian or Alaska Native" ~
+        "American Indian or Alaska Native",
+
+      race_source == "Asian" |
+        race_source == "Asian or Pacific Islander" ~
+        "Asian",
+
+      # NEW: NHOPI as its own category
+      race_source == "Native Hawaiian or Other Pacific Islander" ~
+        "Native Hawaiian or Other Pacific Islander",
+
+      race_source == "Black or African American" ~
+        "Black or African American",
+
+      race_source == "White" ~
+        "White",
+
+      race_source == "More than one race" ~
+        "More than one race",
+
+      TRUE ~ NA_character_
+    )
+  ) %>%
+  group_by(Year) %>%
+  summarise(
+    `Overall (n)` = sum(Deaths, na.rm = TRUE),
+    `Women (n)`   = sum(Deaths[Sex == "Female"], na.rm = TRUE),
+    `Men (n)`     = sum(Deaths[Sex == "Male"], na.rm = TRUE),
+
+    `American Indian or Alaska Native (n)` =
+      sum(Deaths[race_unified == "American Indian or Alaska Native"], na.rm = TRUE),
+
+    `Asian (n)` =
+      sum(Deaths[race_unified == "Asian"], na.rm = TRUE),
+
+    `Native Hawaiian or Other Pacific Islander (n)` =
+      sum(Deaths[race_unified == "Native Hawaiian or Other Pacific Islander"], na.rm = TRUE),
+
+    `Black or African American (n)` =
+      sum(Deaths[race_unified == "Black or African American"], na.rm = TRUE),
+
+    `White (n)` =
+      sum(Deaths[race_unified == "White"], na.rm = TRUE),
+
+    `More than one race (n)` =
+      sum(Deaths[race_unified == "More than one race"], na.rm = TRUE),
+
+    Population = sum(Population, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    `Crude rate (/100,000)` =
+      ifelse(Population > 0,
+             round((`Overall (n)` / Population) * 1e5, 2),
+             NA_real_),
+    Year = as.character(Year)
+  ) %>%
+  complete(
+    Year = as.character(2010:2025),
+    fill = list(
+      `Overall (n)` = NA_real_,
+      `Women (n)` = NA_real_,
+      `Men (n)` = NA_real_,
+      `American Indian or Alaska Native (n)` = NA_real_,
+      `Asian (n)` = NA_real_,
+      `Native Hawaiian or Other Pacific Islander (n)` = NA_real_,
+      `Black or African American (n)` = NA_real_,
+      `White (n)` = NA_real_,
+      `More than one race (n)` = NA_real_,
+      Population = NA_real_,
+      `Crude rate (/100,000)` = NA_real_
+    )
+  ) %>%
+  arrange(as.integer(Year))
+
+table_sepsis_year
+
+
+```
+
+```{r}
+sepsis_total <- table_sepsis_year %>%
+  summarise(
+    Year = "Total",
+    across(where(is.numeric), \(x) sum(x, na.rm = TRUE))
+  ) %>%
+  mutate(
+    `Crude rate (/100,000)` =
+      ifelse(Population > 0,
+             round((`Overall (n)` / Population) * 1e5, 2),
+             NA_real_)
+  )
+
+table_sepsis_year <- bind_rows(table_sepsis_year, sepsis_total)
+```
+
+## N17+A40
+
+```{r}
+glimpse(N17A40)
+```
+
+```{r}
+library(dplyr)
+library(tidyr)
+
+table_renal_sepsis_year <- N17A40 %>%
+  filter(
+    is.na(Notes) | Notes != "Total",
+    Year >= 2010, Year <= 2025,
+    `MCD - ICD Sub-Chapter` == "Renal failure"
+  ) %>%
+  mutate(
+    race_source = coalesce(`Single Race 6`, Race),
+
+    race_unified = case_when(
+      race_source == "American Indian or Alaska Native" ~
+        "American Indian or Alaska Native",
+
+      # Asian bucket includes the old combined label
+      race_source %in% c("Asian", "Asian or Pacific Islander") ~
+        "Asian",
+
+      # NHOPI is its own category
+      race_source == "Native Hawaiian or Other Pacific Islander" ~
+        "Native Hawaiian or Other Pacific Islander",
+
+      race_source == "Black or African American" ~
+        "Black or African American",
+
+      race_source == "White" ~
+        "White",
+
+      race_source == "More than one race" ~
+        "More than one race",
+
+      TRUE ~ NA_character_
+    )
+  ) %>%
+  group_by(Year) %>%
+  summarise(
+    `Overall (n)` = sum(Deaths, na.rm = TRUE),
+    `Women (n)`   = sum(Deaths[Sex == "Female"], na.rm = TRUE),
+    `Men (n)`     = sum(Deaths[Sex == "Male"], na.rm = TRUE),
+
+    `American Indian or Alaska Native (n)` =
+      sum(Deaths[race_unified == "American Indian or Alaska Native"], na.rm = TRUE),
+
+    `Asian (n)` =
+      sum(Deaths[race_unified == "Asian"], na.rm = TRUE),
+
+    `Native Hawaiian or Other Pacific Islander (n)` =
+      sum(Deaths[race_unified == "Native Hawaiian or Other Pacific Islander"], na.rm = TRUE),
+
+    `Black or African American (n)` =
+      sum(Deaths[race_unified == "Black or African American"], na.rm = TRUE),
+
+    `White (n)` =
+      sum(Deaths[race_unified == "White"], na.rm = TRUE),
+
+    `More than one race (n)` =
+      sum(Deaths[race_unified == "More than one race"], na.rm = TRUE),
+
+    Population = sum(Population, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    `Crude rate (/100,000)` =
+      ifelse(Population > 0,
+             round((`Overall (n)` / Population) * 1e5, 2),
+             NA_real_),
+    Year = as.character(Year)
+  ) %>%
+  complete(
+    Year = as.character(2010:2025),
+    fill = list(
+      `Overall (n)` = NA_real_,
+      `Women (n)` = NA_real_,
+      `Men (n)` = NA_real_,
+      `American Indian or Alaska Native (n)` = NA_real_,
+      `Asian (n)` = NA_real_,
+      `Native Hawaiian or Other Pacific Islander (n)` = NA_real_,
+      `Black or African American (n)` = NA_real_,
+      `White (n)` = NA_real_,
+      `More than one race (n)` = NA_real_,
+      Population = NA_real_,
+      `Crude rate (/100,000)` = NA_real_
+    )
+  ) %>%
+  arrange(as.integer(Year))
+
+table_renal_sepsis_year
+
+```
+```{r}
+total_row <- table_renal_sepsis_year %>%
+  summarise(
+    Year = "Total",
+    across(where(is.numeric), \(x) sum(x, na.rm = TRUE))
+  ) %>%
+  mutate(
+    `Crude rate (/100,000)` =
+      ifelse(Population > 0, round((`Overall (n)` / Population) * 1e5, 2), NA_real_)
+  )
+
+table_renal_sepsis_year <- bind_rows(table_renal_sepsis_year, total_row)
+```
+
+## Period Map
+
+```{r}
+period_map <- tibble::tibble(
+  period = c("Pre-pandemic\n(2010–2019)",
+             "Pandemic\n(2020–2022)",
+             "Transition\n(2023)",
+             "Post-pandemic\n(2024–2025)"),
+  year_start = c(2010, 2020, 2023, 2024),
+  year_end   = c(2019, 2022, 2023, 2025)
+) %>%
+  mutate(n_years = year_end - year_start + 1)
+
+# helper: assign period label
+add_period <- function(df) {
+  df %>%
+    left_join(period_map, join_by(Year >= year_start, Year <= year_end)) %>%
+    filter(!is.na(period))
+}
+```
+
+```{r}
+N17_prepped <- N17 %>%
+  filter(
+    `MCD - ICD Sub-Chapter` == "Renal failure",
+    is.na(Notes) | Notes != "Total",
+    Year >= 2010, Year <= 2025
+  ) %>%
+  mutate(
+    # race source (use Single Race 6 when present, else Race)
+    race_source = coalesce(`Single Race 6`, Race),
+
+    race_unified = case_when(
+      race_source == "American Indian or Alaska Native" ~ "American Indian or Alaska Native",
+      race_source == "Asian" | race_source == "Asian or Pacific Islander" ~ "Asian",
+      race_source == "Native Hawaiian or Other Pacific Islander" ~ "Native Hawaiian or Other Pacific Islander",
+      race_source == "Black or African American" ~ "Black or African American",
+      race_source == "White" ~ "White",
+      race_source == "More than one race" ~ "More than one race",
+      TRUE ~ "Not available"
+    ),
+
+    # age categories from Ten-Year Age Groups
+    age_cat = case_when(
+      `Ten-Year Age Groups Code` %in% c("25-34", "35-44") ~ "Age 25–44",
+      `Ten-Year Age Groups Code` %in% c("45-54", "55-64") ~ "Age 45–64",
+      `Ten-Year Age Groups Code` %in% c("65-74", "75-84", "85+") ~ "Age ≥65",
+      TRUE ~ NA_character_
+    )
+  ) %>%
+  add_period()
+```
+
+```{r}
+period_totals <- N17_prepped %>%
+  group_by(period, n_years) %>%
+  summarise(
+    deaths = sum(Deaths, na.rm = TRUE),
+    population = sum(Population, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    crude_per100k_annual = (deaths / population) * 1e5 * (1 / n_years)
+  )
+
+# Sex-specific annual rates
+period_sex <- N17_prepped %>%
+  group_by(period, n_years, Sex) %>%
+  summarise(
+    deaths = sum(Deaths, na.rm = TRUE),
+    population = sum(Population, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(rate = (deaths / population) * 1e5 * (1 / n_years)) %>%
+  select(period, Sex, rate) %>%
+  pivot_wider(names_from = Sex, values_from = rate) %>%
+  rename(Male_rate = Male, Female_rate = Female)
+
+# Age-category annual rates
+period_age <- N17_prepped %>%
+  filter(!is.na(age_cat)) %>%
+  group_by(period, n_years, age_cat) %>%
+  summarise(
+    deaths = sum(Deaths, na.rm = TRUE),
+    population = sum(Population, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(rate = (deaths / population) * 1e5 * (1 / n_years)) %>%
+  select(period, age_cat, rate) %>%
+  pivot_wider(names_from = age_cat, values_from = rate)
+
+# Race annual rates
+period_race <- N17_prepped %>%
+  group_by(period, n_years, race_unified) %>%
+  summarise(
+    deaths = sum(Deaths, na.rm = TRUE),
+    population = sum(Population, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(rate = (deaths / population) * 1e5 * (1 / n_years)) %>%
+  select(period, race_unified, rate) %>%
+  pivot_wider(names_from = race_unified, values_from = rate)
+```
+
+```{r}
+table_ARF_period <- period_totals %>%
+  select(period, n_years, deaths, crude_per100k_annual) %>%
+  left_join(period_sex, by = "period") %>%
+  left_join(period_age, by = "period") %>%
+  left_join(period_race, by = "period") %>%
+  select(-n_years) %>%
+  mutate(
+    crude_per100k_annual = round(crude_per100k_annual, 2),
+    Male_rate = round(Male_rate, 2),
+    Female_rate = round(Female_rate, 2),
+    `Age ≥65` = round(`Age ≥65`, 2),
+    `Age 45–64` = round(`Age 45–64`, 2),
+    `Age 25–44` = round(`Age 25–44`, 2),
+    `American Indian or Alaska Native` = round(`American Indian or Alaska Native`, 2),
+    Asian = round(Asian, 2),
+    `Black or African American` = round(`Black or African American`, 2),
+    `Native Hawaiian or Other Pacific Islander` = round(`Native Hawaiian or Other Pacific Islander`, 2),
+    White = round(White, 2),
+    `More than one race` = round(`More than one race`, 2)
+  )
+
+# Make it a wide table with columns = periods (like your template)
+table_ARF_period_wide <- table_ARF_period %>%
+  pivot_longer(
+    cols = -period,
+    names_to = "Metric",
+    values_to = "Value"
+  ) %>%
+  mutate(
+    Metric = recode(Metric,
+      deaths = "Total death",
+      crude_per100k_annual = "Crude mortality rate(/100,000/annual)",
+      Male_rate = "Male(/100,000)",
+      Female_rate = "Female(/100,000)",
+      `Age ≥65` = "Age categories: Age≥65",
+      `Age 45–64` = "Age categories: Age 45-64",
+      `Age 25–44` = "Age categories: Age 25-44",
+      `American Indian or Alaska Native` = "Race and ethnicity: American Indian or Alaska Natives (/100,000)",
+      Asian = "Race and ethnicity: Asian (/100,000)",
+      `Black or African American` = "Race and ethnicity: Black or Africa American (/100,000)",
+      `Native Hawaiian or Other Pacific Islander` = "Race and ethnicity: Native Hawaiian or Other Pacific Islander (/100,000)",
+      White = "Race and ethnicity: White (/100,000)",
+      `More than one race` = "Race and ethnicity: More than one race (/100,000)",
+      `Not available` = "Race and ethnicity: Not available (/100,000)"
+    )
+  ) %>%
+  pivot_wider(names_from = period, values_from = Value) %>%
+  arrange(factor(Metric, levels = c(
+    "Total death",
+    "Crude mortality rate(/100,000/annual)",
+    "Male(/100,000)",
+    "Female(/100,000)",
+    "Age categories: Age≥65",
+    "Age categories: Age 45-64",
+    "Age categories: Age 25-44",
+    "Race and ethnicity: American Indian or Alaska Natives (/100,000)",
+    "Race and ethnicity: Asian (/100,000)",
+    "Race and ethnicity: Black or Africa American (/100,000)",
+    "Race and ethnicity: Native Hawaiian or Other Pacific Islander (/100,000)",
+    "Race and ethnicity: White (/100,000)",
+    "Race and ethnicity: More than one race (/100,000)",
+    "Race and ethnicity: Not available (/100,000)"
+  )))
+
+table_ARF_period_wide
+```
+```{r}
+library(scales)
+make_period_table <- function(df,
+                              outcome_name = "ARF-related deaths",
+                              year_min = 2010,
+                              year_max = 2025,
+                              subchapter_filter = NULL) {
+
+  # ---- periods in time order ----
+  period_map <- tibble::tibble(
+    period_id = 1:4,
+    period = c("Pre-pandemic (2010–2019)",
+               "Pandemic (2020–2022)",
+               "Transition (2023)",
+               "Post-pandemic (2024–2025)"),
+    year_start = c(2010, 2020, 2023, 2024),
+    year_end   = c(2019, 2022, 2023, 2025)
+  ) %>%
+    mutate(n_years = year_end - year_start + 1)
+
+  add_period <- function(x) {
+    x %>%
+      left_join(period_map, join_by(Year >= year_start, Year <= year_end)) %>%
+      filter(!is.na(period))
+  }
+
+  annual_rate <- function(deaths, pop, n_years) {
+    ifelse(pop > 0, (deaths / pop) * 1e5 * (1 / n_years), NA_real_)
+  }
+
+  # ---- prep: filter + race + age ----
+  x <- df %>%
+    filter(
+      is.na(Notes) | Notes != "Total",
+      Year >= year_min, Year <= year_max
+    )
+
+  if (!is.null(subchapter_filter)) {
+    x <- x %>% filter(`MCD - ICD Sub-Chapter` %in% subchapter_filter)
+  }
+
+  x <- x %>%
+    mutate(
+      race_source = coalesce(`Single Race 6`, Race),
+
+      # Race rules (as requested):
+      # - "Asian or Pacific Islander" -> Asian
+      # - NHOPI is its own category
+      # - drop not available (handled by NA then filter)
+      race_unified = case_when(
+        race_source == "American Indian or Alaska Native" ~ "American Indian or Alaska Native",
+        race_source %in% c("Asian", "Asian or Pacific Islander") ~ "Asian",
+        race_source == "Native Hawaiian or Other Pacific Islander" ~ "Native Hawaiian or Other Pacific Islander",
+        race_source == "Black or African American" ~ "Black or African American",
+        race_source == "White" ~ "White",
+        race_source == "More than one race" ~ "More than one race",
+        TRUE ~ NA_character_
+      ),
+
+      age_cat = case_when(
+        `Ten-Year Age Groups Code` %in% c("25-34", "35-44") ~ "Age 25–44",
+        `Ten-Year Age Groups Code` %in% c("45-54", "55-64") ~ "Age 45–64",
+        `Ten-Year Age Groups Code` %in% c("65-74", "75-84", "85+") ~ "Age ≥65",
+        TRUE ~ NA_character_
+      )
+    ) %>%
+    filter(!is.na(race_unified)) %>%   # drops "Not available"
+    add_period()
+
+  # ---- period totals ----
+  period_totals <- x %>%
+    group_by(period_id, period, n_years) %>%
+    summarise(
+      deaths = sum(Deaths, na.rm = TRUE),
+      population = sum(Population, na.rm = TRUE),
+      .groups = "drop"
+    ) %>%
+    mutate(crude_annual = annual_rate(deaths, population, n_years))
+
+  # ---- sex rates ----
+  period_sex <- x %>%
+    group_by(period_id, period, n_years, Sex) %>%
+    summarise(
+      deaths = sum(Deaths, na.rm = TRUE),
+      population = sum(Population, na.rm = TRUE),
+      .groups = "drop"
+    ) %>%
+    mutate(rate = annual_rate(deaths, population, n_years)) %>%
+    select(period_id, period, Sex, rate) %>%
+    pivot_wider(names_from = Sex, values_from = rate) %>%
+    rename(Male = Male, Female = Female)
+
+  # ---- age rates ----
+  period_age <- x %>%
+    filter(!is.na(age_cat)) %>%
+    group_by(period_id, period, n_years, age_cat) %>%
+    summarise(
+      deaths = sum(Deaths, na.rm = TRUE),
+      population = sum(Population, na.rm = TRUE),
+      .groups = "drop"
+    ) %>%
+    mutate(rate = annual_rate(deaths, population, n_years)) %>%
+    select(period_id, period, age_cat, rate) %>%
+    pivot_wider(names_from = age_cat, values_from = rate)
+
+  # ---- race rates ----
+  period_race <- x %>%
+    group_by(period_id, period, n_years, race_unified) %>%
+    summarise(
+      deaths = sum(Deaths, na.rm = TRUE),
+      population = sum(Population, na.rm = TRUE),
+      .groups = "drop"
+    ) %>%
+    mutate(rate = annual_rate(deaths, population, n_years)) %>%
+    select(period_id, period, race_unified, rate) %>%
+    pivot_wider(names_from = race_unified, values_from = rate)
+
+  # ---- assemble (period rows) ----
+  period_table <- period_totals %>%
+    left_join(period_sex,  by = c("period_id", "period")) %>%
+    left_join(period_age,  by = c("period_id", "period")) %>%
+    left_join(period_race, by = c("period_id", "period")) %>%
+    arrange(period_id) %>%
+    transmute(
+      period_id, period,
+      `Total deaths, n` = deaths,
+      `Population` = population,
+      `Crude mortality rate, annual (/100,000)` = crude_annual,
+      `Male, annual (/100,000)` = Male,
+      `Female, annual (/100,000)` = Female,
+      `Age ≥65, annual (/100,000)` = `Age ≥65`,
+      `Age 45–64, annual (/100,000)` = `Age 45–64`,
+      `Age 25–44, annual (/100,000)` = `Age 25–44`,
+      `American Indian or Alaska Native, annual (/100,000)` = `American Indian or Alaska Native`,
+      `Asian, annual (/100,000)` = Asian,
+      `Native Hawaiian or Other Pacific Islander, annual (/100,000)` = `Native Hawaiian or Other Pacific Islander`,
+      `Black or African American, annual (/100,000)` = `Black or African American`,
+      `White, annual (/100,000)` = White,
+      `More than one race, annual (/100,000)` = `More than one race`
+    )
+
+  # ---- publication formatting (no scientific notation; commas; 2 decimals) ----
+  pub <- period_table %>%
+    select(-period_id) %>%
+    pivot_longer(cols = -period, names_to = "Metric", values_to = "Value") %>%
+    mutate(
+      Value = ifelse(
+        Metric %in% c("Total deaths, n", "Population"),
+        formatC(round(Value, 0), format = "f", big.mark = ",", digits = 0),
+        formatC(round(Value, 2), format = "f", big.mark = ",", digits = 2)
+      )
+    ) %>%
+    mutate(
+      Metric = factor(Metric, levels = c(
+        "Total deaths, n",
+        "Population",
+        "Crude mortality rate, annual (/100,000)",
+        "Male, annual (/100,000)",
+        "Female, annual (/100,000)",
+        "Age ≥65, annual (/100,000)",
+        "Age 45–64, annual (/100,000)",
+        "Age 25–44, annual (/100,000)",
+        "American Indian or Alaska Native, annual (/100,000)",
+        "Asian, annual (/100,000)",
+        "Native Hawaiian or Other Pacific Islander, annual (/100,000)",
+        "Black or African American, annual (/100,000)",
+        "White, annual (/100,000)",
+        "More than one race, annual (/100,000)"
+      ))
+    ) %>%
+    arrange(Metric) %>%
+    pivot_wider(names_from = period, values_from = Value)
+
+  # return both raw numeric + formatted
+  list(
+    outcome = outcome_name,
+    numeric_period_table = period_table,
+    publication_table = pub
+  )
+}
+
+# ---------------- Apply to your three datasets ----------------
+
+# 1) ARF / Renal failure (N17)
+arf_tbl <- make_period_table(
+  N17,
+  outcome_name = "ARF-related deaths (Renal failure)",
+  subchapter_filter = c("Renal failure")
+)
+
+# 2) Sepsis-related (A40)  (adjust filter if you use a different definition)
+sepsis_tbl <- make_period_table(
+  A40,
+  outcome_name = "Sepsis-related deaths",
+  subchapter_filter = c("Other bacterial diseases")
+)
+
+# 3) Renal + Sepsis combined (N17A40)  (already combined; you can omit filter)
+renal_sepsis_tbl <- make_period_table(
+  N17A40,
+  outcome_name = "Renal + Sepsis-related deaths"
+)
+
+# Use the publication-ready tables:
+arf_tbl$publication_table
+sepsis_tbl$publication_table
+renal_sepsis_tbl$publication_table
+```
+
+## Age
+
+```{r}
+library(dplyr)
+library(tidyr)
+
+add_age3 <- function(df) {
+  df %>%
+    mutate(
+      age3 = case_when(
+        `Ten-Year Age Groups Code` %in% c("25-34", "35-44") ~ "25_44",
+        `Ten-Year Age Groups Code` %in% c("45-54", "55-64") ~ "45_64",
+        `Ten-Year Age Groups Code` %in% c("65-74", "75-84", "85+") ~ "65_plus",
+        TRUE ~ NA_character_
+      )
+    ) %>%
+    filter(!is.na(age3))
+}
+
+# ---- Helper: Year x age3 -> deaths & crude rate (adds Total row) ----
+year_age_deaths_rates <- function(df, prefix) {
+  by_year_age <- df %>%
+    filter(
+      is.na(Notes) | Notes != "Total",
+      Year >= 2010, Year <= 2025
+    ) %>%
+    add_age3() %>%
+    group_by(Year, age3) %>%
+    summarise(
+      deaths = sum(Deaths, na.rm = TRUE),
+      pop    = sum(Population, na.rm = TRUE),
+      .groups = "drop"
+    ) %>%
+    mutate(rate = ifelse(pop > 0, (deaths / pop) * 1e5, NA_real_)) %>%
+    mutate(Year = as.character(Year)) %>%
+    complete(
+      Year = as.character(2010:2025),
+      age3 = c("25_44", "45_64", "65_plus"),
+      fill = list(deaths = 0, pop = 0, rate = NA_real_)
+    )
+
+  # Add Total row (sum deaths & pop across years within each age bin; recompute rate)
+  total_rows <- by_year_age %>%
+    group_by(age3) %>%
+    summarise(
+      Year = "Total",
+      deaths = sum(deaths, na.rm = TRUE),
+      pop    = sum(pop, na.rm = TRUE),
+      .groups = "drop"
+    ) %>%
+    mutate(rate = ifelse(pop > 0, (deaths / pop) * 1e5, NA_real_))
+
+  by_year_age <- bind_rows(by_year_age, total_rows)
+
+  deaths_wide <- by_year_age %>%
+    select(Year, age3, deaths) %>%
+    pivot_wider(names_from = age3, values_from = deaths, values_fill = 0) %>%
+    rename(
+      !!paste0(prefix, "_deaths_25_44")  := `25_44`,
+      !!paste0(prefix, "_deaths_45_64")  := `45_64`,
+      !!paste0(prefix, "_deaths_65_plus"):= `65_plus`
+    )
+
+  rates_wide <- by_year_age %>%
+    select(Year, age3, rate) %>%
+    pivot_wider(names_from = age3, values_from = rate) %>%
+    rename(
+      !!paste0(prefix, "_rate_25_44")   := `25_44`,
+      !!paste0(prefix, "_rate_45_64")   := `45_64`,
+      !!paste0(prefix, "_rate_65_plus") := `65_plus`
+    )
+
+  list(deaths = deaths_wide, rates = rates_wide)
+}
+
+# ---- Build for the 3 datasets ----
+arf    <- year_age_deaths_rates(N17,    "ARF")
+sepsis <- year_age_deaths_rates(A40,    "Sepsis")
+both   <- year_age_deaths_rates(N17A40, "ARF_Sepsis")
+
+# ---- Combine into one deaths table ----
+deaths_table_age <- arf$deaths %>%
+  full_join(sepsis$deaths, by = "Year") %>%
+  full_join(both$deaths,   by = "Year") %>%
+  mutate(Year = factor(Year, levels = c(as.character(2010:2025), "Total"))) %>%
+  arrange(Year)
+
+# ---- Combine into one crude-rate table ----
+rate_table_age <- arf$rates %>%
+  full_join(sepsis$rates, by = "Year") %>%
+  full_join(both$rates,   by = "Year") %>%
+  mutate(Year = factor(Year, levels = c(as.character(2010:2025), "Total"))) %>%
+  arrange(Year) %>%
+  # Optional: round rates nicely
+  mutate(across(where(is.numeric), ~ round(.x, 2)))
+
+deaths_table_age
+rate_table_age
+
+```
+
+## Sex
+
+```{r}
+year_sex_deaths_rates <- function(df, prefix) {
+
+  by_year_sex <- df %>%
+    filter(
+      is.na(Notes) | Notes != "Total",
+      Year >= 2010, Year <= 2025
+    ) %>%
+    group_by(Year, Sex) %>%
+    summarise(
+      deaths = sum(Deaths, na.rm = TRUE),
+      pop    = sum(Population, na.rm = TRUE),
+      .groups = "drop"
+    ) %>%
+    mutate(rate = ifelse(pop > 0, (deaths / pop) * 1e5, NA_real_)) %>%
+    mutate(Year = as.character(Year)) %>%
+    complete(
+      Year = as.character(2010:2025),
+      Sex = c("Male", "Female"),
+      fill = list(deaths = 0, pop = 0, rate = NA_real_)
+    )
+
+  # add "Overall" per year
+  overall_year <- by_year_sex %>%
+    group_by(Year) %>%
+    summarise(
+      Sex = "Overall",
+      deaths = sum(deaths, na.rm = TRUE),
+      pop    = sum(pop, na.rm = TRUE),
+      .groups = "drop"
+    ) %>%
+    mutate(rate = ifelse(pop > 0, (deaths / pop) * 1e5, NA_real_))
+
+  by_year_sex2 <- bind_rows(by_year_sex, overall_year)
+
+  # add Total row (sum across years within each Sex; recompute rate)
+  total_row <- by_year_sex2 %>%
+    group_by(Sex) %>%
+    summarise(
+      Year = "Total",
+      deaths = sum(deaths, na.rm = TRUE),
+      pop    = sum(pop, na.rm = TRUE),
+      .groups = "drop"
+    ) %>%
+    mutate(rate = ifelse(pop > 0, (deaths / pop) * 1e5, NA_real_))
+
+  by_year_sex2 <- bind_rows(by_year_sex2, total_row)
+
+  deaths_wide <- by_year_sex2 %>%
+    select(Year, Sex, deaths) %>%
+    pivot_wider(names_from = Sex, values_from = deaths, values_fill = 0) %>%
+    rename(
+      !!paste0(prefix, "_deaths_Overall") := Overall,
+      !!paste0(prefix, "_deaths_Male")    := Male,
+      !!paste0(prefix, "_deaths_Female")  := Female
+    )
+
+  rates_wide <- by_year_sex2 %>%
+    select(Year, Sex, rate) %>%
+    pivot_wider(names_from = Sex, values_from = rate) %>%
+    rename(
+      !!paste0(prefix, "_rate_Overall") := Overall,
+      !!paste0(prefix, "_rate_Male")    := Male,
+      !!paste0(prefix, "_rate_Female")  := Female
+    )
+
+  list(deaths = deaths_wide, rates = rates_wide)
+}
+
+# ---- build for three datasets ----
+arf    <- year_sex_deaths_rates(N17,    "ARF")
+sepsis <- year_sex_deaths_rates(A40,    "Sepsis")
+both   <- year_sex_deaths_rates(N17A40, "ARF_Sepsis")
+
+# ---- deaths table (Year + 9 columns) ----
+deaths_table_sex <- arf$deaths %>%
+  full_join(sepsis$deaths, by = "Year") %>%
+  full_join(both$deaths,   by = "Year") %>%
+  mutate(Year = factor(Year, levels = c(as.character(2010:2025), "Total"))) %>%
+  arrange(Year)
+
+# ---- crude rate table (same structure; rounded) ----
+rate_table_sex <- arf$rates %>%
+  full_join(sepsis$rates, by = "Year") %>%
+  full_join(both$rates,   by = "Year") %>%
+  mutate(Year = factor(Year, levels = c(as.character(2010:2025), "Total"))) %>%
+  arrange(Year) %>%
+  mutate(across(where(is.numeric), ~ round(.x, 2)))
+
+deaths_table_sex
+rate_table_sex
+```
+## Portional
+
+```{r}
+year_overall <- function(df, label) {
+  df %>%
+    filter(
+      is.na(Notes) | Notes != "Total",
+      Year >= 2010, Year <= 2025
+    ) %>%
+    group_by(Year) %>%
+    summarise(
+      deaths = sum(Deaths, na.rm = TRUE),
+      pop    = sum(Population, na.rm = TRUE),
+      .groups = "drop"
+    ) %>%
+    mutate(
+      crude_rate = ifelse(pop > 0, (deaths / pop) * 1e5, NA_real_),
+      Year = as.character(Year)
+    ) %>%
+    complete(Year = as.character(2010:2025),
+             fill = list(deaths = 0, pop = 0, crude_rate = NA_real_)) %>%
+    bind_rows(
+      summarise(
+        .,
+        Year = "Total",
+        deaths = sum(deaths, na.rm = TRUE),
+        pop    = sum(pop, na.rm = TRUE),
+        crude_rate = ifelse(sum(pop, na.rm = TRUE) > 0,
+                            (sum(deaths, na.rm = TRUE) / sum(pop, na.rm = TRUE)) * 1e5,
+                            NA_real_)
+      )
+    ) %>%
+    rename(
+      !!paste0(label, "_Deaths") := deaths,
+      !!paste0(label, "_CrudeRate") := crude_rate
+    ) %>%
+    select(Year, ends_with("_Deaths"), ends_with("_CrudeRate"))
+}
+
+# ---- 1) Get yearly values for each dataset ----
+arf_tbl   <- year_overall(N17, "ARF")
+sep_tbl   <- year_overall(A40, "Sepsis")
+both_tbl  <- year_overall(N17A40, "ARF_Sepsis")
+
+# ---- 2) Combine + compute overlap metrics ----
+overlap_table <- arf_tbl %>%
+  full_join(sep_tbl,  by = "Year") %>%
+  full_join(both_tbl, by = "Year") %>%
+  mutate(
+    # Death ratios: ③/① and ③/②
+    `Sepsis among ARF (Deaths)` = ifelse(ARF_Deaths > 0, ARF_Sepsis_Deaths / ARF_Deaths, NA_real_),
+    `ARF among Sepsis (Deaths)` = ifelse(Sepsis_Deaths > 0, ARF_Sepsis_Deaths / Sepsis_Deaths, NA_real_),
+
+    # Crude-rate ratios (your request: "use crude rate")
+    `Sepsis among ARF (Crude rate)` = ifelse(ARF_CrudeRate > 0, ARF_Sepsis_CrudeRate / ARF_CrudeRate, NA_real_),
+    `ARF among Sepsis (Crude rate)` = ifelse(Sepsis_CrudeRate > 0, ARF_Sepsis_CrudeRate / Sepsis_CrudeRate, NA_real_)
+  ) %>%
+  # ---- Choose which version you want in the last 2 columns ----
+  # If you want the last 2 columns to be crude-rate ratios, keep these:
+  select(
+    Year,
+    `ARF (crude rate)` = ARF_CrudeRate,              # ①
+    `Sepsis (crude rate)` = Sepsis_CrudeRate,        # ②
+    `ARF & Sepsis (crude rate)` = ARF_Sepsis_CrudeRate, # ③
+    `Sepsis among ARF (③/①)` = `Sepsis among ARF (Crude rate)`,
+    `ARF among Sepsis (③/②)` = `ARF among Sepsis (Crude rate)`
+  ) %>%
+  mutate(
+    Year = factor(Year, levels = c(as.character(2010:2025), "Total")),
+    across(where(is.numeric), ~ round(.x, 2))
+  ) %>%
+  arrange(Year)
+
+overlap_table
+```
+## Export 
+```{r}
+library(openxlsx)
+
+wb <- createWorkbook()
+
+addWorksheet(wb, "ARF_year")
+writeData(wb, "ARF_year", table_renal_year)
+
+addWorksheet(wb, "sepsis_year")
+writeData(wb, "sepsis_year", table_sepsis_year)
+
+addWorksheet(wb, "ARF_sepsis_year")
+writeData(wb, "ARF_sepsis_year", table_renal_sepsis_year)
+
+addWorksheet(wb, "ARF_period_summary")
+writeData(wb, "ARF_period_summary", arf_tbl$publication_table)
+
+addWorksheet(wb, "Sepsis_period_summary")
+writeData(wb, "Sepsis_period_summary", sepsis_tbl$publication_table)
+
+addWorksheet(wb, "ARF_Sepsis_period_summary")
+writeData(wb, "ARF_Sepsis_period_summary", renal_sepsis_tbl$publication_table)
+
+addWorksheet(wb, "Deaths_by_age")
+writeData(wb, "Deaths_by_age", deaths_table_age)
+
+addWorksheet(wb, "Rate_by_age")
+writeData(wb, "Rate_by_age", rate_table_age)
+
+addWorksheet(wb, "Deaths_by_sex")
+writeData(wb, "Deaths_by_sex", deaths_table_sex)
+
+addWorksheet(wb, "Crude_rate_by_sex")
+writeData(wb, "Crude_rate_by_sex", rate_table_sex)
+
+addWorksheet(wb, "ARF_Sepsis_overlap_rates")
+writeData(wb, "ARF_Sepsis_overlap_rates", overlap_table)
+
+saveWorkbook(
+  wb,
+  file = "Supplementary_Tables_ARF_Sepsis_US_2010_2025.xlsx",
+  overwrite = TRUE
+)
+```
+
+## Trend

@@ -1,0 +1,497 @@
+"Notes","MCD - ICD Sub-Chapter","MCD - ICD Sub-Chapter Code","Year","Year Code","Sex","Sex Code","Race","Race Code","Ten-Year Age Groups","Ten-Year Age Groups Code",Deaths,Population,Crude Rate
+,"Renal failure","N17-N19","2010","2010","Female","F","American Indian or Alaska Native","1002-5","35-44 years","35-44",11,282307,Unreliable
+,"Renal failure","N17-N19","2010","2010","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",33,273464,12.1
+,"Renal failure","N17-N19","2010","2010","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",43,178582,24.1
+,"Renal failure","N17-N19","2010","2010","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",49,87469,56.0
+,"Renal failure","N17-N19","2010","2010","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",59,40892,144.3
+,"Renal failure","N17-N19","2010","2010","Female","F","American Indian or Alaska Native","1002-5","85+ years","85+",42,14001,300.0
+,"Renal failure","N17-N19","2010","2010","Female","F","Asian or Pacific Islander","A-PI","45-54 years","45-54",20,1223444,1.6
+,"Renal failure","N17-N19","2010","2010","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",50,919792,5.4
+,"Renal failure","N17-N19","2010","2010","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",98,490802,20.0
+,"Renal failure","N17-N19","2010","2010","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",221,266935,82.8
+,"Renal failure","N17-N19","2010","2010","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",242,92921,260.4
+,"Renal failure","N17-N19","2010","2010","Female","F","Black or African American","2054-5","25-34 years","25-34",42,3066086,1.4
+,"Renal failure","N17-N19","2010","2010","Female","F","Black or African American","2054-5","35-44 years","35-44",104,2961585,3.5
+,"Renal failure","N17-N19","2010","2010","Female","F","Black or African American","2054-5","45-54 years","45-54",342,3056411,11.2
+,"Renal failure","N17-N19","2010","2010","Female","F","Black or African American","2054-5","55-64 years","55-64",563,2196805,25.6
+,"Renal failure","N17-N19","2010","2010","Female","F","Black or African American","2054-5","65-74 years","65-74",677,1192148,56.8
+,"Renal failure","N17-N19","2010","2010","Female","F","Black or African American","2054-5","75-84 years","75-84",994,675432,147.2
+,"Renal failure","N17-N19","2010","2010","Female","F","Black or African American","2054-5","85+ years","85+",1166,282385,412.9
+,"Renal failure","N17-N19","2010","2010","Female","F","White","2106-3","25-34 years","25-34",98,15551936,0.6
+,"Renal failure","N17-N19","2010","2010","Female","F","White","2106-3","35-44 years","35-44",271,15940784,1.7
+,"Renal failure","N17-N19","2010","2010","Female","F","White","2106-3","45-54 years","45-54",921,18311038,5.0
+,"Renal failure","N17-N19","2010","2010","Female","F","White","2106-3","55-64 years","55-64",2028,15586402,13.0
+,"Renal failure","N17-N19","2010","2010","Female","F","White","2106-3","65-74 years","65-74",3661,9846491,37.2
+,"Renal failure","N17-N19","2010","2010","Female","F","White","2106-3","75-84 years","75-84",7317,6601101,110.8
+,"Renal failure","N17-N19","2010","2010","Female","F","White","2106-3","85+ years","85+",11105,3314447,335.0
+,"Renal failure","N17-N19","2010","2010","Male","M","American Indian or Alaska Native","1002-5","35-44 years","35-44",19,290118,Unreliable
+,"Renal failure","N17-N19","2010","2010","Male","M","American Indian or Alaska Native","1002-5","45-54 years","45-54",30,264283,11.4
+,"Renal failure","N17-N19","2010","2010","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",41,167158,24.5
+,"Renal failure","N17-N19","2010","2010","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",34,76459,44.5
+,"Renal failure","N17-N19","2010","2010","Male","M","American Indian or Alaska Native","1002-5","75-84 years","75-84",39,29157,133.8
+,"Renal failure","N17-N19","2010","2010","Male","M","American Indian or Alaska Native","1002-5","85+ years","85+",24,7236,331.7
+,"Renal failure","N17-N19","2010","2010","Male","M","Asian or Pacific Islander","A-PI","35-44 years","35-44",18,1298595,Unreliable
+,"Renal failure","N17-N19","2010","2010","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",47,1074756,4.4
+,"Renal failure","N17-N19","2010","2010","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",98,761268,12.9
+,"Renal failure","N17-N19","2010","2010","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",148,408568,36.2
+,"Renal failure","N17-N19","2010","2010","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",225,185737,121.1
+,"Renal failure","N17-N19","2010","2010","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",219,54709,400.3
+,"Renal failure","N17-N19","2010","2010","Male","M","Black or African American","2054-5","25-34 years","25-34",58,2801017,2.1
+,"Renal failure","N17-N19","2010","2010","Male","M","Black or African American","2054-5","35-44 years","35-44",147,2639054,5.6
+,"Renal failure","N17-N19","2010","2010","Male","M","Black or African American","2054-5","45-54 years","45-54",399,2707520,14.7
+,"Renal failure","N17-N19","2010","2010","Male","M","Black or African American","2054-5","55-64 years","55-64",731,1832463,39.9
+,"Renal failure","N17-N19","2010","2010","Male","M","Black or African American","2054-5","65-74 years","65-74",765,885780,86.4
+,"Renal failure","N17-N19","2010","2010","Male","M","Black or African American","2054-5","75-84 years","75-84",839,395774,212.0
+,"Renal failure","N17-N19","2010","2010","Male","M","Black or African American","2054-5","85+ years","85+",631,110382,571.7
+,"Renal failure","N17-N19","2010","2010","Male","M","White","2106-3","25-34 years","25-34",131,16138835,0.8
+,"Renal failure","N17-N19","2010","2010","Male","M","White","2106-3","35-44 years","35-44",415,16208232,2.6
+,"Renal failure","N17-N19","2010","2010","Male","M","White","2106-3","45-54 years","45-54",1481,18095800,8.2
+,"Renal failure","N17-N19","2010","2010","Male","M","White","2106-3","55-64 years","55-64",3043,14840259,20.5
+,"Renal failure","N17-N19","2010","2010","Male","M","White","2106-3","65-74 years","65-74",4912,8725712,56.3
+,"Renal failure","N17-N19","2010","2010","Male","M","White","2106-3","75-84 years","75-84",8175,4866094,168.0
+,"Renal failure","N17-N19","2010","2010","Male","M","White","2106-3","85+ years","85+",7931,1617352,490.4
+,"Renal failure","N17-N19","2011","2011","Female","F","American Indian or Alaska Native","1002-5","35-44 years","35-44",12,283174,Unreliable
+,"Renal failure","N17-N19","2011","2011","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",35,276312,12.7
+,"Renal failure","N17-N19","2011","2011","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",30,192307,15.6
+,"Renal failure","N17-N19","2011","2011","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",63,93453,67.4
+,"Renal failure","N17-N19","2011","2011","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",53,43747,121.2
+,"Renal failure","N17-N19","2011","2011","Female","F","American Indian or Alaska Native","1002-5","85+ years","85+",42,15447,271.9
+,"Renal failure","N17-N19","2011","2011","Female","F","Asian or Pacific Islander","A-PI","45-54 years","45-54",34,1247324,2.7
+,"Renal failure","N17-N19","2011","2011","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",58,979140,5.9
+,"Renal failure","N17-N19","2011","2011","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",114,525453,21.7
+,"Renal failure","N17-N19","2011","2011","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",226,282420,80.0
+,"Renal failure","N17-N19","2011","2011","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",276,105055,262.7
+,"Renal failure","N17-N19","2011","2011","Female","F","Black or African American","2054-5","25-34 years","25-34",40,3122987,1.3
+,"Renal failure","N17-N19","2011","2011","Female","F","Black or African American","2054-5","35-44 years","35-44",106,2934906,3.6
+,"Renal failure","N17-N19","2011","2011","Female","F","Black or African American","2054-5","45-54 years","45-54",313,3066612,10.2
+,"Renal failure","N17-N19","2011","2011","Female","F","Black or African American","2054-5","55-64 years","55-64",596,2331287,25.6
+,"Renal failure","N17-N19","2011","2011","Female","F","Black or African American","2054-5","65-74 years","65-74",688,1237777,55.6
+,"Renal failure","N17-N19","2011","2011","Female","F","Black or African American","2054-5","75-84 years","75-84",982,696468,141.0
+,"Renal failure","N17-N19","2011","2011","Female","F","Black or African American","2054-5","85+ years","85+",1104,292691,377.2
+,"Renal failure","N17-N19","2011","2011","Female","F","White","2106-3","25-34 years","25-34",102,15778153,0.6
+,"Renal failure","N17-N19","2011","2011","Female","F","White","2106-3","35-44 years","35-44",282,15695797,1.8
+,"Renal failure","N17-N19","2011","2011","Female","F","White","2106-3","45-54 years","45-54",888,18108708,4.9
+,"Renal failure","N17-N19","2011","2011","Female","F","White","2106-3","55-64 years","55-64",2084,16201201,12.9
+,"Renal failure","N17-N19","2011","2011","Female","F","White","2106-3","65-74 years","65-74",3727,10148742,36.7
+,"Renal failure","N17-N19","2011","2011","Female","F","White","2106-3","75-84 years","75-84",7327,6579562,111.4
+,"Renal failure","N17-N19","2011","2011","Female","F","White","2106-3","85+ years","85+",11260,3429955,328.3
+,"Renal failure","N17-N19","2011","2011","Male","M","American Indian or Alaska Native","1002-5","35-44 years","35-44",13,292515,Unreliable
+,"Renal failure","N17-N19","2011","2011","Male","M","American Indian or Alaska Native","1002-5","45-54 years","45-54",31,269072,11.5
+,"Renal failure","N17-N19","2011","2011","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",39,179489,21.7
+,"Renal failure","N17-N19","2011","2011","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",47,82279,57.1
+,"Renal failure","N17-N19","2011","2011","Male","M","American Indian or Alaska Native","1002-5","75-84 years","75-84",43,31812,135.2
+,"Renal failure","N17-N19","2011","2011","Male","M","American Indian or Alaska Native","1002-5","85+ years","85+",28,8223,340.5
+,"Renal failure","N17-N19","2011","2011","Male","M","Asian or Pacific Islander","A-PI","35-44 years","35-44",19,1333988,Unreliable
+,"Renal failure","N17-N19","2011","2011","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",37,1101754,3.4
+,"Renal failure","N17-N19","2011","2011","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",101,809532,12.5
+,"Renal failure","N17-N19","2011","2011","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",145,436536,33.2
+,"Renal failure","N17-N19","2011","2011","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",202,200623,100.7
+,"Renal failure","N17-N19","2011","2011","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",251,61242,409.8
+,"Renal failure","N17-N19","2011","2011","Male","M","Black or African American","2054-5","25-34 years","25-34",69,2876283,2.4
+,"Renal failure","N17-N19","2011","2011","Male","M","Black or African American","2054-5","35-44 years","35-44",129,2612286,4.9
+,"Renal failure","N17-N19","2011","2011","Male","M","Black or African American","2054-5","45-54 years","45-54",406,2717303,14.9
+,"Renal failure","N17-N19","2011","2011","Male","M","Black or African American","2054-5","55-64 years","55-64",709,1946428,36.4
+,"Renal failure","N17-N19","2011","2011","Male","M","Black or African American","2054-5","65-74 years","65-74",785,924403,84.9
+,"Renal failure","N17-N19","2011","2011","Male","M","Black or African American","2054-5","75-84 years","75-84",847,414645,204.3
+,"Renal failure","N17-N19","2011","2011","Male","M","Black or African American","2054-5","85+ years","85+",544,114793,473.9
+,"Renal failure","N17-N19","2011","2011","Male","M","White","2106-3","25-34 years","25-34",148,16433075,0.9
+,"Renal failure","N17-N19","2011","2011","Male","M","White","2106-3","35-44 years","35-44",419,15984681,2.6
+,"Renal failure","N17-N19","2011","2011","Male","M","White","2106-3","45-54 years","45-54",1518,17931118,8.5
+,"Renal failure","N17-N19","2011","2011","Male","M","White","2106-3","55-64 years","55-64",3227,15422756,20.9
+,"Renal failure","N17-N19","2011","2011","Male","M","White","2106-3","65-74 years","65-74",4810,9033095,53.2
+,"Renal failure","N17-N19","2011","2011","Male","M","White","2106-3","75-84 years","75-84",8196,4925953,166.4
+,"Renal failure","N17-N19","2011","2011","Male","M","White","2106-3","85+ years","85+",8153,1709767,476.8
+,"Renal failure","N17-N19","2012","2012","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",33,276700,11.9
+,"Renal failure","N17-N19","2012","2012","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",40,200285,20.0
+,"Renal failure","N17-N19","2012","2012","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",35,100409,34.9
+,"Renal failure","N17-N19","2012","2012","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",58,45258,128.2
+,"Renal failure","N17-N19","2012","2012","Female","F","American Indian or Alaska Native","1002-5","85+ years","85+",41,16376,250.4
+,"Renal failure","N17-N19","2012","2012","Female","F","Asian or Pacific Islander","A-PI","45-54 years","45-54",37,1275996,2.9
+,"Renal failure","N17-N19","2012","2012","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",60,1023275,5.9
+,"Renal failure","N17-N19","2012","2012","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",120,568687,21.1
+,"Renal failure","N17-N19","2012","2012","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",203,297516,68.2
+,"Renal failure","N17-N19","2012","2012","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",318,115055,276.4
+,"Renal failure","N17-N19","2012","2012","Female","F","Black or African American","2054-5","25-34 years","25-34",25,3170806,0.8
+,"Renal failure","N17-N19","2012","2012","Female","F","Black or African American","2054-5","35-44 years","35-44",88,2941200,3.0
+,"Renal failure","N17-N19","2012","2012","Female","F","Black or African American","2054-5","45-54 years","45-54",287,3055924,9.4
+,"Renal failure","N17-N19","2012","2012","Female","F","Black or African American","2054-5","55-64 years","55-64",607,2419636,25.1
+,"Renal failure","N17-N19","2012","2012","Female","F","Black or African American","2054-5","65-74 years","65-74",623,1304676,47.8
+,"Renal failure","N17-N19","2012","2012","Female","F","Black or African American","2054-5","75-84 years","75-84",903,706069,127.9
+,"Renal failure","N17-N19","2012","2012","Female","F","Black or African American","2054-5","85+ years","85+",1115,307270,362.9
+,"Renal failure","N17-N19","2012","2012","Female","F","White","2106-3","25-34 years","25-34",91,15892849,0.6
+,"Renal failure","N17-N19","2012","2012","Female","F","White","2106-3","35-44 years","35-44",251,15573096,1.6
+,"Renal failure","N17-N19","2012","2012","Female","F","White","2106-3","45-54 years","45-54",901,17853248,5.0
+,"Renal failure","N17-N19","2012","2012","Female","F","White","2106-3","55-64 years","55-64",2158,16340112,13.2
+,"Renal failure","N17-N19","2012","2012","Female","F","White","2106-3","65-74 years","65-74",3797,10808758,35.1
+,"Renal failure","N17-N19","2012","2012","Female","F","White","2106-3","75-84 years","75-84",7050,6575641,107.2
+,"Renal failure","N17-N19","2012","2012","Female","F","White","2106-3","85+ years","85+",10843,3484596,311.2
+,"Renal failure","N17-N19","2012","2012","Male","M","American Indian or Alaska Native","1002-5","35-44 years","35-44",10,295651,Unreliable
+,"Renal failure","N17-N19","2012","2012","Male","M","American Indian or Alaska Native","1002-5","45-54 years","45-54",39,269981,14.4
+,"Renal failure","N17-N19","2012","2012","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",40,185911,21.5
+,"Renal failure","N17-N19","2012","2012","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",56,88818,63.1
+,"Renal failure","N17-N19","2012","2012","Male","M","American Indian or Alaska Native","1002-5","75-84 years","75-84",50,33101,151.1
+,"Renal failure","N17-N19","2012","2012","Male","M","American Indian or Alaska Native","1002-5","85+ years","85+",24,8691,276.1
+,"Renal failure","N17-N19","2012","2012","Male","M","Asian or Pacific Islander","A-PI","35-44 years","35-44",17,1376255,Unreliable
+,"Renal failure","N17-N19","2012","2012","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",44,1128254,3.9
+,"Renal failure","N17-N19","2012","2012","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",109,846795,12.9
+,"Renal failure","N17-N19","2012","2012","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",153,468808,32.6
+,"Renal failure","N17-N19","2012","2012","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",264,214358,123.2
+,"Renal failure","N17-N19","2012","2012","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",239,66110,361.5
+,"Renal failure","N17-N19","2012","2012","Male","M","Black or African American","2054-5","25-34 years","25-34",58,2944482,2.0
+,"Renal failure","N17-N19","2012","2012","Male","M","Black or African American","2054-5","35-44 years","35-44",129,2619646,4.9
+,"Renal failure","N17-N19","2012","2012","Male","M","Black or African American","2054-5","45-54 years","45-54",387,2707346,14.3
+,"Renal failure","N17-N19","2012","2012","Male","M","Black or African American","2054-5","55-64 years","55-64",771,2021385,38.1
+,"Renal failure","N17-N19","2012","2012","Male","M","Black or African American","2054-5","65-74 years","65-74",740,978519,75.6
+,"Renal failure","N17-N19","2012","2012","Male","M","Black or African American","2054-5","75-84 years","75-84",802,424153,189.1
+,"Renal failure","N17-N19","2012","2012","Male","M","Black or African American","2054-5","85+ years","85+",596,123493,482.6
+,"Renal failure","N17-N19","2012","2012","Male","M","White","2106-3","25-34 years","25-34",152,16593734,0.9
+,"Renal failure","N17-N19","2012","2012","Male","M","White","2106-3","35-44 years","35-44",413,15882055,2.6
+,"Renal failure","N17-N19","2012","2012","Male","M","White","2106-3","45-54 years","45-54",1528,17701289,8.6
+,"Renal failure","N17-N19","2012","2012","Male","M","White","2106-3","55-64 years","55-64",3218,15548803,20.7
+,"Renal failure","N17-N19","2012","2012","Male","M","White","2106-3","65-74 years","65-74",5000,9666717,51.7
+,"Renal failure","N17-N19","2012","2012","Male","M","White","2106-3","75-84 years","75-84",7666,4976538,154.0
+,"Renal failure","N17-N19","2012","2012","Male","M","White","2106-3","85+ years","85+",7947,1765739,450.1
+,"Renal failure","N17-N19","2013","2013","Female","F","American Indian or Alaska Native","1002-5","35-44 years","35-44",18,287786,Unreliable
+,"Renal failure","N17-N19","2013","2013","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",33,276505,11.9
+,"Renal failure","N17-N19","2013","2013","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",35,208893,16.8
+,"Renal failure","N17-N19","2013","2013","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",46,107248,42.9
+,"Renal failure","N17-N19","2013","2013","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",55,47550,115.7
+,"Renal failure","N17-N19","2013","2013","Female","F","American Indian or Alaska Native","1002-5","85+ years","85+",31,17519,177.0
+,"Renal failure","N17-N19","2013","2013","Female","F","Asian or Pacific Islander","A-PI","25-34 years","25-34",10,1628431,Unreliable
+,"Renal failure","N17-N19","2013","2013","Female","F","Asian or Pacific Islander","A-PI","35-44 years","35-44",13,1580422,Unreliable
+,"Renal failure","N17-N19","2013","2013","Female","F","Asian or Pacific Islander","A-PI","45-54 years","45-54",22,1309454,1.7
+,"Renal failure","N17-N19","2013","2013","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",73,1064048,6.9
+,"Renal failure","N17-N19","2013","2013","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",107,614960,17.4
+,"Renal failure","N17-N19","2013","2013","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",238,312870,76.1
+,"Renal failure","N17-N19","2013","2013","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",326,126827,257.0
+,"Renal failure","N17-N19","2013","2013","Female","F","Black or African American","2054-5","25-34 years","25-34",45,3224131,1.4
+,"Renal failure","N17-N19","2013","2013","Female","F","Black or African American","2054-5","35-44 years","35-44",97,2950264,3.3
+,"Renal failure","N17-N19","2013","2013","Female","F","Black or African American","2054-5","45-54 years","45-54",275,3043355,9.0
+,"Renal failure","N17-N19","2013","2013","Female","F","Black or African American","2054-5","55-64 years","55-64",596,2498661,23.9
+,"Renal failure","N17-N19","2013","2013","Female","F","Black or African American","2054-5","65-74 years","65-74",736,1378030,53.4
+,"Renal failure","N17-N19","2013","2013","Female","F","Black or African American","2054-5","75-84 years","75-84",936,722525,129.5
+,"Renal failure","N17-N19","2013","2013","Female","F","Black or African American","2054-5","85+ years","85+",1089,317960,342.5
+,"Renal failure","N17-N19","2013","2013","Female","F","White","2106-3","25-34 years","25-34",100,16021255,0.6
+,"Renal failure","N17-N19","2013","2013","Female","F","White","2106-3","35-44 years","35-44",299,15488957,1.9
+,"Renal failure","N17-N19","2013","2013","Female","F","White","2106-3","45-54 years","45-54",1009,17569134,5.7
+,"Renal failure","N17-N19","2013","2013","Female","F","White","2106-3","55-64 years","55-64",2204,16588074,13.3
+,"Renal failure","N17-N19","2013","2013","Female","F","White","2106-3","65-74 years","65-74",3982,11318886,35.2
+,"Renal failure","N17-N19","2013","2013","Female","F","White","2106-3","75-84 years","75-84",6996,6603057,106.0
+,"Renal failure","N17-N19","2013","2013","Female","F","White","2106-3","85+ years","85+",10701,3536701,302.6
+,"Renal failure","N17-N19","2013","2013","Male","M","American Indian or Alaska Native","1002-5","35-44 years","35-44",16,298691,Unreliable
+,"Renal failure","N17-N19","2013","2013","Male","M","American Indian or Alaska Native","1002-5","45-54 years","45-54",35,271530,12.9
+,"Renal failure","N17-N19","2013","2013","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",49,193548,25.3
+,"Renal failure","N17-N19","2013","2013","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",38,95237,39.9
+,"Renal failure","N17-N19","2013","2013","Male","M","American Indian or Alaska Native","1002-5","75-84 years","75-84",45,35081,128.3
+,"Renal failure","N17-N19","2013","2013","Male","M","American Indian or Alaska Native","1002-5","85+ years","85+",35,9475,369.4
+,"Renal failure","N17-N19","2013","2013","Male","M","Asian or Pacific Islander","A-PI","35-44 years","35-44",29,1405065,2.1
+,"Renal failure","N17-N19","2013","2013","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",50,1157519,4.3
+,"Renal failure","N17-N19","2013","2013","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",114,883729,12.9
+,"Renal failure","N17-N19","2013","2013","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",170,504244,33.7
+,"Renal failure","N17-N19","2013","2013","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",226,229913,98.3
+,"Renal failure","N17-N19","2013","2013","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",279,72810,383.2
+,"Renal failure","N17-N19","2013","2013","Male","M","Black or African American","2054-5","25-34 years","25-34",63,3018776,2.1
+,"Renal failure","N17-N19","2013","2013","Male","M","Black or African American","2054-5","35-44 years","35-44",148,2628985,5.6
+,"Renal failure","N17-N19","2013","2013","Male","M","Black or African American","2054-5","45-54 years","45-54",353,2693002,13.1
+,"Renal failure","N17-N19","2013","2013","Male","M","Black or African American","2054-5","55-64 years","55-64",813,2092483,38.9
+,"Renal failure","N17-N19","2013","2013","Male","M","Black or African American","2054-5","65-74 years","65-74",799,1038392,76.9
+,"Renal failure","N17-N19","2013","2013","Male","M","Black or African American","2054-5","75-84 years","75-84",827,439331,188.2
+,"Renal failure","N17-N19","2013","2013","Male","M","Black or African American","2054-5","85+ years","85+",601,129339,464.7
+,"Renal failure","N17-N19","2013","2013","Male","M","White","2106-3","25-34 years","25-34",161,16763513,1.0
+,"Renal failure","N17-N19","2013","2013","Male","M","White","2106-3","35-44 years","35-44",425,15812520,2.7
+,"Renal failure","N17-N19","2013","2013","Male","M","White","2106-3","45-54 years","45-54",1517,17447033,8.7
+,"Renal failure","N17-N19","2013","2013","Male","M","White","2106-3","55-64 years","55-64",3420,15786995,21.7
+,"Renal failure","N17-N19","2013","2013","Male","M","White","2106-3","65-74 years","65-74",5277,10159769,51.9
+,"Renal failure","N17-N19","2013","2013","Male","M","White","2106-3","75-84 years","75-84",7723,5056192,152.7
+,"Renal failure","N17-N19","2013","2013","Male","M","White","2106-3","85+ years","85+",7853,1830158,429.1
+,"Renal failure","N17-N19","2014","2014","Female","F","American Indian or Alaska Native","1002-5","35-44 years","35-44",14,291074,Unreliable
+,"Renal failure","N17-N19","2014","2014","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",35,277173,12.6
+,"Renal failure","N17-N19","2014","2014","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",40,217910,18.4
+,"Renal failure","N17-N19","2014","2014","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",50,114498,43.7
+,"Renal failure","N17-N19","2014","2014","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",61,50208,121.5
+,"Renal failure","N17-N19","2014","2014","Female","F","American Indian or Alaska Native","1002-5","85+ years","85+",44,18585,236.8
+,"Renal failure","N17-N19","2014","2014","Female","F","Asian or Pacific Islander","A-PI","35-44 years","35-44",26,1634483,1.6
+,"Renal failure","N17-N19","2014","2014","Female","F","Asian or Pacific Islander","A-PI","45-54 years","45-54",23,1366299,1.7
+,"Renal failure","N17-N19","2014","2014","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",65,1111024,5.9
+,"Renal failure","N17-N19","2014","2014","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",119,669694,17.8
+,"Renal failure","N17-N19","2014","2014","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",197,331448,59.4
+,"Renal failure","N17-N19","2014","2014","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",359,137805,260.5
+,"Renal failure","N17-N19","2014","2014","Female","F","Black or African American","2054-5","25-34 years","25-34",38,3304914,1.1
+,"Renal failure","N17-N19","2014","2014","Female","F","Black or African American","2054-5","35-44 years","35-44",116,2984282,3.9
+,"Renal failure","N17-N19","2014","2014","Female","F","Black or African American","2054-5","45-54 years","45-54",303,3028774,10.0
+,"Renal failure","N17-N19","2014","2014","Female","F","Black or African American","2054-5","55-64 years","55-64",595,2577838,23.1
+,"Renal failure","N17-N19","2014","2014","Female","F","Black or African American","2054-5","65-74 years","65-74",718,1460270,49.2
+,"Renal failure","N17-N19","2014","2014","Female","F","Black or African American","2054-5","75-84 years","75-84",896,740614,121.0
+,"Renal failure","N17-N19","2014","2014","Female","F","Black or African American","2054-5","85+ years","85+",1026,327938,312.9
+,"Renal failure","N17-N19","2014","2014","Female","F","White","2106-3","25-34 years","25-34",124,16204311,0.8
+,"Renal failure","N17-N19","2014","2014","Female","F","White","2106-3","35-44 years","35-44",283,15444065,1.8
+,"Renal failure","N17-N19","2014","2014","Female","F","White","2106-3","45-54 years","45-54",956,17361561,5.5
+,"Renal failure","N17-N19","2014","2014","Female","F","White","2106-3","55-64 years","55-64",2350,16848927,13.9
+,"Renal failure","N17-N19","2014","2014","Female","F","White","2106-3","65-74 years","65-74",4227,11804783,35.8
+,"Renal failure","N17-N19","2014","2014","Female","F","White","2106-3","75-84 years","75-84",6770,6667042,101.5
+,"Renal failure","N17-N19","2014","2014","Female","F","White","2106-3","85+ years","85+",10402,3569034,291.5
+,"Renal failure","N17-N19","2014","2014","Male","M","American Indian or Alaska Native","1002-5","35-44 years","35-44",22,302170,7.3
+,"Renal failure","N17-N19","2014","2014","Male","M","American Indian or Alaska Native","1002-5","45-54 years","45-54",39,274161,14.2
+,"Renal failure","N17-N19","2014","2014","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",53,201175,26.3
+,"Renal failure","N17-N19","2014","2014","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",53,101793,52.1
+,"Renal failure","N17-N19","2014","2014","Male","M","American Indian or Alaska Native","1002-5","75-84 years","75-84",55,37312,147.4
+,"Renal failure","N17-N19","2014","2014","Male","M","American Indian or Alaska Native","1002-5","85+ years","85+",32,10348,309.2
+,"Renal failure","N17-N19","2014","2014","Male","M","Asian or Pacific Islander","A-PI","35-44 years","35-44",19,1449054,Unreliable
+,"Renal failure","N17-N19","2014","2014","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",39,1204948,3.2
+,"Renal failure","N17-N19","2014","2014","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",117,924813,12.7
+,"Renal failure","N17-N19","2014","2014","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",187,545296,34.3
+,"Renal failure","N17-N19","2014","2014","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",237,248143,95.5
+,"Renal failure","N17-N19","2014","2014","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",283,79563,355.7
+,"Renal failure","N17-N19","2014","2014","Male","M","Black or African American","2054-5","25-34 years","25-34",55,3122333,1.8
+,"Renal failure","N17-N19","2014","2014","Male","M","Black or African American","2054-5","35-44 years","35-44",114,2661111,4.3
+,"Renal failure","N17-N19","2014","2014","Male","M","Black or African American","2054-5","45-54 years","45-54",355,2680947,13.2
+,"Renal failure","N17-N19","2014","2014","Male","M","Black or African American","2054-5","55-64 years","55-64",770,2162149,35.6
+,"Renal failure","N17-N19","2014","2014","Male","M","Black or African American","2054-5","65-74 years","65-74",828,1099266,75.3
+,"Renal failure","N17-N19","2014","2014","Male","M","Black or African American","2054-5","75-84 years","75-84",774,456225,169.7
+,"Renal failure","N17-N19","2014","2014","Male","M","Black or African American","2054-5","85+ years","85+",564,136175,414.2
+,"Renal failure","N17-N19","2014","2014","Male","M","White","2106-3","25-34 years","25-34",176,16906536,1.0
+,"Renal failure","N17-N19","2014","2014","Male","M","White","2106-3","35-44 years","35-44",480,15746894,3.0
+,"Renal failure","N17-N19","2014","2014","Male","M","White","2106-3","45-54 years","45-54",1559,17264988,9.0
+,"Renal failure","N17-N19","2014","2014","Male","M","White","2106-3","55-64 years","55-64",3569,16033745,22.3
+,"Renal failure","N17-N19","2014","2014","Male","M","White","2106-3","65-74 years","65-74",5365,10602690,50.6
+,"Renal failure","N17-N19","2014","2014","Male","M","White","2106-3","75-84 years","75-84",7549,5151698,146.5
+,"Renal failure","N17-N19","2014","2014","Male","M","White","2106-3","85+ years","85+",7992,1882783,424.5
+,"Renal failure","N17-N19","2015","2015","Female","F","American Indian or Alaska Native","1002-5","35-44 years","35-44",12,294511,Unreliable
+,"Renal failure","N17-N19","2015","2015","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",28,277510,10.1
+,"Renal failure","N17-N19","2015","2015","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",53,226940,23.4
+,"Renal failure","N17-N19","2015","2015","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",54,122035,44.2
+,"Renal failure","N17-N19","2015","2015","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",53,52843,100.3
+,"Renal failure","N17-N19","2015","2015","Female","F","American Indian or Alaska Native","1002-5","85+ years","85+",47,20022,234.7
+,"Renal failure","N17-N19","2015","2015","Female","F","Asian or Pacific Islander","A-PI","35-44 years","35-44",19,1683702,Unreliable
+,"Renal failure","N17-N19","2015","2015","Female","F","Asian or Pacific Islander","A-PI","45-54 years","45-54",24,1416779,1.7
+,"Renal failure","N17-N19","2015","2015","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",74,1155370,6.4
+,"Renal failure","N17-N19","2015","2015","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",136,725572,18.7
+,"Renal failure","N17-N19","2015","2015","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",212,350343,60.5
+,"Renal failure","N17-N19","2015","2015","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",343,150073,228.6
+,"Renal failure","N17-N19","2015","2015","Female","F","Black or African American","2054-5","25-34 years","25-34",48,3382985,1.4
+,"Renal failure","N17-N19","2015","2015","Female","F","Black or African American","2054-5","35-44 years","35-44",110,3013072,3.7
+,"Renal failure","N17-N19","2015","2015","Female","F","Black or African American","2054-5","45-54 years","45-54",292,3021717,9.7
+,"Renal failure","N17-N19","2015","2015","Female","F","Black or African American","2054-5","55-64 years","55-64",625,2654398,23.5
+,"Renal failure","N17-N19","2015","2015","Female","F","Black or African American","2054-5","65-74 years","65-74",819,1543609,53.1
+,"Renal failure","N17-N19","2015","2015","Female","F","Black or African American","2054-5","75-84 years","75-84",938,762579,123.0
+,"Renal failure","N17-N19","2015","2015","Female","F","Black or African American","2054-5","85+ years","85+",1040,338522,307.2
+,"Renal failure","N17-N19","2015","2015","Female","F","White","2106-3","25-34 years","25-34",115,16343612,0.7
+,"Renal failure","N17-N19","2015","2015","Female","F","White","2106-3","35-44 years","35-44",306,15394921,2.0
+,"Renal failure","N17-N19","2015","2015","Female","F","White","2106-3","45-54 years","45-54",1010,17173379,5.9
+,"Renal failure","N17-N19","2015","2015","Female","F","White","2106-3","55-64 years","55-64",2393,17126364,14.0
+,"Renal failure","N17-N19","2015","2015","Female","F","White","2106-3","65-74 years","65-74",4368,12266953,35.6
+,"Renal failure","N17-N19","2015","2015","Female","F","White","2106-3","75-84 years","75-84",6793,6733838,100.9
+,"Renal failure","N17-N19","2015","2015","Female","F","White","2106-3","85+ years","85+",10417,3604246,289.0
+,"Renal failure","N17-N19","2015","2015","Male","M","American Indian or Alaska Native","1002-5","35-44 years","35-44",18,306732,Unreliable
+,"Renal failure","N17-N19","2015","2015","Male","M","American Indian or Alaska Native","1002-5","45-54 years","45-54",42,275803,15.2
+,"Renal failure","N17-N19","2015","2015","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",58,209714,27.7
+,"Renal failure","N17-N19","2015","2015","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",70,108443,64.6
+,"Renal failure","N17-N19","2015","2015","Male","M","American Indian or Alaska Native","1002-5","75-84 years","75-84",45,39823,113.0
+,"Renal failure","N17-N19","2015","2015","Male","M","American Indian or Alaska Native","1002-5","85+ years","85+",31,11308,274.1
+,"Renal failure","N17-N19","2015","2015","Male","M","Asian or Pacific Islander","A-PI","35-44 years","35-44",28,1490424,1.9
+,"Renal failure","N17-N19","2015","2015","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",56,1248191,4.5
+,"Renal failure","N17-N19","2015","2015","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",101,965484,10.5
+,"Renal failure","N17-N19","2015","2015","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",185,586368,31.6
+,"Renal failure","N17-N19","2015","2015","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",236,266500,88.6
+,"Renal failure","N17-N19","2015","2015","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",273,86681,314.9
+,"Renal failure","N17-N19","2015","2015","Male","M","Black or African American","2054-5","25-34 years","25-34",59,3224785,1.8
+,"Renal failure","N17-N19","2015","2015","Male","M","Black or African American","2054-5","35-44 years","35-44",143,2690744,5.3
+,"Renal failure","N17-N19","2015","2015","Male","M","Black or African American","2054-5","45-54 years","45-54",378,2673905,14.1
+,"Renal failure","N17-N19","2015","2015","Male","M","Black or African American","2054-5","55-64 years","55-64",812,2230799,36.4
+,"Renal failure","N17-N19","2015","2015","Male","M","Black or African American","2054-5","65-74 years","65-74",931,1164256,80.0
+,"Renal failure","N17-N19","2015","2015","Male","M","Black or African American","2054-5","75-84 years","75-84",817,473171,172.7
+,"Renal failure","N17-N19","2015","2015","Male","M","Black or African American","2054-5","85+ years","85+",583,142359,409.5
+,"Renal failure","N17-N19","2015","2015","Male","M","White","2106-3","25-34 years","25-34",166,17051627,1.0
+,"Renal failure","N17-N19","2015","2015","Male","M","White","2106-3","35-44 years","35-44",487,15715677,3.1
+,"Renal failure","N17-N19","2015","2015","Male","M","White","2106-3","45-54 years","45-54",1509,17100877,8.8
+,"Renal failure","N17-N19","2015","2015","Male","M","White","2106-3","55-64 years","55-64",3645,16308750,22.3
+,"Renal failure","N17-N19","2015","2015","Male","M","White","2106-3","65-74 years","65-74",5820,11033281,52.7
+,"Renal failure","N17-N19","2015","2015","Male","M","White","2106-3","75-84 years","75-84",7701,5244077,146.9
+,"Renal failure","N17-N19","2015","2015","Male","M","White","2106-3","85+ years","85+",7959,1933950,411.5
+,"Renal failure","N17-N19","2016","2016","Female","F","American Indian or Alaska Native","1002-5","35-44 years","35-44",16,297098,Unreliable
+,"Renal failure","N17-N19","2016","2016","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",37,277646,13.3
+,"Renal failure","N17-N19","2016","2016","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",52,235033,22.1
+,"Renal failure","N17-N19","2016","2016","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",57,129801,43.9
+,"Renal failure","N17-N19","2016","2016","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",38,55662,68.3
+,"Renal failure","N17-N19","2016","2016","Female","F","American Indian or Alaska Native","1002-5","85+ years","85+",46,21195,217.0
+,"Renal failure","N17-N19","2016","2016","Female","F","Asian or Pacific Islander","A-PI","35-44 years","35-44",13,1697830,Unreliable
+,"Renal failure","N17-N19","2016","2016","Female","F","Asian or Pacific Islander","A-PI","45-54 years","45-54",41,1446459,2.8
+,"Renal failure","N17-N19","2016","2016","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",87,1178042,7.4
+,"Renal failure","N17-N19","2016","2016","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",136,764332,17.8
+,"Renal failure","N17-N19","2016","2016","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",216,365597,59.1
+,"Renal failure","N17-N19","2016","2016","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",313,159716,196.0
+,"Renal failure","N17-N19","2016","2016","Female","F","Black or African American","2054-5","25-34 years","25-34",55,3466922,1.6
+,"Renal failure","N17-N19","2016","2016","Female","F","Black or African American","2054-5","35-44 years","35-44",105,3017848,3.5
+,"Renal failure","N17-N19","2016","2016","Female","F","Black or African American","2054-5","45-54 years","45-54",292,3018481,9.7
+,"Renal failure","N17-N19","2016","2016","Female","F","Black or African American","2054-5","55-64 years","55-64",685,2712845,25.3
+,"Renal failure","N17-N19","2016","2016","Female","F","Black or African American","2054-5","65-74 years","65-74",818,1626680,50.3
+,"Renal failure","N17-N19","2016","2016","Female","F","Black or African American","2054-5","75-84 years","75-84",911,785828,115.9
+,"Renal failure","N17-N19","2016","2016","Female","F","Black or African American","2054-5","85+ years","85+",1027,346391,296.5
+,"Renal failure","N17-N19","2016","2016","Female","F","White","2106-3","25-34 years","25-34",143,16465489,0.9
+,"Renal failure","N17-N19","2016","2016","Female","F","White","2106-3","35-44 years","35-44",330,15304617,2.2
+,"Renal failure","N17-N19","2016","2016","Female","F","White","2106-3","45-54 years","45-54",990,16937954,5.8
+,"Renal failure","N17-N19","2016","2016","Female","F","White","2106-3","55-64 years","55-64",2508,17338186,14.5
+,"Renal failure","N17-N19","2016","2016","Female","F","White","2106-3","65-74 years","65-74",4388,12718408,34.5
+,"Renal failure","N17-N19","2016","2016","Female","F","White","2106-3","75-84 years","75-84",6668,6849573,97.3
+,"Renal failure","N17-N19","2016","2016","Female","F","White","2106-3","85+ years","85+",9775,3628186,269.4
+,"Renal failure","N17-N19","2016","2016","Male","M","American Indian or Alaska Native","1002-5","25-34 years","25-34",13,374596,Unreliable
+,"Renal failure","N17-N19","2016","2016","Male","M","American Indian or Alaska Native","1002-5","35-44 years","35-44",15,309569,Unreliable
+,"Renal failure","N17-N19","2016","2016","Male","M","American Indian or Alaska Native","1002-5","45-54 years","45-54",46,277098,16.6
+,"Renal failure","N17-N19","2016","2016","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",61,216738,28.1
+,"Renal failure","N17-N19","2016","2016","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",62,114778,54.0
+,"Renal failure","N17-N19","2016","2016","Male","M","American Indian or Alaska Native","1002-5","75-84 years","75-84",50,42459,117.8
+,"Renal failure","N17-N19","2016","2016","Male","M","American Indian or Alaska Native","1002-5","85+ years","85+",27,12059,223.9
+,"Renal failure","N17-N19","2016","2016","Male","M","Asian or Pacific Islander","A-PI","35-44 years","35-44",24,1504147,1.6
+,"Renal failure","N17-N19","2016","2016","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",58,1272640,4.6
+,"Renal failure","N17-N19","2016","2016","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",132,985505,13.4
+,"Renal failure","N17-N19","2016","2016","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",179,612074,29.2
+,"Renal failure","N17-N19","2016","2016","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",261,280882,92.9
+,"Renal failure","N17-N19","2016","2016","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",263,92994,282.8
+,"Renal failure","N17-N19","2016","2016","Male","M","Black or African American","2054-5","25-34 years","25-34",67,3338882,2.0
+,"Renal failure","N17-N19","2016","2016","Male","M","Black or African American","2054-5","35-44 years","35-44",131,2702577,4.8
+,"Renal failure","N17-N19","2016","2016","Male","M","Black or African American","2054-5","45-54 years","45-54",364,2666665,13.7
+,"Renal failure","N17-N19","2016","2016","Male","M","Black or African American","2054-5","55-64 years","55-64",857,2284809,37.5
+,"Renal failure","N17-N19","2016","2016","Male","M","Black or African American","2054-5","65-74 years","65-74",983,1228135,80.0
+,"Renal failure","N17-N19","2016","2016","Male","M","Black or African American","2054-5","75-84 years","75-84",847,490623,172.6
+,"Renal failure","N17-N19","2016","2016","Male","M","Black or African American","2054-5","85+ years","85+",546,147306,370.7
+,"Renal failure","N17-N19","2016","2016","Male","M","White","2106-3","25-34 years","25-34",200,17186128,1.2
+,"Renal failure","N17-N19","2016","2016","Male","M","White","2106-3","35-44 years","35-44",557,15636470,3.6
+,"Renal failure","N17-N19","2016","2016","Male","M","White","2106-3","45-54 years","45-54",1498,16889736,8.9
+,"Renal failure","N17-N19","2016","2016","Male","M","White","2106-3","55-64 years","55-64",3825,16511986,23.2
+,"Renal failure","N17-N19","2016","2016","Male","M","White","2106-3","65-74 years","65-74",6001,11436122,52.5
+,"Renal failure","N17-N19","2016","2016","Male","M","White","2106-3","75-84 years","75-84",7645,5362910,142.6
+,"Renal failure","N17-N19","2016","2016","Male","M","White","2106-3","85+ years","85+",7687,1972484,389.7
+,"Renal failure","N17-N19","2017","2017","Female","F","American Indian or Alaska Native","1002-5","35-44 years","35-44",12,301182,Unreliable
+,"Renal failure","N17-N19","2017","2017","Female","F","American Indian or Alaska Native","1002-5","45-54 years","45-54",41,277424,14.8
+,"Renal failure","N17-N19","2017","2017","Female","F","American Indian or Alaska Native","1002-5","55-64 years","55-64",41,242608,16.9
+,"Renal failure","N17-N19","2017","2017","Female","F","American Indian or Alaska Native","1002-5","65-74 years","65-74",63,137585,45.8
+,"Renal failure","N17-N19","2017","2017","Female","F","American Indian or Alaska Native","1002-5","75-84 years","75-84",52,58651,88.7
+,"Renal failure","N17-N19","2017","2017","Female","F","American Indian or Alaska Native","1002-5","85+ years","85+",48,22588,212.5
+,"Renal failure","N17-N19","2017","2017","Female","F","Asian or Pacific Islander","A-PI","35-44 years","35-44",20,1757097,1.1
+,"Renal failure","N17-N19","2017","2017","Female","F","Asian or Pacific Islander","A-PI","45-54 years","45-54",41,1507028,2.7
+,"Renal failure","N17-N19","2017","2017","Female","F","Asian or Pacific Islander","A-PI","55-64 years","55-64",94,1224600,7.7
+,"Renal failure","N17-N19","2017","2017","Female","F","Asian or Pacific Islander","A-PI","65-74 years","65-74",155,819417,18.9
+,"Renal failure","N17-N19","2017","2017","Female","F","Asian or Pacific Islander","A-PI","75-84 years","75-84",245,390555,62.7
+,"Renal failure","N17-N19","2017","2017","Female","F","Asian or Pacific Islander","A-PI","85+ years","85+",358,172121,208.0
+,"Renal failure","N17-N19","2017","2017","Female","F","Black or African American","2054-5","25-34 years","25-34",40,3560406,1.1
+,"Renal failure","N17-N19","2017","2017","Female","F","Black or African American","2054-5","35-44 years","35-44",128,3055368,4.2
+,"Renal failure","N17-N19","2017","2017","Female","F","Black or African American","2054-5","45-54 years","45-54",286,3016004,9.5
+,"Renal failure","N17-N19","2017","2017","Female","F","Black or African American","2054-5","55-64 years","55-64",679,2777624,24.4
+,"Renal failure","N17-N19","2017","2017","Female","F","Black or African American","2054-5","65-74 years","65-74",861,1709818,50.4
+,"Renal failure","N17-N19","2017","2017","Female","F","Black or African American","2054-5","75-84 years","75-84",882,814516,108.3
+,"Renal failure","N17-N19","2017","2017","Female","F","Black or African American","2054-5","85+ years","85+",952,356668,266.9
+,"Renal failure","N17-N19","2017","2017","Female","F","White","2106-3","25-34 years","25-34",126,16576425,0.8
+,"Renal failure","N17-N19","2017","2017","Female","F","White","2106-3","35-44 years","35-44",335,15392623,2.2
+,"Renal failure","N17-N19","2017","2017","Female","F","White","2106-3","45-54 years","45-54",1002,16668139,6.0
+,"Renal failure","N17-N19","2017","2017","Female","F","White","2106-3","55-64 years","55-64",2604,17493023,14.9
+,"Renal failure","N17-N19","2017","2017","Female","F","White","2106-3","65-74 years","65-74",4562,13139486,34.7
+,"Renal failure","N17-N19","2017","2017","Female","F","White","2106-3","75-84 years","75-84",6655,7034954,94.6
+,"Renal failure","N17-N19","2017","2017","Female","F","White","2106-3","85+ years","85+",9446,3637636,259.7
+,"Renal failure","N17-N19","2017","2017","Male","M","American Indian or Alaska Native","1002-5","25-34 years","25-34",15,383036,Unreliable
+,"Renal failure","N17-N19","2017","2017","Male","M","American Indian or Alaska Native","1002-5","35-44 years","35-44",24,314647,7.6
+,"Renal failure","N17-N19","2017","2017","Male","M","American Indian or Alaska Native","1002-5","45-54 years","45-54",32,277853,11.5
+,"Renal failure","N17-N19","2017","2017","Male","M","American Indian or Alaska Native","1002-5","55-64 years","55-64",73,224532,32.5
+,"Renal failure","N17-N19","2017","2017","Male","M","American Indian or Alaska Native","1002-5","65-74 years","65-74",57,121253,47.0
+,"Renal failure","N17-N19","2017","2017","Male","M","American Indian or Alaska Native","1002-5","75-84 years","75-84",49,45396,107.9
+,"Renal failure","N17-N19","2017","2017","Male","M","American Indian or Alaska Native","1002-5","85+ years","85+",37,12970,285.3
+,"Renal failure","N17-N19","2017","2017","Male","M","Asian or Pacific Islander","A-PI","35-44 years","35-44",21,1559482,1.3
+,"Renal failure","N17-N19","2017","2017","Male","M","Asian or Pacific Islander","A-PI","45-54 years","45-54",63,1325041,4.8
+,"Renal failure","N17-N19","2017","2017","Male","M","Asian or Pacific Islander","A-PI","55-64 years","55-64",130,1025701,12.7
+,"Renal failure","N17-N19","2017","2017","Male","M","Asian or Pacific Islander","A-PI","65-74 years","65-74",216,653648,33.0
+,"Renal failure","N17-N19","2017","2017","Male","M","Asian or Pacific Islander","A-PI","75-84 years","75-84",303,301045,100.6
+,"Renal failure","N17-N19","2017","2017","Male","M","Asian or Pacific Islander","A-PI","85+ years","85+",251,100678,249.3
+,"Renal failure","N17-N19","2017","2017","Male","M","Black or African American","2054-5","25-34 years","25-34",65,3465087,1.9
+,"Renal failure","N17-N19","2017","2017","Male","M","Black or African American","2054-5","35-44 years","35-44",131,2743658,4.8
+,"Renal failure","N17-N19","2017","2017","Male","M","Black or African American","2054-5","45-54 years","45-54",364,2660679,13.7
+,"Renal failure","N17-N19","2017","2017","Male","M","Black or African American","2054-5","55-64 years","55-64",879,2341639,37.5
+,"Renal failure","N17-N19","2017","2017","Male","M","Black or African American","2054-5","65-74 years","65-74",1000,1289007,77.6
+,"Renal failure","N17-N19","2017","2017","Male","M","Black or African American","2054-5","75-84 years","75-84",817,511629,159.7
+,"Renal failure","N17-N19","2017","2017","Male","M","Black or African American","2054-5","85+ years","85+",567,153683,368.9
+,"Renal failure","N17-N19","2017","2017","Male","M","White","2106-3","25-34 years","25-34",234,17369406,1.3
+,"Renal failure","N17-N19","2017","2017","Male","M","White","2106-3","35-44 years","35-44",514,15751313,3.3
+,"Renal failure","N17-N19","2017","2017","Male","M","White","2106-3","45-54 years","45-54",1577,16642784,9.5
+,"Renal failure","N17-N19","2017","2017","Male","M","White","2106-3","55-64 years","55-64",3879,16665931,23.3
+,"Renal failure","N17-N19","2017","2017","Male","M","White","2106-3","65-74 years","65-74",6413,11813232,54.3
+,"Renal failure","N17-N19","2017","2017","Male","M","White","2106-3","75-84 years","75-84",7791,5549805,140.4
+,"Renal failure","N17-N19","2017","2017","Male","M","White","2106-3","85+ years","85+",7585,2012338,376.9
+"---"
+"Dataset: Multiple Cause of Death, 1999-2020"
+"Query Parameters:"
+"MCD - ICD-10 Codes: N17.0 (Acute renal failure with tubular necrosis); N17.1 (Acute renal failure with acute cortical necrosis);"
+"N17.2 (Acute renal failure with medullary necrosis); N17.8 (Other acute renal failure); N17.9 (Acute renal failure, unspecified)"
+"Ten-Year Age Groups: 25-34 years; 35-44 years; 45-54 years; 55-64 years; 65-74 years; 75-84 years; 85+ years"
+"Year/Month: 2010; 2011; 2012; 2013; 2014; 2015; 2016; 2017"
+"Group By: MCD - ICD Sub-Chapter; Year; Sex; Race; Ten-Year Age Groups"
+"Show Totals: Disabled"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/mcd.html for more information."
+"---"
+"Query Date: Jan 14, 2026 1:45:31 AM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/mcd-icd10.html on Jan 14, 2026 1:45:31 AM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"2. Rows with suppressed Deaths are hidden. Use Quick Options above to show suppressed rows."
+"---"
+Footnotes:
+"1. Totals and sub-totals show the frequency of the selected causes of death, which may be greater than the number of deaths."
+"Note that any single death record may have up to 20 causes. More information."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#2014-Revision."
+"2. These items in the results table are not fully selected: Renal failure. The Query Description lists the actual values"
+"selected."
+"3. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#Assurance of Confidentiality."
+"4. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#Unreliable."
+"5. Deaths of persons with Age ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among age groups,"
+"so are not included in age-specific counts, age-specific rates or in any age-adjusted rates. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#Not Stated."
+"6. Information included on the death certificate about the race and Hispanic ethnicity of the decedent is reported by the"
+"funeral director as provided by an informant, often the surviving next of kin, or, in the absence of an informant, on the basis"
+"of observation. Race and ethnicity information from the census is by self-report. To the extent that race and Hispanic origin"
+"are inconsistent between these two data sources, death rates will be biased. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#Racial Differences."
+"7. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. Population figures for 2011 are bridged-race estimates of the July 1"
+"resident population, from the county-level postcensal Vintage 2011 series released by NCHS on July 18, 2012. Population figures"
+"for 2010 are April 1 Census counts. The population figures for years 2001 - 2009, are bridged-race estimates of the July 1"
+"resident population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012."
+"Population figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of"
+"July 1 estimates. Population figures for Infant Age Groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"8. Beginning with the 2018 data, changes have been implemented that affect the counts for ICD-10 cause of death codes O00-O99"
+"compared to previous practice. In addition, data for the cause of death codes O00-O99 for 2003 through 2017 reflect differences"
+"in information available to individual states and probable errors. Caution should be used in interpreting these data. More"
+"information can be found at: https://www.cdc.gov/nchs/maternal-mortality/."
+"9. On March 11, 2021, the 2019 mortality data on CDC WONDER was updated with the 2019 mortality data updated by NCHS on March 4,"
+"2021 to include corrected information for residents of Texas affecting 5 records previously coded to cause code *U01.4,"
+"Terrorism involving firearms (homicide). The underlying and multiple cause of death codes for 5 records were corrected in the"
+"2019 data. Underlying and multiple cause of death codes for those 5 records were recoded to Assault (homicide) by other and"
+"unspecified firearm discharge, ICD-10 code X95. The corrected final death records replaces the data released on December 22,"
+"2020."
+"10. Changes to cause of death classification affect reporting trends. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#ICD-10 Changes."
