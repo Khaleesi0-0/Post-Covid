@@ -1,0 +1,152 @@
+---
+title: "Method"
+format: html
+editor: visual
+---
+```{r}
+doc <- read_docx()
+
+# ---- Title (Heading 1) ----
+doc <- body_add_par(doc, "Methods", style = "heading 1")
+
+# ---- Data source and study design (Heading 2) ----
+doc <- body_add_par(doc, "Data source and study design", style = "heading 2")
+doc <- body_add_par(
+  doc,
+  paste(
+    "We conducted a descriptive, population-based analysis of mortality trends related to sepsis and renal failure in the United States",
+    "using the Centers for Disease Control and Prevention (CDC) Wide-ranging Online Data for Epidemiologic Research (CDC WONDER)",
+    "Multiple Cause of Death (MCOD) public-use database. MCOD data are derived from U.S. death certificates and include both",
+    "underlying and contributing causes of death. Because the dataset is de-identified and publicly available, this study did not",
+    "require institutional review board approval. Reporting follows the Strengthening the Reporting of Observational Studies in",
+    "Epidemiology (STROBE) guidelines."
+  ),
+  style = "Normal"
+)
+
+# ---- Case definitions ----
+doc <- body_add_par(doc, "Case definitions", style = "heading 2")
+doc <- body_add_par(
+  doc,
+  paste(
+    "Deaths were identified using the International Classification of Diseases, Tenth Revision (ICD-10) multiple-cause coding.",
+    "Sepsis-related deaths were defined using ICD-10 codes A40–A41. Renal failure–related deaths were defined using ICD-10 codes",
+    "N17. Deaths in which both sepsis and renal failure codes appeared on the same death certificate were classified as the",
+    "combined sepsis and renal failure group."
+  ),
+  style = "Normal"
+)
+
+# ---- Study population and data extraction ----
+doc <- body_add_par(doc, "Study population and data extraction", style = "heading 2")
+doc <- body_add_par(
+  doc,
+  paste(
+    "Annual mortality and population denominator data were extracted for all 50 U.S. states and the District of Columbia from 2010",
+    "through 2025. Analyses were restricted to individuals aged 25 years and older, using CDC WONDER 10-year age groups (25–34,",
+    "35–44, 45–54, 55–64, 65–74, 75–84, and 85 years and older). Stratified analyses were conducted by sex and race."
+  ),
+  style = "Normal"
+)
+doc <- body_add_par(
+  doc,
+  paste(
+    "Race and ethnicity were harmonized using the “Race” and “Single Race 6” variables when available. Individuals classified as",
+    "“Asian or Pacific Islander” were grouped as Asian, while Native Hawaiian or Other Pacific Islander was retained as a separate",
+    "category. Records with unavailable or suppressed race information were excluded from race-stratified analyses."
+  ),
+  style = "Normal"
+)
+
+# ---- Statistical analysis ----
+doc <- body_add_par(doc, "Statistical analysis", style = "heading 2")
+doc <- body_add_par(
+  doc,
+  paste(
+    "Mortality was summarized using age-adjusted mortality rates (AAMRs).",
+    "AAMRs per 100,000 population were calculated by direct standardization to the 2000 U.S. standard population using CDC standard",
+    "million weights for 10-year age groups from 25–34 through 85 years and older. Age-specific mortality rates were multiplied by",
+    "the corresponding standard weights and summed to obtain AAMRs."
+  ),
+  style = "Normal"
+)
+
+doc <- body_add_par(
+  doc,
+  paste(
+    "To assess temporal patterns, four pandemic-related periods were defined: pre-pandemic (2010–2019), pandemic (2020–2022),",
+    "transition (2023), and post-pandemic (2024–2025). Period-specific crude mortality rates were calculated using aggregated deaths",
+    "and population denominators. Period-specific AAMRs were calculated by aggregating age-specific deaths and populations and",
+    "applying direct standardization. State-level AAMRs were computed using the same approach to facilitate geographic comparisons."
+  ),
+  style = "Normal"
+)
+
+# ---- Growth rate formula (Word-friendly) ----
+doc <- body_add_par(
+  doc,
+  "To quantify changes relative to baseline mortality, the relative growth in AAMR at the peak year and in 2025 was calculated in reference to the pre-pandemic average AAMR from 2010 to 2019 using the following formula:",
+  style = "Normal"
+)
+
+# Put the “equation” as a separate line for readability (portable across Word versions)
+doc <- body_add_par(
+  doc,
+  "Growth rate = (AAMR_t − mean(AAMR_2010–2019)) / mean(AAMR_2010–2019)",
+  style = "Normal"
+)
+
+# ---- Software and reproducibility ----
+doc <- body_add_par(doc, "Software and reproducibility", style = "heading 2")
+doc <- body_add_par(
+  doc,
+  paste(
+    "All data management, statistical analyses, and figure generation were conducted using R version 4.5.0 (R Foundation for Statistical Computing).",
+    "Data cleaning and aggregation were performed using the tidyverse suite of packages, and visualizations were created using ggplot2",
+    "and related packages. All analyses were performed using scripted workflows to ensure reproducibility. The analytic code used in this",
+    "study is available upon reasonable request."
+  ),
+  style = "Normal"
+)
+
+# ---- Save the document ----
+print(doc, target = "Methods_section.docx")
+```
+
+```{r}
+doc <- read_docx("Growth_vs_PrePandemic_Baseline.docx") |>
+  body_add_par("Notes", style = "heading 2") |>
+
+  body_add_par(
+    "Growth rates were calculated relative to the pre-pandemic baseline as:",
+    style = "Normal"
+  ) |>
+
+  body_add_fpar(
+    fpar(
+      ftext("Growth rate = (", italic = TRUE),
+      ftext("AAMR", italic = TRUE),
+      ftext("_t", italic = TRUE),
+      ftext(" − ", italic = TRUE),
+      ftext("mean", italic = TRUE),
+      ftext("(", italic = TRUE),
+      ftext("AAMR", italic = TRUE),
+      ftext("_2010–2019", italic = TRUE),
+      ftext(")", italic = TRUE),
+      ftext(") / ", italic = TRUE),
+      ftext("mean", italic = TRUE),
+      ftext("(", italic = TRUE),
+      ftext("AAMR", italic = TRUE),
+      ftext("_2010–2019", italic = TRUE),
+      ftext(")", italic = TRUE)
+    )
+  ) |>
+
+  body_add_par(
+    "where AAMR\u209C denotes the age-adjusted mortality rate in year t, and mean(AAMR\u2082\u2080\u2081\u2080–\u2082\u2080\u2081\u2089) represents the average age-adjusted mortality rate during the pre-pandemic period.",
+    style = "Normal"
+  )
+
+print(doc, target = "Growth_vs_PrePandemic_Baseline.docx")
+```
+
