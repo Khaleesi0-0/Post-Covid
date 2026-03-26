@@ -1,0 +1,552 @@
+"Notes","Residence Census Region","Residence Census Region Code","Residence State","Residence State Code","Year","Year Code","MCD - ICD Sub-Chapter","MCD - ICD Sub-Chapter Code",Deaths,Population,Crude Rate,Age Adjusted Rate
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2018","2018","Renal failure","N17-N19",519,3572665,14.5,10.4
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2019","2019","Renal failure","N17-N19",480,3565287,13.5,9.7
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2020","2020","Renal failure","N17-N19",631,3557006,17.7,12.7
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2021","2021","Renal failure","N17-N19",799,3605597,22.2,16.6
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2022","2022","Renal failure","N17-N19",1266,3626205,34.9,25.8
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2023","2023","Renal failure","N17-N19",1005,3617176,27.8,20.0
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2024 (provisional)","2024","Renal failure","N17-N19",1016,3675069,27.6,19.7
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2025 (provisional and partial)","2025","Renal failure","N17-N19",887,3675069,24.1,17.1
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2026 (provisional and partial)","2026","Renal failure","N17-N19",61,3675069,1.7,1.2
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2018","2018","Renal failure","N17-N19",324,1338404,24.2,15.9
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2019","2019","Renal failure","N17-N19",291,1344212,21.6,13.9
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2020","2020","Renal failure","N17-N19",293,1350141,21.7,14.1
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2021","2021","Renal failure","N17-N19",322,1372247,23.5,16.4
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2022","2022","Renal failure","N17-N19",340,1385340,24.5,15.9
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2023","2023","Renal failure","N17-N19",308,1395722,22.1,14.1
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2024 (provisional)","2024","Renal failure","N17-N19",295,1405012,21.0,13.8
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2025 (provisional and partial)","2025","Renal failure","N17-N19",259,1405012,18.4,11.5
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2026 (provisional and partial)","2026","Renal failure","N17-N19",20,1405012,1.4,0.9
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2018","2018","Renal failure","N17-N19",1198,6902149,17.4,13.5
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2019","2019","Renal failure","N17-N19",1197,6892503,17.4,13.2
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2020","2020","Renal failure","N17-N19",1639,6893574,23.8,17.9
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2021","2021","Renal failure","N17-N19",1935,6984723,27.7,21.6
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2022","2022","Renal failure","N17-N19",2499,6981974,35.8,26.9
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2023","2023","Renal failure","N17-N19",2366,7001399,33.8,25.4
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2024 (provisional)","2024","Renal failure","N17-N19",2328,7136171,32.6,24.4
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2025 (provisional and partial)","2025","Renal failure","N17-N19",2217,7136171,31.1,23.1
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2026 (provisional and partial)","2026","Renal failure","N17-N19",155,7136171,2.2,1.6
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2018","2018","Renal failure","N17-N19",254,1356458,18.7,14.0
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2019","2019","Renal failure","N17-N19",246,1359711,18.1,13.3
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2020","2020","Renal failure","N17-N19",280,1366275,20.5,15.0
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2021","2021","Renal failure","N17-N19",390,1388992,28.1,21.0
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2022","2022","Renal failure","N17-N19",492,1395231,35.3,24.6
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2023","2023","Renal failure","N17-N19",451,1402054,32.2,22.5
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2024 (provisional)","2024","Renal failure","N17-N19",434,1409032,30.8,21.1
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2025 (provisional and partial)","2025","Renal failure","N17-N19",471,1409032,33.4,22.6
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2026 (provisional and partial)","2026","Renal failure","N17-N19",31,1409032,2.2,1.4
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2018","2018","Renal failure","N17-N19",161,1057315,15.2,10.9
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2019","2019","Renal failure","N17-N19",182,1059361,17.2,12.5
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2020","2020","Renal failure","N17-N19",228,1057125,21.6,15.5
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2021","2021","Renal failure","N17-N19",373,1095610,34.0,25.5
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2022","2022","Renal failure","N17-N19",349,1093734,31.9,23.1
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2023","2023","Renal failure","N17-N19",322,1095962,29.4,21.3
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2024 (provisional)","2024","Renal failure","N17-N19",284,1112308,25.5,18.1
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2025 (provisional and partial)","2025","Renal failure","N17-N19",300,1112308,27.0,19.3
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2026 (provisional and partial)","2026","Renal failure","N17-N19",25,1112308,2.2,1.6
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2018","2018","Renal failure","N17-N19",120,626299,19.2,14.1
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2019","2019","Renal failure","N17-N19",122,623989,19.6,14.0
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2020","2020","Renal failure","N17-N19",139,623347,22.3,15.0
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2021","2021","Renal failure","N17-N19",169,645570,26.2,18.4
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2022","2022","Renal failure","N17-N19",187,647064,28.9,19.7
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2023","2023","Renal failure","N17-N19",171,647464,26.4,18.3
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2024 (provisional)","2024","Renal failure","N17-N19",167,648493,25.8,16.8
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2025 (provisional and partial)","2025","Renal failure","N17-N19",165,648493,25.4,16.4
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2026 (provisional and partial)","2026","Renal failure","N17-N19",13,648493,Unreliable,Unreliable
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2018","2018","Renal failure","N17-N19",1657,8908520,18.6,14.5
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2019","2019","Renal failure","N17-N19",1551,8882190,17.5,13.4
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2020","2020","Renal failure","N17-N19",2599,8882371,29.3,22.4
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2021","2021","Renal failure","N17-N19",2889,9267130,31.2,24.8
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2022","2022","Renal failure","N17-N19",3463,9261699,37.4,28.6
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2023","2023","Renal failure","N17-N19",3075,9290841,33.1,25.6
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2024 (provisional)","2024","Renal failure","N17-N19",3108,9500851,32.7,25.0
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2025 (provisional and partial)","2025","Renal failure","N17-N19",2975,9500851,31.3,23.9
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2026 (provisional and partial)","2026","Renal failure","N17-N19",181,9500851,1.9,1.4
+,"Census Region 1: Northeast","CENS-R1","New York","36","2018","2018","Renal failure","N17-N19",2613,19542209,13.4,10.2
+,"Census Region 1: Northeast","CENS-R1","New York","36","2019","2019","Renal failure","N17-N19",2461,19453561,12.7,9.5
+,"Census Region 1: Northeast","CENS-R1","New York","36","2020","2020","Renal failure","N17-N19",3563,19336776,18.4,13.7
+,"Census Region 1: Northeast","CENS-R1","New York","36","2021","2021","Renal failure","N17-N19",3983,19835913,20.1,15.3
+,"Census Region 1: Northeast","CENS-R1","New York","36","2022","2022","Renal failure","N17-N19",4284,19677151,21.8,15.9
+,"Census Region 1: Northeast","CENS-R1","New York","36","2023","2023","Renal failure","N17-N19",3786,19571216,19.3,14.2
+,"Census Region 1: Northeast","CENS-R1","New York","36","2024 (provisional)","2024","Renal failure","N17-N19",3671,19867248,18.5,13.3
+,"Census Region 1: Northeast","CENS-R1","New York","36","2025 (provisional and partial)","2025","Renal failure","N17-N19",3839,19867248,19.3,13.9
+,"Census Region 1: Northeast","CENS-R1","New York","36","2026 (provisional and partial)","2026","Renal failure","N17-N19",276,19867248,1.4,1.0
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2018","2018","Renal failure","N17-N19",2730,12807060,21.3,14.9
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2019","2019","Renal failure","N17-N19",2574,12801989,20.1,14.0
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2020","2020","Renal failure","N17-N19",3344,12783254,26.2,18.0
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2021","2021","Renal failure","N17-N19",5217,12964056,40.2,29.2
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2022","2022","Renal failure","N17-N19",6241,12972008,48.1,33.5
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2023","2023","Renal failure","N17-N19",5556,12961683,42.9,29.9
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2024 (provisional)","2024","Renal failure","N17-N19",5393,13078751,41.2,28.6
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2025 (provisional and partial)","2025","Renal failure","N17-N19",5410,13078751,41.4,28.4
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2026 (provisional and partial)","2026","Renal failure","N17-N19",267,13078751,2.0,1.4
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2018","2018","Renal failure","N17-N19",1931,12741080,15.2,12.4
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2019","2019","Renal failure","N17-N19",1801,12671821,14.2,11.5
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2020","2020","Renal failure","N17-N19",2172,12587530,17.3,13.7
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2021","2021","Renal failure","N17-N19",2706,12671469,21.4,17.6
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2022","2022","Renal failure","N17-N19",3658,12582032,29.1,23.0
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2023","2023","Renal failure","N17-N19",3131,12549689,24.9,19.6
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2024 (provisional)","2024","Renal failure","N17-N19",2890,12710158,22.7,17.6
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2025 (provisional and partial)","2025","Renal failure","N17-N19",2982,12710158,23.5,18.3
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2026 (provisional and partial)","2026","Renal failure","N17-N19",176,12710158,1.4,1.1
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2018","2018","Renal failure","N17-N19",2050,6691878,30.6,25.7
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2019","2019","Renal failure","N17-N19",2007,6732219,29.8,24.8
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2020","2020","Renal failure","N17-N19",2396,6754953,35.5,29.3
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2021","2021","Renal failure","N17-N19",3207,6805985,47.1,39.9
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2022","2022","Renal failure","N17-N19",3607,6833037,52.8,43.1
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2023","2023","Renal failure","N17-N19",2796,6862199,40.7,33.4
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2024 (provisional)","2024","Renal failure","N17-N19",2816,6924275,40.7,32.9
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2025 (provisional and partial)","2025","Renal failure","N17-N19",2734,6924275,39.5,31.8
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2026 (provisional and partial)","2026","Renal failure","N17-N19",148,6924275,2.1,1.7
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2018","2018","Renal failure","N17-N19",1591,9995915,15.9,12.4
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2019","2019","Renal failure","N17-N19",1618,9986857,16.2,12.4
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2020","2020","Renal failure","N17-N19",2317,9966555,23.2,17.6
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2021","2021","Renal failure","N17-N19",3499,10050811,34.8,27.4
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2022","2022","Renal failure","N17-N19",3713,10034113,37.0,28.0
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2023","2023","Renal failure","N17-N19",3361,10037261,33.5,25.3
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2024 (provisional)","2024","Renal failure","N17-N19",3337,10140459,32.9,24.5
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2025 (provisional and partial)","2025","Renal failure","N17-N19",3359,10140459,33.1,24.7
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2026 (provisional and partial)","2026","Renal failure","N17-N19",211,10140459,2.1,1.5
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2018","2018","Renal failure","N17-N19",2019,11689442,17.3,13.3
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2019","2019","Renal failure","N17-N19",1975,11689100,16.9,12.8
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2020","2020","Renal failure","N17-N19",2504,11693217,21.4,16.3
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2021","2021","Renal failure","N17-N19",3705,11780017,31.5,24.9
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2022","2022","Renal failure","N17-N19",4916,11756058,41.8,31.8
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2023","2023","Renal failure","N17-N19",4224,11785935,35.8,27.4
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2024 (provisional)","2024","Renal failure","N17-N19",4545,11883304,38.2,28.7
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2025 (provisional and partial)","2025","Renal failure","N17-N19",4596,11883304,38.7,29.0
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2026 (provisional and partial)","2026","Renal failure","N17-N19",253,11883304,2.1,1.6
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2018","2018","Renal failure","N17-N19",1228,5813568,21.1,16.4
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2019","2019","Renal failure","N17-N19",1232,5822434,21.2,16.2
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2020","2020","Renal failure","N17-N19",1433,5832655,24.6,18.5
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2021","2021","Renal failure","N17-N19",1992,5895908,33.8,26.8
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2022","2022","Renal failure","N17-N19",2444,5892539,41.5,31.2
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2023","2023","Renal failure","N17-N19",2286,5910955,38.7,29.0
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2024 (provisional)","2024","Renal failure","N17-N19",2168,5960975,36.4,26.7
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2025 (provisional and partial)","2025","Renal failure","N17-N19",2299,5960975,38.6,28.4
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2026 (provisional and partial)","2026","Renal failure","N17-N19",106,5960975,1.8,1.3
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2018","2018","Renal failure","N17-N19",715,3156145,22.7,16.9
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2019","2019","Renal failure","N17-N19",713,3155070,22.6,16.9
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2020","2020","Renal failure","N17-N19",947,3163561,29.9,22.3
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2021","2021","Renal failure","N17-N19",1096,3193079,34.3,26.8
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2022","2022","Renal failure","N17-N19",1353,3200517,42.3,32.1
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2023","2023","Renal failure","N17-N19",1141,3207004,35.6,26.4
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2024 (provisional)","2024","Renal failure","N17-N19",1139,3241488,35.1,25.8
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2025 (provisional and partial)","2025","Renal failure","N17-N19",1121,3241488,34.6,25.4
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2026 (provisional and partial)","2026","Renal failure","N17-N19",75,3241488,2.3,1.7
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2018","2018","Renal failure","N17-N19",748,2911505,25.7,20.8
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2019","2019","Renal failure","N17-N19",705,2913314,24.2,19.3
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2020","2020","Renal failure","N17-N19",795,2913805,27.3,21.6
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2021","2021","Renal failure","N17-N19",1053,2934582,35.9,29.5
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2022","2022","Renal failure","N17-N19",1256,2937150,42.8,34.2
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2023","2023","Renal failure","N17-N19",1076,2940546,36.6,29.6
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2024 (provisional)","2024","Renal failure","N17-N19",1050,2970606,35.3,27.9
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2025 (provisional and partial)","2025","Renal failure","N17-N19",1233,2970606,41.5,32.9
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2026 (provisional and partial)","2026","Renal failure","N17-N19",66,2970606,2.2,1.7
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2018","2018","Renal failure","N17-N19",953,5611179,17.0,13.7
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2019","2019","Renal failure","N17-N19",905,5639632,16.0,12.9
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2020","2020","Renal failure","N17-N19",1098,5657342,19.4,15.5
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2021","2021","Renal failure","N17-N19",1644,5707390,28.8,23.6
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2022","2022","Renal failure","N17-N19",2013,5717184,35.2,27.6
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2023","2023","Renal failure","N17-N19",1801,5737915,31.4,24.7
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2024 (provisional)","2024","Renal failure","N17-N19",1822,5793151,31.5,24.0
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2025 (provisional and partial)","2025","Renal failure","N17-N19",1813,5793151,31.3,24.0
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2026 (provisional and partial)","2026","Renal failure","N17-N19",117,5793151,2.0,1.5
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2018","2018","Renal failure","N17-N19",1551,6126452,25.3,19.8
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2019","2019","Renal failure","N17-N19",1384,6137428,22.6,17.4
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2020","2020","Renal failure","N17-N19",1803,6151548,29.3,22.4
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2021","2021","Renal failure","N17-N19",2295,6168187,37.2,29.6
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2022","2022","Renal failure","N17-N19",2822,6177957,45.7,35.2
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2023","2023","Renal failure","N17-N19",2618,6196156,42.3,32.5
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2024 (provisional)","2024","Renal failure","N17-N19",2521,6245466,40.4,30.6
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2025 (provisional and partial)","2025","Renal failure","N17-N19",2523,6245466,40.4,30.5
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2026 (provisional and partial)","2026","Renal failure","N17-N19",164,6245466,2.6,2.0
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2018","2018","Renal failure","N17-N19",456,1929268,23.6,19.6
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2019","2019","Renal failure","N17-N19",460,1934408,23.8,19.5
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2020","2020","Renal failure","N17-N19",522,1937552,26.9,21.7
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2021","2021","Renal failure","N17-N19",697,1963692,35.5,30.0
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2022","2022","Renal failure","N17-N19",868,1967923,44.1,36.2
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2023","2023","Renal failure","N17-N19",810,1978379,40.9,33.6
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2024 (provisional)","2024","Renal failure","N17-N19",913,2005465,45.5,37.2
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2025 (provisional and partial)","2025","Renal failure","N17-N19",795,2005465,39.6,32.5
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2026 (provisional and partial)","2026","Renal failure","N17-N19",43,2005465,2.1,1.8
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2018","2018","Renal failure","N17-N19",195,760077,25.7,20.9
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2019","2019","Renal failure","N17-N19",186,762062,24.4,20.1
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2020","2020","Renal failure","N17-N19",273,765309,35.7,28.9
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2021","2021","Renal failure","N17-N19",282,774948,36.4,31.2
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2022","2022","Renal failure","N17-N19",307,779261,39.4,32.4
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2023","2023","Renal failure","N17-N19",284,783926,36.2,29.5
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2024 (provisional)","2024","Renal failure","N17-N19",315,796568,39.5,32.0
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2025 (provisional and partial)","2025","Renal failure","N17-N19",276,796568,34.6,28.7
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2018","2018","Renal failure","N17-N19",281,882235,31.9,25.3
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2019","2019","Renal failure","N17-N19",313,884659,35.4,27.6
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2020","2020","Renal failure","N17-N19",422,892717,47.3,37.4
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2021","2021","Renal failure","N17-N19",500,895376,55.8,47.8
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2022","2022","Renal failure","N17-N19",426,909824,46.8,38.2
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2023","2023","Renal failure","N17-N19",380,919318,41.3,33.7
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2024 (provisional)","2024","Renal failure","N17-N19",400,924669,43.3,34.9
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2025 (provisional and partial)","2025","Renal failure","N17-N19",381,924669,41.2,32.9
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2026 (provisional and partial)","2026","Renal failure","N17-N19",13,924669,Unreliable,Unreliable
+,"Census Region 3: South","CENS-R3","Delaware","10","2018","2018","Renal failure","N17-N19",251,967171,26.0,19.3
+,"Census Region 3: South","CENS-R3","Delaware","10","2019","2019","Renal failure","N17-N19",205,973764,21.1,15.6
+,"Census Region 3: South","CENS-R3","Delaware","10","2020","2020","Renal failure","N17-N19",276,986809,28.0,20.2
+,"Census Region 3: South","CENS-R3","Delaware","10","2021","2021","Renal failure","N17-N19",385,1003384,38.4,27.9
+,"Census Region 3: South","CENS-R3","Delaware","10","2022","2022","Renal failure","N17-N19",495,1018396,48.6,35.0
+,"Census Region 3: South","CENS-R3","Delaware","10","2023","2023","Renal failure","N17-N19",452,1031890,43.8,31.4
+,"Census Region 3: South","CENS-R3","Delaware","10","2024 (provisional)","2024","Renal failure","N17-N19",400,1051917,38.0,27.1
+,"Census Region 3: South","CENS-R3","Delaware","10","2025 (provisional and partial)","2025","Renal failure","N17-N19",396,1051917,37.6,26.4
+,"Census Region 3: South","CENS-R3","Delaware","10","2026 (provisional and partial)","2026","Renal failure","N17-N19",22,1051917,2.1,1.5
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2018","2018","Renal failure","N17-N19",77,702455,11.0,11.3
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2019","2019","Renal failure","N17-N19",87,705749,12.3,12.5
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2020","2020","Renal failure","N17-N19",118,712816,16.6,16.4
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2021","2021","Renal failure","N17-N19",142,670050,21.2,21.3
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2022","2022","Renal failure","N17-N19",225,671803,33.5,32.8
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2023","2023","Renal failure","N17-N19",192,678972,28.3,28.2
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2024 (provisional)","2024","Renal failure","N17-N19",202,702250,28.8,29.0
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2025 (provisional and partial)","2025","Renal failure","N17-N19",192,702250,27.3,27.5
+,"Census Region 3: South","CENS-R3","Florida","12","2018","2018","Renal failure","N17-N19",3259,21299325,15.3,10.1
+,"Census Region 3: South","CENS-R3","Florida","12","2019","2019","Renal failure","N17-N19",3305,21477737,15.4,10.1
+,"Census Region 3: South","CENS-R3","Florida","12","2020","2020","Renal failure","N17-N19",4042,21733312,18.6,12.0
+,"Census Region 3: South","CENS-R3","Florida","12","2021","2021","Renal failure","N17-N19",7534,21781128,34.6,23.5
+,"Census Region 3: South","CENS-R3","Florida","12","2022","2022","Renal failure","N17-N19",7979,22244823,35.9,23.1
+,"Census Region 3: South","CENS-R3","Florida","12","2023","2023","Renal failure","N17-N19",7138,22610726,31.6,20.4
+,"Census Region 3: South","CENS-R3","Florida","12","2024 (provisional)","2024","Renal failure","N17-N19",6806,23372215,29.1,18.7
+,"Census Region 3: South","CENS-R3","Florida","12","2025 (provisional and partial)","2025","Renal failure","N17-N19",6974,23372215,29.8,19.2
+,"Census Region 3: South","CENS-R3","Florida","12","2026 (provisional and partial)","2026","Renal failure","N17-N19",345,23372215,1.5,0.9
+,"Census Region 3: South","CENS-R3","Georgia","13","2018","2018","Renal failure","N17-N19",1468,10519475,14.0,13.6
+,"Census Region 3: South","CENS-R3","Georgia","13","2019","2019","Renal failure","N17-N19",1506,10617423,14.2,13.4
+,"Census Region 3: South","CENS-R3","Georgia","13","2020","2020","Renal failure","N17-N19",2101,10710017,19.6,18.0
+,"Census Region 3: South","CENS-R3","Georgia","13","2021","2021","Renal failure","N17-N19",3114,10799566,28.8,26.7
+,"Census Region 3: South","CENS-R3","Georgia","13","2022","2022","Renal failure","N17-N19",3531,10912876,32.4,29.2
+,"Census Region 3: South","CENS-R3","Georgia","13","2023","2023","Renal failure","N17-N19",3447,11029227,31.3,28.3
+,"Census Region 3: South","CENS-R3","Georgia","13","2024 (provisional)","2024","Renal failure","N17-N19",3531,11180878,31.6,27.9
+,"Census Region 3: South","CENS-R3","Georgia","13","2025 (provisional and partial)","2025","Renal failure","N17-N19",3366,11180878,30.1,26.6
+,"Census Region 3: South","CENS-R3","Georgia","13","2026 (provisional and partial)","2026","Renal failure","N17-N19",147,11180878,1.3,1.1
+,"Census Region 3: South","CENS-R3","Maryland","24","2018","2018","Renal failure","N17-N19",911,6042718,15.1,12.7
+,"Census Region 3: South","CENS-R3","Maryland","24","2019","2019","Renal failure","N17-N19",1003,6045680,16.6,13.6
+,"Census Region 3: South","CENS-R3","Maryland","24","2020","2020","Renal failure","N17-N19",1447,6055802,23.9,19.4
+,"Census Region 3: South","CENS-R3","Maryland","24","2021","2021","Renal failure","N17-N19",1870,6165129,30.3,25.5
+,"Census Region 3: South","CENS-R3","Maryland","24","2022","2022","Renal failure","N17-N19",2377,6164660,38.6,30.7
+,"Census Region 3: South","CENS-R3","Maryland","24","2023","2023","Renal failure","N17-N19",2103,6180253,34.0,27.3
+,"Census Region 3: South","CENS-R3","Maryland","24","2024 (provisional)","2024","Renal failure","N17-N19",2147,6263220,34.3,26.9
+,"Census Region 3: South","CENS-R3","Maryland","24","2025 (provisional and partial)","2025","Renal failure","N17-N19",2220,6263220,35.4,27.8
+,"Census Region 3: South","CENS-R3","Maryland","24","2026 (provisional and partial)","2026","Renal failure","N17-N19",139,6263220,2.2,1.7
+,"Census Region 3: South","CENS-R3","North Carolina","37","2018","2018","Renal failure","N17-N19",2033,10383620,19.6,16.5
+,"Census Region 3: South","CENS-R3","North Carolina","37","2019","2019","Renal failure","N17-N19",2240,10488084,21.4,17.6
+,"Census Region 3: South","CENS-R3","North Carolina","37","2020","2020","Renal failure","N17-N19",2779,10600823,26.2,21.2
+,"Census Region 3: South","CENS-R3","North Carolina","37","2021","2021","Renal failure","N17-N19",4148,10551162,39.3,32.6
+,"Census Region 3: South","CENS-R3","North Carolina","37","2022","2022","Renal failure","N17-N19",4250,10698973,39.7,32.1
+,"Census Region 3: South","CENS-R3","North Carolina","37","2023","2023","Renal failure","N17-N19",3548,10835491,32.7,26.4
+,"Census Region 3: South","CENS-R3","North Carolina","37","2024 (provisional)","2024","Renal failure","N17-N19",3426,11046024,31.0,24.6
+,"Census Region 3: South","CENS-R3","North Carolina","37","2025 (provisional and partial)","2025","Renal failure","N17-N19",3539,11046024,32.0,25.4
+,"Census Region 3: South","CENS-R3","North Carolina","37","2026 (provisional and partial)","2026","Renal failure","N17-N19",161,11046024,1.5,1.1
+,"Census Region 3: South","CENS-R3","South Carolina","45","2018","2018","Renal failure","N17-N19",1359,5084127,26.7,21.5
+,"Census Region 3: South","CENS-R3","South Carolina","45","2019","2019","Renal failure","N17-N19",1337,5148714,26.0,20.6
+,"Census Region 3: South","CENS-R3","South Carolina","45","2020","2020","Renal failure","N17-N19",1882,5218040,36.1,27.4
+,"Census Region 3: South","CENS-R3","South Carolina","45","2021","2021","Renal failure","N17-N19",2878,5190705,55.4,44.1
+,"Census Region 3: South","CENS-R3","South Carolina","45","2022","2022","Renal failure","N17-N19",3294,5282634,62.4,47.5
+,"Census Region 3: South","CENS-R3","South Carolina","45","2023","2023","Renal failure","N17-N19",2913,5373555,54.2,41.5
+,"Census Region 3: South","CENS-R3","South Carolina","45","2024 (provisional)","2024","Renal failure","N17-N19",2670,5478831,48.7,36.7
+,"Census Region 3: South","CENS-R3","South Carolina","45","2025 (provisional and partial)","2025","Renal failure","N17-N19",2681,5478831,48.9,36.7
+,"Census Region 3: South","CENS-R3","South Carolina","45","2026 (provisional and partial)","2026","Renal failure","N17-N19",156,5478831,2.8,2.1
+,"Census Region 3: South","CENS-R3","Virginia","51","2018","2018","Renal failure","N17-N19",1372,8517685,16.1,13.8
+,"Census Region 3: South","CENS-R3","Virginia","51","2019","2019","Renal failure","N17-N19",1396,8535519,16.4,13.7
+,"Census Region 3: South","CENS-R3","Virginia","51","2020","2020","Renal failure","N17-N19",1856,8590563,21.6,17.9
+,"Census Region 3: South","CENS-R3","Virginia","51","2021","2021","Renal failure","N17-N19",3050,8642274,35.3,29.9
+,"Census Region 3: South","CENS-R3","Virginia","51","2022","2022","Renal failure","N17-N19",3039,8683619,35.0,28.4
+,"Census Region 3: South","CENS-R3","Virginia","51","2023","2023","Renal failure","N17-N19",2406,8715698,27.6,22.3
+,"Census Region 3: South","CENS-R3","Virginia","51","2024 (provisional)","2024","Renal failure","N17-N19",2498,8811195,28.4,22.6
+,"Census Region 3: South","CENS-R3","Virginia","51","2025 (provisional and partial)","2025","Renal failure","N17-N19",2409,8811195,27.3,21.7
+,"Census Region 3: South","CENS-R3","Virginia","51","2026 (provisional and partial)","2026","Renal failure","N17-N19",145,8811195,1.6,1.3
+,"Census Region 3: South","CENS-R3","West Virginia","54","2018","2018","Renal failure","N17-N19",424,1805832,23.5,16.6
+,"Census Region 3: South","CENS-R3","West Virginia","54","2019","2019","Renal failure","N17-N19",425,1792147,23.7,16.7
+,"Census Region 3: South","CENS-R3","West Virginia","54","2020","2020","Renal failure","N17-N19",504,1784787,28.2,19.7
+,"Census Region 3: South","CENS-R3","West Virginia","54","2021","2021","Renal failure","N17-N19",1050,1782959,58.9,42.4
+,"Census Region 3: South","CENS-R3","West Virginia","54","2022","2022","Renal failure","N17-N19",1042,1775156,58.7,40.4
+,"Census Region 3: South","CENS-R3","West Virginia","54","2023","2023","Renal failure","N17-N19",763,1770071,43.1,29.6
+,"Census Region 3: South","CENS-R3","West Virginia","54","2024 (provisional)","2024","Renal failure","N17-N19",685,1769979,38.7,26.0
+,"Census Region 3: South","CENS-R3","West Virginia","54","2025 (provisional and partial)","2025","Renal failure","N17-N19",658,1769979,37.2,24.5
+,"Census Region 3: South","CENS-R3","West Virginia","54","2026 (provisional and partial)","2026","Renal failure","N17-N19",24,1769979,1.4,0.8
+,"Census Region 3: South","CENS-R3","Alabama","01","2018","2018","Renal failure","N17-N19",906,4887871,18.5,15.0
+,"Census Region 3: South","CENS-R3","Alabama","01","2019","2019","Renal failure","N17-N19",881,4903185,18.0,14.3
+,"Census Region 3: South","CENS-R3","Alabama","01","2020","2020","Renal failure","N17-N19",1246,4921532,25.3,19.7
+,"Census Region 3: South","CENS-R3","Alabama","01","2021","2021","Renal failure","N17-N19",1968,5039877,39.0,31.2
+,"Census Region 3: South","CENS-R3","Alabama","01","2022","2022","Renal failure","N17-N19",2184,5074296,43.0,33.5
+,"Census Region 3: South","CENS-R3","Alabama","01","2023","2023","Renal failure","N17-N19",2012,5108468,39.4,30.7
+,"Census Region 3: South","CENS-R3","Alabama","01","2024 (provisional)","2024","Renal failure","N17-N19",1758,5157699,34.1,26.4
+,"Census Region 3: South","CENS-R3","Alabama","01","2025 (provisional and partial)","2025","Renal failure","N17-N19",1697,5157699,32.9,25.2
+,"Census Region 3: South","CENS-R3","Alabama","01","2026 (provisional and partial)","2026","Renal failure","N17-N19",86,5157699,1.7,1.3
+,"Census Region 3: South","CENS-R3","Kentucky","21","2018","2018","Renal failure","N17-N19",1271,4468402,28.4,23.7
+,"Census Region 3: South","CENS-R3","Kentucky","21","2019","2019","Renal failure","N17-N19",1289,4467673,28.9,23.4
+,"Census Region 3: South","CENS-R3","Kentucky","21","2020","2020","Renal failure","N17-N19",1545,4477251,34.5,27.7
+,"Census Region 3: South","CENS-R3","Kentucky","21","2021","2021","Renal failure","N17-N19",2987,4509394,66.2,54.8
+,"Census Region 3: South","CENS-R3","Kentucky","21","2022","2022","Renal failure","N17-N19",3615,4512310,80.1,64.4
+,"Census Region 3: South","CENS-R3","Kentucky","21","2023","2023","Renal failure","N17-N19",3105,4526154,68.6,55.2
+,"Census Region 3: South","CENS-R3","Kentucky","21","2024 (provisional)","2024","Renal failure","N17-N19",2937,4588372,64.0,50.8
+,"Census Region 3: South","CENS-R3","Kentucky","21","2025 (provisional and partial)","2025","Renal failure","N17-N19",2891,4588372,63.0,50.2
+,"Census Region 3: South","CENS-R3","Kentucky","21","2026 (provisional and partial)","2026","Renal failure","N17-N19",122,4588372,2.7,2.1
+,"Census Region 3: South","CENS-R3","Mississippi","28","2018","2018","Renal failure","N17-N19",717,2986530,24.0,20.3
+,"Census Region 3: South","CENS-R3","Mississippi","28","2019","2019","Renal failure","N17-N19",678,2976149,22.8,19.3
+,"Census Region 3: South","CENS-R3","Mississippi","28","2020","2020","Renal failure","N17-N19",1071,2966786,36.1,29.3
+,"Census Region 3: South","CENS-R3","Mississippi","28","2021","2021","Renal failure","N17-N19",1376,2949965,46.6,39.5
+,"Census Region 3: South","CENS-R3","Mississippi","28","2022","2022","Renal failure","N17-N19",1419,2940057,48.3,39.3
+,"Census Region 3: South","CENS-R3","Mississippi","28","2023","2023","Renal failure","N17-N19",1115,2939690,37.9,30.7
+,"Census Region 3: South","CENS-R3","Mississippi","28","2024 (provisional)","2024","Renal failure","N17-N19",1139,2943045,38.7,30.7
+,"Census Region 3: South","CENS-R3","Mississippi","28","2025 (provisional and partial)","2025","Renal failure","N17-N19",1188,2943045,40.4,32.3
+,"Census Region 3: South","CENS-R3","Mississippi","28","2026 (provisional and partial)","2026","Renal failure","N17-N19",60,2943045,2.0,1.6
+,"Census Region 3: South","CENS-R3","Tennessee","47","2018","2018","Renal failure","N17-N19",1506,6770010,22.2,18.5
+,"Census Region 3: South","CENS-R3","Tennessee","47","2019","2019","Renal failure","N17-N19",1584,6829174,23.2,19.0
+,"Census Region 3: South","CENS-R3","Tennessee","47","2020","2020","Renal failure","N17-N19",2108,6886834,30.6,24.8
+,"Census Region 3: South","CENS-R3","Tennessee","47","2021","2021","Renal failure","N17-N19",3540,6975218,50.8,42.0
+,"Census Region 3: South","CENS-R3","Tennessee","47","2022","2022","Renal failure","N17-N19",3763,7051339,53.4,43.1
+,"Census Region 3: South","CENS-R3","Tennessee","47","2023","2023","Renal failure","N17-N19",3035,7126489,42.6,34.9
+,"Census Region 3: South","CENS-R3","Tennessee","47","2024 (provisional)","2024","Renal failure","N17-N19",2887,7227750,39.9,32.3
+,"Census Region 3: South","CENS-R3","Tennessee","47","2025 (provisional and partial)","2025","Renal failure","N17-N19",2728,7227750,37.7,30.4
+,"Census Region 3: South","CENS-R3","Tennessee","47","2026 (provisional and partial)","2026","Renal failure","N17-N19",146,7227750,2.0,1.6
+,"Census Region 3: South","CENS-R3","Arkansas","05","2018","2018","Renal failure","N17-N19",923,3013825,30.6,24.6
+,"Census Region 3: South","CENS-R3","Arkansas","05","2019","2019","Renal failure","N17-N19",933,3017804,30.9,24.5
+,"Census Region 3: South","CENS-R3","Arkansas","05","2020","2020","Renal failure","N17-N19",1167,3030522,38.5,29.7
+,"Census Region 3: South","CENS-R3","Arkansas","05","2021","2021","Renal failure","N17-N19",1519,3025891,50.2,40.8
+,"Census Region 3: South","CENS-R3","Arkansas","05","2022","2022","Renal failure","N17-N19",1660,3045637,54.5,42.8
+,"Census Region 3: South","CENS-R3","Arkansas","05","2023","2023","Renal failure","N17-N19",1476,3067732,48.1,37.6
+,"Census Region 3: South","CENS-R3","Arkansas","05","2024 (provisional)","2024","Renal failure","N17-N19",1456,3088354,47.1,36.4
+,"Census Region 3: South","CENS-R3","Arkansas","05","2025 (provisional and partial)","2025","Renal failure","N17-N19",1428,3088354,46.2,35.6
+,"Census Region 3: South","CENS-R3","Arkansas","05","2026 (provisional and partial)","2026","Renal failure","N17-N19",57,3088354,1.8,1.4
+,"Census Region 3: South","CENS-R3","Louisiana","22","2018","2018","Renal failure","N17-N19",719,4659978,15.4,13.2
+,"Census Region 3: South","CENS-R3","Louisiana","22","2019","2019","Renal failure","N17-N19",669,4648794,14.4,12.4
+,"Census Region 3: South","CENS-R3","Louisiana","22","2020","2020","Renal failure","N17-N19",1011,4645318,21.8,18.1
+,"Census Region 3: South","CENS-R3","Louisiana","22","2021","2021","Renal failure","N17-N19",1362,4624047,29.5,25.2
+,"Census Region 3: South","CENS-R3","Louisiana","22","2022","2022","Renal failure","N17-N19",1384,4590241,30.2,25.0
+,"Census Region 3: South","CENS-R3","Louisiana","22","2023","2023","Renal failure","N17-N19",1209,4573749,26.4,21.7
+,"Census Region 3: South","CENS-R3","Louisiana","22","2024 (provisional)","2024","Renal failure","N17-N19",1204,4597740,26.2,21.2
+,"Census Region 3: South","CENS-R3","Louisiana","22","2025 (provisional and partial)","2025","Renal failure","N17-N19",1283,4597740,27.9,22.6
+,"Census Region 3: South","CENS-R3","Louisiana","22","2026 (provisional and partial)","2026","Renal failure","N17-N19",36,4597740,0.8,0.7
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2018","2018","Renal failure","N17-N19",844,3943079,21.4,18.4
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2019","2019","Renal failure","N17-N19",766,3956971,19.4,16.3
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2020","2020","Renal failure","N17-N19",1147,3980783,28.8,24.0
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2021","2021","Renal failure","N17-N19",1568,3986639,39.3,34.0
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2022","2022","Renal failure","N17-N19",1770,4019800,44.0,37.2
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2023","2023","Renal failure","N17-N19",1296,4053824,32.0,27.5
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2024 (provisional)","2024","Renal failure","N17-N19",1285,4095393,31.4,26.4
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2025 (provisional and partial)","2025","Renal failure","N17-N19",1108,4095393,27.1,22.7
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2026 (provisional and partial)","2026","Renal failure","N17-N19",33,4095393,0.8,0.6
+,"Census Region 3: South","CENS-R3","Texas","48","2018","2018","Renal failure","N17-N19",7851,28701845,27.4,28.3
+,"Census Region 3: South","CENS-R3","Texas","48","2019","2019","Renal failure","N17-N19",7181,28995881,24.8,25.3
+,"Census Region 3: South","CENS-R3","Texas","48","2020","2020","Renal failure","N17-N19",10493,29360759,35.7,35.5
+,"Census Region 3: South","CENS-R3","Texas","48","2021","2021","Renal failure","N17-N19",13394,29527941,45.4,45.9
+,"Census Region 3: South","CENS-R3","Texas","48","2022","2022","Renal failure","N17-N19",12565,30029572,41.8,41.8
+,"Census Region 3: South","CENS-R3","Texas","48","2023","2023","Renal failure","N17-N19",11130,30503301,36.5,36.4
+,"Census Region 3: South","CENS-R3","Texas","48","2024 (provisional)","2024","Renal failure","N17-N19",10668,31290831,34.1,33.5
+,"Census Region 3: South","CENS-R3","Texas","48","2025 (provisional and partial)","2025","Renal failure","N17-N19",9896,31290831,31.6,31.1
+,"Census Region 3: South","CENS-R3","Texas","48","2026 (provisional and partial)","2026","Renal failure","N17-N19",428,31290831,1.4,1.4
+,"Census Region 4: West","CENS-R4","Arizona","04","2018","2018","Renal failure","N17-N19",1170,7171646,16.3,13.0
+,"Census Region 4: West","CENS-R4","Arizona","04","2019","2019","Renal failure","N17-N19",1183,7278717,16.3,12.8
+,"Census Region 4: West","CENS-R4","Arizona","04","2020","2020","Renal failure","N17-N19",1880,7421401,25.3,19.3
+,"Census Region 4: West","CENS-R4","Arizona","04","2021","2021","Renal failure","N17-N19",2511,7276316,34.5,27.3
+,"Census Region 4: West","CENS-R4","Arizona","04","2022","2022","Renal failure","N17-N19",2295,7359197,31.2,23.8
+,"Census Region 4: West","CENS-R4","Arizona","04","2023","2023","Renal failure","N17-N19",1940,7431344,26.1,19.4
+,"Census Region 4: West","CENS-R4","Arizona","04","2024 (provisional)","2024","Renal failure","N17-N19",2001,7582384,26.4,19.7
+,"Census Region 4: West","CENS-R4","Arizona","04","2025 (provisional and partial)","2025","Renal failure","N17-N19",1902,7582384,25.1,18.6
+,"Census Region 4: West","CENS-R4","Arizona","04","2026 (provisional and partial)","2026","Renal failure","N17-N19",90,7582384,1.2,0.8
+,"Census Region 4: West","CENS-R4","Colorado","08","2018","2018","Renal failure","N17-N19",992,5695564,17.4,16.6
+,"Census Region 4: West","CENS-R4","Colorado","08","2019","2019","Renal failure","N17-N19",870,5758736,15.1,14.2
+,"Census Region 4: West","CENS-R4","Colorado","08","2020","2020","Renal failure","N17-N19",1266,5807719,21.8,20.0
+,"Census Region 4: West","CENS-R4","Colorado","08","2021","2021","Renal failure","N17-N19",2270,5812069,39.1,36.2
+,"Census Region 4: West","CENS-R4","Colorado","08","2022","2022","Renal failure","N17-N19",2572,5839926,44.0,39.5
+,"Census Region 4: West","CENS-R4","Colorado","08","2023","2023","Renal failure","N17-N19",2271,5877610,38.6,34.6
+,"Census Region 4: West","CENS-R4","Colorado","08","2024 (provisional)","2024","Renal failure","N17-N19",2265,5957493,38.0,33.2
+,"Census Region 4: West","CENS-R4","Colorado","08","2025 (provisional and partial)","2025","Renal failure","N17-N19",2199,5957493,36.9,32.4
+,"Census Region 4: West","CENS-R4","Colorado","08","2026 (provisional and partial)","2026","Renal failure","N17-N19",129,5957493,2.2,1.9
+,"Census Region 4: West","CENS-R4","Idaho","16","2018","2018","Renal failure","N17-N19",253,1754208,14.4,12.7
+,"Census Region 4: West","CENS-R4","Idaho","16","2019","2019","Renal failure","N17-N19",267,1787065,14.9,13.2
+,"Census Region 4: West","CENS-R4","Idaho","16","2020","2020","Renal failure","N17-N19",336,1826913,18.4,15.4
+,"Census Region 4: West","CENS-R4","Idaho","16","2021","2021","Renal failure","N17-N19",565,1900923,29.7,25.9
+,"Census Region 4: West","CENS-R4","Idaho","16","2022","2022","Renal failure","N17-N19",585,1939033,30.2,25.4
+,"Census Region 4: West","CENS-R4","Idaho","16","2023","2023","Renal failure","N17-N19",554,1964726,28.2,23.8
+,"Census Region 4: West","CENS-R4","Idaho","16","2024 (provisional)","2024","Renal failure","N17-N19",506,2001619,25.3,21.0
+,"Census Region 4: West","CENS-R4","Idaho","16","2025 (provisional and partial)","2025","Renal failure","N17-N19",476,2001619,23.8,19.5
+,"Census Region 4: West","CENS-R4","Idaho","16","2026 (provisional and partial)","2026","Renal failure","N17-N19",30,2001619,1.5,1.3
+,"Census Region 4: West","CENS-R4","Montana","30","2018","2018","Renal failure","N17-N19",199,1062305,18.7,13.7
+,"Census Region 4: West","CENS-R4","Montana","30","2019","2019","Renal failure","N17-N19",198,1068778,18.5,14.1
+,"Census Region 4: West","CENS-R4","Montana","30","2020","2020","Renal failure","N17-N19",280,1080577,25.9,19.7
+,"Census Region 4: West","CENS-R4","Montana","30","2021","2021","Renal failure","N17-N19",510,1104271,46.2,36.0
+,"Census Region 4: West","CENS-R4","Montana","30","2022","2022","Renal failure","N17-N19",511,1122867,45.5,33.9
+,"Census Region 4: West","CENS-R4","Montana","30","2023","2023","Renal failure","N17-N19",407,1132812,35.9,26.8
+,"Census Region 4: West","CENS-R4","Montana","30","2024 (provisional)","2024","Renal failure","N17-N19",402,1137233,35.3,25.9
+,"Census Region 4: West","CENS-R4","Montana","30","2025 (provisional and partial)","2025","Renal failure","N17-N19",413,1137233,36.3,26.7
+,"Census Region 4: West","CENS-R4","Montana","30","2026 (provisional and partial)","2026","Renal failure","N17-N19",29,1137233,2.6,2.0
+,"Census Region 4: West","CENS-R4","Nevada","32","2018","2018","Renal failure","N17-N19",584,3034392,19.2,16.9
+,"Census Region 4: West","CENS-R4","Nevada","32","2019","2019","Renal failure","N17-N19",519,3080156,16.8,14.7
+,"Census Region 4: West","CENS-R4","Nevada","32","2020","2020","Renal failure","N17-N19",731,3138259,23.3,19.8
+,"Census Region 4: West","CENS-R4","Nevada","32","2021","2021","Renal failure","N17-N19",1003,3143991,31.9,27.8
+,"Census Region 4: West","CENS-R4","Nevada","32","2022","2022","Renal failure","N17-N19",1367,3177772,43.0,36.4
+,"Census Region 4: West","CENS-R4","Nevada","32","2023","2023","Renal failure","N17-N19",1122,3194176,35.1,29.4
+,"Census Region 4: West","CENS-R4","Nevada","32","2024 (provisional)","2024","Renal failure","N17-N19",1014,3267467,31.0,25.4
+,"Census Region 4: West","CENS-R4","Nevada","32","2025 (provisional and partial)","2025","Renal failure","N17-N19",936,3267467,28.6,23.6
+,"Census Region 4: West","CENS-R4","Nevada","32","2026 (provisional and partial)","2026","Renal failure","N17-N19",57,3267467,1.7,1.4
+,"Census Region 4: West","CENS-R4","New Mexico","35","2018","2018","Renal failure","N17-N19",389,2095428,18.6,15.4
+,"Census Region 4: West","CENS-R4","New Mexico","35","2019","2019","Renal failure","N17-N19",383,2096829,18.3,14.9
+,"Census Region 4: West","CENS-R4","New Mexico","35","2020","2020","Renal failure","N17-N19",544,2106319,25.8,20.8
+,"Census Region 4: West","CENS-R4","New Mexico","35","2021","2021","Renal failure","N17-N19",790,2115877,37.3,30.6
+,"Census Region 4: West","CENS-R4","New Mexico","35","2022","2022","Renal failure","N17-N19",763,2113344,36.1,29.0
+,"Census Region 4: West","CENS-R4","New Mexico","35","2023","2023","Renal failure","N17-N19",554,2114371,26.2,20.5
+,"Census Region 4: West","CENS-R4","New Mexico","35","2024 (provisional)","2024","Renal failure","N17-N19",566,2130256,26.6,20.5
+,"Census Region 4: West","CENS-R4","New Mexico","35","2025 (provisional and partial)","2025","Renal failure","N17-N19",541,2130256,25.4,19.8
+,"Census Region 4: West","CENS-R4","New Mexico","35","2026 (provisional and partial)","2026","Renal failure","N17-N19",31,2130256,1.5,1.2
+,"Census Region 4: West","CENS-R4","Utah","49","2018","2018","Renal failure","N17-N19",436,3161105,13.8,16.7
+,"Census Region 4: West","CENS-R4","Utah","49","2019","2019","Renal failure","N17-N19",485,3205958,15.1,17.9
+,"Census Region 4: West","CENS-R4","Utah","49","2020","2020","Renal failure","N17-N19",605,3249879,18.6,21.4
+,"Census Region 4: West","CENS-R4","Utah","49","2021","2021","Renal failure","N17-N19",812,3337975,24.3,28.4
+,"Census Region 4: West","CENS-R4","Utah","49","2022","2022","Renal failure","N17-N19",859,3380800,25.4,29.2
+,"Census Region 4: West","CENS-R4","Utah","49","2023","2023","Renal failure","N17-N19",801,3417734,23.4,27.2
+,"Census Region 4: West","CENS-R4","Utah","49","2024 (provisional)","2024","Renal failure","N17-N19",786,3503613,22.4,25.9
+,"Census Region 4: West","CENS-R4","Utah","49","2025 (provisional and partial)","2025","Renal failure","N17-N19",630,3503613,18.0,20.6
+,"Census Region 4: West","CENS-R4","Utah","49","2026 (provisional and partial)","2026","Renal failure","N17-N19",29,3503613,0.8,0.9
+,"Census Region 4: West","CENS-R4","Wyoming","56","2018","2018","Renal failure","N17-N19",97,577737,16.8,14.3
+,"Census Region 4: West","CENS-R4","Wyoming","56","2019","2019","Renal failure","N17-N19",114,578759,19.7,16.2
+,"Census Region 4: West","CENS-R4","Wyoming","56","2020","2020","Renal failure","N17-N19",135,582328,23.2,18.6
+,"Census Region 4: West","CENS-R4","Wyoming","56","2021","2021","Renal failure","N17-N19",252,578803,43.5,35.5
+,"Census Region 4: West","CENS-R4","Wyoming","56","2022","2022","Renal failure","N17-N19",240,581381,41.3,32.9
+,"Census Region 4: West","CENS-R4","Wyoming","56","2023","2023","Renal failure","N17-N19",251,584057,43.0,33.8
+,"Census Region 4: West","CENS-R4","Wyoming","56","2024 (provisional)","2024","Renal failure","N17-N19",288,587618,49.0,37.6
+,"Census Region 4: West","CENS-R4","Wyoming","56","2025 (provisional and partial)","2025","Renal failure","N17-N19",264,587618,44.9,35.3
+,"Census Region 4: West","CENS-R4","Alaska","02","2018","2018","Renal failure","N17-N19",56,737438,7.6,8.8
+,"Census Region 4: West","CENS-R4","Alaska","02","2019","2019","Renal failure","N17-N19",69,731545,9.4,11.3
+,"Census Region 4: West","CENS-R4","Alaska","02","2020","2020","Renal failure","N17-N19",78,731158,10.7,11.6
+,"Census Region 4: West","CENS-R4","Alaska","02","2021","2021","Renal failure","N17-N19",157,732673,21.4,22.8
+,"Census Region 4: West","CENS-R4","Alaska","02","2022","2022","Renal failure","N17-N19",211,733583,28.8,31.7
+,"Census Region 4: West","CENS-R4","Alaska","02","2023","2023","Renal failure","N17-N19",166,733406,22.6,23.7
+,"Census Region 4: West","CENS-R4","Alaska","02","2024 (provisional)","2024","Renal failure","N17-N19",137,740133,18.5,19.0
+,"Census Region 4: West","CENS-R4","Alaska","02","2025 (provisional and partial)","2025","Renal failure","N17-N19",151,740133,20.4,20.5
+,"Census Region 4: West","CENS-R4","California","06","2018","2018","Renal failure","N17-N19",7291,39557045,18.4,16.5
+,"Census Region 4: West","CENS-R4","California","06","2019","2019","Renal failure","N17-N19",7344,39512223,18.6,16.3
+,"Census Region 4: West","CENS-R4","California","06","2020","2020","Renal failure","N17-N19",9505,39368078,24.1,20.8
+,"Census Region 4: West","CENS-R4","California","06","2021","2021","Renal failure","N17-N19",14288,39237836,36.4,32.1
+,"Census Region 4: West","CENS-R4","California","06","2022","2022","Renal failure","N17-N19",13494,39029342,34.6,29.3
+,"Census Region 4: West","CENS-R4","California","06","2023","2023","Renal failure","N17-N19",12329,38965193,31.6,26.6
+,"Census Region 4: West","CENS-R4","California","06","2024 (provisional)","2024","Renal failure","N17-N19",11960,39431263,30.3,25.1
+,"Census Region 4: West","CENS-R4","California","06","2025 (provisional and partial)","2025","Renal failure","N17-N19",11568,39431263,29.3,24.3
+,"Census Region 4: West","CENS-R4","California","06","2026 (provisional and partial)","2026","Renal failure","N17-N19",657,39431263,1.7,1.4
+,"Census Region 4: West","CENS-R4","Hawaii","15","2018","2018","Renal failure","N17-N19",215,1420491,15.1,10.8
+,"Census Region 4: West","CENS-R4","Hawaii","15","2019","2019","Renal failure","N17-N19",211,1415872,14.9,10.9
+,"Census Region 4: West","CENS-R4","Hawaii","15","2020","2020","Renal failure","N17-N19",230,1407006,16.3,11.3
+,"Census Region 4: West","CENS-R4","Hawaii","15","2021","2021","Renal failure","N17-N19",335,1441553,23.2,16.7
+,"Census Region 4: West","CENS-R4","Hawaii","15","2022","2022","Renal failure","N17-N19",351,1440196,24.4,16.9
+,"Census Region 4: West","CENS-R4","Hawaii","15","2023","2023","Renal failure","N17-N19",382,1435138,26.6,17.9
+,"Census Region 4: West","CENS-R4","Hawaii","15","2024 (provisional)","2024","Renal failure","N17-N19",375,1446146,25.9,16.8
+,"Census Region 4: West","CENS-R4","Hawaii","15","2025 (provisional and partial)","2025","Renal failure","N17-N19",351,1446146,24.3,16.3
+,"Census Region 4: West","CENS-R4","Hawaii","15","2026 (provisional and partial)","2026","Renal failure","N17-N19",17,1446146,Unreliable,Unreliable
+,"Census Region 4: West","CENS-R4","Oregon","41","2018","2018","Renal failure","N17-N19",936,4190713,22.3,17.6
+,"Census Region 4: West","CENS-R4","Oregon","41","2019","2019","Renal failure","N17-N19",913,4217737,21.6,16.7
+,"Census Region 4: West","CENS-R4","Oregon","41","2020","2020","Renal failure","N17-N19",939,4241507,22.1,17.1
+,"Census Region 4: West","CENS-R4","Oregon","41","2021","2021","Renal failure","N17-N19",1423,4246155,33.5,26.7
+,"Census Region 4: West","CENS-R4","Oregon","41","2022","2022","Renal failure","N17-N19",1603,4240137,37.8,28.5
+,"Census Region 4: West","CENS-R4","Oregon","41","2023","2023","Renal failure","N17-N19",1527,4233358,36.1,27.4
+,"Census Region 4: West","CENS-R4","Oregon","41","2024 (provisional)","2024","Renal failure","N17-N19",1461,4272371,34.2,25.1
+,"Census Region 4: West","CENS-R4","Oregon","41","2025 (provisional and partial)","2025","Renal failure","N17-N19",1548,4272371,36.2,26.8
+,"Census Region 4: West","CENS-R4","Oregon","41","2026 (provisional and partial)","2026","Renal failure","N17-N19",72,4272371,1.7,1.2
+,"Census Region 4: West","CENS-R4","Washington","53","2018","2018","Renal failure","N17-N19",1492,7535591,19.8,17.4
+,"Census Region 4: West","CENS-R4","Washington","53","2019","2019","Renal failure","N17-N19",1518,7614893,19.9,17.2
+,"Census Region 4: West","CENS-R4","Washington","53","2020","2020","Renal failure","N17-N19",1759,7693612,22.9,19.6
+,"Census Region 4: West","CENS-R4","Washington","53","2021","2021","Renal failure","N17-N19",2898,7738692,37.4,32.9
+,"Census Region 4: West","CENS-R4","Washington","53","2022","2022","Renal failure","N17-N19",3680,7785786,47.3,39.6
+,"Census Region 4: West","CENS-R4","Washington","53","2023","2023","Renal failure","N17-N19",3470,7812880,44.4,37.1
+,"Census Region 4: West","CENS-R4","Washington","53","2024 (provisional)","2024","Renal failure","N17-N19",3162,7958180,39.7,32.9
+,"Census Region 4: West","CENS-R4","Washington","53","2025 (provisional and partial)","2025","Renal failure","N17-N19",3165,7958180,39.8,32.8
+,"Census Region 4: West","CENS-R4","Washington","53","2026 (provisional and partial)","2026","Renal failure","N17-N19",134,7958180,1.7,1.4
+"---"
+"Dataset: Provisional Mortality Statistics, 2018 through Last Week"
+"Query Parameters:"
+"MCD - ICD-10 Codes: N17.0 (Acute renal failure with tubular necrosis); N17.1 (Acute renal failure with acute cortical necrosis);"
+"N17.2 (Acute renal failure with medullary necrosis); N17.8 (Other acute renal failure); N17.9 (Acute renal failure, unspecified)"
+"Group By: Residence Census Region; Residence State; Year; MCD - ICD Sub-Chapter"
+"Show Totals: Disabled"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Standard Population: 2000 U.S. Std. Population"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/mcd-provisional.html for more information."
+"---"
+"Query Date: Feb 8, 2026 6:08:42 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Provisional Mortality on CDC WONDER Online Database. Data are from the final Multiple Cause of Death Files, 2018-2023,"
+"and from provisional data for years 2024 and later, as compiled from data provided by the 57 vital statistics jurisdictions"
+"through the Vital Statistics Cooperative Program. Accessed at http://wonder.cdc.gov/mcd-icd10-provisional.html on Feb 8, 2026"
+"6:08:42 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"2. Rows with suppressed Deaths are hidden. Use Quick Options above to show suppressed rows."
+"---"
+Footnotes:
+"1. Totals and sub-totals show the frequency of the selected causes of death, which may be greater than the number of deaths."
+"Note that any single death record may have up to 20 causes. More information."
+"---"
+Caveats:
+"1. These items in the results table are not fully selected: Renal failure. The Query Description lists the actual values"
+"selected."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Unreliable."
+"4. The populations used to calculate standard age-adjusted rates are documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/mcd-provisional.html#2000 Standard Population."
+"5. The method used to calculate age-adjusted rates is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Age-Adjusted Rates."
+"6. Deaths for persons of unknown age are included in counts and crude rates, but are not included in age-adjusted rates."
+"7. The population estimates for years 2022 - 2026 are from separate series of estimates based on the Modified Blended Base"
+"produced by the US Census Bureau in lieu of the April 1, 2020 decennial population count. The Modified Blended Base consists of"
+"the blend of Vintage 2020 postcensal population estimates for April 1, 2020, 2020 Demographic Analysis Estimates, and 2020"
+"Census data from the internal Census Edited File (CEF). Each subsequent series of estimates adjusts the methodology."" The"
+"population figures for years 2024 and later are single-race estimates of the July 1 resident population, from the Vintage 2024"
+"postcensal series released by the Census Bureau on June 26, 2025. The population figures for year 2023 are single-race estimates"
+"of the July 1 resident population, from the Vintage 2023 postcensal series released by the Census Bureau on June 27, 2024. T The"
+"population figures for year 2022 are single-race estimates of the July 1 resident population, from the Vintage 2022 postcensal"
+"series released by the Census Bureau on June 22, 2023. The population figures for year 2021 are single-race estimates of the"
+"July 1 resident population, based on the Blended Base produced by the US Census Bureau in lieu of the April 1, 2020 decennial"
+"population count, from the Vintage 2021 postcensal series released by the Census Bureau on June 30, 2022. The population figures"
+"for year 2020 are single-race estimates of the July 1 resident population, from the Vintage 2020 postcensal series based on"
+"April 2010 Census, released by the Census Bureau on July 27, 2021. The population figures for year 2019 are single-race"
+"estimates of the July 1 resident population, from the Vintage 2019 postcensal series based on April 2010 Census, released by the"
+"Census Bureau on June 25, 2020. The population figures for year 2018 are single-race estimates of the July 1 resident"
+"population, from the Vintage 2018 postcensal series based on April 2010 Census, released by the Census Bureau on June 20, 2019."
+"More information: http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Population Data."
+"8. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Age"
+"Group."
+"9. Beginning with the 2018 data, changes have been implemented that affect the counts for ICD-10 cause of death codes O00-O99"
+"compared to previous practice. In addition, data for the cause of death codes O00-O99 for 2003 through 2017 reflect differences"
+"in information available to individual states and probable errors. Deaths with the underlying cause classified with O00-O99 are"
+"subject to further processing before these deaths records are considered final. Provisional deaths have not undergone full"
+"processing and review and therefore should not be considered final for statistical purposes. Caution should be used in"
+"interpreting these data. More information can be found at: https://www.cdc.gov/nchs/maternal-mortality/."
+"10. On March 11, 2021, the 2019 mortality data on CDC WONDER was updated with the 2019 mortality data updated by NCHS on March"
+"4, 2021 to include corrected information for residents of Texas affecting 5 records previously coded to cause code *U01.4,"
+"Terrorism involving firearms (homicide). The underlying and multiple cause of death codes for 5 records were corrected in the"
+"2019 data. Underlying and multiple cause of death codes for those 5 records were recoded to Assault (homicide) by other and"
+"unspecified firearm discharge, ICD-10 code X95. The corrected final death records replaces the data released on December 22,"
+"2020."
+"11. Connecticut population estimates for 2022 and later years are reported for 9 planning regions as county equivalent areas,"
+"instead of the former 8 legacy counties in the Vintage 2022 postcensal series released by the Census Bureau on June 22, 2023,"
+"and in the Vintage 2023 postcensal series released by the Census Bureau on June 27, 2024. Populations estimates for the former"
+"counties are not available for 2022 and later years. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Connecticut-2022."
+"12. After the creation of the final 2023 dataset, North Carolina updated the cause of death information for over 900 death"
+"certificates to include a cause of death code indicating drug overdose (ICD-10 underlying cause-of-death codes: X40-X44,"
+"X60-X64, X85, and Y10-Y14). Jurisdictions can continue to update death certificates after the closing of the mortality file. As"
+"a result, users should consider that the actual death count for drug overdose deaths for North Carolina in 2023 is over 4,400"
+"deaths, with a crude rate of approximately 41.0 per 100,000 population, and an age-adjusted rate of approximately 42.1 per"
+"100,000 population. These deaths will not be updated on the final mortality datasets."
+"13. Changes to cause of death classification affect reporting trends. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd-provisional.html#ICD-10 Changes."
+"14. Deaths related to external causes of injury or sudden death: In the provisional mortality data, causes of death classified"
+"as external causes of injury (ICD-10 codes V01-Y89), sudden deaths (ICD-10 codes R95 and R96), or drug poisoning (ICD-10 codes"
+"T36-T50), have the cause of death labeled as 'Data not shown due to 6 month lag to account for delays in death certificate"
+"completion for certain causes of death.' For these deaths occurring 24 weeks prior to the final date in the provisional data,"
+"the number of deaths and related statistics are not available by specific cause of death for ICD-10 codes V01-Y89, R95, R96, or"
+"T36-T50. More information: http://wonder.cdc.gov/wonder/help/mcd-provisional.html#999."
+"15. Deaths occurring through January 24, 2026 as of February 01, 2026."

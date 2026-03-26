@@ -1,0 +1,676 @@
+---
+title: "region"
+format: html
+editor: visual
+---
+```{r}
+library(readr)
+library(tidyverse)
+library(lubridate)
+library(splines)
+library(broom)
+library(usmap)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(readr)
+library(officer)
+library(flextable)
+library(dplyr)
+library(conflicted)
+conflicts_prefer(dplyr::select)
+```
+```{r}
+parse_num_safe <- function(x) {
+  readr::parse_number(as.character(x), na = c("", "NA", "Unreliable", "Not Applicable"))
+}
+
+clean_year <- function(df) {
+  df %>%
+    # rename residence columns to match old schema if they exist
+    rename(any_of(c(
+      "Census Region"      = "Residence Census Region",
+      "Census Region Code" = "Residence Census Region Code",
+      "State"              = "Residence State",
+      "State Code"         = "Residence State Code"
+    ))) %>%
+    mutate(
+      # standardize Year type across files
+      Year_raw  = as.character(Year),
+      Year      = readr::parse_number(Year_raw),
+      Year_note = str_squish(str_remove(Year_raw, "^\\d{4}")),
+
+      # types
+      `Year Code`         = as.integer(`Year Code`),
+      Deaths              = as.numeric(Deaths),
+      Population          = parse_num_safe(Population),
+      `Crude Rate`        = parse_num_safe(`Crude Rate`),
+      `Age Adjusted Rate` = parse_num_safe(`Age Adjusted Rate`),
+
+      # also standardize State Code to 2-digit character (helps later joins)
+      `State Code` = sprintf("%02d", as.integer(`State Code`))
+    )
+}
+```
+
+```{r}
+N172010 <- read_csv("Data/regionN172010.csv") %>%
+  filter(`Year Code` < 2018)
+N172018 <- read_csv("Data/regionN172018.csv")
+
+N17 <- bind_rows(
+  clean_year(N172010 ),
+  clean_year(N172018 )
+) %>%
+  select(-Year_raw)
+
+glimpse(N17)
+```
+
+```{r}
+A402010 <- read_csv("Data/regionA402010.csv")%>%
+  filter(`Year Code` < 2018)
+A402018 <- read_csv("Data/regionA402018.csv")
+A40 <- bind_rows(
+  clean_year(A402010 ),
+  clean_year(A402018 )
+) %>%
+  select(-Year_raw)
+```
+```{r}
+N17A402010 <- read_csv("Data/regionN17A402010.csv")%>%
+  filter(`Year Code` < 2018)
+N17A402018 <- read_csv("Data/regionN17A402018.csv")
+
+N17A40 <- bind_rows(
+  clean_year(N17A402010 ),
+  clean_year(N17A402018 )
+) %>%
+  select(-Year_raw)
+N17A40_RF <- N17A40 %>%
+  dplyr::filter(`MCD - ICD Sub-Chapter` == "Renal failure")
+
+```
+
+### Map
+```{r}
+period_map <- function(y) {
+  y <- suppressWarnings(as.integer(y))
+  dplyr::case_when(
+    y >= 2010 & y <= 2019 ~ "pre-pandemic (2010–2019)",
+    y >= 2020 & y <= 2022 ~ "pandemic (2020–2022)",
+    y == 2023             ~ "transition (2023)",
+    y >= 2024 & y <= 2025 ~ "post-pandemic (2024–2025)",
+    TRUE                  ~ NA_character_
+  )
+}
+
+```
+
+```{r}
+prep_state_period_aar <- function(df, outcome_label) {
+  df %>%
+    filter(is.na(Notes) | Notes != "Total") %>%
+    mutate(
+      period = period_map(`Year Code`)
+    ) %>%
+    filter(!is.na(period)) %>%
+    group_by(State, period) %>%
+    summarise(
+      AAR = mean(`Age Adjusted Rate`, na.rm = TRUE),   # period mean of annual AAR
+      .groups = "drop"
+    ) %>%
+    mutate(outcome = outcome_label)
+}
+
+state_period_aar <- bind_rows(
+  prep_state_period_aar(N17,    "AKI"),
+  prep_state_period_aar(A40,    "Sepsis"),
+  prep_state_period_aar(N17A40_RF, "AKI/sepsis")
+)
+
+
+
+```
+
+```{r}
+fi <- usmap::fips_info
+if (is.function(fi)) fi <- usmap::fips_info()
+
+state_period_aar_usmap <- state_period_aar %>%
+  left_join(
+    fi %>% select(full, abbr),
+    by = c("State" = "full")
+  ) %>%
+  rename(state = abbr) %>%
+  filter(!is.na(state)) %>%
+  mutate(
+    period = factor(
+      period,
+      levels = c(
+        "pre-pandemic (2010–2019)",
+        "pandemic (2020–2022)",
+        "transition (2023)",
+        "post-pandemic (2024–2025)"
+      )
+    )
+  ) %>%
+  select(state, period, outcome, AAR)
+
+```
+
+```{r}
+make_outcome_map <- function(df, outcome_name, low_col, high_col) {
+
+  df_out  <- df %>% filter(outcome == outcome_name)
+  max_out <- max(df_out$AAR, na.rm = TRUE)
+
+  plot_usmap(
+    regions = "states",
+    data    = df_out,
+    values  = "AAR",
+    color   = "grey60",
+    size    = 0.2
+  ) +
+    facet_grid(period ~ .) +
+    scale_fill_gradient(
+      low      = low_col,
+      high     = high_col,
+      limits   = c(0, max_out),
+      oob      = scales::squish,
+      breaks   = pretty(c(0, max_out), n = 5),
+      labels   = scales::number_format(accuracy = 1),
+      na.value = "grey90"
+    ) +
+    guides(
+      fill = guide_colorbar(
+        title.position = "top",
+        title.hjust    = 0.5,
+        barwidth       = unit(6, "cm"),
+        barheight      = unit(0.6, "cm")
+      )
+    ) +
+    labs(
+      title    = paste0(outcome_name),
+      subtitle = paste0("Scale: 0–", round(max_out, 0), " per 100,000"),
+      fill     = "AAMR per 100,000"
+    ) +
+    theme_minimal(base_size = 12) +
+    theme(
+      plot.title    = element_text(face = "bold", color = high_col),
+      plot.subtitle = element_text(color = "grey30"),
+      strip.text    = element_text(face = "bold", color = high_col),
+      legend.position = "bottom",
+      legend.title   = element_text(face = "bold"),
+      panel.grid     = element_blank()
+    )
+}
+
+```
+
+```{r}
+map_n17 <- make_outcome_map(
+  state_period_aar_usmap,
+  outcome_name = "AKI",
+  low_col  = "#f7fbff",
+  high_col = "#08306b"
+)
+
+map_a40 <- make_outcome_map(
+  state_period_aar_usmap,
+  outcome_name = "Sepsis",
+  low_col  = "#fee5d9",
+  high_col = "#99000d"
+)
+
+map_n17a40 <- make_outcome_map(
+  state_period_aar_usmap,
+  outcome_name = "AKI/sepsis",
+  low_col  = "#e6f4f3",
+  high_col = "#0b6b66"
+)
+
+map_n17
+map_a40
+map_n17a40
+
+
+```
+
+```{r}
+library(patchwork)
+final_plot <- (map_n17 | map_a40 | map_n17a40)
+final_plot
+```
+
+```{r}
+ggsave("figures/AAR_maps_3outcomes_4periodsO.png", final_plot,
+       width = 16, height = 10, dpi = 600)
+ggsave(
+  filename = "figures/AAR_maps_3outcomes_4periodsO.tiff",
+  plot = final_plot,
+  device = "tiff",
+  dpi = 300,
+  width = 16,
+  height = 10,
+  units = "in",
+  compression = "lzw"
+)
+```
+
+### scatter plot
+```{r}
+prep_state_period_scatter <- function(df, outcome_label) {
+  df %>%
+    filter(is.na(Notes) | Notes != "Total") %>%
+    mutate(
+      period = period_map(`Year Code`),
+      region = str_remove(`Census Region`, "^Census Region \\d+:\\s*")
+    ) %>%
+    filter(!is.na(period)) %>%
+    group_by(State, period, region) %>%
+    summarise(
+      pop = sum(Population, na.rm = TRUE),
+      AAR = mean(`Age Adjusted Rate`, na.rm = TRUE),   # period mean of annual AAR
+      .groups = "drop"
+    ) %>%
+    mutate(outcome = outcome_label)
+}
+
+```
+
+```{r}
+scatter_data <- bind_rows(
+  prep_state_period_scatter(N17,    "AKI"),
+  prep_state_period_scatter(A40,    "Sepsis"),
+  prep_state_period_scatter(N17A40_RF, "AKI/sepsis")
+) %>%
+  mutate(
+    period  = factor(period, levels = c(
+      "pre-pandemic (2010–2019)",
+      "pandemic (2020–2022)",
+      "transition (2023)",
+      "post-pandemic (2024–2025)"
+    )),
+    outcome = factor(outcome, levels = c(
+      "AKI",
+      "Sepsis",
+      "AKI/sepsis"
+    ))
+  )
+```
+
+```{r}
+library(usmap)
+
+fi <- usmap::fips_info
+if (is.function(fi)) fi <- usmap::fips_info()
+
+scatter_data <- scatter_data %>%
+  left_join(fi %>% select(full, abbr), by = c("State" = "full")) %>%
+  mutate(state_abbr = abbr)
+
+scatter_data <- scatter_data %>%
+  mutate(label_ok = pop >= 5e6) %>%
+  filter(!is.na(AAR), AAR > 0, pop > 0)
+
+scatter_data <- scatter_data %>%
+  group_by(period, outcome) %>%
+  mutate(
+    rank_pop = rank(-pop, ties.method = "first"),
+    rank_aar = rank(-AAR, ties.method = "first"),
+    label_ok = rank_aar <= 15   # tune these numbers
+  ) %>%
+  ungroup()
+avg_lines <- scatter_data %>%
+  group_by(period, outcome) %>%
+  summarise(
+    mean_AAR = mean(AAR, na.rm = TRUE),
+    .groups = "drop"
+  )
+```
+
+```{r}
+library(ggplot2)
+library(ggrepel)
+library(scales)
+
+p_scatter_better <- ggplot(
+  scatter_data %>% filter(!is.na(AAR), AAR > 0, pop > 0),
+  aes(x = pop/1e6, y = AAR, color = region)
+) +
+  geom_point(size = 1.7, alpha = 0.85) +
+  geom_hline(
+    data = avg_lines,
+    aes(yintercept = mean_AAR),
+    inherit.aes = FALSE,
+    color = "grey40",
+    linetype = "dashed",
+    linewidth = 0.6
+  )+ 
+
+  geom_text_repel(
+    data = subset(scatter_data, label_ok),
+    aes(label = state_abbr),
+    size = 3,
+    fontface = "plain",
+    max.overlaps = Inf,
+    box.padding = 0.15,
+    point.padding = 0.10,
+    # huge readability gain:
+    segment.color = NA   # <- no leader lines
+  ) +
+
+  scale_x_log10(
+    name = "Population (millions, log scale)",
+    breaks = c(0.5, 1, 2, 5, 10, 20, 40),
+    labels = label_number(accuracy = 0.1)
+  ) +
+  scale_y_log10(
+    name = "Age-adjusted mortality rate per 100,000 (log scale)",
+    breaks = c( 5, 10, 20,30,40, 50),
+    labels = label_number()
+  ) + 
+  geom_text(
+    data = avg_lines,
+    aes(x = 0.6, y = mean_AAR, label = "Panel average"),
+    inherit.aes = FALSE,
+    hjust = 0,
+    vjust = -0.4,
+    size = 3,
+    color = "grey40"
+  )+
+
+  facet_grid(period ~ outcome) +
+  labs(
+    title = "State-level age-adjusted mortality rate vs population",
+    subtitle = "Points colored by Census Region; labeled states = largest populations or highest rates within each panel"
+  ) +
+
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title = element_text(face = "bold"),
+    strip.text = element_text(face = "bold"),
+    legend.position = "top",
+    legend.title = element_blank(),
+
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank()
+  )
+
+p_scatter_better
+
+```
+
+```{r}
+ggsave("figures/scatter_AAR_vs_pop_readable.png",
+       p_scatter_better,
+       width = 18, height = 11, dpi = 600)
+```
+
+```{r}
+avg_lines2 <- scatter_data %>%
+  filter(!is.na(AAR), AAR > 0, pop > 0) %>%
+  group_by(outcome, period) %>%
+  summarise(mean_AAR = mean(AAR, na.rm = TRUE), .groups = "drop")
+```
+
+```{r}
+
+plot_scatter_one_disease <- function(outcome_name) {
+
+  df <- scatter_data %>%
+    filter(outcome == outcome_name, !is.na(AAR), AAR > 0, pop > 0)
+
+  al <- avg_lines2 %>% filter(outcome == outcome_name)
+
+  # ---- dynamic y-scale (per disease) ----
+  # use observed range, padded a bit
+  y_min <- min(df$AAR, na.rm = TRUE) * 0.90
+  y_max <- max(df$AAR, na.rm = TRUE) * 1.10
+
+  ggplot(df, aes(x = pop/1e6, y = AAR, color = region)) +
+    geom_point(size = 1.7, alpha = 0.85) +
+
+    # panel average line (per period)
+    geom_hline(
+      data = al,
+      aes(yintercept = mean_AAR),
+      inherit.aes = FALSE,
+      color = "grey40",
+      linetype = "dashed",
+      linewidth = 0.6
+    ) +
+
+    # optional label for average (kept subtle)
+    geom_text(
+      data = al,
+      aes(x = 0.6, y = mean_AAR, label = "Panel avg"),
+      inherit.aes = FALSE,
+      hjust = 0,
+      vjust = -0.4,
+      size = 3,
+      color = "grey40"
+    ) +
+
+    # label only selected states
+    geom_text_repel(
+      data = subset(df, label_ok),
+      aes(label = state_abbr),
+      size = 3,
+      max.overlaps = Inf,
+      box.padding = 0.15,
+      point.padding = 0.10,
+      segment.color = NA
+    ) +
+
+    scale_x_log10(
+      name = "Population (millions, log scale)",
+      breaks = c(0.5, 1, 2, 5, 10, 20, 40),
+      labels = label_number(accuracy = 0.1)
+    ) +
+
+    # ✅ adjusted y-scale (NOT starting at 0)
+    scale_y_continuous(
+      name = "Age-adjusted mortality rate per 100,000",
+      breaks = pretty(c(y_min, y_max), n = 5),
+      labels = label_number(accuracy = 1)
+    ) +
+    coord_cartesian(ylim = c(y_min, y_max)) +
+
+    # 4 periods inside ONE disease plot
+    facet_wrap(~ period, ncol = 2) +
+
+  
+
+    theme_minimal(base_size = 12) +
+    theme(
+      plot.title = element_text(face = "bold"),
+      strip.text = element_text(face = "bold"),
+      legend.position = "top",
+      legend.title = element_blank(),
+      panel.grid.minor = element_blank(),
+      panel.grid.major.x = element_blank()
+    )
+}
+
+```
+
+```{r}
+p_aki   <- plot_scatter_one_disease("AKI")
+p_sep   <- plot_scatter_one_disease("Sepsis")
+p_both  <- plot_scatter_one_disease("AKI/sepsis")
+
+p_aki
+p_sep
+p_both
+
+```
+```{r}
+ggsave(
+  filename = "figures/Scatter_AKI_AAR_vs_Population.tiff",
+  plot = p_aki,
+  device = "tiff",
+  dpi = 300,
+  width = 10,
+  height = 7.5,
+  units = "in",
+  compression = "lzw"
+)
+
+ggsave(
+  filename = "figures/Scatter_Sepsis_AAR_vs_Population.tiff",
+  plot = p_sep,
+  device = "tiff",
+  dpi = 300,
+  width = 10,
+  height = 7.5,
+  units = "in",
+  compression = "lzw"
+)
+
+ggsave(
+  filename = "figures/Scatter_AKI_Sepsis_AAR_vs_Population.tiff",
+  plot = p_both,
+  device = "tiff",
+  dpi = 300,
+  width = 10,
+  height = 7.5,
+  units = "in",
+  compression = "lzw"
+)
+
+```
+
+### Table
+```{r}
+
+period_levels <- c(
+  "pre-pandemic (2010–2019)",
+  "pandemic (2020–2022)",
+  "transition (2023)",
+  "post-pandemic (2024–2025)"
+)
+
+outcome_levels <- c("AKI", "Sepsis", "AKI/sepsis")
+
+prep_state_period_rate <- function(df, outcome_label, rate_col = "Age Adjusted Rate") {
+  df %>%
+    filter(is.na(Notes) | Notes != "Total") %>%
+    mutate(
+      period = period_map(`Year Code`),
+      State  = str_squish(State)
+    ) %>%
+    filter(!is.na(period), !is.na(State)) %>%
+    group_by(State, period) %>%
+    summarise(
+      AAMR = mean(.data[[rate_col]], na.rm = TRUE),
+      .groups = "drop"
+    ) %>%
+    mutate(outcome = outcome_label)
+}
+
+state_period_aamr <- bind_rows(
+  prep_state_period_rate(N17,    "AKI",          rate_col = "Age Adjusted Rate"),
+  prep_state_period_rate(A40,    "Sepsis",       rate_col = "Age Adjusted Rate"),
+  prep_state_period_rate(N17A40_RF, "AKI/sepsis", rate_col = "Age Adjusted Rate")
+) %>%
+  mutate(
+    period  = factor(period, levels = period_levels),
+    outcome = factor(outcome, levels = outcome_levels)
+  )
+```
+```{r}
+fi <- usmap::fips_info
+if (is.function(fi)) fi <- usmap::fips_info()
+
+all_states <- unique(fi$full) %>% setdiff("District of Columbia")
+
+state_aamr_table <- state_period_aamr %>%
+  filter(!is.na(State), State %in% all_states) %>%
+  complete(
+    State = all_states,
+    period = factor(period_levels, levels = period_levels),
+    outcome = factor(outcome_levels, levels = outcome_levels)
+  ) %>%
+  mutate(
+    period_short = dplyr::recode(as.character(period),
+      "pre-pandemic (2010–2019)"  = "Pre",
+      "pandemic (2020–2022)"      = "Pandemic",
+      "transition (2023)"         = "Transition",
+      "post-pandemic (2024–2025)" = "Post",
+      .default = NA_character_
+    ),
+    col = paste0(as.character(outcome), "_", period_short)
+  ) %>%
+  select(State, col, AAMR) %>%
+  # IMPORTANT: guarantee uniqueness BEFORE pivot
+  group_by(State, col) %>%
+  summarise(AAMR = mean(AAMR, na.rm = TRUE), .groups = "drop") %>%
+  pivot_wider(names_from = col, values_from = AAMR) %>%
+  arrange(State)
+
+state_aamr_table_pub <- state_aamr_table %>%
+  mutate(across(where(is.numeric), ~ round(.x, 2)))
+state_aamr_table_pub
+```
+
+```{r}
+library(officer)
+library(flextable)
+library(dplyr)
+```
+
+```{r}
+make_ft <- function(df, font_size = 9) {
+  flextable(df) |>
+    theme_booktabs() |>
+    fontsize(size = font_size, part = "all") |>
+    padding(padding = 2, part = "all") |>
+    autofit() |>
+    align(align = "center", part = "all") |>
+    align(j = 1, align = "left", part = "all")
+}
+
+# Check your real column names first (optional)
+# names(state_aamr_table_pub)
+
+# If your columns are ARF_Pre, ARF_Pandemic, ARF_Transition, ARF_Post:
+arf_tbl <- state_aamr_table_pub %>%
+  dplyr::select(dplyr::any_of(c("State","AKI_Pre","AKI_Pandemic","AKI_Transition","AKI_Post")))
+
+sep_tbl <- state_aamr_table_pub %>%
+  dplyr::select(dplyr::any_of(c("State","Sepsis_Pre","Sepsis_Pandemic","Sepsis_Transition","Sepsis_Post")))
+
+both_tbl <- state_aamr_table_pub %>%
+  dplyr::select(dplyr::any_of(c("State","AKI/sepsis_Pre","AKI/sepsis_Pandemic","AKI/sepsis_Transition","AKI/sepsis_Post")))
+
+doc <- read_docx()
+
+doc <- body_add_par(doc,
+  "State-level AAMRs by outcome and pandemic period (2010–2025)",
+  style = "heading 1"
+)
+
+doc <- body_add_par(doc,
+  "Values are age-adjusted mortality rates (AAMR) per 100,000, standardized to the 2000 U.S. standard population.",
+  style = "Normal"
+)
+
+doc <- body_add_par(doc, "AKI (Renal failure)", style = "heading 2")
+doc <- body_add_flextable(doc, make_ft(arf_tbl, font_size = 9))
+doc <- body_add_break(doc)
+
+doc <- body_add_par(doc, "Sepsis", style = "heading 2")
+doc <- body_add_flextable(doc, make_ft(sep_tbl, font_size = 9))
+doc <- body_add_break(doc)
+
+doc <- body_add_par(doc, "AKIF & Sepsis", style = "heading 2")
+doc <- body_add_flextable(doc, make_ft(both_tbl, font_size = 9))
+
+print(doc, target = "State_AAMR_Periods_Tables_Portrait.docx")
+
+
+
+```
+

@@ -1,0 +1,478 @@
+"Notes","Year","Year Code","MCD - ICD Sub-Chapter","MCD - ICD Sub-Chapter Code","Five-Year Age Groups","Five-Year Age Groups Code",Deaths,Population,Crude Rate,Crude Rate Lower 95% Confidence Interval,Crude Rate Upper 95% Confidence Interval
+,"2018","2018","Other bacterial diseases","A30-A49","15-19 years","15-19",19,21097221,0.1,0.1,0.1
+,"2018","2018","Other bacterial diseases","A30-A49","20-24 years","20-24",30,21873579,0.1,0.1,0.2
+,"2018","2018","Other bacterial diseases","A30-A49","25-29 years","25-29",69,23561756,0.3,0.2,0.4
+,"2018","2018","Other bacterial diseases","A30-A49","30-34 years","30-34",121,22136018,0.5,0.4,0.6
+,"2018","2018","Other bacterial diseases","A30-A49","35-39 years","35-39",210,21563587,1.0,0.8,1.1
+,"2018","2018","Other bacterial diseases","A30-A49","40-44 years","40-44",274,19714301,1.4,1.2,1.6
+,"2018","2018","Other bacterial diseases","A30-A49","45-49 years","45-49",453,20747135,2.2,2.0,2.4
+,"2018","2018","Other bacterial diseases","A30-A49","50-54 years","50-54",756,20884564,3.6,3.4,3.9
+,"2018","2018","Other bacterial diseases","A30-A49","55-59 years","55-59",1204,21940985,5.5,5.2,5.8
+,"2018","2018","Other bacterial diseases","A30-A49","60-64 years ","60-64",1680,20331651,8.3,7.9,8.7
+,"2018","2018","Other bacterial diseases","A30-A49","65-69 years","65-69",2073,17086893,12.1,11.6,12.7
+,"2018","2018","Other bacterial diseases","A30-A49","70-74 years","70-74",2337,13405423,17.4,16.7,18.1
+,"2018","2018","Other bacterial diseases","A30-A49","75-79 years","75-79",2377,9267066,25.6,24.6,26.7
+,"2018","2018","Other bacterial diseases","A30-A49","80-84 years","80-84",2415,6127308,39.4,37.8,41.0
+,"2018","2018","Other bacterial diseases","A30-A49","85-89 years","85-89",2242,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2018","2018","Other bacterial diseases","A30-A49","90-94 years","90-94",1467,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2018","2018","Other bacterial diseases","A30-A49","95-99 years","95-99",540,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2018","2018","Other bacterial diseases","A30-A49","100+ years","100+",83,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+"Total","2018","2018","Other bacterial diseases","A30-A49",,,18372,327167434,5.6,5.5,5.7
+,"2018","2018","Renal failure","N17-N19","15-19 years","15-19",19,21097221,0.1,0.1,0.1
+,"2018","2018","Renal failure","N17-N19","20-24 years","20-24",30,21873579,0.1,0.1,0.2
+,"2018","2018","Renal failure","N17-N19","25-29 years","25-29",69,23561756,0.3,0.2,0.4
+,"2018","2018","Renal failure","N17-N19","30-34 years","30-34",122,22136018,0.6,0.5,0.6
+,"2018","2018","Renal failure","N17-N19","35-39 years","35-39",211,21563587,1.0,0.8,1.1
+,"2018","2018","Renal failure","N17-N19","40-44 years","40-44",281,19714301,1.4,1.3,1.6
+,"2018","2018","Renal failure","N17-N19","45-49 years","45-49",461,20747135,2.2,2.0,2.4
+,"2018","2018","Renal failure","N17-N19","50-54 years","50-54",774,20884564,3.7,3.4,4.0
+,"2018","2018","Renal failure","N17-N19","55-59 years","55-59",1225,21940985,5.6,5.3,5.9
+,"2018","2018","Renal failure","N17-N19","60-64 years ","60-64",1700,20331651,8.4,8.0,8.8
+,"2018","2018","Renal failure","N17-N19","65-69 years","65-69",2111,17086893,12.4,11.8,12.9
+,"2018","2018","Renal failure","N17-N19","70-74 years","70-74",2379,13405423,17.7,17.0,18.5
+,"2018","2018","Renal failure","N17-N19","75-79 years","75-79",2420,9267066,26.1,25.1,27.2
+,"2018","2018","Renal failure","N17-N19","80-84 years","80-84",2447,6127308,39.9,38.4,41.5
+,"2018","2018","Renal failure","N17-N19","85-89 years","85-89",2276,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2018","2018","Renal failure","N17-N19","90-94 years","90-94",1484,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2018","2018","Renal failure","N17-N19","95-99 years","95-99",548,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2018","2018","Renal failure","N17-N19","100+ years","100+",83,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+"Total","2018","2018","Renal failure","N17-N19",,,18662,327167434,5.7,5.6,5.8
+"Total","2018","2018",,,,,37034,327167434,11.3,11.2,11.4
+,"2019","2019","Other bacterial diseases","A30-A49","< 1 year","1",15,3783052,0.4,0.2,0.7
+,"2019","2019","Other bacterial diseases","A30-A49","15-19 years","15-19",11,21054570,0.1,0.0,0.1
+,"2019","2019","Other bacterial diseases","A30-A49","20-24 years","20-24",37,21632940,0.2,0.1,0.2
+,"2019","2019","Other bacterial diseases","A30-A49","25-29 years","25-29",64,23509016,0.3,0.2,0.3
+,"2019","2019","Other bacterial diseases","A30-A49","30-34 years","30-34",126,22431305,0.6,0.5,0.7
+,"2019","2019","Other bacterial diseases","A30-A49","35-39 years","35-39",205,21737521,0.9,0.8,1.1
+,"2019","2019","Other bacterial diseases","A30-A49","40-44 years","40-44",268,19921623,1.3,1.2,1.5
+,"2019","2019","Other bacterial diseases","A30-A49","45-49 years","45-49",471,20397751,2.3,2.1,2.5
+,"2019","2019","Other bacterial diseases","A30-A49","50-54 years","50-54",707,20477151,3.5,3.2,3.7
+,"2019","2019","Other bacterial diseases","A30-A49","55-59 years","55-59",1170,21877391,5.3,5.0,5.7
+,"2019","2019","Other bacterial diseases","A30-A49","60-64 years ","60-64",1673,20571146,8.1,7.7,8.5
+,"2019","2019","Other bacterial diseases","A30-A49","65-69 years","65-69",1967,17455001,11.3,10.8,11.8
+,"2019","2019","Other bacterial diseases","A30-A49","70-74 years","70-74",2287,14028432,16.3,15.6,17.0
+,"2019","2019","Other bacterial diseases","A30-A49","75-79 years","75-79",2448,9652665,25.4,24.4,26.4
+,"2019","2019","Other bacterial diseases","A30-A49","80-84 years","80-84",2292,6317207,36.3,34.8,37.8
+,"2019","2019","Other bacterial diseases","A30-A49","85-89 years","85-89",2013,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2019","2019","Other bacterial diseases","A30-A49","90-94 years","90-94",1343,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2019","2019","Other bacterial diseases","A30-A49","95-99 years","95-99",485,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2019","2019","Other bacterial diseases","A30-A49","100+ years","100+",61,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+"Total","2019","2019","Other bacterial diseases","A30-A49",,,17652,328239523,5.4,5.3,5.5
+,"2019","2019","Renal failure","N17-N19","< 1 year","1",14,3783052,0.4,0.2,0.6
+,"2019","2019","Renal failure","N17-N19","15-19 years","15-19",11,21054570,0.1,0.0,0.1
+,"2019","2019","Renal failure","N17-N19","20-24 years","20-24",38,21632940,0.2,0.1,0.2
+,"2019","2019","Renal failure","N17-N19","25-29 years","25-29",66,23509016,0.3,0.2,0.4
+,"2019","2019","Renal failure","N17-N19","30-34 years","30-34",127,22431305,0.6,0.5,0.7
+,"2019","2019","Renal failure","N17-N19","35-39 years","35-39",209,21737521,1.0,0.8,1.1
+,"2019","2019","Renal failure","N17-N19","40-44 years","40-44",276,19921623,1.4,1.2,1.5
+,"2019","2019","Renal failure","N17-N19","45-49 years","45-49",476,20397751,2.3,2.1,2.5
+,"2019","2019","Renal failure","N17-N19","50-54 years","50-54",715,20477151,3.5,3.2,3.7
+,"2019","2019","Renal failure","N17-N19","55-59 years","55-59",1188,21877391,5.4,5.1,5.7
+,"2019","2019","Renal failure","N17-N19","60-64 years ","60-64",1696,20571146,8.2,7.9,8.6
+,"2019","2019","Renal failure","N17-N19","65-69 years","65-69",1988,17455001,11.4,10.9,11.9
+,"2019","2019","Renal failure","N17-N19","70-74 years","70-74",2321,14028432,16.5,15.9,17.2
+,"2019","2019","Renal failure","N17-N19","75-79 years","75-79",2490,9652665,25.8,24.8,26.8
+,"2019","2019","Renal failure","N17-N19","80-84 years","80-84",2328,6317207,36.9,35.4,38.3
+,"2019","2019","Renal failure","N17-N19","85-89 years","85-89",2037,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2019","2019","Renal failure","N17-N19","90-94 years","90-94",1371,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2019","2019","Renal failure","N17-N19","95-99 years","95-99",491,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2019","2019","Renal failure","N17-N19","100+ years","100+",61,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+"Total","2019","2019","Renal failure","N17-N19",,,17912,328239523,5.5,5.4,5.5
+"Total","2019","2019",,,,,35564,328239523,10.8,10.7,10.9
+,"2020","2020","Other bacterial diseases","A30-A49","15-19 years","15-19",12,20960929,0.1,0.0,0.1
+,"2020","2020","Other bacterial diseases","A30-A49","20-24 years","20-24",44,21594755,0.2,0.1,0.3
+,"2020","2020","Other bacterial diseases","A30-A49","25-29 years","25-29",81,23231243,0.3,0.3,0.4
+,"2020","2020","Other bacterial diseases","A30-A49","30-34 years","30-34",177,22838403,0.8,0.7,0.9
+,"2020","2020","Other bacterial diseases","A30-A49","35-39 years","35-39",294,21828304,1.3,1.2,1.5
+,"2020","2020","Other bacterial diseases","A30-A49","40-44 years","40-44",377,20307888,1.9,1.7,2.0
+,"2020","2020","Other bacterial diseases","A30-A49","45-49 years","45-49",642,19970606,3.2,3.0,3.5
+,"2020","2020","Other bacterial diseases","A30-A49","50-54 years","50-54",999,20395527,4.9,4.6,5.2
+,"2020","2020","Other bacterial diseases","A30-A49","55-59 years","55-59",1702,21603099,7.9,7.5,8.3
+,"2020","2020","Other bacterial diseases","A30-A49","60-64 years ","60-64",2415,20800578,11.6,11.1,12.1
+,"2020","2020","Other bacterial diseases","A30-A49","65-69 years","65-69",2945,17873667,16.5,15.9,17.1
+,"2020","2020","Other bacterial diseases","A30-A49","70-74 years","70-74",3379,14675731,23.0,22.2,23.8
+,"2020","2020","Other bacterial diseases","A30-A49","75-79 years","75-79",3153,9986833,31.6,30.5,32.7
+,"2020","2020","Other bacterial diseases","A30-A49","80-84 years","80-84",2944,6464714,45.5,43.9,47.2
+,"2020","2020","Other bacterial diseases","A30-A49","85-89 years","85-89",2299,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2020","2020","Other bacterial diseases","A30-A49","90-94 years","90-94",1603,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2020","2020","Other bacterial diseases","A30-A49","95-99 years","95-99",529,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2020","2020","Other bacterial diseases","A30-A49","100+ years","100+",58,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+"Total","2020","2020","Other bacterial diseases","A30-A49",,,23673,329484123,7.2,7.1,7.3
+,"2020","2020","Renal failure","N17-N19","15-19 years","15-19",12,20960929,0.1,0.0,0.1
+,"2020","2020","Renal failure","N17-N19","20-24 years","20-24",44,21594755,0.2,0.1,0.3
+,"2020","2020","Renal failure","N17-N19","25-29 years","25-29",82,23231243,0.4,0.3,0.4
+,"2020","2020","Renal failure","N17-N19","30-34 years","30-34",184,22838403,0.8,0.7,0.9
+,"2020","2020","Renal failure","N17-N19","35-39 years","35-39",296,21828304,1.4,1.2,1.5
+,"2020","2020","Renal failure","N17-N19","40-44 years","40-44",380,20307888,1.9,1.7,2.1
+,"2020","2020","Renal failure","N17-N19","45-49 years","45-49",649,19970606,3.2,3.0,3.5
+,"2020","2020","Renal failure","N17-N19","50-54 years","50-54",1009,20395527,4.9,4.6,5.3
+,"2020","2020","Renal failure","N17-N19","55-59 years","55-59",1733,21603099,8.0,7.6,8.4
+,"2020","2020","Renal failure","N17-N19","60-64 years ","60-64",2454,20800578,11.8,11.3,12.3
+,"2020","2020","Renal failure","N17-N19","65-69 years","65-69",2993,17873667,16.7,16.1,17.3
+,"2020","2020","Renal failure","N17-N19","70-74 years","70-74",3431,14675731,23.4,22.6,24.2
+,"2020","2020","Renal failure","N17-N19","75-79 years","75-79",3198,9986833,32.0,30.9,33.1
+,"2020","2020","Renal failure","N17-N19","80-84 years","80-84",2990,6464714,46.3,44.6,47.9
+,"2020","2020","Renal failure","N17-N19","85-89 years","85-89",2332,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2020","2020","Renal failure","N17-N19","90-94 years","90-94",1624,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2020","2020","Renal failure","N17-N19","95-99 years","95-99",534,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2020","2020","Renal failure","N17-N19","100+ years","100+",58,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+"Total","2020","2020","Renal failure","N17-N19",,,24023,329484123,7.3,7.2,7.4
+"Total","2020","2020",,,,,47696,329484123,14.5,14.3,14.6
+,"2021","2021","Other bacterial diseases","A30-A49","< 1 year","1",17,3564493,0.5,0.3,0.8
+,"2021","2021","Other bacterial diseases","A30-A49","15-19 years","15-19",21,21564666,0.1,0.1,0.1
+,"2021","2021","Other bacterial diseases","A30-A49","20-24 years","20-24",73,21523997,0.3,0.3,0.4
+,"2021","2021","Other bacterial diseases","A30-A49","25-29 years","25-29",152,22392477,0.7,0.6,0.8
+,"2021","2021","Other bacterial diseases","A30-A49","30-34 years","30-34",317,23102628,1.4,1.2,1.5
+,"2021","2021","Other bacterial diseases","A30-A49","35-39 years","35-39",524,22299318,2.3,2.1,2.6
+,"2021","2021","Other bacterial diseases","A30-A49","40-44 years","40-44",737,21104536,3.5,3.2,3.7
+,"2021","2021","Other bacterial diseases","A30-A49","45-49 years","45-49",1102,19781510,5.6,5.2,5.9
+,"2021","2021","Other bacterial diseases","A30-A49","50-54 years","50-54",1784,20906926,8.5,8.1,8.9
+,"2021","2021","Other bacterial diseases","A30-A49","55-59 years","55-59",2768,21567314,12.8,12.4,13.3
+,"2021","2021","Other bacterial diseases","A30-A49","60-64 years ","60-64",3892,21235750,18.3,17.8,18.9
+,"2021","2021","Other bacterial diseases","A30-A49","65-69 years","65-69",4604,18394320,25.0,24.3,25.8
+,"2021","2021","Other bacterial diseases","A30-A49","70-74 years","70-74",5031,15271802,32.9,32.0,33.9
+,"2021","2021","Other bacterial diseases","A30-A49","75-79 years","75-79",4833,9904769,48.8,47.4,50.2
+,"2021","2021","Other bacterial diseases","A30-A49","80-84 years","80-84",4067,6301306,64.5,62.6,66.5
+,"2021","2021","Other bacterial diseases","A30-A49","85-89 years","85-89",3144,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2021","2021","Other bacterial diseases","A30-A49","90-94 years","90-94",1882,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2021","2021","Other bacterial diseases","A30-A49","95-99 years","95-99",684,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2021","2021","Other bacterial diseases","A30-A49","100+ years","100+",94,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+"Total","2021","2021","Other bacterial diseases","A30-A49",,,35742,331893745,10.8,10.7,10.9
+,"2021","2021","Renal failure","N17-N19","< 1 year","1",17,3564493,0.5,0.3,0.8
+,"2021","2021","Renal failure","N17-N19","15-19 years","15-19",22,21564666,0.1,0.1,0.2
+,"2021","2021","Renal failure","N17-N19","20-24 years","20-24",74,21523997,0.3,0.3,0.4
+,"2021","2021","Renal failure","N17-N19","25-29 years","25-29",154,22392477,0.7,0.6,0.8
+,"2021","2021","Renal failure","N17-N19","30-34 years","30-34",323,23102628,1.4,1.2,1.6
+,"2021","2021","Renal failure","N17-N19","35-39 years","35-39",535,22299318,2.4,2.2,2.6
+,"2021","2021","Renal failure","N17-N19","40-44 years","40-44",747,21104536,3.5,3.3,3.8
+,"2021","2021","Renal failure","N17-N19","45-49 years","45-49",1117,19781510,5.6,5.3,6.0
+,"2021","2021","Renal failure","N17-N19","50-54 years","50-54",1824,20906926,8.7,8.3,9.1
+,"2021","2021","Renal failure","N17-N19","55-59 years","55-59",2810,21567314,13.0,12.5,13.5
+,"2021","2021","Renal failure","N17-N19","60-64 years ","60-64",3958,21235750,18.6,18.1,19.2
+,"2021","2021","Renal failure","N17-N19","65-69 years","65-69",4673,18394320,25.4,24.7,26.1
+,"2021","2021","Renal failure","N17-N19","70-74 years","70-74",5104,15271802,33.4,32.5,34.3
+,"2021","2021","Renal failure","N17-N19","75-79 years","75-79",4904,9904769,49.5,48.1,50.9
+,"2021","2021","Renal failure","N17-N19","80-84 years","80-84",4137,6301306,65.7,63.7,67.7
+,"2021","2021","Renal failure","N17-N19","85-89 years","85-89",3185,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2021","2021","Renal failure","N17-N19","90-94 years","90-94",1906,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2021","2021","Renal failure","N17-N19","95-99 years","95-99",693,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2021","2021","Renal failure","N17-N19","100+ years","100+",94,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+"Total","2021","2021","Renal failure","N17-N19",,,36293,331893745,10.9,10.8,11.0
+"Total","2021","2021",,,,,72035,331893745,21.7,21.5,21.9
+,"2022","2022","Other bacterial diseases","A30-A49","< 1 year","1",19,3683113,0.5,0.3,0.8
+,"2022","2022","Other bacterial diseases","A30-A49","1-4 years","1-4",12,14855240,0.1,0.0,0.1
+,"2022","2022","Other bacterial diseases","A30-A49","15-19 years","15-19",29,21635792,0.1,0.1,0.2
+,"2022","2022","Other bacterial diseases","A30-A49","20-24 years","20-24",65,22705779,0.3,0.2,0.4
+,"2022","2022","Other bacterial diseases","A30-A49","25-29 years","25-29",135,22193164,0.6,0.5,0.7
+,"2022","2022","Other bacterial diseases","A30-A49","30-34 years","30-34",317,23308136,1.4,1.2,1.5
+,"2022","2022","Other bacterial diseases","A30-A49","35-39 years","35-39",479,22267949,2.2,2.0,2.3
+,"2022","2022","Other bacterial diseases","A30-A49","40-44 years","40-44",657,21427416,3.1,2.8,3.3
+,"2022","2022","Other bacterial diseases","A30-A49","45-49 years","45-49",1010,19624098,5.1,4.8,5.5
+,"2022","2022","Other bacterial diseases","A30-A49","50-54 years","50-54",1621,20807547,7.8,7.4,8.2
+,"2022","2022","Other bacterial diseases","A30-A49","55-59 years","55-59",2544,20967014,12.1,11.7,12.6
+,"2022","2022","Other bacterial diseases","A30-A49","60-64 years ","60-64",3869,21118423,18.3,17.7,18.9
+,"2022","2022","Other bacterial diseases","A30-A49","65-69 years","65-69",4855,18631422,26.1,25.3,26.8
+,"2022","2022","Other bacterial diseases","A30-A49","70-74 years","70-74",5700,15157017,37.6,36.6,38.6
+,"2022","2022","Other bacterial diseases","A30-A49","75-79 years","75-79",5925,10861000,54.6,53.2,55.9
+,"2022","2022","Other bacterial diseases","A30-A49","80-84 years","80-84",4967,6659545,74.6,72.5,76.7
+,"2022","2022","Other bacterial diseases","A30-A49","85-89 years","85-89",4144,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2022","2022","Other bacterial diseases","A30-A49","90-94 years","90-94",2502,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2022","2022","Other bacterial diseases","A30-A49","95-99 years","95-99",881,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2022","2022","Other bacterial diseases","A30-A49","100+ years","100+",141,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+"Total","2022","2022","Other bacterial diseases","A30-A49",,,39888,333287557,12.0,11.9,12.1
+,"2022","2022","Renal failure","N17-N19","< 1 year","1",19,3683113,0.5,0.3,0.8
+,"2022","2022","Renal failure","N17-N19","1-4 years","1-4",12,14855240,0.1,0.0,0.1
+,"2022","2022","Renal failure","N17-N19","15-19 years","15-19",31,21635792,0.1,0.1,0.2
+,"2022","2022","Renal failure","N17-N19","20-24 years","20-24",66,22705779,0.3,0.2,0.4
+,"2022","2022","Renal failure","N17-N19","25-29 years","25-29",137,22193164,0.6,0.5,0.7
+,"2022","2022","Renal failure","N17-N19","30-34 years","30-34",321,23308136,1.4,1.2,1.5
+,"2022","2022","Renal failure","N17-N19","35-39 years","35-39",487,22267949,2.2,2.0,2.4
+,"2022","2022","Renal failure","N17-N19","40-44 years","40-44",664,21427416,3.1,2.9,3.3
+,"2022","2022","Renal failure","N17-N19","45-49 years","45-49",1024,19624098,5.2,4.9,5.5
+,"2022","2022","Renal failure","N17-N19","50-54 years","50-54",1642,20807547,7.9,7.5,8.3
+,"2022","2022","Renal failure","N17-N19","55-59 years","55-59",2588,20967014,12.3,11.9,12.8
+,"2022","2022","Renal failure","N17-N19","60-64 years ","60-64",3920,21118423,18.6,18.0,19.1
+,"2022","2022","Renal failure","N17-N19","65-69 years","65-69",4926,18631422,26.4,25.7,27.2
+,"2022","2022","Renal failure","N17-N19","70-74 years","70-74",5787,15157017,38.2,37.2,39.2
+,"2022","2022","Renal failure","N17-N19","75-79 years","75-79",5998,10861000,55.2,53.8,56.6
+,"2022","2022","Renal failure","N17-N19","80-84 years","80-84",5036,6659545,75.6,73.5,77.7
+,"2022","2022","Renal failure","N17-N19","85-89 years","85-89",4198,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2022","2022","Renal failure","N17-N19","90-94 years","90-94",2521,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2022","2022","Renal failure","N17-N19","95-99 years","95-99",887,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2022","2022","Renal failure","N17-N19","100+ years","100+",141,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+"Total","2022","2022","Renal failure","N17-N19",,,40421,333287557,12.1,12.0,12.2
+"Total","2022","2022",,,,,80309,333287557,24.1,23.9,24.3
+,"2023","2023","Other bacterial diseases","A30-A49","< 1 year","1",21,3648654,0.6,0.4,0.9
+,"2023","2023","Other bacterial diseases","A30-A49","1-4 years","1-4",14,14862506,0.1,0.1,0.2
+,"2023","2023","Other bacterial diseases","A30-A49","5-9 years","5-9",15,20152757,0.1,0.0,0.1
+,"2023","2023","Other bacterial diseases","A30-A49","10-14 years","10-14",14,20834564,0.1,0.0,0.1
+,"2023","2023","Other bacterial diseases","A30-A49","15-19 years","15-19",16,22075480,0.1,0.0,0.1
+,"2023","2023","Other bacterial diseases","A30-A49","20-24 years","20-24",56,21811172,0.3,0.2,0.3
+,"2023","2023","Other bacterial diseases","A30-A49","25-29 years","25-29",121,22018360,0.5,0.5,0.6
+,"2023","2023","Other bacterial diseases","A30-A49","30-34 years","30-34",262,23524156,1.1,1.0,1.2
+,"2023","2023","Other bacterial diseases","A30-A49","35-39 years","35-39",428,22506644,1.9,1.7,2.1
+,"2023","2023","Other bacterial diseases","A30-A49","40-44 years","40-44",616,21884049,2.8,2.6,3.0
+,"2023","2023","Other bacterial diseases","A30-A49","45-49 years","45-49",866,19817010,4.4,4.1,4.7
+,"2023","2023","Other bacterial diseases","A30-A49","50-54 years","50-54",1329,20676771,6.4,6.1,6.8
+,"2023","2023","Other bacterial diseases","A30-A49","55-59 years","55-59",2136,20606257,10.4,9.9,10.8
+,"2023","2023","Other bacterial diseases","A30-A49","60-64 years ","60-64",3388,21248154,15.9,15.4,16.5
+,"2023","2023","Other bacterial diseases","A30-A49","65-69 years","65-69",4235,19150728,22.1,21.4,22.8
+,"2023","2023","Other bacterial diseases","A30-A49","70-74 years","70-74",4932,15534556,31.7,30.9,32.6
+,"2023","2023","Other bacterial diseases","A30-A49","75-79 years","75-79",5490,11387417,48.2,46.9,49.5
+,"2023","2023","Other bacterial diseases","A30-A49","80-84 years","80-84",4864,6980680,69.7,67.7,71.6
+,"2023","2023","Other bacterial diseases","A30-A49","85-89 years","85-89",4011,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2023","2023","Other bacterial diseases","A30-A49","90-94 years","90-94",2399,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2023","2023","Other bacterial diseases","A30-A49","95-99 years","95-99",827,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2023","2023","Other bacterial diseases","A30-A49","100+ years","100+",133,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+"Total","2023","2023","Other bacterial diseases","A30-A49",,,36173,334914895,10.8,10.7,10.9
+,"2023","2023","Renal failure","N17-N19","< 1 year","1",21,3648654,0.6,0.4,0.9
+,"2023","2023","Renal failure","N17-N19","1-4 years","1-4",14,14862506,0.1,0.1,0.2
+,"2023","2023","Renal failure","N17-N19","5-9 years","5-9",15,20152757,0.1,0.0,0.1
+,"2023","2023","Renal failure","N17-N19","10-14 years","10-14",14,20834564,0.1,0.0,0.1
+,"2023","2023","Renal failure","N17-N19","15-19 years","15-19",16,22075480,0.1,0.0,0.1
+,"2023","2023","Renal failure","N17-N19","20-24 years","20-24",58,21811172,0.3,0.2,0.3
+,"2023","2023","Renal failure","N17-N19","25-29 years","25-29",124,22018360,0.6,0.5,0.7
+,"2023","2023","Renal failure","N17-N19","30-34 years","30-34",265,23524156,1.1,1.0,1.3
+,"2023","2023","Renal failure","N17-N19","35-39 years","35-39",434,22506644,1.9,1.7,2.1
+,"2023","2023","Renal failure","N17-N19","40-44 years","40-44",623,21884049,2.8,2.6,3.1
+,"2023","2023","Renal failure","N17-N19","45-49 years","45-49",878,19817010,4.4,4.1,4.7
+,"2023","2023","Renal failure","N17-N19","50-54 years","50-54",1349,20676771,6.5,6.2,6.9
+,"2023","2023","Renal failure","N17-N19","55-59 years","55-59",2166,20606257,10.5,10.1,11.0
+,"2023","2023","Renal failure","N17-N19","60-64 years ","60-64",3437,21248154,16.2,15.6,16.7
+,"2023","2023","Renal failure","N17-N19","65-69 years","65-69",4299,19150728,22.4,21.8,23.1
+,"2023","2023","Renal failure","N17-N19","70-74 years","70-74",4997,15534556,32.2,31.3,33.1
+,"2023","2023","Renal failure","N17-N19","75-79 years","75-79",5575,11387417,49.0,47.7,50.2
+,"2023","2023","Renal failure","N17-N19","80-84 years","80-84",4938,6980680,70.7,68.8,72.7
+,"2023","2023","Renal failure","N17-N19","85-89 years","85-89",4053,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2023","2023","Renal failure","N17-N19","90-94 years","90-94",2428,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2023","2023","Renal failure","N17-N19","95-99 years","95-99",835,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2023","2023","Renal failure","N17-N19","100+ years","100+",133,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+"Total","2023","2023","Renal failure","N17-N19",,,36672,334914895,10.9,10.8,11.1
+"Total","2023","2023",,,,,72845,334914895,21.8,21.6,21.9
+,"2024","2024","Other bacterial diseases","A30-A49","< 1 year","1",29,3615598,0.8,0.5,1.2
+,"2024","2024","Other bacterial diseases","A30-A49","1-4 years","1-4",11,14983716,0.1,0.0,0.1
+,"2024","2024","Other bacterial diseases","A30-A49","10-14 years","10-14",11,20901154,0.1,0.0,0.1
+,"2024","2024","Other bacterial diseases","A30-A49","15-19 years","15-19",18,22375825,0.1,0.0,0.1
+,"2024","2024","Other bacterial diseases","A30-A49","20-24 years","20-24",51,22421936,0.2,0.2,0.3
+,"2024","2024","Other bacterial diseases","A30-A49","25-29 years","25-29",123,22459876,0.5,0.5,0.6
+,"2024","2024","Other bacterial diseases","A30-A49","30-34 years","30-34",276,23993988,1.2,1.0,1.3
+,"2024","2024","Other bacterial diseases","A30-A49","35-39 years","35-39",384,23170072,1.7,1.5,1.8
+,"2024","2024","Other bacterial diseases","A30-A49","40-44 years","40-44",547,22369152,2.4,2.2,2.7
+,"2024","2024","Other bacterial diseases","A30-A49","45-49 years","45-49",824,20294049,4.1,3.8,4.3
+,"2024","2024","Other bacterial diseases","A30-A49","50-54 years","50-54",1231,20486307,6.0,5.7,6.3
+,"2024","2024","Other bacterial diseases","A30-A49","55-59 years","55-59",1933,20359928,9.5,9.1,9.9
+,"2024","2024","Other bacterial diseases","A30-A49","60-64 years ","60-64",3139,21301797,14.7,14.2,15.3
+,"2024","2024","Other bacterial diseases","A30-A49","65-69 years","65-69",4158,19489471,21.3,20.7,22.0
+,"2024","2024","Other bacterial diseases","A30-A49","70-74 years","70-74",4682,15955491,29.3,28.5,30.2
+,"2024","2024","Other bacterial diseases","A30-A49","75-79 years","75-79",5366,11993326,44.7,43.5,45.9
+,"2024","2024","Other bacterial diseases","A30-A49","80-84 years","80-84",4988,7306487,68.3,66.4,70.2
+,"2024","2024","Other bacterial diseases","A30-A49","85-89 years","85-89",3833,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2024","2024","Other bacterial diseases","A30-A49","90-94 years","90-94",2290,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2024","2024","Other bacterial diseases","A30-A49","95-99 years","95-99",816,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2024","2024","Other bacterial diseases","A30-A49","100+ years","100+",157,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+"Total","2024","2024","Other bacterial diseases","A30-A49",,,34877,340110988,10.3,10.1,10.4
+,"2024","2024","Renal failure","N17-N19","< 1 year","1",28,3615598,0.8,0.5,1.1
+,"2024","2024","Renal failure","N17-N19","1-4 years","1-4",11,14983716,0.1,0.0,0.1
+,"2024","2024","Renal failure","N17-N19","10-14 years","10-14",11,20901154,0.1,0.0,0.1
+,"2024","2024","Renal failure","N17-N19","15-19 years","15-19",18,22375825,0.1,0.0,0.1
+,"2024","2024","Renal failure","N17-N19","20-24 years","20-24",51,22421936,0.2,0.2,0.3
+,"2024","2024","Renal failure","N17-N19","25-29 years","25-29",124,22459876,0.6,0.5,0.6
+,"2024","2024","Renal failure","N17-N19","30-34 years","30-34",281,23993988,1.2,1.0,1.3
+,"2024","2024","Renal failure","N17-N19","35-39 years","35-39",389,23170072,1.7,1.5,1.8
+,"2024","2024","Renal failure","N17-N19","40-44 years","40-44",559,22369152,2.5,2.3,2.7
+,"2024","2024","Renal failure","N17-N19","45-49 years","45-49",838,20294049,4.1,3.8,4.4
+,"2024","2024","Renal failure","N17-N19","50-54 years","50-54",1253,20486307,6.1,5.8,6.5
+,"2024","2024","Renal failure","N17-N19","55-59 years","55-59",1957,20359928,9.6,9.2,10.0
+,"2024","2024","Renal failure","N17-N19","60-64 years ","60-64",3193,21301797,15.0,14.5,15.5
+,"2024","2024","Renal failure","N17-N19","65-69 years","65-69",4204,19489471,21.6,20.9,22.2
+,"2024","2024","Renal failure","N17-N19","70-74 years","70-74",4760,15955491,29.8,29.0,30.7
+,"2024","2024","Renal failure","N17-N19","75-79 years","75-79",5446,11993326,45.4,44.2,46.6
+,"2024","2024","Renal failure","N17-N19","80-84 years","80-84",5064,7306487,69.3,67.4,71.2
+,"2024","2024","Renal failure","N17-N19","85-89 years","85-89",3899,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2024","2024","Renal failure","N17-N19","90-94 years","90-94",2321,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2024","2024","Renal failure","N17-N19","95-99 years","95-99",827,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2024","2024","Renal failure","N17-N19","100+ years","100+",160,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+"Total","2024","2024","Renal failure","N17-N19",,,35404,340110988,10.4,10.3,10.5
+"Total","2024","2024",,,,,70281,340110988,20.7,20.5,20.8
+,"2025 (provisional)","2025","Other bacterial diseases","A30-A49","< 1 year","1",23,3615598,0.6,0.4,1.0
+,"2025 (provisional)","2025","Other bacterial diseases","A30-A49","10-14 years","10-14",11,20901154,0.1,0.0,0.1
+,"2025 (provisional)","2025","Other bacterial diseases","A30-A49","15-19 years","15-19",32,22375825,0.1,0.1,0.2
+,"2025 (provisional)","2025","Other bacterial diseases","A30-A49","20-24 years","20-24",48,22421936,0.2,0.2,0.3
+,"2025 (provisional)","2025","Other bacterial diseases","A30-A49","25-29 years","25-29",120,22459876,0.5,0.4,0.6
+,"2025 (provisional)","2025","Other bacterial diseases","A30-A49","30-34 years","30-34",230,23993988,1.0,0.8,1.1
+,"2025 (provisional)","2025","Other bacterial diseases","A30-A49","35-39 years","35-39",385,23170072,1.7,1.5,1.8
+,"2025 (provisional)","2025","Other bacterial diseases","A30-A49","40-44 years","40-44",582,22369152,2.6,2.4,2.8
+,"2025 (provisional)","2025","Other bacterial diseases","A30-A49","45-49 years","45-49",810,20294049,4.0,3.7,4.3
+,"2025 (provisional)","2025","Other bacterial diseases","A30-A49","50-54 years","50-54",1189,20486307,5.8,5.5,6.1
+,"2025 (provisional)","2025","Other bacterial diseases","A30-A49","55-59 years","55-59",1806,20359928,8.9,8.5,9.3
+,"2025 (provisional)","2025","Other bacterial diseases","A30-A49","60-64 years ","60-64",2994,21301797,14.1,13.6,14.6
+,"2025 (provisional)","2025","Other bacterial diseases","A30-A49","65-69 years","65-69",4077,19489471,20.9,20.3,21.6
+,"2025 (provisional)","2025","Other bacterial diseases","A30-A49","70-74 years","70-74",4877,15955491,30.6,29.7,31.4
+,"2025 (provisional)","2025","Other bacterial diseases","A30-A49","75-79 years","75-79",5547,11993326,46.3,45.0,47.5
+,"2025 (provisional)","2025","Other bacterial diseases","A30-A49","80-84 years","80-84",4973,7306487,68.1,66.2,70.0
+,"2025 (provisional)","2025","Other bacterial diseases","A30-A49","85-89 years","85-89",3788,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2025 (provisional)","2025","Other bacterial diseases","A30-A49","90-94 years","90-94",2232,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2025 (provisional)","2025","Other bacterial diseases","A30-A49","95-99 years","95-99",820,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2025 (provisional)","2025","Other bacterial diseases","A30-A49","100+ years","100+",142,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+"Total","2025 (provisional)","2025","Other bacterial diseases","A30-A49",,,34696,340110988,10.2,10.1,10.3
+,"2025 (provisional)","2025","Renal failure","N17-N19","< 1 year","1",23,3615598,0.6,0.4,1.0
+,"2025 (provisional)","2025","Renal failure","N17-N19","10-14 years","10-14",11,20901154,0.1,0.0,0.1
+,"2025 (provisional)","2025","Renal failure","N17-N19","15-19 years","15-19",34,22375825,0.2,0.1,0.2
+,"2025 (provisional)","2025","Renal failure","N17-N19","20-24 years","20-24",48,22421936,0.2,0.2,0.3
+,"2025 (provisional)","2025","Renal failure","N17-N19","25-29 years","25-29",123,22459876,0.5,0.5,0.6
+,"2025 (provisional)","2025","Renal failure","N17-N19","30-34 years","30-34",233,23993988,1.0,0.8,1.1
+,"2025 (provisional)","2025","Renal failure","N17-N19","35-39 years","35-39",390,23170072,1.7,1.5,1.9
+,"2025 (provisional)","2025","Renal failure","N17-N19","40-44 years","40-44",588,22369152,2.6,2.4,2.8
+,"2025 (provisional)","2025","Renal failure","N17-N19","45-49 years","45-49",819,20294049,4.0,3.8,4.3
+,"2025 (provisional)","2025","Renal failure","N17-N19","50-54 years","50-54",1206,20486307,5.9,5.6,6.2
+,"2025 (provisional)","2025","Renal failure","N17-N19","55-59 years","55-59",1831,20359928,9.0,8.6,9.4
+,"2025 (provisional)","2025","Renal failure","N17-N19","60-64 years ","60-64",3037,21301797,14.3,13.7,14.8
+,"2025 (provisional)","2025","Renal failure","N17-N19","65-69 years","65-69",4136,19489471,21.2,20.6,21.9
+,"2025 (provisional)","2025","Renal failure","N17-N19","70-74 years","70-74",4954,15955491,31.0,30.2,31.9
+,"2025 (provisional)","2025","Renal failure","N17-N19","75-79 years","75-79",5620,11993326,46.9,45.6,48.1
+,"2025 (provisional)","2025","Renal failure","N17-N19","80-84 years","80-84",5030,7306487,68.8,66.9,70.7
+,"2025 (provisional)","2025","Renal failure","N17-N19","85-89 years","85-89",3848,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2025 (provisional)","2025","Renal failure","N17-N19","90-94 years","90-94",2262,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2025 (provisional)","2025","Renal failure","N17-N19","95-99 years","95-99",832,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2025 (provisional)","2025","Renal failure","N17-N19","100+ years","100+",145,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+"Total","2025 (provisional)","2025","Renal failure","N17-N19",,,35180,340110988,10.3,10.2,10.5
+"Total","2025 (provisional)","2025",,,,,69876,340110988,20.5,20.4,20.7
+,"2026 (provisional and partial)","2026","Other bacterial diseases","A30-A49","20-24 years","20-24",11,22421936,0.0,0.0,0.1
+,"2026 (provisional and partial)","2026","Other bacterial diseases","A30-A49","30-34 years","30-34",16,23993988,0.1,0.0,0.1
+,"2026 (provisional and partial)","2026","Other bacterial diseases","A30-A49","35-39 years","35-39",34,23170072,0.1,0.1,0.2
+,"2026 (provisional and partial)","2026","Other bacterial diseases","A30-A49","40-44 years","40-44",64,22369152,0.3,0.2,0.4
+,"2026 (provisional and partial)","2026","Other bacterial diseases","A30-A49","45-49 years","45-49",87,20294049,0.4,0.3,0.5
+,"2026 (provisional and partial)","2026","Other bacterial diseases","A30-A49","50-54 years","50-54",99,20486307,0.5,0.4,0.6
+,"2026 (provisional and partial)","2026","Other bacterial diseases","A30-A49","55-59 years","55-59",202,20359928,1.0,0.9,1.1
+,"2026 (provisional and partial)","2026","Other bacterial diseases","A30-A49","60-64 years ","60-64",297,21301797,1.4,1.2,1.6
+,"2026 (provisional and partial)","2026","Other bacterial diseases","A30-A49","65-69 years","65-69",468,19489471,2.4,2.2,2.6
+,"2026 (provisional and partial)","2026","Other bacterial diseases","A30-A49","70-74 years","70-74",554,15955491,3.5,3.2,3.8
+,"2026 (provisional and partial)","2026","Other bacterial diseases","A30-A49","75-79 years","75-79",651,11993326,5.4,5.0,5.8
+,"2026 (provisional and partial)","2026","Other bacterial diseases","A30-A49","80-84 years","80-84",592,7306487,8.1,7.4,8.8
+,"2026 (provisional and partial)","2026","Other bacterial diseases","A30-A49","85-89 years","85-89",487,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2026 (provisional and partial)","2026","Other bacterial diseases","A30-A49","90-94 years","90-94",275,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2026 (provisional and partial)","2026","Other bacterial diseases","A30-A49","95-99 years","95-99",105,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2026 (provisional and partial)","2026","Other bacterial diseases","A30-A49","100+ years","100+",24,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+"Total","2026 (provisional and partial)","2026","Other bacterial diseases","A30-A49",,,3985,340110988,1.2,1.1,1.2
+,"2026 (provisional and partial)","2026","Renal failure","N17-N19","20-24 years","20-24",11,22421936,0.0,0.0,0.1
+,"2026 (provisional and partial)","2026","Renal failure","N17-N19","30-34 years","30-34",16,23993988,0.1,0.0,0.1
+,"2026 (provisional and partial)","2026","Renal failure","N17-N19","35-39 years","35-39",34,23170072,0.1,0.1,0.2
+,"2026 (provisional and partial)","2026","Renal failure","N17-N19","40-44 years","40-44",66,22369152,0.3,0.2,0.4
+,"2026 (provisional and partial)","2026","Renal failure","N17-N19","45-49 years","45-49",87,20294049,0.4,0.3,0.5
+,"2026 (provisional and partial)","2026","Renal failure","N17-N19","50-54 years","50-54",99,20486307,0.5,0.4,0.6
+,"2026 (provisional and partial)","2026","Renal failure","N17-N19","55-59 years","55-59",204,20359928,1.0,0.9,1.1
+,"2026 (provisional and partial)","2026","Renal failure","N17-N19","60-64 years ","60-64",300,21301797,1.4,1.2,1.6
+,"2026 (provisional and partial)","2026","Renal failure","N17-N19","65-69 years","65-69",472,19489471,2.4,2.2,2.6
+,"2026 (provisional and partial)","2026","Renal failure","N17-N19","70-74 years","70-74",563,15955491,3.5,3.2,3.8
+,"2026 (provisional and partial)","2026","Renal failure","N17-N19","75-79 years","75-79",662,11993326,5.5,5.1,5.9
+,"2026 (provisional and partial)","2026","Renal failure","N17-N19","80-84 years","80-84",599,7306487,8.2,7.5,8.9
+,"2026 (provisional and partial)","2026","Renal failure","N17-N19","85-89 years","85-89",494,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2026 (provisional and partial)","2026","Renal failure","N17-N19","90-94 years","90-94",279,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2026 (provisional and partial)","2026","Renal failure","N17-N19","95-99 years","95-99",107,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+,"2026 (provisional and partial)","2026","Renal failure","N17-N19","100+ years","100+",24,Not Applicable,Not Applicable,Not Applicable,Not Applicable
+"Total","2026 (provisional and partial)","2026","Renal failure","N17-N19",,,4036,340110988,1.2,1.2,1.2
+"Total","2026 (provisional and partial)","2026",,,,,8021,340110988,2.4,2.3,2.4
+"Total",,,,,,,493661,3005320241,16.4,16.4,16.5
+"---"
+"Dataset: Provisional Mortality Statistics, 2018 through Last Week"
+"Query Parameters:"
+"MCD - ICD-10 Codes: N17.0 (Acute renal failure with tubular necrosis); N17.1 (Acute renal failure with acute cortical necrosis);"
+"N17.2 (Acute renal failure with medullary necrosis); N17.8 (Other acute renal failure); N17.9 (Acute renal failure, unspecified)"
+"MCD - ICD-10 Codes: AND"
+"MCD - ICD-10 Codes: A40.0 (Septicaemia due to streptococcus, group A); A40.1 (Septicaemia due to streptococcus, group B); A40.2"
+"(Septicaemia due to streptococcus, group D); A40.3 (Septicaemia due to Streptococcus pneumoniae); A40.8 (Other streptococcal"
+"septicaemia); A40.9 (Streptococcal septicaemia, unspecified); A41.0 (Septicaemia due to Staphylococcus aureus); A41.1"
+"(Septicaemia due to other specified staphylococcus); A41.2 (Septicaemia due to unspecified staphylococcus); A41.3 (Septicaemia"
+"due to Haemophilus influenzae); A41.4 (Septicaemia due to anaerobes); A41.5 (Septicaemia due to other Gram-negative organisms);"
+"A41.8 (Other specified septicaemia); A41.9 (Septicaemia, unspecified)"
+"Group By: Year; MCD - ICD Sub-Chapter; Five-Year Age Groups"
+"Show Totals: True"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/mcd-provisional.html for more information."
+"---"
+"Query Date: Feb 27, 2026 1:45:49 AM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Provisional Mortality on CDC WONDER Online Database. Data are from the final Multiple Cause of Death Files, 2018-2024,"
+"and from provisional data for years 2025 and later, as compiled from data provided by the 57 vital statistics jurisdictions"
+"through the Vital Statistics Cooperative Program. Accessed at http://wonder.cdc.gov/mcd-icd10-provisional.html on Feb 27, 2026"
+"1:45:49 AM"
+"---"
+Messages:
+"1. Rows with zero Deaths are hidden, but the Population values in those rows are included in the totals. Use Quick Options above"
+"to show zero rows."
+"2. Rows with suppressed Deaths are hidden, but the Deaths and Population values in those rows are included in the totals. Use"
+"Quick Options above to show suppressed rows."
+"---"
+Footnotes:
+"1. Totals and sub-totals show the frequency of the selected causes of death, which may be greater than the number of deaths."
+"Note that any single death record may have up to 20 causes. More information."
+"---"
+Caveats:
+"1. Population and rates are labeled 'Not Applicable' when they include a subset of ages 85-100+ because populations are not"
+"available for those ages. More information: http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Ages 85-100."
+"2. These items in the results table are not fully selected: Other bacterial diseases, Renal failure. The Query Description lists"
+"the actual values selected."
+"3. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Assurance of Confidentiality."
+"4. Deaths of persons with Age ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among age groups,"
+"so are not included in age-specific counts, age-specific rates or in any age-adjusted rates. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Not Stated."
+"5. The method used to calculate 95% confidence intervals is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Confidence-Intervals."
+"6. The population estimates for years 2022 - 2026 are from separate series of estimates based on the Modified Blended Base"
+"produced by the US Census Bureau in lieu of the April 1, 2020 decennial population count. The Modified Blended Base consists of"
+"the blend of Vintage 2020 postcensal population estimates for April 1, 2020, 2020 Demographic Analysis Estimates, and 2020"
+"Census data from the internal Census Edited File (CEF). Each subsequent series of estimates adjusts the methodology. The"
+"population figures for years 2024 and later are single-race estimates of the July 1 resident population, from the Vintage 2024"
+"postcensal series released by the Census Bureau on June 26, 2025. The population figures for year 2023 are single-race estimates"
+"of the July 1 resident population, from the Vintage 2023 postcensal series released by the Census Bureau on June 27, 2024. The"
+"population figures for year 2022 are single-race estimates of the July 1 resident population, from the Vintage 2022 postcensal"
+"series released by the Census Bureau on June 22, 2023. The population figures for year 2021 are single-race estimates of the"
+"July 1 resident population, based on the Blended Base produced by the US Census Bureau in lieu of the April 1, 2020 decennial"
+"population count, from the Vintage 2021 postcensal series released by the Census Bureau on June 30, 2022. The population figures"
+"for year 2020 are single-race estimates of the July 1 resident population, from the Vintage 2020 postcensal series based on"
+"April 2010 Census, released by the Census Bureau on July 27, 2021. The population figures for year 2019 are single-race"
+"estimates of the July 1 resident population, from the Vintage 2019 postcensal series based on April 2010 Census, released by the"
+"Census Bureau on June 25, 2020. The population figures for year 2018 are single-race estimates of the July 1 resident"
+"population, from the Vintage 2018 postcensal series based on April 2010 Census, released by the Census Bureau on June 20, 2019."
+"More information: http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Population Data."
+"7. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Age"
+"Group."
+"8. Beginning with the 2018 data, changes have been implemented that affect the counts for ICD-10 cause of death codes O00-O99"
+"compared to previous practice. In addition, data for the cause of death codes O00-O99 for 2003 through 2017 reflect differences"
+"in information available to individual states and probable errors. Deaths with the underlying cause classified with O00-O99 are"
+"subject to further processing before these deaths records are considered final. Provisional deaths have not undergone full"
+"processing and review and therefore should not be considered final for statistical purposes. Caution should be used in"
+"interpreting these data. More information can be found at: https://www.cdc.gov/nchs/maternal-mortality/."
+"9. On March 11, 2021, the 2019 mortality data on CDC WONDER was updated with the 2019 mortality data updated by NCHS on March 4,"
+"2021 to include corrected information for residents of Texas affecting 5 records previously coded to cause code *U01.4,"
+"Terrorism involving firearms (homicide). The underlying and multiple cause of death codes for 5 records were corrected in the"
+"2019 data. Underlying and multiple cause of death codes for those 5 records were recoded to Assault (homicide) by other and"
+"unspecified firearm discharge, ICD-10 code X95. The corrected final death records replaces the data released on December 22,"
+"2020."
+"10. Connecticut population estimates for 2022 and later years are reported for 9 planning regions as county equivalent areas,"
+"instead of the former 8 legacy counties in the Vintage 2022 postcensal series released by the Census Bureau on June 22, 2023,"
+"and in the Vintage 2023 postcensal series released by the Census Bureau on June 27, 2024. Populations estimates for the former"
+"counties are not available for 2022 and later years. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd-provisional.html#Connecticut-2022."
+"11. After the creation of the final 2023 dataset, North Carolina updated the cause of death information for over 900 death"
+"certificates to include a cause of death code indicating drug overdose (ICD-10 underlying cause-of-death codes: X40-X44,"
+"X60-X64, X85, and Y10-Y14). Jurisdictions can continue to update death certificates after the closing of the mortality file. As"
+"a result, users should consider that the actual death count for drug overdose deaths for North Carolina in 2023 is over 4,400"
+"deaths, with a crude rate of approximately 41.0 per 100,000 population, and an age-adjusted rate of approximately 42.1 per"
+"100,000 population. These deaths will not be updated on the final mortality datasets."
+"12. Changes to cause of death classification affect reporting trends. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd-provisional.html#ICD-10 Changes."
+"13. Deaths related to external causes of injury or sudden death: In the provisional mortality data, causes of death classified"
+"as external causes of injury (ICD-10 codes V01-Y89), sudden deaths (ICD-10 codes R95 and R96), or drug poisoning (ICD-10 codes"
+"T36-T50), have the cause of death labeled as 'Data not shown due to 6 month lag to account for delays in death certificate"
+"completion for certain causes of death.' For these deaths occurring 24 weeks prior to the final date in the provisional data,"
+"the number of deaths and related statistics are not available by specific cause of death for ICD-10 codes V01-Y89, R95, R96, or"
+"T36-T50. More information: http://wonder.cdc.gov/wonder/help/mcd-provisional.html#999."
+"14. Deaths occurring through February 14, 2026 as of February 22, 2026."

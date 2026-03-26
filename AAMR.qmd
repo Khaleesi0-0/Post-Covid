@@ -1,0 +1,3067 @@
+---
+title: "AAMR"
+format: html
+editor: visual
+---
+```{r}
+library(readr)
+library(tidyverse)
+library(lubridate)
+library(splines)
+library(broom)
+library(usmap)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(readr)
+```
+
+```{r}
+N172010a <- read_csv("Data/N172010a.csv") %>%
+  filter(`Year Code` < 2018)
+N172018a <- read_csv("Data/N172018a.csv")
+clean_year <- function(df) {
+  df %>%
+    mutate(
+      Year_raw = as.character(Year),
+      # pull the first 4-digit year (e.g., "2024 (provisional)" -> 2024)
+      Year = readr::parse_number(Year_raw),
+      # keep any extra text as a note (optional)
+      Year_note = str_squish(str_remove(Year_raw, "^\\d{4}"))
+    )
+}
+
+N17a <- bind_rows(
+  clean_year(N172010a ),
+  clean_year(N172018a )
+) %>%
+  select(-Year_raw)
+
+
+N172010s <- read_csv("Data/N172010s.csv") %>%
+  filter(`Year Code` < 2018)
+N172018s <- read_csv("Data/N172018s.csv")
+
+N17s <- bind_rows(
+  clean_year(N172010s ),
+  clean_year(N172018s )
+) %>%
+  select(-Year_raw)
+
+
+
+N172010r <- read_csv("Data/N172010race.csv") %>%
+  filter(`Year Code` < 2018)
+N172018r <- read_csv("Data/N172018race.csv")
+
+N17r <- bind_rows(
+  clean_year(N172010r ),
+  clean_year(N172018r )
+) %>%
+  select(-Year_raw)
+
+```
+
+```{r}
+A402010a <- read_csv("Data/A402010a.csv") %>%
+  filter(`Year Code` < 2018)
+A402018a <- read_csv("Data/A402018a.csv")
+
+A40a <- bind_rows(
+  clean_year(A402010a ),
+  clean_year(A402018a )
+) %>%
+  select(-Year_raw)
+
+
+A402010s <- read_csv("Data/A402010s.csv") %>%
+  filter(`Year Code` < 2018)
+A402018s <- read_csv("Data/A402018s.csv")
+
+A40s <- bind_rows(
+  clean_year(A402010s ),
+  clean_year(A402018s )
+) %>%
+  select(-Year_raw)
+
+A402010r <- read_csv("Data/A402010race.csv") %>%
+  filter(`Year Code` < 2018)
+A402018r <- read_csv("Data/A402018race.csv")
+
+A40r <- bind_rows(
+  clean_year(A402010r ),
+  clean_year(A402018r )
+) %>%
+  select(-Year_raw)
+
+```
+```{r}
+N17A402010a <- read_csv("Data/N17A402010a.csv") %>%
+  filter(`Year Code` < 2018)
+N17A402018a <- read_csv("Data/N17A402018a.csv")
+
+N17A40a <- bind_rows(
+  clean_year(N17A402010a ),
+  clean_year(N17A402018a )
+) %>%
+  select(-Year_raw)
+
+
+N17A402010s <- read_csv("Data/N17A402010s.csv") %>%
+  filter(`Year Code` < 2018)
+N17A402018s <- read_csv("Data/N17A402018s.csv")
+
+N17A40s <- bind_rows(
+  clean_year(N17A402010s ),
+  clean_year(N17A402018s )
+) %>%
+  select(-Year_raw)
+
+N17A402010r <- read_csv("Data/N17A402010race.csv") %>%
+  filter(`Year Code` < 2018)
+N17A402018r <- read_csv("Data/N17A402018race.csv")
+
+N17A40r <- bind_rows(
+  clean_year(N17A402010r ),
+  clean_year(N17A402018r )
+) %>%
+  select(-Year_raw)
+
+```
+
+
+```{r}
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(readr)
+  library(tidyr)
+})
+
+# -----------------------------
+# Helpers
+# -----------------------------
+
+parse_pop_safe <- function(x) {
+  x <- na_if(as.character(x), "Not Applicable")
+  readr::parse_number(x, na = c("", "NA", "Not Applicable"))
+}
+
+parse_rate_safe <- function(x) {
+  x <- na_if(as.character(x), "Unreliable")
+  x <- na_if(x, "Not Applicable")
+  readr::parse_number(x, na = c("", "NA", "Unreliable", "Not Applicable"))
+}
+
+std_year <- function(df) {
+  df %>%
+    mutate(
+      Year = suppressWarnings(as.integer(Year)),
+      `Year Code` = suppressWarnings(as.integer(`Year Code`))
+    )
+}
+
+coerce_rate_ci_cols <- function(df) {
+  rate_cols <- c(
+    "Crude Rate",
+    "Crude Rate Lower 95% Confidence Interval",
+    "Crude Rate Upper 95% Confidence Interval",
+    "Age Adjusted Rate",
+    "Age Adjusted Rate Lower 95% Confidence Interval",
+    "Age Adjusted Rate Upper 95% Confidence Interval"
+  )
+  
+  present <- intersect(rate_cols, names(df))
+  
+  df %>%
+    mutate(across(all_of(present), ~ parse_rate_safe(.x)))
+}
+
+# -----------------------------
+# Master standardizer
+# -----------------------------
+standardize_extract <- function(df, source_label) {
+  
+  # unify race columns if both exist
+  if (all(c("Single Race 6", "Race") %in% names(df))) {
+    df <- df %>%
+      mutate(
+        race      = coalesce(`Single Race 6`, Race),
+        race_code = coalesce(`Single Race 6 Code`, `Race Code`)
+      ) %>%
+      select(-any_of(c("Single Race 6", "Single Race 6 Code",
+                       "Race", "Race Code")))
+  }
+  
+  df %>%
+    std_year() %>%
+    mutate(source = source_label) %>%
+    mutate(
+      Population = if ("Population" %in% names(.))
+        parse_pop_safe(Population) else Population
+    ) %>%
+    coerce_rate_ci_cols() %>%
+    # ensure missing stratifier columns exist
+    mutate(
+      Sex = if (!"Sex" %in% names(.)) NA_character_ else Sex,
+      `Sex Code` = if (!"Sex Code" %in% names(.)) NA_character_ else `Sex Code`,
+      race = if (!"race" %in% names(.)) NA_character_ else race,
+      race_code = if (!"race_code" %in% names(.)) NA_character_ else race_code,
+      `Five-Year Age Groups` = if (!"Five-Year Age Groups" %in% names(.))
+        NA_character_ else `Five-Year Age Groups`,
+      `Five-Year Age Groups Code` = if (!"Five-Year Age Groups Code" %in% names(.))
+        NA_character_ else `Five-Year Age Groups Code`
+    )
+}
+```
+
+```{r}
+N17_all <- bind_rows(
+  standardize_extract(N17a, "age"),
+  standardize_extract(N17s, "sex"),
+  standardize_extract(N17r, "race")
+)
+A40_all <- bind_rows(
+  standardize_extract(A40a, "age"),
+  standardize_extract(A40s, "sex"),
+  standardize_extract(A40r, "race")
+)
+N17A40_all <- bind_rows(
+  standardize_extract(N17A40a, "age"),
+  standardize_extract(N17A40s, "sex"),
+  standardize_extract(N17A40r, "race")
+)
+
+N17A40_RF <- N17A40_all %>%
+  dplyr::filter(`MCD - ICD Sub-Chapter`=="Renal failure")
+
+unique(N17_all$race)
+```
+
+## YEAR table
+```{r}
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(tidyr)
+  library(stringr)
+})
+
+# -----------------------------
+# Race harmonizer
+# -----------------------------
+norm_race <- function(x) {
+  case_when(
+    x == "American Indian or Alaska Native" ~ "American Indian or Alaska Native",
+    x == "Asian" ~ "Asian",
+    x == "Asian or Pacific Islander" ~ "Asian",
+    x == "Native Hawaiian or Other Pacific Islander" ~
+      "Native Hawaiian or Other Pacific Islander",
+    x == "Black or African American" ~ "Black or African American",
+    x == "White" ~ "White",
+    x == "More than one race" ~ "More than one race",
+    TRUE ~ NA_character_
+  )
+}
+
+# -----------------------------
+# SEX deaths (2010–2025)
+# -----------------------------
+get_sex_totals <- function(df) {
+  df %>%
+    filter(source == "sex",
+           !is.na(Sex),
+           Sex %in% c("Female","Male"),
+           Year >= 2010, Year <= 2025) %>%
+    group_by(Year, Sex) %>%
+    summarise(n = sum(Deaths, na.rm = TRUE), .groups="drop") %>%
+    pivot_wider(names_from = Sex,
+                values_from = n,
+                values_fill = 0) %>%
+    rename(
+      `Women (n)` = Female,
+      `Men (n)`   = Male
+    ) %>%
+    mutate(
+      `Overall (n)` = `Women (n)` + `Men (n)`
+    )
+}
+
+# -----------------------------
+# RACE deaths
+# -----------------------------
+get_race_totals <- function(df) {
+  df %>%
+    filter(source == "race",
+           !is.na(race),
+           Year >= 2010, Year <= 2025) %>%
+    mutate(race_std = norm_race(race)) %>%
+    filter(!is.na(race_std)) %>%
+    group_by(Year, race_std) %>%
+    summarise(n = sum(Deaths, na.rm = TRUE), .groups="drop") %>%
+    mutate(race_std = paste0(race_std," (n)")) %>%
+    pivot_wider(names_from = race_std,
+                values_from = n,
+                values_fill = 0)
+}
+
+# -----------------------------
+# Population + Crude + AAMR
+# pull from sex extract (one row per sex, same pop)
+# -----------------------------
+get_rates <- function(df) {
+  df %>%
+    filter(source == "sex",
+           !is.na(Sex),
+           Sex == "Female",    # population same for both sexes
+           Year >= 2010, Year <= 2025) %>%
+    group_by(Year) %>%
+    summarise(
+      Population = max(Population, na.rm=TRUE),
+      `Crude rate (/100,000)` = max(`Crude Rate`, na.rm=TRUE),
+      `AAMR (/100,000), age-adjusted (all ages)` =
+        max(`Age Adjusted Rate`, na.rm=TRUE),
+      .groups="drop"
+    )
+}
+
+# -----------------------------
+# MASTER FUNCTION
+# -----------------------------
+make_total_table <- function(df, outcome_label){
+
+  sex_tbl  <- get_sex_totals(df)
+  race_tbl <- get_race_totals(df)
+  rate_tbl <- get_rates(df)
+
+  sex_tbl %>%
+    left_join(race_tbl, by="Year") %>%
+    left_join(rate_tbl, by="Year") %>%
+    mutate(outcome = outcome_label) %>%
+    select(
+      outcome,
+      Year,
+      `Overall (n)`,
+      `Women (n)`,
+      `Men (n)`,
+      `American Indian or Alaska Native (n)`,
+      `Asian (n)`,
+      `Native Hawaiian or Other Pacific Islander (n)`,
+      `Black or African American (n)`,
+      `White (n)`,
+      `More than one race (n)`,
+      Population,
+      `Crude rate (/100,000)`,
+      `AAMR (/100,000), age-adjusted (all ages)`
+    ) %>%
+    arrange(Year)
+}
+
+# -----------------------------
+# Build tables (2010–2025 only)
+# -----------------------------
+tbl_N17    <- make_year_table(N17_all,    "N17 (Renal failure)")
+tbl_A40    <- make_year_table(A40_all,    "A40 (Sepsis)")
+tbl_N17A40 <- make_year_table(N17A40_RF, "N17/A40")
+
+
+```
+
+```{r}
+add_total_row <- function(tbl) {
+
+  tbl2 <- tbl %>%
+    mutate(Year = as.character(Year))
+
+  ok <- is.finite(tbl2$Population) & tbl2$Population > 0 &
+    is.finite(tbl2$`AAMR (/100,000), age-adjusted (all ages)`)
+
+  wmean_aamr <- if (any(ok)) {
+    sum(tbl2$`AAMR (/100,000), age-adjusted (all ages)`[ok] *
+          tbl2$Population[ok]) /
+      sum(tbl2$Population[ok])
+  } else {
+    NA_real_
+  }
+
+  total_row <- tbl2 %>%
+    summarise(
+      outcome = first(outcome),
+      Year = "2010–2025",
+
+      `Overall (n)` = sum(`Overall (n)`, na.rm = TRUE),
+      `Women (n)`   = sum(`Women (n)`, na.rm = TRUE),
+      `Men (n)`     = sum(`Men (n)`, na.rm = TRUE),
+
+      `American Indian or Alaska Native (n)` =
+        sum(`American Indian or Alaska Native (n)`, na.rm = TRUE),
+      `Asian (n)` =
+        sum(`Asian (n)`, na.rm = TRUE),
+      `Native Hawaiian or Other Pacific Islander (n)` =
+        sum(`Native Hawaiian or Other Pacific Islander (n)`, na.rm = TRUE),
+      `Black or African American (n)` =
+        sum(`Black or African American (n)`, na.rm = TRUE),
+      `White (n)` =
+        sum(`White (n)`, na.rm = TRUE),
+      `More than one race (n)` =
+        sum(`More than one race (n)`, na.rm = TRUE),
+
+      Population = sum(Population, na.rm = TRUE),
+
+      `Crude rate (/100,000)` =
+        round(
+          sum(`Overall (n)`, na.rm = TRUE) /
+            sum(Population, na.rm = TRUE) * 100000,
+          2
+        ),
+
+      `AAMR (/100,000), age-adjusted (all ages)` =
+        round(wmean_aamr, 2)
+    )
+
+  bind_rows(tbl2, total_row) %>%
+    mutate(
+      `Crude rate (/100,000)` =
+        round(`Crude rate (/100,000)`, 2),
+      `AAMR (/100,000), age-adjusted (all ages)` =
+        round(`AAMR (/100,000), age-adjusted (all ages)`, 2)
+    )
+}
+
+tbl_N17    <- add_total_row(tbl_N17)
+tbl_A40    <- add_total_row(tbl_A40)
+tbl_N17A40 <- add_total_row(tbl_N17A40)
+
+tbl_N17
+tbl_A40
+tbl_N17A40
+```
+## Period Map
+
+```{r}
+# ============================================================
+# Period summary table (Metric rows × Period columns)
+# For N17_all, A40_all, N17A40_all (2010–2025)
+# - Uses std2000_allages for direct standardization from age table
+# - Fixes list-columns (<chr[2]>) by deduping totals and forcing
+#   exactly 1 row per outcome×period before pivot_wider
+# ============================================================
+
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(tidyr)
+  library(stringr)
+  library(tibble)
+})
+
+# ============================================================
+# 0) 2000 US standard weights (all ages; your version)
+# ============================================================
+std2000_allages <- tibble(
+  age_code = c(
+    "1","1-4",
+    "5-9","10-14",
+    "15-19","20-24",
+    "25-29","30-34",
+    "35-39","40-44",
+    "45-49","50-54",
+    "55-59","60-64",
+    "65-69","70-74",
+    "75-79","80-84",
+    "85+"
+  ),
+  std_million = c(
+    13818, 55317,
+    145565/2, 145565/2,
+    138646/2, 138646/2,
+    135573/2, 135573/2,
+    162613/2, 162613/2,
+    134834/2, 134834/2,
+    87247/2,  87247/2,
+    66037/2,  66037/2,
+    44842/2,  44842/2,
+    15508
+  )
+) %>%
+  mutate(
+    std_million = round(std_million),
+    weight_all  = std_million / sum(std_million)
+  )
+
+# ============================================================
+# 1) Period map (2010–2025)
+# ============================================================
+period_map <- function(year) {
+  case_when(
+    year >= 2010 & year <= 2019 ~ "Pre-pandemic (2010–2019)",
+    year >= 2020 & year <= 2022 ~ "Pandemic (2020–2022)",
+    year == 2023                ~ "Transition (2023)",
+    year >= 2024 & year <= 2025 ~ "Post-pandemic (2024–2025)",
+    TRUE ~ NA_character_
+  )
+}
+
+# ============================================================
+# 2) Your age recode (collapse 85-89/90-94/95-99/100+ -> 85+)
+#    (Safe even if your codes already have 85+)
+# ============================================================
+recode_to_std_age <- function(age_code) {
+  dplyr::case_when(
+    age_code %in% c("85-89", "90-94", "95-99", "100+") ~ "85+",
+    TRUE ~ as.character(age_code)
+  )
+}
+
+# ============================================================
+# 3) Formatting helpers (2 decimals for rates)
+# ============================================================
+fmt_int <- function(x) ifelse(is.na(x), NA_character_, formatC(round(x), digits = 0, format = "f", big.mark = ","))
+fmt_rate2 <- function(x) ifelse(is.na(x), NA_character_, formatC(x, digits = 2, format = "f", big.mark = ","))
+fmt_n_pct <- function(n, denom, digits = 1) {
+  ifelse(is.na(n) | is.na(denom) | denom == 0,
+         NA_character_,
+         paste0(fmt_int(n), " (", formatC(100*n/denom, digits = digits, format = "f"), "%)"))
+}
+
+# ============================================================
+# 4) Direct-standardized AAMR from age table using std2000_allages
+#    - If ages_keep provided, weights are renormalized within that band
+# ============================================================
+aamr_from_age <- function(age_df, ages_keep = NULL) {
+  # age_df must contain: period, age_code, Deaths, Population
+  w <- std2000_allages %>% select(age_code, weight_all)
+
+  df <- age_df %>%
+    left_join(w, by = "age_code") %>%
+    filter(!is.na(weight_all))
+
+  if (!is.null(ages_keep)) {
+    df <- df %>% filter(age_code %in% ages_keep)
+  }
+
+  df <- df %>%
+    group_by(period) %>%
+    mutate(w_norm = weight_all / sum(weight_all, na.rm = TRUE)) %>%
+    ungroup() %>%
+    mutate(rate = ifelse(Population > 0, Deaths / Population * 100000, NA_real_))
+
+  df %>%
+    group_by(period) %>%
+    summarise(AAMR = sum(rate * w_norm, na.rm = TRUE), .groups = "drop")
+}
+
+# ============================================================
+# 5) Period totals (deaths/pop/crude) from SEX table totals
+#    FIX: dedupe "overall" per YEAR before summing to period
+# ============================================================
+# ---- period order
+period_levels <- c(
+  "Pre-pandemic (2010–2019)",
+  "Pandemic (2020–2022)",
+  "Transition (2023)",
+  "Post-pandemic (2024–2025)"
+)
+
+# ============================================================
+# A) Overall totals: deaths/pop/crude + OVERALL AAMR from WONDER AAR totals
+#    (population-weighted mean of yearly AAR within each period)
+# ============================================================
+period_overall_totals <- function(df_all) {
+
+  # pick ONE "overall" row per year
+  yearly_overall <- df_all %>%
+    mutate(period = period_map(Year)) %>%
+    filter(!is.na(period), source == "sex") %>%
+    filter(is.na(Sex) | Sex == "" | Notes == "Total" | str_to_lower(Sex) == "total") %>%
+    mutate(overall_rank = ifelse(Notes == "Total", 1L, 2L)) %>%
+    arrange(Year, overall_rank) %>%
+    group_by(Year, period) %>%
+    slice(1) %>%
+    ungroup()
+
+  yearly_overall %>%
+    group_by(period) %>%
+    summarise(
+      total_deaths = sum(Deaths, na.rm = TRUE),
+      population   = sum(Population, na.rm = TRUE),
+      crude_rate   = ifelse(sum(Population, na.rm = TRUE) > 0,
+                            sum(Deaths, na.rm = TRUE) / sum(Population, na.rm = TRUE) * 100000,
+                            NA_real_),
+      # overall AAMR: population-weighted mean of yearly Age Adjusted Rate from WONDER totals
+      AAMR_overall = ifelse(sum(Population, na.rm = TRUE) > 0,
+                            sum(`Age Adjusted Rate` * Population, na.rm = TRUE) / sum(Population, na.rm = TRUE),
+                            NA_real_),
+      .groups = "drop"
+    )
+}
+
+# ============================================================
+# B) Sex stats (female & male in one row per period)
+# ============================================================
+period_sex_stats <- function(df_all) {
+
+  base <- df_all %>%
+    mutate(period = period_map(Year)) %>%
+    filter(!is.na(period), source == "sex") %>%
+    mutate(
+      Sex_chr  = str_trim(as.character(Sex)),
+      Code_chr = str_trim(as.character(`Sex Code`)),
+      Sex_std = case_when(
+        str_to_lower(Sex_chr) %in% c("male", "m") ~ "Male",
+        str_to_lower(Sex_chr) %in% c("female", "f") ~ "Female",
+        Code_chr == "M" ~ "Male",
+        Code_chr == "F" ~ "Female",
+        TRUE ~ NA_character_
+      )
+    ) %>%
+    filter(Sex_std %in% c("Male", "Female"))
+
+  female <- base %>%
+    filter(Sex_std == "Female") %>%
+    group_by(period) %>%
+    summarise(
+      Female_deaths = sum(Deaths, na.rm = TRUE),
+      Female_AAMR   = ifelse(sum(Population, na.rm = TRUE) > 0,
+                             sum(`Age Adjusted Rate` * Population, na.rm = TRUE) / sum(Population, na.rm = TRUE),
+                             NA_real_),
+      .groups = "drop"
+    )
+
+  male <- base %>%
+    filter(Sex_std == "Male") %>%
+    group_by(period) %>%
+    summarise(
+      Male_deaths = sum(Deaths, na.rm = TRUE),
+      Male_AAMR   = ifelse(sum(Population, na.rm = TRUE) > 0,
+                           sum(`Age Adjusted Rate` * Population, na.rm = TRUE) / sum(Population, na.rm = TRUE),
+                           NA_real_),
+      .groups = "drop"
+    )
+
+  full_join(female, male, by = "period")
+}
+
+# ============================================================
+# C) Age-band AAMRs from age table using std weights (unchanged logic)
+#    NOTE: this does NOT define overall AAMR anymore (only bands)
+# ============================================================
+period_age_aamr_blocks <- function(df_all) {
+
+  age_df <- df_all %>%
+    mutate(period = period_map(Year)) %>%
+    filter(!is.na(period), source == "age") %>%
+    transmute(
+      period,
+      age_code = recode_to_std_age(`Five-Year Age Groups Code`),
+      Deaths,
+      Population
+    ) %>%
+    group_by(period, age_code) %>%
+    summarise(
+      Deaths = sum(Deaths, na.rm = TRUE),
+      Population = sum(Population, na.rm = TRUE),
+      .groups = "drop"
+    ) %>%
+    mutate(
+      age_band = case_when(
+        age_code %in% c("1","1-4","5-9","10-14","15-19") ~ "<20",
+        age_code %in% c("20-24","25-29","30-34","35-39","40-44") ~ "20–44",
+        age_code %in% c("45-49","50-54","55-59","60-64") ~ "45–64",
+        age_code %in% c("65-69","70-74","75-79","80-84","85+") ~ "65+",
+        TRUE ~ NA_character_
+      )
+    ) %>%
+    filter(!is.na(age_band)) %>%
+    group_by(period, age_band) %>%
+    summarise(
+      deaths_band = sum(Deaths, na.rm = TRUE),
+      pop_band    = sum(Population, na.rm = TRUE),
+      rate_band   = ifelse(pop_band > 0, deaths_band / pop_band * 100000, NA_real_),
+      .groups = "drop"
+    ) %>%
+    select(period, age_band, rate_band) %>%
+    mutate(
+      col = case_when(
+        age_band == "<20"   ~ "<20 AAMR (/100,000)",
+        age_band == "20–44" ~ "20–44 AAMR (/100,000)",
+        age_band == "45–64" ~ "45–64 AAMR (/100,000)",
+        age_band == "65+"   ~ "65+ AAMR (/100,000)",
+        TRUE ~ NA_character_
+      )
+    ) %>%
+    select(period, col, rate_band) %>%
+    pivot_wider(names_from = col, values_from = rate_band)
+
+  age_df
+}
+
+# ============================================================
+# D) Final table builder (Metric rows × Period cols, ordered)
+# ============================================================
+make_period_metric_table <- function(df_all, outcome_label) {
+
+  overall_tot <- period_overall_totals(df_all)
+  sex_stats   <- period_sex_stats(df_all)
+  race_stats  <- period_race_aamr(df_all)
+  age_blocks  <- period_age_aamr_blocks(df_all)
+
+  wide <- overall_tot %>%
+    left_join(sex_stats,  by = "period") %>%
+    left_join(age_blocks, by = "period") %>%
+    left_join(race_stats, by = "period") %>%
+    mutate(outcome = outcome_label) %>%
+    group_by(outcome, period) %>%
+    summarise(across(everything(), ~ dplyr::first(.x)), .groups = "drop") %>%
+    mutate(
+      Male_deaths   = coalesce(Male_deaths,   0),
+      Female_deaths = coalesce(Female_deaths, 0)
+    )
+
+  wide_fmt <- wide %>%
+    transmute(
+      outcome,
+      period,
+
+      `Total deaths, n` = fmt_int(total_deaths),
+      `Male deaths, n (%)` = fmt_n_pct(Male_deaths, total_deaths, digits = 1),
+      `Female deaths, n (%)` = fmt_n_pct(Female_deaths, total_deaths, digits = 1),
+
+      Population = fmt_int(population),
+      `Crude mortality rate (/100,000)` = fmt_rate2(crude_rate),
+
+      # ✅ overall AAMR from WONDER totals
+      `AAMR (/100,000), age-adjusted (all ages)` = fmt_rate2(AAMR_overall),
+
+      `Male AAMR (/100,000)` = fmt_rate2(Male_AAMR),
+      `Female AAMR (/100,000)` = fmt_rate2(Female_AAMR),
+
+      `<20 AAMR (/100,000)` = fmt_rate2(`<20 AAMR (/100,000)`),
+      `20–44 AAMR (/100,000)` = fmt_rate2(`20–44 AAMR (/100,000)`),
+      `45–64 AAMR (/100,000)` = fmt_rate2(`45–64 AAMR (/100,000)`),
+      `65+ AAMR (/100,000)` = fmt_rate2(`65+ AAMR (/100,000)`),
+
+      `American Indian or Alaska Native AAMR (/100,000)` =
+        fmt_rate2(`American Indian or Alaska Native AAMR (/100,000)`),
+      `Asian AAMR (/100,000)` =
+        fmt_rate2(`Asian AAMR (/100,000)`),
+      `Native Hawaiian or Other Pacific Islander AAMR (/100,000)` =
+        fmt_rate2(`Native Hawaiian or Other Pacific Islander AAMR (/100,000)`),
+      `Black or African American AAMR (/100,000)` =
+        fmt_rate2(`Black or African American AAMR (/100,000)`),
+      `White AAMR (/100,000)` =
+        fmt_rate2(`White AAMR (/100,000)`),
+      `More than one race AAMR (/100,000)` =
+        fmt_rate2(`More than one race AAMR (/100,000)`)
+    )
+
+  metric_tbl <- wide_fmt %>%
+    pivot_longer(cols = -c(outcome, period), names_to = "Metric", values_to = "value") %>%
+    mutate(period = factor(period, levels = period_levels)) %>%
+    pivot_wider(names_from = period, values_from = value)
+
+  metric_order <- c(
+    "Total deaths, n",
+    "Male deaths, n (%)",
+    "Female deaths, n (%)",
+    "Population",
+    "Crude mortality rate (/100,000)",
+    "AAMR (/100,000), age-adjusted (all ages)",
+    "Male AAMR (/100,000)",
+    "Female AAMR (/100,000)",
+    "<20 AAMR (/100,000)",
+    "20–44 AAMR (/100,000)",
+    "45–64 AAMR (/100,000)",
+    "65+ AAMR (/100,000)",
+    "American Indian or Alaska Native AAMR (/100,000)",
+    "Asian AAMR (/100,000)",
+    "Native Hawaiian or Other Pacific Islander AAMR (/100,000)",
+    "Black or African American AAMR (/100,000)",
+    "White AAMR (/100,000)",
+    "More than one race AAMR (/100,000)"
+  )
+
+  metric_tbl %>%
+    mutate(Metric = factor(Metric, levels = metric_order)) %>%
+    arrange(Metric) %>%
+    mutate(Metric = as.character(Metric)) %>%
+    select(outcome, Metric, all_of(period_levels))
+}
+# ============================================================
+# 10) RUN for all three outcomes
+#     (Assumes you already have: N17_all, A40_all, N17A40_all)
+# ============================================================
+tbl_period_N17    <- make_period_metric_table(N17_all,    "N17 (Renal failure)")
+tbl_period_A40    <- make_period_metric_table(A40_all,    "A40 (Sepsis)")
+tbl_period_N17A40 <- make_period_metric_table(N17A40_RF, "N17 & A40")
+
+# View
+tbl_period_N17
+tbl_period_A40
+tbl_period_N17A40
+
+
+```
+
+```{r}
+pod <- read_csv("Data/pod.csv", show_col_types = FALSE)
+
+pod_wide <- pod %>%
+  select(period, dataset, place_group, total_deaths) %>%
+  mutate(
+    place_group = ifelse(place_group == "Medical Facility",
+                         "Avg annual deaths (Medical Facility)",
+                         "Avg annual deaths (Non-medical facility)")
+  ) %>%
+  pivot_wider(
+    names_from = place_group,
+    values_from = total_deaths
+  )
+
+# If your period table uses these exact column names:
+pod_metric_long <- pod_wide %>%
+  mutate(
+    total_pod = `Avg annual deaths (Medical Facility)` + `Avg annual deaths (Non-medical facility)`,
+    `Place of death: Medical Facility N(%)` =
+      paste0(
+        fmt_int(`Avg annual deaths (Medical Facility)`),
+        " (",
+        formatC(100 * `Avg annual deaths (Medical Facility)` / total_pod, format = "f", digits = 1),
+        "%)"
+      ),
+    `Place of death: Non-medical facility N(%)` =
+      paste0(
+        fmt_int(`Avg annual deaths (Non-medical facility)`),
+        " (",
+        formatC(100 * `Avg annual deaths (Non-medical facility)` / total_pod, format = "f", digits = 1),
+        "%)"
+      )
+  ) %>%
+  select(dataset, period,
+         `Place of death: Medical Facility N(%)`,
+         `Place of death: Non-medical facility N(%)`) %>%
+  pivot_longer(
+    cols = c(`Place of death: Medical Facility N(%)`,
+             `Place of death: Non-medical facility N(%)`),
+    names_to = "Metric",
+    values_to = "value"
+  ) %>%
+  mutate(period = factor(period, levels = period_levels)) %>%
+  pivot_wider(names_from = period, values_from = value) %>%
+  mutate(outcome = dataset) %>%         # align naming with your period tables
+  select(outcome, Metric, all_of(period_levels))
+```
+
+```{r}
+pod_metric_long2 <- pod_metric_long %>%
+  mutate(outcome = recode(outcome,
+                          "AKI" = "N17 (Renal failure)",
+                          "Sepsis" = "A40 (Sepsis)",
+                          "AKI & Sepsis" = "N17 & A40"))
+```
+
+```{r}
+tbl_period_N17    <- bind_rows(tbl_period_N17,    filter(pod_metric_long2, outcome == "N17 (Renal failure)"))
+tbl_period_A40    <- bind_rows(tbl_period_A40,    filter(pod_metric_long2, outcome == "A40 (Sepsis)"))
+tbl_period_N17A40 <- bind_rows(tbl_period_N17A40, filter(pod_metric_long2, outcome == "N17 & A40"))
+
+tbl_period_N17
+tbl_period_A40
+tbl_period_N17A40
+
+```
+
+## Age
+```{r}
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(tidyr)
+})
+
+# ============================================================
+# 0) helpers
+# ============================================================
+ageband_map <- function(age_code) {
+  dplyr::case_when(
+    age_code %in% c("1","1-4","5-9","10-14","15-19") ~ "lt20",
+    age_code %in% c("20-24","25-29","30-34","35-39","40-44") ~ "20_44",
+    age_code %in% c("45-49","50-54","55-59","60-64") ~ "45_64",
+    age_code %in% c("65-69","70-74","75-79","80-84","85+") ~ "65_plus",
+    TRUE ~ NA_character_
+  )
+}
+
+# --- deaths by YearKey × band (wide)
+deaths_by_year_band <- function(df_all, prefix_name) {
+  df_all %>%
+    filter(source == "age") %>%
+    transmute(
+      YearKey    = as.integer(`Year Code`),
+      age_code   = recode_to_std_age(`Five-Year Age Groups Code`),
+      Deaths     = as.numeric(Deaths),
+      Population = as.numeric(Population)
+    ) %>%
+    filter(YearKey >= 2010, YearKey <= 2025) %>%
+    mutate(age_band = ageband_map(age_code)) %>%
+    filter(!is.na(age_band)) %>%
+    group_by(YearKey, age_band) %>%
+    summarise(deaths = sum(Deaths, na.rm = TRUE), .groups = "drop") %>%
+    mutate(col = paste0(prefix_name, "_deaths_", age_band)) %>%
+    select(YearKey, col, deaths) %>%
+    pivot_wider(names_from = col, values_from = deaths)
+}
+
+# --- age-band rates (per 100,000) by YearKey × band (wide)
+rates_by_year_band <- function(df_all, prefix_name) {
+  df_all %>%
+    filter(source == "age") %>%
+    transmute(
+      YearKey    = as.integer(`Year Code`),
+      age_code   = recode_to_std_age(`Five-Year Age Groups Code`),
+      Deaths     = as.numeric(Deaths),
+      Population = as.numeric(Population)
+    ) %>%
+    filter(YearKey >= 2010, YearKey <= 2025) %>%
+    mutate(age_band = ageband_map(age_code)) %>%
+    filter(!is.na(age_band)) %>%
+    group_by(YearKey, age_band) %>%
+    summarise(
+      deaths = sum(Deaths, na.rm = TRUE),
+      pop    = sum(Population, na.rm = TRUE),
+      rate   = ifelse(pop > 0, deaths / pop * 100000, NA_real_),
+      .groups = "drop"
+    ) %>%
+    mutate(col = paste0(prefix_name, "_AAMR_", age_band)) %>%  # keep your requested name
+    select(YearKey, col, rate) %>%
+    pivot_wider(names_from = col, values_from = rate)
+}
+
+# --- TOTAL row for deaths (sum across years)
+add_total_row_deaths <- function(tbl, label = "2010–2025") {
+  tbl2 <- tbl %>% mutate(YearKey = as.character(YearKey))
+
+  total_row <- tbl2 %>%
+    summarise(
+      YearKey = label,
+      across(-YearKey, ~ sum(.x, na.rm = TRUE))
+    )
+
+  bind_rows(tbl2, total_row)
+}
+
+
+# --- TOTAL row for rates (recompute: sum deaths / sum pop across years)
+rate_total_band <- function(df_all, prefix_name, label = "2010–2025") {
+  df_all %>%
+    filter(source == "age") %>%
+    transmute(
+      YearKey    = as.integer(`Year Code`),
+      age_code   = recode_to_std_age(`Five-Year Age Groups Code`),
+      Deaths     = as.numeric(Deaths),
+      Population = as.numeric(Population)
+    ) %>%
+    filter(YearKey >= 2010, YearKey <= 2025) %>%
+    mutate(age_band = ageband_map(age_code)) %>%
+    filter(!is.na(age_band)) %>%
+    group_by(age_band) %>%
+    summarise(
+      deaths = sum(Deaths, na.rm = TRUE),
+      pop    = sum(Population, na.rm = TRUE),
+      rate   = ifelse(pop > 0, deaths / pop * 100000, NA_real_),
+      .groups = "drop"
+    ) %>%
+    mutate(col = paste0(prefix_name, "_AAMR_", age_band)) %>%
+    select(col, rate) %>%
+    pivot_wider(names_from = col, values_from = rate) %>%
+    mutate(YearKey = label) %>%
+    select(YearKey, everything())
+}
+
+# ============================================================
+# 1) Build DEATHS table (2010–2025)
+# ============================================================
+death_tbl <- full_join(
+  deaths_by_year_band(N17_all, "AKI"),
+  deaths_by_year_band(A40_all, "Sepsis"),
+  by = "YearKey"
+) %>%
+  full_join(deaths_by_year_band(N17A40_RF, "AKI_Sepsis"), by = "YearKey") %>%
+  arrange(YearKey) %>%
+  mutate(across(-YearKey, ~ coalesce(.x, 0))) %>%
+  select(
+    YearKey,
+    AKI_deaths_lt20, AKI_deaths_20_44, AKI_deaths_45_64, AKI_deaths_65_plus,
+    Sepsis_deaths_lt20, Sepsis_deaths_20_44, Sepsis_deaths_45_64, Sepsis_deaths_65_plus,
+    AKI_Sepsis_deaths_lt20, AKI_Sepsis_deaths_20_44, AKI_Sepsis_deaths_45_64, AKI_Sepsis_deaths_65_plus
+  )
+
+death_tbl_total <- add_total_row_deaths(death_tbl, label = "2010–2025")
+
+# ============================================================
+# 2) Build "AAMR" table (age-band rates per 100,000; 2010–2025)
+# ============================================================
+aamr_tbl <- full_join(
+  rates_by_year_band(N17_all, "AKI"),
+  rates_by_year_band(A40_all, "Sepsis"),
+  by = "YearKey"
+) %>%
+  full_join(rates_by_year_band(N17A40_RF, "AKI_Sepsis"), by = "YearKey") %>%
+  arrange(YearKey) %>%
+  select(
+    YearKey,
+    AKI_AAMR_lt20, AKI_AAMR_20_44, AKI_AAMR_45_64, AKI_AAMR_65_plus,
+    Sepsis_AAMR_lt20, Sepsis_AAMR_20_44, Sepsis_AAMR_45_64, Sepsis_AAMR_65_plus,
+    AKI_Sepsis_AAMR_lt20, AKI_Sepsis_AAMR_20_44, AKI_Sepsis_AAMR_45_64, AKI_Sepsis_AAMR_65_plus
+  ) %>%
+  mutate(across(-YearKey, ~ round(.x, 2)))
+
+aamr_total_row <- full_join(
+  rate_total_band(N17_all,    "AKI",       label = "2010–2025"),
+  rate_total_band(A40_all,    "Sepsis",    label = "2010–2025"),
+  by = "YearKey"
+) %>%
+  full_join(rate_total_band(N17A40_RF, "AKI_Sepsis", label = "2010–2025"), by = "YearKey") %>%
+  select(
+    YearKey,
+    AKI_AAMR_lt20, AKI_AAMR_20_44, AKI_AAMR_45_64, AKI_AAMR_65_plus,
+    Sepsis_AAMR_lt20, Sepsis_AAMR_20_44, Sepsis_AAMR_45_64, Sepsis_AAMR_65_plus,
+    AKI_Sepsis_AAMR_lt20, AKI_Sepsis_AAMR_20_44, AKI_Sepsis_AAMR_45_64, AKI_Sepsis_AAMR_65_plus
+  ) %>%
+  mutate(across(-YearKey, ~ round(.x, 2)))
+add_total_row_rates <- function(tbl, total_row) {
+  tbl2 <- tbl %>% mutate(YearKey = as.character(YearKey))
+  total2 <- total_row %>% mutate(YearKey = as.character(YearKey))
+  bind_rows(tbl2, total2)
+}
+aamr_tbl_total <- add_total_row_rates(aamr_tbl, aamr_total_row)
+
+# ============================================================
+# Results
+# ============================================================
+death_tbl_total
+aamr_tbl_total
+```
+
+## Sex
+
+```{r}
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(tidyr)
+  library(stringr)
+})
+
+# ------------------------------------------------------------
+# 1) Standardize sex rows from *_all (source == "sex")
+# ------------------------------------------------------------
+sex_clean <- function(df_all) {
+
+  # find the AAR column name robustly
+  aar_col <- intersect(
+    names(df_all),
+    c("Age Adjusted Rate", "Age adjusted rate", "Age Adjusted Rate ")
+  )
+  if (length(aar_col) == 0) {
+    stop("No 'Age Adjusted Rate' column found in df_all (source=='sex').")
+  }
+  aar_col <- aar_col[1]
+
+  df_all %>%
+    filter(source == "sex") %>%
+    transmute(
+      YearKey    = as.integer(`Year Code`),
+      Sex_chr    = str_trim(as.character(Sex)),
+      Code_chr   = str_trim(as.character(`Sex Code`)),
+      Notes_chr  = str_trim(as.character(Notes)),
+      Deaths     = as.numeric(Deaths),
+      Population = as.numeric(Population),
+      AAR        = as.numeric(.data[[aar_col]])
+    ) %>%
+    filter(YearKey >= 2010, YearKey <= 2025) %>%
+    mutate(
+      Sex_std = case_when(
+        str_to_lower(Sex_chr) %in% c("female","f") ~ "Female",
+        str_to_lower(Sex_chr) %in% c("male","m")   ~ "Male",
+        Code_chr == "F" ~ "Female",
+        Code_chr == "M" ~ "Male",
+        TRUE ~ NA_character_
+      ),
+      Overall_flag = is.na(Sex_std) & (Notes_chr == "Total" | Sex_chr == "" | is.na(Sex_chr))
+    )
+}
+
+# ------------------------------------------------------------
+# 2) Build yearly deaths (Female/Male/Overall) for one outcome
+#    - Overall from Notes=="Total" (preferred) else Female+Male
+# ------------------------------------------------------------
+sex_deaths_year_one <- function(df_all, prefix_name) {
+
+  base <- sex_clean(df_all)
+
+  # Female/Male
+  fm <- base %>%
+    filter(Sex_std %in% c("Female","Male")) %>%
+    group_by(YearKey, Sex_std) %>%
+    summarise(deaths = sum(Deaths, na.rm = TRUE), .groups = "drop") %>%
+    pivot_wider(names_from = Sex_std, values_from = deaths)
+
+  # Overall (prefer Notes=="Total" rows)
+  overall <- base %>%
+    filter(Overall_flag) %>%
+    group_by(YearKey) %>%
+    summarise(Overall = sum(Deaths, na.rm = TRUE), .groups = "drop")
+
+  out <- full_join(fm, overall, by = "YearKey") %>%
+    mutate(
+      Overall = ifelse(is.na(Overall),
+                       coalesce(Female, 0) + coalesce(Male, 0),
+                       Overall)
+    ) %>%
+    transmute(
+      YearKey,
+      !!paste0(prefix_name, "_deaths_Female")  := coalesce(Female, 0),
+      !!paste0(prefix_name, "_deaths_Male")    := coalesce(Male, 0),
+      !!paste0(prefix_name, "_deaths_Overall") := coalesce(Overall, 0)
+    )
+
+  out
+}
+
+# ------------------------------------------------------------
+# 3) Total row (2010–2025) for one outcome
+# ------------------------------------------------------------
+sex_deaths_total_one <- function(df_all, prefix_name, label = "2010–2025") {
+  base <- sex_clean(df_all)
+
+  fm <- base %>%
+    filter(Sex_std %in% c("Female","Male")) %>%
+    group_by(Sex_std) %>%
+    summarise(deaths = sum(Deaths, na.rm = TRUE), .groups = "drop") %>%
+    pivot_wider(names_from = Sex_std, values_from = deaths)
+
+  overall <- base %>%
+    filter(Overall_flag) %>%
+    summarise(Overall = sum(Deaths, na.rm = TRUE)) %>%
+    as_tibble()
+
+  out <- bind_cols(fm, overall) %>%
+    mutate(
+      Overall = ifelse(is.na(Overall),
+                       coalesce(Female, 0) + coalesce(Male, 0),
+                       Overall)
+    ) %>%
+    transmute(
+      YearKey = label,
+      !!paste0(prefix_name, "_deaths_Female")  := coalesce(Female, 0),
+      !!paste0(prefix_name, "_deaths_Male")    := coalesce(Male, 0),
+      !!paste0(prefix_name, "_deaths_Overall") := coalesce(Overall, 0)
+    )
+
+  out
+}
+
+# ------------------------------------------------------------
+# 4) TABLE 1: Deaths (yearly 2010–2025 + total row)
+# ------------------------------------------------------------
+sex_deaths_tbl <- full_join(
+  sex_deaths_year_one(N17_all, "AKI"),
+  sex_deaths_year_one(A40_all, "Sepsis"),
+  by = "YearKey"
+) %>%
+  full_join(sex_deaths_year_one(N17A40_RF, "AKI_Sepsis"), by = "YearKey") %>%
+  arrange(YearKey)
+
+sex_deaths_total <- bind_cols(
+  sex_deaths_total_one(N17_all, "AKI"),
+  sex_deaths_total_one(A40_all, "Sepsis") %>% select(-YearKey),
+  sex_deaths_total_one(N17A40_RF, "AKI_Sepsis") %>% select(-YearKey)
+)
+
+sex_deaths_tbl_total <- bind_rows(
+  sex_deaths_tbl %>% mutate(YearKey = as.character(YearKey)),
+  sex_deaths_total
+) %>%
+  select(
+    YearKey,
+    AKI_deaths_Female, AKI_deaths_Male, AKI_deaths_Overall,
+    Sepsis_deaths_Female, Sepsis_deaths_Male, Sepsis_deaths_Overall,
+    AKI_Sepsis_deaths_Female, AKI_Sepsis_deaths_Male, AKI_Sepsis_deaths_Overall
+  )
+
+# ------------------------------------------------------------
+# 5) TABLE 2: Sex-specific crude rates (/100,000) + overall crude rate
+#     - Female/Male: sum(D)/sum(P)*100k
+#     - Overall: from Notes=="Total" rows if available, else (Female+Male)/(FemalePop+MalePop)
+# ------------------------------------------------------------
+# ------------------------------------------------------------
+# AAMR by sex (yearly 2010–2025)
+# ------------------------------------------------------------
+# yearly AAMR table
+sex_aamr_year_one <- function(df_all, prefix_name) {
+
+  base <- sex_clean(df_all)
+
+  fm <- base %>%
+    filter(Sex_std %in% c("Female","Male")) %>%
+    group_by(YearKey, Sex_std) %>%
+    summarise(
+      AAMR = ifelse(sum(Population, na.rm = TRUE) > 0,
+                    sum(AAR * Population, na.rm = TRUE) / sum(Population, na.rm = TRUE),
+                    NA_real_),
+      .groups = "drop"
+    ) %>%
+    pivot_wider(names_from = Sex_std, values_from = AAMR)
+
+  overall <- base %>%
+    filter(Overall_flag) %>%
+    group_by(YearKey) %>%
+    summarise(
+      AAMR = ifelse(sum(Population, na.rm = TRUE) > 0,
+                    sum(AAR * Population, na.rm = TRUE) / sum(Population, na.rm = TRUE),
+                    NA_real_),
+      .groups = "drop"
+    )
+
+  full_join(fm, overall, by = "YearKey") %>%
+    transmute(
+      YearKey,
+      !!paste0(prefix_name, "_AAMR_Female")  := round(Female, 2),
+      !!paste0(prefix_name, "_AAMR_Male")    := round(Male, 2),
+      !!paste0(prefix_name, "_AAMR_Overall") := round(AAMR, 2)
+    )
+}
+
+# total row AAMR (2010–2025)
+sex_aamr_total_one <- function(df_all, prefix_name, label = "2010–2025") {
+
+  base <- sex_clean(df_all)
+
+  fm <- base %>%
+    filter(Sex_std %in% c("Female","Male")) %>%
+    group_by(Sex_std) %>%
+    summarise(
+      AAMR = ifelse(sum(Population, na.rm = TRUE) > 0,
+                    sum(AAR * Population, na.rm = TRUE) / sum(Population, na.rm = TRUE),
+                    NA_real_),
+      .groups = "drop"
+    ) %>%
+    pivot_wider(names_from = Sex_std, values_from = AAMR)
+
+  overall <- base %>%
+    filter(Overall_flag) %>%
+    summarise(
+      AAMR = ifelse(sum(Population, na.rm = TRUE) > 0,
+                    sum(AAR * Population, na.rm = TRUE) / sum(Population, na.rm = TRUE),
+                    NA_real_)
+    )
+
+  bind_cols(fm, overall) %>%
+    transmute(
+      YearKey = label,
+      !!paste0(prefix_name, "_AAMR_Female")  := round(Female, 2),
+      !!paste0(prefix_name, "_AAMR_Male")    := round(Male, 2),
+      !!paste0(prefix_name, "_AAMR_Overall") := round(AAMR, 2)
+    )
+}
+
+# Build full table across outcomes
+sex_aamr_tbl <- full_join(
+  sex_aamr_year_one(N17_all, "AKI"),
+  sex_aamr_year_one(A40_all, "Sepsis"),
+  by = "YearKey"
+) %>%
+  full_join(sex_aamr_year_one(N17A40_RF, "AKI_Sepsis"), by = "YearKey") %>%
+  arrange(YearKey)
+
+sex_aamr_total <- bind_cols(
+  sex_aamr_total_one(N17_all, "AKI"),
+  sex_aamr_total_one(A40_all, "Sepsis") %>% select(-YearKey),
+  sex_aamr_total_one(N17A40_RF, "AKI_Sepsis") %>% select(-YearKey)
+)
+
+sex_aamr_tbl_total <- bind_rows(
+  sex_aamr_tbl %>% mutate(YearKey = as.character(YearKey)),
+  sex_aamr_total
+) %>%
+  select(
+    YearKey,
+    AKI_AAMR_Female, AKI_AAMR_Male, AKI_AAMR_Overall,
+    Sepsis_AAMR_Female, Sepsis_AAMR_Male, Sepsis_AAMR_Overall,
+    AKI_Sepsis_AAMR_Female, AKI_Sepsis_AAMR_Male, AKI_Sepsis_AAMR_Overall
+  )
+
+sex_aamr_tbl_total
+# ------------------------------------------------------------
+# OUTPUTS
+# ------------------------------------------------------------
+sex_deaths_tbl_total
+
+```
+
+## Portional
+```{r}
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(tidyr)
+  library(stringr)
+})
+
+# ------------------------------------------------------------
+# 1) Overall AAMR (all ages) by YearKey from sex TOTAL rows
+#    (population-weighted mean of WONDER "Age Adjusted Rate")
+# ------------------------------------------------------------
+overall_aamr_by_year <- function(df_all, out_label) {
+
+  # robust AAR column find
+  aar_col <- intersect(names(df_all), c("Age Adjusted Rate", "Age adjusted rate", "Age Adjusted Rate "))
+  if (length(aar_col) == 0) stop("No 'Age Adjusted Rate' column found.")
+  aar_col <- aar_col[1]
+
+  df_all %>%
+    filter(source == "sex") %>%
+    transmute(
+      YearKey    = as.integer(`Year Code`),
+      Notes_chr  = str_trim(as.character(Notes)),
+      Sex_chr    = str_trim(as.character(Sex)),
+      Deaths     = as.numeric(Deaths),
+      Population = as.numeric(Population),
+      AAR        = as.numeric(.data[[aar_col]])
+    ) %>%
+    filter(YearKey >= 2010, YearKey <= 2025) %>%
+    # keep overall rows: prefer Notes=="Total"; otherwise blank Sex
+    mutate(overall_flag = (Notes_chr == "Total") | (is.na(Sex_chr) | Sex_chr == "")) %>%
+    filter(overall_flag) %>%
+    group_by(YearKey) %>%
+    summarise(
+      AAMR = ifelse(sum(Population, na.rm = TRUE) > 0,
+                   sum(AAR * Population, na.rm = TRUE) / sum(Population, na.rm = TRUE),
+                   NA_real_),
+      .groups = "drop"
+    ) %>%
+    mutate(outcome = out_label)
+}
+
+# ------------------------------------------------------------
+# 2) Build the ratio table
+#    Sepsis among AKI = (AKI&Sepsis) / (AKI)
+#    AKI among Sepsis = (AKI&Sepsis) / (Sepsis)
+# ------------------------------------------------------------
+ratio_tbl <- full_join(
+  overall_aamr_by_year(N17_all,    "AKI"),
+  overall_aamr_by_year(A40_all,    "Sepsis"),
+  by = "YearKey",
+  suffix = c("_AKI", "_Sepsis")
+) %>%
+  full_join(
+    overall_aamr_by_year(N17A40_RF, "AKI / Sepsis"),
+    by = "YearKey"
+  ) %>%
+  transmute(
+    YearKey = YearKey,
+
+    `AKI (AAMR all ages)` = round(AAMR_AKI, 2),
+    `Sepsis (AAMR all ages)` = round(AAMR_Sepsis, 2),
+    `AKI / Sepsis (AAMR all ages)` = round(AAMR, 2),
+
+    `Sepsis among AKI ((3)/(1))` =
+      round((AAMR) / (AAMR_AKI), 4),
+
+    `AKI among Sepsis ((3)/(2))` =
+      round((AAMR) / (AAMR_Sepsis), 4)
+  ) %>%
+  arrange(YearKey)
+
+# ------------------------------------------------------------
+# 3) Add total row (2010–2025) based on population-weighted AAMR totals
+#    and compute ratios from those totals
+# ------------------------------------------------------------
+overall_aamr_total <- function(df_all, out_label, label = "2010–2025") {
+
+  aar_col <- intersect(names(df_all), c("Age Adjusted Rate", "Age adjusted rate", "Age Adjusted Rate "))
+  if (length(aar_col) == 0) stop("No 'Age Adjusted Rate' column found.")
+  aar_col <- aar_col[1]
+
+  df_all %>%
+    filter(source == "sex") %>%
+    transmute(
+      YearKey    = as.integer(`Year Code`),
+      Notes_chr  = str_trim(as.character(Notes)),
+      Sex_chr    = str_trim(as.character(Sex)),
+      Population = as.numeric(Population),
+      AAR        = as.numeric(.data[[aar_col]])
+    ) %>%
+    filter(YearKey >= 2010, YearKey <= 2025) %>%
+    mutate(overall_flag = (Notes_chr == "Total") | (is.na(Sex_chr) | Sex_chr == "")) %>%
+    filter(overall_flag) %>%
+    summarise(
+      AAMR = ifelse(sum(Population, na.rm = TRUE) > 0,
+                   sum(AAR * Population, na.rm = TRUE) / sum(Population, na.rm = TRUE),
+                   NA_real_)
+    ) %>%
+    transmute(YearKey = label, outcome = out_label, AAMR = AAMR)
+}
+
+tot_AKI    <- overall_aamr_total(N17_all,    "AKI")
+tot_Sepsis <- overall_aamr_total(A40_all,    "Sepsis")
+tot_Both   <- overall_aamr_total(N17A40_RF, "AKI / Sepsis")
+
+total_row <- tibble(
+  YearKey = "2010–2025",
+  `AKI (AAMR all ages)` = round(tot_AKI$AAMR, 2),
+  `Sepsis (AAMR all ages)` = round(tot_Sepsis$AAMR, 2),
+  `AKI / Sepsis (AAMR all ages)` = round(tot_Both$AAMR, 2),
+  `Sepsis among AKI ((3)/(1))` = round(tot_Both$AAMR / tot_AKI$AAMR, 4),
+  `AKI among Sepsis ((3)/(2))` = round(tot_Both$AAMR / tot_Sepsis$AAMR, 4)
+)
+
+ratio_tbl_total <- bind_rows(
+  ratio_tbl %>% mutate(YearKey = as.character(YearKey)),
+  total_row
+)
+
+ratio_tbl_total
+```
+## Overall
+
+```{r}
+# ============================================================
+# ONE summary table (2010–2025) with columns: AKI / Sepsis / AKI & sepsis
+# Rows = Metric (as you specified), including Age, Race, Place of death blocks
+#
+# Assumes you already have:
+#   N17_all, A40_all, N17A40_all
+#   pod_wide (period × dataset × Avg annual deaths (Medical/Non-medical))
+#   recode_to_std_age(), ageband_map() (or we define here)
+#
+# Uses:
+# - Deaths/pop/crude from sex TOTAL rows (Notes=="Total" preferred)
+# - AAMR all-ages + Male/Female AAMR from WONDER Age Adjusted Rate (sex table), pop-weighted
+# - Age-band rates (<20, 20–44, 45–64, ≥65) = sum(D)/sum(P)*100k from age table
+# - Race AAMR = pop-weighted mean of WONDER Age Adjusted Rate (race table)
+# - Place of death = from pod_wide avg annual deaths, expressed as N (%)
+# ============================================================
+
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(tidyr)
+  library(stringr)
+  library(tibble)
+})
+
+# ----------------------------
+# helpers
+# ----------------------------
+fmt_int <- function(x) ifelse(is.na(x), NA_character_, formatC(round(x), format = "f", digits = 0, big.mark = ","))
+fmt_rate2 <- function(x) ifelse(is.na(x), NA_character_, formatC(x, format = "f", digits = 2, big.mark = ","))
+fmt_n_pct <- function(n, denom, digits = 1) {
+  ifelse(is.na(n) | is.na(denom) | denom == 0,
+         NA_character_,
+         paste0(fmt_int(n), " (", formatC(100 * n/denom, format = "f", digits = digits), "%)"))
+}
+
+ageband_map <- function(age_code) {
+  case_when(
+    age_code %in% c("1","1-4","5-9","10-14","15-19") ~ "<20",
+    age_code %in% c("20-24","25-29","30-34","35-39","40-44") ~ "20–44",
+    age_code %in% c("45-49","50-54","55-59","60-64") ~ "45–64",
+    age_code %in% c("65-69","70-74","75-79","80-84","85+") ~ "≥65",
+    TRUE ~ NA_character_
+  )
+}
+
+get_aar_col <- function(df) {
+  aar_col <- intersect(names(df), c("Age Adjusted Rate", "Age adjusted rate", "Age Adjusted Rate "))
+  if (length(aar_col) == 0) stop("No 'Age Adjusted Rate' column found in this dataset.")
+  aar_col[1]
+}
+
+# ----------------------------
+# 1) Overall totals from SEX table (2010–2025)
+# ----------------------------
+overall_totals_2010_2025 <- function(df_all) {
+  aar_col <- get_aar_col(df_all)
+
+  # choose ONE "overall" row per year (prefer Notes=="Total")
+  yearly_overall <- df_all %>%
+    filter(source == "sex") %>%
+    transmute(
+      YearKey    = as.integer(`Year Code`),
+      Notes_chr  = str_trim(as.character(Notes)),
+      Sex_chr    = str_trim(as.character(Sex)),
+      Deaths     = as.numeric(Deaths),
+      Population = as.numeric(Population),
+      AAR        = as.numeric(.data[[aar_col]])
+    ) %>%
+    filter(YearKey >= 2010, YearKey <= 2025) %>%
+    mutate(
+      overall_flag = (Notes_chr == "Total") | (is.na(Sex_chr) | Sex_chr == ""),
+      overall_rank = ifelse(Notes_chr == "Total", 1L, 2L)
+    ) %>%
+    filter(overall_flag) %>%
+    arrange(YearKey, overall_rank) %>%
+    group_by(YearKey) %>%
+    slice(1) %>%
+    ungroup()
+
+  yearly_overall %>%
+    summarise(
+      total_deaths = sum(Deaths, na.rm = TRUE),
+      total_pop    = sum(Population, na.rm = TRUE),
+      crude_rate   = ifelse(sum(Population, na.rm = TRUE) > 0,
+                            sum(Deaths, na.rm = TRUE)/sum(Population, na.rm = TRUE)*100000,
+                            NA_real_),
+      AAMR_all     = ifelse(sum(Population, na.rm = TRUE) > 0,
+                            sum(AAR * Population, na.rm = TRUE)/sum(Population, na.rm = TRUE),
+                            NA_real_)
+    )
+}
+
+# ----------------------------
+# 2) Sex-specific deaths and AAMR (2010–2025)
+# ----------------------------
+sex_stats_2010_2025 <- function(df_all) {
+  aar_col <- get_aar_col(df_all)
+
+  base <- df_all %>%
+    filter(source == "sex") %>%
+    transmute(
+      YearKey    = as.integer(`Year Code`),
+      Sex_chr    = str_trim(as.character(Sex)),
+      Code_chr   = str_trim(as.character(`Sex Code`)),
+      Deaths     = as.numeric(Deaths),
+      Population = as.numeric(Population),
+      AAR        = as.numeric(.data[[aar_col]])
+    ) %>%
+    filter(YearKey >= 2010, YearKey <= 2025) %>%
+    mutate(
+      Sex_std = case_when(
+        str_to_lower(Sex_chr) %in% c("female","f") ~ "Female",
+        str_to_lower(Sex_chr) %in% c("male","m")   ~ "Male",
+        Code_chr == "F" ~ "Female",
+        Code_chr == "M" ~ "Male",
+        TRUE ~ NA_character_
+      )
+    ) %>%
+    filter(Sex_std %in% c("Female","Male"))
+
+  out <- base %>%
+    group_by(Sex_std) %>%
+    summarise(
+      deaths = sum(Deaths, na.rm = TRUE),
+      AAMR   = ifelse(sum(Population, na.rm = TRUE) > 0,
+                      sum(AAR * Population, na.rm = TRUE) / sum(Population, na.rm = TRUE),
+                      NA_real_),
+      .groups = "drop"
+    )
+
+  tibble(
+    Male_deaths   = out$deaths[out$Sex_std == "Male"]   %>% dplyr::coalesce(0),
+    Female_deaths = out$deaths[out$Sex_std == "Female"] %>% dplyr::coalesce(0),
+    Male_AAMR     = out$AAMR[out$Sex_std == "Male"]     %>% dplyr::coalesce(NA_real_),
+    Female_AAMR   = out$AAMR[out$Sex_std == "Female"]   %>% dplyr::coalesce(NA_real_)
+  )
+}
+
+# ----------------------------
+# 3) Age-band rates (<20, 20–44, 45–64, ≥65) from AGE table (2010–2025)
+#     = sum(D)/sum(P)*100k within each band
+# ----------------------------
+age_band_rates_2010_2025 <- function(df_all) {
+
+  df_all %>%
+    filter(source == "age") %>%
+    transmute(
+      YearKey    = as.integer(`Year Code`),
+      age_code   = recode_to_std_age(`Five-Year Age Groups Code`),
+      Deaths     = as.numeric(Deaths),
+      Population = as.numeric(Population)
+    ) %>%
+    filter(YearKey >= 2010, YearKey <= 2025) %>%
+    mutate(age_band = ageband_map(age_code)) %>%
+    filter(!is.na(age_band)) %>%
+    group_by(age_band) %>%
+    summarise(
+      deaths = sum(Deaths, na.rm = TRUE),
+      pop    = sum(Population, na.rm = TRUE),
+      rate   = ifelse(pop > 0, deaths/pop*100000, NA_real_),
+      .groups = "drop"
+    ) %>%
+    transmute(
+      Metric = paste0("Age ", age_band, " AAMR, /100,000"),
+      value  = rate
+    )
+}
+
+# ----------------------------
+# 4) Race AAMR (2010–2025) from RACE table (pop-weighted AAR)
+# ----------------------------
+race_aamr_2010_2025 <- function(df_all) {
+  aar_col <- get_aar_col(df_all)
+
+  keep <- c(
+    "American Indian or Alaska Native",
+    "Asian",
+    "Black or African American",
+    "Native Hawaiian or Other Pacific Islander",
+    "White",
+    "More than one race"
+  )
+
+  df_all %>%
+    filter(source == "race", !is.na(race)) %>%
+    transmute(
+      YearKey    = as.integer(`Year Code`),
+      race       = as.character(race),
+      Population = as.numeric(Population),
+      AAR        = as.numeric(.data[[aar_col]])
+    ) %>%
+    filter(YearKey >= 2010, YearKey <= 2025, race %in% keep) %>%
+    group_by(race) %>%
+    summarise(
+      AAMR = ifelse(sum(Population, na.rm = TRUE) > 0,
+                   sum(AAR * Population, na.rm = TRUE)/sum(Population, na.rm = TRUE),
+                   NA_real_),
+      .groups = "drop"
+    ) %>%
+    transmute(
+      Metric = paste0(race, " AAMR, /100,000"),
+      value  = AAMR
+    )
+}
+
+# ----------------------------
+# 5) Place of death N(%) from pod_wide (Avg annual deaths)
+#     NOTE: uses avg annual deaths within each period; we aggregate across periods
+#     by summing avg annual deaths across periods equally weighted.
+#     If you prefer TRUE totals (not avg annual), swap to your underlying totals.
+# ----------------------------
+pod_n_pct_2010_2025 <- function(pod_wide, dataset_label) {
+
+  x <- pod_wide %>%
+    filter(dataset == dataset_label) %>%
+    summarise(
+      med = sum(`Avg annual deaths (Medical Facility)`, na.rm = TRUE),
+      non = sum(`Avg annual deaths (Non-medical facility)`, na.rm = TRUE)
+    )
+
+  total <- x$med + x$non
+
+  tibble(
+    Metric = c("Medical Facility, n (%)", "Non-medical facility, n (%)"),
+    value  = c(
+      fmt_n_pct(x$med, total, digits = 1),
+      fmt_n_pct(x$non, total, digits = 1)
+    )
+  )
+}
+
+# ----------------------------
+# 6) Build ONE column of metrics for one outcome
+# ----------------------------
+build_one_outcome_col <- function(df_all, outcome_name, pod_dataset_name = NULL, pod_wide = NULL) {
+
+  overall <- overall_totals_2010_2025(df_all)
+  sex     <- sex_stats_2010_2025(df_all)
+
+  base_rows <- {
+  overall <- overall_totals_2010_2025(df_all)
+  sex     <- sex_stats_2010_2025(df_all)
+
+  tibble(
+    Metric = c(
+      "Total deaths (standardizable ages), n",
+      "Male deaths, n (%)",
+      "Female deaths, n (%)",
+      "Total population (standardizable ages)",
+      "Crude mortality rate (standardizable ages), /100,000",
+      "AAMR (all ages), /100,000",
+      "Male AAMR (all ages), /100,000",
+      "Female AAMR (all ages), /100,000"
+    ),
+    value = c(
+      fmt_int(overall$total_deaths),
+      fmt_n_pct(sex$Male_deaths,   overall$total_deaths, digits = 1),
+      fmt_n_pct(sex$Female_deaths, overall$total_deaths, digits = 1),
+      fmt_int(overall$total_pop),
+      fmt_rate2(overall$crude_rate),
+      fmt_rate2(overall$AAMR_all),
+      fmt_rate2(sex$Male_AAMR),
+      fmt_rate2(sex$Female_AAMR)
+    )
+  )
+}
+
+  age_header  <- tibble(Metric = "Age categories", value = NA_character_)
+  race_header <- tibble(Metric = "Race and ethnicity", value = NA_character_)
+  pod_header  <- tibble(Metric = "Place of death", value = NA_character_)
+
+  age_rows <- age_band_rates_2010_2025(df_all) %>%
+    mutate(value = fmt_rate2(value)) %>%
+    mutate(Metric = paste0("  ", Metric)) %>%
+    transmute(Metric, value)
+
+  race_rows <- race_aamr_2010_2025(df_all) %>%
+    mutate(value = fmt_rate2(value)) %>%
+    mutate(Metric = paste0("  ", Metric)) %>%
+    transmute(Metric, value)
+
+  pod_rows <- tibble(Metric = character(), value = character())
+  if (!is.null(pod_wide) && !is.null(pod_dataset_name)) {
+    pod_rows <- pod_n_pct_2010_2025(pod_wide, pod_dataset_name) %>%
+      mutate(Metric = paste0("  ", Metric)) %>%
+      transmute(Metric, value)
+  }
+
+  bind_rows(
+    base_rows,
+    age_header,
+    age_rows,
+    race_header,
+    race_rows,
+    pod_header,
+    pod_rows
+  ) %>%
+    rename(!!outcome_name := value)
+}
+
+# ============================================================
+# FINAL TABLE
+# ============================================================
+tbl_AKI <- build_one_outcome_col(N17_all,    "AKI",         pod_dataset_name = "AKI",          pod_wide = pod_wide)
+tbl_SEP <- build_one_outcome_col(A40_all,    "Sepsis",      pod_dataset_name = "Sepsis",       pod_wide = pod_wide)
+tbl_BTH <- build_one_outcome_col(N17A40_RF, "AKI & sepsis",pod_dataset_name = "AKI & Sepsis", pod_wide = pod_wide)
+
+table_S <- tbl_AKI %>%
+  left_join(tbl_SEP, by = "Metric") %>%
+  left_join(tbl_BTH, by = "Metric") %>%
+  select(Metric, AKI, Sepsis, `AKI & sepsis`)
+
+table_S
+```
+
+## Export
+
+
+
+```{r}
+library(officer)
+library(flextable)
+
+# ---- flextable helper (robust across versions) ----
+df_to_flex <- function(df, font_size = 10) {
+  flextable(df) |>
+    theme_booktabs() |>
+    fontsize(size = font_size, part = "all") |>
+    autofit() |>
+    set_table_properties(layout = "autofit")
+}
+
+# Optional: auto-shrink very wide tables a bit
+pick_font <- function(df) {
+  p <- ncol(df)
+  if (p >= 12) 8 else if (p >= 9) 9 else 10
+}
+
+add_table_section <- function(doc, title, df) {
+  doc <- body_add_par(doc, title, style = "heading 1")
+  doc <- body_add_flextable(doc, df_to_flex(df, font_size = pick_font(df)))
+  doc <- body_add_par(doc, "", style = "Normal") # spacer
+  doc
+}
+
+doc <- read_docx()
+
+# -------------------------
+# Year tables
+# -------------------------
+doc <- add_table_section(doc, "AKI_year", tbl_N17  )
+doc <- add_table_section(doc, "sepsis_year", tbl_A40    )
+doc <- add_table_section(doc, "AKI_sepsis_year", tbl_N17A40)
+
+# -------------------------
+# Period summaries
+# -------------------------
+doc <- add_table_section(doc, "AKI_period_summary", tbl_period_N17)
+doc <- add_table_section(doc, "Sepsis_period_summary", tbl_period_A40)
+doc <- add_table_section(doc, "AKI_Sepsis_period_summary",tbl_period_N17A40)
+
+# -------------------------
+# Age / Sex breakdowns
+# -------------------------
+doc <- add_table_section(doc, "Deaths_by_age", death_tbl_total)
+doc <- add_table_section(doc, "AAMR_by_age", aamr_tbl_total)        # <-- change name if your object differs
+doc <- add_table_section(doc, "Deaths_by_sex", sex_deaths_tbl_total)
+doc <- add_table_section(doc, "AAMR_by_sex", sex_aamr_tbl_total)
+
+
+# -------------------------
+# Overlap + Overall summary
+# -------------------------
+doc <- add_table_section(doc, "AKI_Sepsis_overlap_rates", ratio_tbl_total)
+doc <- add_table_section(doc, "Overall_Summary", table_S)
+
+# -------------------------
+# Save
+# -------------------------
+print(doc, target = "Supplementary_Tables_AKI_Sepsis_US_2010_2025-1.docx")
+
+```
+
+## Trend
+```{r}
+# ============================================================
+# Publication-style trend plot
+# - Custom age-group colors
+# - Light grey: 2020–2022 (Pandemic)
+# - Darker grey: 2023 (Transition)
+# ============================================================
+
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(tidyr)
+  library(stringr)
+  library(ggplot2)
+})
+
+# -----------------------------
+# 1) Prepare long plotting data
+# -----------------------------
+plot_df <- aamr_tbl %>%
+  filter(YearKey >= 2010, YearKey <= 2025) %>%
+  select(
+    YearKey,
+    AKI_AAMR_20_44, AKI_AAMR_45_64, AKI_AAMR_65_plus,
+    Sepsis_AAMR_20_44, Sepsis_AAMR_45_64, Sepsis_AAMR_65_plus,
+    AKI_Sepsis_AAMR_20_44, AKI_Sepsis_AAMR_45_64, AKI_Sepsis_AAMR_65_plus
+  ) %>%
+  pivot_longer(
+    cols = -YearKey,
+    names_to = "key",
+    values_to = "AAMR"
+  ) %>%
+  mutate(
+    outcome = case_when(
+      str_starts(key, "AKI_Sepsis") ~ "AKI/sepsis",
+      str_starts(key, "AKI_")       ~ "AKI",
+      str_starts(key, "Sepsis_")    ~ "Sepsis",
+      TRUE ~ NA_character_
+    ),
+    age_group = case_when(
+      str_detect(key, "_20_44$")   ~ "20–44",
+      str_detect(key, "_45_64$")   ~ "45–64",
+      str_detect(key, "_65_plus$") ~ "65+",
+      TRUE ~ NA_character_
+    ),
+    outcome   = factor(outcome, levels = c("AKI", "AKI/sepsis", "Sepsis")),
+    age_group = factor(age_group, levels = c("20–44", "45–64", "65+"))
+  )
+
+# -----------------------------
+# 2) Define shaded periods
+# -----------------------------
+pandemic_band <- tibble(
+  xmin = 2020,
+  xmax = 2023,   # 2020–2022 (xmax exclusive visually)
+  ymin = -Inf,
+  ymax = Inf
+)
+
+transition_band <- tibble(
+  xmin = 2023,
+  xmax = 2024,   # 2023 only
+  ymin = -Inf,
+  ymax = Inf
+)
+
+# -----------------------------
+# 3) Plot
+# -----------------------------
+p <- ggplot(plot_df, aes(x = YearKey, y = AAMR,
+                         group = age_group, color = age_group)) +
+
+  # Light grey pandemic shading
+  geom_rect(
+    data = pandemic_band,
+    aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+    inherit.aes = FALSE,
+    fill = "grey85",
+    alpha = 0.6
+  ) +
+
+  # Darker transition shading
+  geom_rect(
+    data = transition_band,
+    aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+    inherit.aes = FALSE,
+    fill = "grey70",
+    alpha = 0.6
+  ) +
+
+  # Trend lines
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 2.6) +
+
+  facet_wrap(~ outcome, nrow = 1, scales = "free_y") +
+
+  scale_color_manual(values = c(
+    "20–44" = "#1b9e77",
+    "45–64" = "#d95f02",
+    "65+"   = "#7570b3"
+  )) +
+
+  scale_x_continuous(
+    breaks = seq(2010, 2025, by = 3),
+    limits = c(2010, 2025)
+  ) +
+
+  labs(
+    x = "Year",
+    y = "AAMR (per 100,000)",
+    color = "Age group",
+    caption = "Grey shading denotes the COVID-19 pandemic period (2020–2022); darker shading denotes the transition year (2023)."
+  ) +
+
+  theme_minimal(base_size = 14) +
+  theme(
+    legend.position = "top",
+    legend.title = element_text(face = "bold"),
+    strip.text = element_text(face = "bold"),
+    axis.title = element_text(face = "bold"),
+    axis.text  = element_text(color = "black"),
+    panel.grid.minor = element_blank()
+  )
+
+p
+```
+```{r}
+# ============================================================
+# Export 3 individual panels (AKI, AKI/sepsis, Sepsis) as 300-dpi TIFF
+# Saves to: Figures/  (creates folder if missing)
+# Assumes you already created `plot_df` and the two shading tibbles
+# (pandemic_band, transition_band) from the previous code.
+# ============================================================
+
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(ggplot2)
+})
+
+# --- ensure output dir exists
+dir.create("Figures", showWarnings = FALSE, recursive = TRUE)
+
+# --- color map
+age_cols <- c(
+  "20–44" = "#1b9e77",
+  "45–64" = "#d95f02",
+  "65+"   = "#7570b3"
+)
+
+# --- base plot builder for one outcome
+make_outcome_plot <- function(outcome_name) {
+
+  df1 <- plot_df %>% filter(outcome == outcome_name)
+
+  ggplot(df1, aes(x = YearKey, y = AAMR, group = age_group, color = age_group)) +
+
+    # Light grey pandemic shading (2020–2022)
+    geom_rect(
+      data = pandemic_band,
+      aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+      inherit.aes = FALSE,
+      fill = "grey85",
+      alpha = 0.6
+    ) +
+
+    # Darker transition shading (2023)
+    geom_rect(
+      data = transition_band,
+      aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+      inherit.aes = FALSE,
+      fill = "grey70",
+      alpha = 0.6
+    ) +
+
+    geom_line(linewidth = 1.2) +
+    geom_point(size = 2.6) +
+
+    scale_color_manual(values = age_cols) +
+
+    scale_x_continuous(
+      breaks = seq(2010, 2025, by = 3),
+      limits = c(2010, 2025)
+    ) +
+
+    labs(
+      title = outcome_name,
+      x = "Year",
+      y = "AAMR (per 100,000)",
+      color = "Age group",
+      caption = "Grey shading denotes the COVID-19 pandemic period (2020–2022); darker shading denotes the transition year (2023)."
+    ) +
+
+    theme_minimal(base_size = 14) +
+    theme(
+      legend.position = "top",
+      legend.title = element_text(face = "bold"),
+      plot.title = element_text(face = "bold"),
+      axis.title = element_text(face = "bold"),
+      axis.text  = element_text(color = "black"),
+      panel.grid.minor = element_blank()
+    )
+}
+
+# --- build each plot
+p_aki       <- make_outcome_plot("AKI")
+p_akisepsis <- make_outcome_plot("AKI/sepsis")
+p_sepsis    <- make_outcome_plot("Sepsis")
+
+# --- export settings (TIFF, 300 dpi)
+# Choose size: adjust width/height if your journal wants different dimensions
+export_tiff_300 <- function(p, filename, width_in = 9.0, height_in = 6.0) {
+  ggsave(
+    filename = file.path("Figures", filename),
+    plot = p,
+    device = "tiff",
+    dpi = 300,
+    width = width_in,
+    height = height_in,
+    units = "in",
+    compression = "lzw"
+  )
+}
+
+export_tiff_300(p_aki,       "figure/Fig_AKI_AAMR_trend_300dpi.tiff")
+export_tiff_300(p_akisepsis, "figure/Fig_AKI_sepsis_AAMR_trend_300dpi.tiff")
+export_tiff_300(p_sepsis,    "figure/Fig_Sepsis_AAMR_trend_300dpi.tiff")
+
+# If you also want a combined 3-panel export as TIFF:
+export_tiff_300(p, "figure/Fig_All3_AAMR_trend_300dpi.tiff", width_in = 12, height_in = 4.8)
+```
+
+## Sex trend
+
+```{r}
+# ============================================================
+# Sex-specific AAMR trend plot (like your example) + exports
+# - 3 facets: AKI / AKI/sepsis / Sepsis
+# - lines+points for Sex: Male, Female
+# - Grey shading: 2020–2022; darker shading: 2023
+# - Export 3 individual 300-dpi TIFFs to Figures/
+#
+# Assumes you have: N17_all, A40_all, N17A40_all
+# and that each has source=="sex" rows with columns:
+#   Year Code, Sex, Sex Code, Notes, Population, Age Adjusted Rate
+# ============================================================
+
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(tidyr)
+  library(stringr)
+  library(ggplot2)
+})
+
+dir.create("Figures", showWarnings = FALSE, recursive = TRUE)
+
+# -----------------------------
+# 0) helpers
+# -----------------------------
+get_aar_col <- function(df) {
+  aar_col <- intersect(names(df), c("Age Adjusted Rate", "Age adjusted rate", "Age Adjusted Rate "))
+  if (length(aar_col) == 0) stop("No 'Age Adjusted Rate' column found.")
+  aar_col[1]
+}
+
+sex_long_one <- function(df_all, outcome_label) {
+  aar_col <- get_aar_col(df_all)
+
+  df_all %>%
+    filter(source == "sex") %>%
+    transmute(
+      Year = as.integer(`Year Code`),
+      Sex_chr  = str_trim(as.character(Sex)),
+      Code_chr = str_trim(as.character(`Sex Code`)),
+      Notes_chr= str_trim(as.character(Notes)),
+      Population = as.numeric(Population),
+      AAR = as.numeric(.data[[aar_col]])
+    ) %>%
+    filter(Year >= 2010, Year <= 2025) %>%
+    mutate(
+      Sex_std = case_when(
+        str_to_lower(Sex_chr) %in% c("male","m") ~ "Male",
+        str_to_lower(Sex_chr) %in% c("female","f") ~ "Female",
+        Code_chr == "M" ~ "Male",
+        Code_chr == "F" ~ "Female",
+        TRUE ~ NA_character_
+      )
+    ) %>%
+    filter(Sex_std %in% c("Male", "Female")) %>%
+    group_by(Year, Sex_std) %>%
+    summarise(
+      AAMR = ifelse(sum(Population, na.rm = TRUE) > 0,
+                   sum(AAR * Population, na.rm = TRUE) / sum(Population, na.rm = TRUE),
+                   NA_real_),
+      .groups = "drop"
+    ) %>%
+    mutate(
+      outcome = outcome_label,
+      Sex_std = factor(Sex_std, levels = c("Male", "Female"))
+    )
+}
+
+# -----------------------------
+# 1) Build plotting data (long)
+# -----------------------------
+sex_plot_df <- bind_rows(
+  sex_long_one(N17_all,    "AKI"),
+  sex_long_one(N17A40_all, "AKI/sepsis"),
+  sex_long_one(A40_all,    "Sepsis")
+) %>%
+  mutate(outcome = factor(outcome, levels = c("AKI", "AKI/sepsis", "Sepsis")))
+
+# -----------------------------
+# 2) Shading bands
+# -----------------------------
+pandemic_band <- tibble(xmin = 2020, xmax = 2023, ymin = -Inf, ymax = Inf)  # 2020–2022
+transition_band <- tibble(xmin = 2023, xmax = 2024, ymin = -Inf, ymax = Inf) # 2023
+
+# -----------------------------
+# 3) Plot function (single panel)
+# -----------------------------
+sex_cols <- c("Male" = "#1f78b4", "Female" = "#d95f02")  # matches your screenshot style
+
+make_sex_outcome_plot <- function(outcome_name) {
+
+  df1 <- sex_plot_df %>% filter(outcome == outcome_name)
+
+  ggplot(df1, aes(x = Year, y = AAMR, group = Sex_std, color = Sex_std)) +
+
+    geom_rect(
+      data = pandemic_band,
+      aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+      inherit.aes = FALSE,
+      fill = "grey85",
+      alpha = 0.6
+    ) +
+    geom_rect(
+      data = transition_band,
+      aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+      inherit.aes = FALSE,
+      fill = "grey70",
+      alpha = 0.6
+    ) +
+
+    geom_line(linewidth = 1.2) +
+    geom_point(size = 2.6) +
+
+    scale_color_manual(values = sex_cols) +
+
+    scale_x_continuous(
+      breaks = seq(2010, 2025, by = 3),
+      limits = c(2010, 2025)
+    ) +
+
+    labs(
+      title = outcome_name,
+      x = "Year",
+      y = "AAMR(per 100,000)",
+      color = "Sex",
+      caption = "Grey shading denotes the COVID-19 pandemic period (2020–2022); darker shading denotes the transition year (2023)."
+    ) +
+
+    theme_minimal(base_size = 14) +
+    theme(
+      legend.position = "top",
+      legend.title = element_text(face = "bold"),
+      plot.title = element_text(face = "bold"),
+      axis.title = element_text(face = "bold"),
+      axis.text  = element_text(color = "black"),
+      panel.grid.minor = element_blank()
+    )
+}
+
+# -----------------------------
+# 4) Create plots
+# -----------------------------
+p_sex_aki       <- make_sex_outcome_plot("AKI")
+p_sex_akisepsis <- make_sex_outcome_plot("AKI/sepsis")
+p_sex_sepsis    <- make_sex_outcome_plot("Sepsis")
+
+p_sex_aki
+p_sex_akisepsis
+p_sex_sepsis
+
+# -----------------------------
+# 5) Export 300-dpi TIFFs
+# -----------------------------
+export_tiff_300 <- function(p, filename, width_in = 9.0, height_in = 6.0) {
+  ggsave(
+    filename = file.path("Figures", filename),
+    plot = p,
+    device = "tiff",
+    dpi = 300,
+    width = width_in,
+    height = height_in,
+    units = "in",
+    compression = "lzw"
+  )
+}
+
+export_tiff_300(p_sex_aki,       "Fig_AKI_AAMR_sex_300dpi.tiff")
+export_tiff_300(p_sex_akisepsis, "Fig_AKI_sepsis_AAMR_sex_300dpi.tiff")
+export_tiff_300(p_sex_sepsis,    "Fig_Sepsis_AAMR_sex_300dpi.tiff")
+```
+
+```{r}
+# ============================================================
+# Combined 3-panel Sex AAMR figure
+# ============================================================
+
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(ggplot2)
+})
+
+# ---- Colors
+sex_cols <- c(
+  "Male"   = "#1f78b4",
+  "Female" = "#d95f02"
+)
+
+# ---- Shading bands
+pandemic_band   <- tibble(xmin = 2020, xmax = 2023, ymin = -Inf, ymax = Inf)
+transition_band <- tibble(xmin = 2023, xmax = 2024, ymin = -Inf, ymax = Inf)
+
+# ---- Combined Plot
+p_sex_combined <- ggplot(
+  sex_plot_df,
+  aes(x = Year, y = AAMR, group = Sex_std, color = Sex_std)
+) +
+
+  # Pandemic shading
+  geom_rect(
+    data = pandemic_band,
+    aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+    inherit.aes = FALSE,
+    fill = "grey85",
+    alpha = 0.6
+  ) +
+
+  # Transition shading
+  geom_rect(
+    data = transition_band,
+    aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+    inherit.aes = FALSE,
+    fill = "grey70",
+    alpha = 0.6
+  ) +
+
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 2.6) +
+
+  facet_wrap(~ outcome, nrow = 1, scales = "free_y") +
+
+  scale_color_manual(values = sex_cols) +
+
+  scale_x_continuous(
+    breaks = seq(2010, 2025, by = 3),
+    limits = c(2010, 2025)
+  ) +
+
+  labs(
+    x = "Year",
+    y = "AAMR(per 100,000)",
+    color = "Sex",
+    caption = "Grey shading denotes the COVID-19 pandemic period (2020–2022); darker shading denotes the transition year (2023)."
+  ) +
+
+  theme_minimal(base_size = 14) +
+  theme(
+    legend.position = "top",
+    legend.title = element_text(face = "bold"),
+    strip.text = element_text(face = "bold"),
+    axis.title = element_text(face = "bold"),
+    axis.text  = element_text(color = "black"),
+    panel.grid.minor = element_blank()
+  )
+
+p_sex_combined
+
+dir.create("Figures", showWarnings = FALSE)
+
+ggsave(
+  filename = "Figures/Fig_Sex_AAMR_Combined_300dpi.tiff",
+  plot = p_sex_combined,
+  device = "tiff",
+  dpi = 300,
+  width = 12,
+  height = 4.8,
+  units = "in",
+  compression = "lzw"
+)
+```
+
+## <20
+
+```{r}
+# ============================================================
+# Sepsis (<20) trend graph (AAMR per 100,000) + 300-dpi TIFF export
+# Uses AGE table (source == "age") and computes band rate:
+#   sum(deaths)/sum(pop) * 100,000 for ages <20
+# Grey shading: 2020–2022; darker: 2023
+#
+# Assumes you already have:
+#   A40_all
+#   recode_to_std_age()
+# ============================================================
+
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(stringr)
+  library(ggplot2)
+  library(tibble)
+})
+
+dir.create("Figures", showWarnings = FALSE, recursive = TRUE)
+
+# ---- age codes for <20 (after recode_to_std_age)
+ages_lt20 <- c("1","1-4","5-9","10-14","15-19")
+
+# ---- build yearly <20 rate table for Sepsis
+sepsis_lt20_df <- A40_all %>%
+  filter(source == "age") %>%
+  transmute(
+    Year = as.integer(`Year Code`),
+    age_code = recode_to_std_age(`Five-Year Age Groups Code`),
+    Deaths = as.numeric(Deaths),
+    Population = as.numeric(Population)
+  ) %>%
+  filter(Year >= 2010, Year <= 2025, age_code %in% ages_lt20) %>%
+  group_by(Year) %>%
+  summarise(
+    deaths_lt20 = sum(Deaths, na.rm = TRUE),
+    pop_lt20    = sum(Population, na.rm = TRUE),
+    AAMR_lt20   = ifelse(pop_lt20 > 0, deaths_lt20 / pop_lt20 * 100000, NA_real_),
+    .groups = "drop"
+  )
+
+# ---- shading bands
+pandemic_band   <- tibble(xmin = 2020, xmax = 2023, ymin = -Inf, ymax = Inf)
+transition_band <- tibble(xmin = 2023, xmax = 2024, ymin = -Inf, ymax = Inf)
+
+# ---- plot
+p_sepsis_lt20 <- ggplot(sepsis_lt20_df, aes(x = Year, y = AAMR_lt20)) +
+
+  geom_rect(
+    data = pandemic_band,
+    aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+    inherit.aes = FALSE,
+    fill = "grey85",
+    alpha = 0.6
+  ) +
+  geom_rect(
+    data = transition_band,
+    aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+    inherit.aes = FALSE,
+    fill = "grey70",
+    alpha = 0.6
+  ) +
+
+  geom_line(linewidth = 1.2, color = "#D55E00") +
+  geom_point(size = 2.6, color = "#D55E00") +
+
+  scale_x_continuous(
+    breaks = seq(2010, 2025, by = 3),
+    limits = c(2010, 2025)
+  ) +
+
+  labs(
+    title = "Sepsis (<20)",
+    x = "Year",
+    y = "AAMR (per 100,000)",
+    caption = "Grey shading denotes the COVID-19 pandemic period (2020–2022); darker shading denotes the transition year (2023)."
+  ) +
+
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(face = "bold"),
+    axis.title = element_text(face = "bold"),
+    axis.text  = element_text(color = "black"),
+    panel.grid.minor = element_blank()
+  )
+
+p_sepsis_lt20
+
+# ---- export 300-dpi TIFF
+ggsave(
+  filename = "Figures/Fig_Sepsis_AAMR_lt20_300dpi.tiff",
+  plot = p_sepsis_lt20,
+  device = "tiff",
+  dpi = 300,
+  width = 9,
+  height = 6,
+  units = "in",
+  compression = "lzw"
+)
+```
+
+## ALL
+```{r}
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(ggplot2)
+  library(tibble)
+})
+
+get_year_col <- function(df) {
+  yc <- intersect(names(df), c("YearKey", "Year", "Year Code", "year"))
+  if (length(yc) == 0) stop("No year column found in: ", paste(names(df), collapse = ", "))
+  yc[1]
+}
+
+to_plot_tbl <- function(df, disease_label) {
+  ycol <- get_year_col(df)
+  df %>%
+    transmute(
+      YearKey = as.integer(.data[[ycol]]),
+      AAMR    = as.numeric(`AAMR (/100,000), age-adjusted (all ages)`),
+      Disease = disease_label
+    ) %>%
+    filter(YearKey >= 2010, YearKey <= 2025)
+}
+
+overall_plot_df <- bind_rows(
+  to_plot_tbl(tbl_N17,    "AKI"),
+  to_plot_tbl(tbl_N17A40, "AKI/sepsis"),
+  to_plot_tbl(tbl_A40,    "Sepsis")
+) %>%
+  mutate(Disease = factor(Disease, levels = c("AKI", "AKI/sepsis", "Sepsis")))
+```
+```{r}
+dir.create("Figures", showWarnings = FALSE, recursive = TRUE)
+
+# Shading bands:
+# - pandemic: 2020–2022  => [2020, 2023)
+# - transition: 2023     => [2023, 2024)
+pandemic_band   <- tibble(xmin = 2020, xmax = 2023, ymin = -Inf, ymax = Inf)
+transition_band <- tibble(xmin = 2023, xmax = 2024, ymin = -Inf, ymax = Inf)
+
+# Disease colors (exact)
+disease_cols <- c(
+  "AKI"        = "#0072B2",
+  "AKI/sepsis" = "#009E73",
+  "Sepsis"     = "#D55E00"
+)
+
+p_overall <- ggplot(overall_plot_df,
+                    aes(x = YearKey, y = AAMR, color = Disease, group = Disease)) +
+
+  # Shading FIRST (behind everything)
+  geom_rect(
+    data = pandemic_band,
+    aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+    inherit.aes = FALSE,
+    fill = "grey85",
+    alpha = 0.6
+  ) +
+  geom_rect(
+    data = transition_band,
+    aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+    inherit.aes = FALSE,
+    fill = "grey70",
+    alpha = 0.6
+  ) +
+
+  # Lines + points
+  geom_line(linewidth = 1.8) +
+  geom_point(size = 3.6) +
+
+  # Scales
+  scale_color_manual(values = disease_cols) +
+  scale_x_continuous(
+    breaks = seq(2010, 2025, by = 3),
+    limits = c(2010, 2025)
+  ) +
+
+  # Labels
+  labs(
+    x = "Year",
+    y = "AAMR (per 100,000)",
+    color = "Disease",
+    caption = "Grey shading denotes the COVID-19 pandemic period (2020–2022); darker shading denotes the transition year (2023)."
+  ) +
+
+  # Theme to match screenshot
+  theme_minimal(base_size = 16) +
+  theme(
+    legend.position = "top",
+    legend.direction = "horizontal",
+    legend.title = element_text(face = "bold", size = 18),
+    legend.text  = element_text(size = 16),
+
+    axis.title   = element_text(face = "bold", size = 18),
+    axis.text    = element_text(color = "black", size = 14),
+
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank()
+  )
+
+p_overall
+```
+```{r}
+ggsave(
+  filename = "Figures/Fig_AAMR_overall_3diseases_300dpi.tiff",
+  plot = p_overall,
+  device = "tiff",
+  dpi = 300,
+  width = 10,
+  height = 7,
+  units = "in",
+  compression = "lzw"
+)
+```
+
+
+
+## APC
+```{r}
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(tidyr)
+  library(stringr)
+})
+
+# ---- helper: year-to-year APC (percent change) ----
+calc_yoy_apc <- function(rate, prev_rate) {
+  # APC only defined if both years exist and prev_rate > 0
+  ifelse(is.na(rate) | is.na(prev_rate) | prev_rate <= 0, NA_real_,
+         100 * (rate / prev_rate - 1))
+}
+
+# ---- 1) Wide -> Long, parse Disease + Age group ----
+aamr_long <- aamr_tbl %>%
+  mutate(YearKey = as.integer(YearKey)) %>%
+  pivot_longer(
+    cols = -YearKey,
+    names_to = "series",
+    values_to = "AAMR"
+  ) %>%
+  mutate(
+    Disease = case_when(
+      str_starts(series, "AKI_Sepsis_") ~ "AKI/Sepsis",
+      str_starts(series, "AKI_")        ~ "AKI",
+      str_starts(series, "Sepsis_")     ~ "Sepsis",
+      TRUE ~ NA_character_
+    ),
+    AgeGroup = case_when(
+      str_ends(series, "_lt20")    ~ "<20",
+      str_ends(series, "_20_44")   ~ "20–44",
+      str_ends(series, "_45_64")   ~ "45–64",
+      str_ends(series, "_65_plus") ~ "65+",
+      TRUE ~ NA_character_
+    )
+  ) %>%
+  filter(!is.na(Disease), !is.na(AgeGroup)) %>%
+  arrange(Disease, AgeGroup, YearKey)
+
+# ---- 2) Compute year-to-year APC within each Disease x AgeGroup ----
+apc_long <- aamr_long %>%
+  group_by(Disease, AgeGroup) %>%
+  mutate(
+    prev_AAMR = lag(AAMR),
+    APC_yoy   = calc_yoy_apc(AAMR, prev_AAMR)
+  ) %>%
+  ungroup()
+
+# Result: long table
+apc_long %>%
+  select(YearKey, Disease, AgeGroup, AAMR, prev_AAMR, APC_yoy) %>%
+  arrange(Disease, AgeGroup, YearKey)
+```
+```{r}
+apc_wide <- apc_long %>%
+  mutate(
+    apc_col = case_when(
+      Disease == "AKI"        ~ paste0("AKI_APC_", AgeGroup),
+      Disease == "Sepsis"     ~ paste0("Sepsis_APC_", AgeGroup),
+      Disease == "AKI/Sepsis" ~ paste0("AKI_Sepsis_APC_", AgeGroup),
+      TRUE ~ NA_character_
+    ),
+    apc_col = apc_col %>%
+      str_replace_all("20–44", "20_44") %>%
+      str_replace_all("45–64", "45_64") %>%
+      str_replace_all("<20", "lt20") %>%
+      str_replace_all("65\\+", "65_plus"),
+    APC_yoy = round(APC_yoy, 2)   # <-- round here
+  ) %>%
+  select(YearKey, apc_col, APC_yoy) %>%
+  filter(!is.na(apc_col)) %>%
+  pivot_wider(names_from = apc_col, values_from = APC_yoy) %>%
+  arrange(YearKey)
+
+apc_wide
+```
+
+## APC plot
+```{r}
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(tidyr)
+  library(stringr)
+  library(ggplot2)
+  library(tibble)
+})
+
+dir.create("Figures", showWarnings = FALSE, recursive = TRUE)
+
+# -----------------------------
+# 1) Wide -> long, parse disease + age group
+# -----------------------------
+aamr_long <- aamr_tbl %>%
+  mutate(YearKey = as.integer(YearKey)) %>%
+  pivot_longer(
+    cols = -YearKey,
+    names_to = "series",
+    values_to = "AAMR"
+  ) %>%
+  mutate(
+    Disease = case_when(
+      str_starts(series, "AKI_Sepsis_") ~ "AKI/sepsis",
+      str_starts(series, "AKI_")        ~ "AKI",
+      str_starts(series, "Sepsis_")     ~ "Sepsis",
+      TRUE ~ NA_character_
+    ),
+    AgeGroup = case_when(
+      str_ends(series, "_lt20")    ~ "<20",
+      str_ends(series, "_20_44")   ~ "20–44",
+      str_ends(series, "_45_64")   ~ "45–64",
+      str_ends(series, "_65_plus") ~ "65+",
+      TRUE ~ NA_character_
+    )
+  ) %>%
+  filter(!is.na(Disease), !is.na(AgeGroup)) %>%
+  arrange(Disease, AgeGroup, YearKey)
+
+# -----------------------------
+# 2) Year-to-year APC (%)
+# APC_t = 100 * (AAMR_t / AAMR_{t-1} - 1)
+# -----------------------------
+apc_long <- aamr_long %>%
+  group_by(Disease, AgeGroup) %>%
+  mutate(
+    prev_AAMR = lag(AAMR),
+    APC = ifelse(is.na(AAMR) | is.na(prev_AAMR) | prev_AAMR <= 0,
+                 NA_real_,
+                 100 * (AAMR / prev_AAMR - 1))
+  ) %>%
+  ungroup()
+
+# Keep only the age groups shown in your figure
+plot_df <- apc_long %>%
+  filter(AgeGroup %in% c("20–44", "45–64", "65+")) %>%
+  mutate(
+    Disease  = factor(Disease, levels = c("AKI", "AKI/sepsis", "Sepsis")),
+    AgeGroup = factor(AgeGroup, levels = c("20–44", "45–64", "65+"))
+  )
+
+# -----------------------------
+# 3) Shading bands (same as your figure)
+# light grey: 2020–2022  => [2020, 2023)
+# darker grey: 2023      => [2023, 2024)
+# -----------------------------
+band_light <- tibble(xmin = 2020, xmax = 2023, ymin = -Inf, ymax = Inf)
+band_dark  <- tibble(xmin = 2023, xmax = 2024, ymin = -Inf, ymax = Inf)
+
+# Age group colors (match screenshot vibe)
+age_cols <- c(
+  "20–44" = "#1B9E77",  # green
+  "45–64" = "#D95F02",  # orange
+  "65+"   = "#7570B3"   # purple
+)
+
+# -----------------------------
+# 4) Plot
+# -----------------------------
+p_apc <- ggplot(plot_df, aes(x = YearKey, y = APC, color = AgeGroup, group = AgeGroup)) +
+  geom_rect(
+    data = band_light,
+    aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+    inherit.aes = FALSE,
+    fill = "grey90",
+    alpha = 0.9
+  ) +
+  geom_rect(
+    data = band_dark,
+    aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+    inherit.aes = FALSE,
+    fill = "grey80",
+    alpha = 0.9
+  ) +
+  geom_hline(yintercept = 0, linewidth = 0.7, color = "grey55") +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 3) +
+  facet_wrap(~ Disease, nrow = 1) +
+  scale_color_manual(values = age_cols) +
+  scale_x_continuous(
+    limits = c(2010, 2025),
+    breaks = seq(2010, 2025, by = 3)
+  ) +
+  labs(
+    x = "Year",
+    y = "Annual percent change (APC, %)",
+    color = "Age group",
+    caption = "Light grey: COVID-19 pandemic (2020–2022); darker grey: transition year (2023)."
+  ) +
+  theme_minimal(base_size = 16) +
+  theme(
+    legend.position = "top",
+    legend.direction = "horizontal",
+    legend.title = element_text(face = "bold", size = 18),
+    legend.text  = element_text(size = 16),
+
+    strip.text = element_text(face = "bold", size = 16),
+
+    axis.title = element_text(face = "bold", size = 18),
+    axis.text  = element_text(color = "grey30", size = 14),
+
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank()
+  )
+
+p_apc
+
+# -----------------------------
+# 5) Export 300-dpi TIFF
+# -----------------------------
+ggsave(
+  filename = "Figures/Fig_APC_yoy_3diseases_agegroups_300dpi.tiff",
+  plot = p_apc,
+  device = "tiff",
+  dpi = 300,
+  width = 14.5,
+  height = 6.5,
+  units = "in",
+  compression = "lzw"
+)
+```
+
+```{r}
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(tidyr)
+  library(stringr)
+  library(ggplot2)
+  library(tibble)
+})
+
+dir.create("Figures", showWarnings = FALSE, recursive = TRUE)
+
+# -----------------------------
+# 1) Build APC long table from aamr_tbl
+# -----------------------------
+aamr_long <- aamr_tbl %>%
+  mutate(YearKey = as.integer(YearKey)) %>%
+  pivot_longer(
+    cols = -YearKey,
+    names_to = "series",
+    values_to = "AAMR"
+  ) %>%
+  mutate(
+    Disease = case_when(
+      str_starts(series, "AKI_Sepsis_") ~ "AKI/sepsis",
+      str_starts(series, "AKI_")        ~ "AKI",
+      str_starts(series, "Sepsis_")     ~ "Sepsis",
+      TRUE ~ NA_character_
+    ),
+    AgeGroup = case_when(
+      str_ends(series, "_20_44")   ~ "20–44",
+      str_ends(series, "_45_64")   ~ "45–64",
+      str_ends(series, "_65_plus") ~ "65+",
+      str_ends(series, "_lt20")    ~ "<20",
+      TRUE ~ NA_character_
+    )
+  ) %>%
+  filter(!is.na(Disease), !is.na(AgeGroup)) %>%
+  arrange(Disease, AgeGroup, YearKey)
+
+apc_long <- aamr_long %>%
+  group_by(Disease, AgeGroup) %>%
+  mutate(
+    prev_AAMR = lag(AAMR),
+    APC = ifelse(is.na(AAMR) | is.na(prev_AAMR) | prev_AAMR <= 0,
+                 NA_real_,
+                 100 * (AAMR / prev_AAMR - 1))
+  ) %>%
+  ungroup() %>%
+  filter(AgeGroup %in% c("20–44", "45–64", "65+")) %>%
+  mutate(
+    Disease  = factor(Disease, levels = c("AKI", "AKI/sepsis", "Sepsis")),
+    AgeGroup = factor(AgeGroup, levels = c("20–44", "45–64", "65+"))
+  )
+
+# -----------------------------
+# 2) Shading bands (pandemic + transition)
+# -----------------------------
+band_light <- tibble(xmin = 2020, xmax = 2023, ymin = -Inf, ymax = Inf)  # 2020–2022
+band_dark  <- tibble(xmin = 2023, xmax = 2024, ymin = -Inf, ymax = Inf)  # 2023
+
+# Colors to match your example
+age_cols <- c(
+  "20–44" = "#1B9E77",
+  "45–64" = "#D95F02",
+  "65+"   = "#7570B3"
+)
+
+# -----------------------------
+# 3) Function to make ONE disease plot (with labels)
+# -----------------------------
+make_one_disease_apc_plot <- function(apc_df,
+                                      disease_name,
+                                      label_years = c(2020, 2021, 2022),
+                                      ylim_pad = 5) {
+
+  ddf <- apc_df %>% filter(Disease == disease_name)
+
+  # dynamic y-limits (keeps the plot looking like your example)
+  y_rng <- range(ddf$APC, na.rm = TRUE)
+  y_lim <- c(floor(y_rng[1] - ylim_pad), ceiling(y_rng[2] + ylim_pad))
+
+  # label only chosen years (keeps readable)
+  label_df <- ddf %>%
+    filter(YearKey %in% label_years, !is.na(APC)) %>%
+    mutate(lbl = sprintf("%.1f", APC))
+
+  ggplot(ddf, aes(x = YearKey, y = APC, color = AgeGroup, group = AgeGroup)) +
+    geom_rect(
+      data = band_light,
+      aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+      inherit.aes = FALSE,
+      fill = "grey90",
+      alpha = 0.9
+    ) +
+    geom_rect(
+      data = band_dark,
+      aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
+      inherit.aes = FALSE,
+      fill = "grey80",
+      alpha = 0.9
+    ) +
+    geom_hline(yintercept = 0, linewidth = 0.7, color = "grey55") +
+    geom_line(linewidth = 1.3) +
+    geom_point(size = 3.4) +
+    geom_text(
+      data = label_df,
+      aes(label = lbl),
+      show.legend = FALSE,
+      color = "black",
+      fontface = "bold",
+      size = 4.2,
+      vjust = -0.8
+    ) +
+    scale_color_manual(values = age_cols) +
+    scale_x_continuous(
+      limits = c(2010, 2025),
+      breaks = seq(2010, 2025, by = 3)
+    ) +
+    coord_cartesian(ylim = y_lim) +
+    labs(
+      title = disease_name,
+      x = "Year",
+      y = "Annual percent change (APC, %)",
+      color = "Age group",
+      caption = "Light grey: COVID-19 pandemic (2020–2022); darker grey: transition year (2023)."
+    ) +
+    theme_minimal(base_size = 16) +
+    theme(
+      plot.title = element_text(face = "bold", hjust = 0.5, size = 18),
+      legend.position = "top",
+      legend.direction = "horizontal",
+      legend.title = element_text(face = "bold", size = 18),
+      legend.text  = element_text(size = 16),
+      axis.title   = element_text(face = "bold", size = 18),
+      axis.text    = element_text(color = "grey30", size = 14),
+      panel.grid.minor = element_blank(),
+      panel.grid.major.x = element_blank()
+    )
+}
+
+# -----------------------------
+# 4) Make + save individual plots
+# -----------------------------
+diseases <- c("AKI", "AKI/sepsis", "Sepsis")
+
+plots <- lapply(diseases, function(d) make_one_disease_apc_plot(apc_long, d))
+
+names(plots) <- diseases
+
+# Print one (example)
+plots[["AKI/sepsis"]]
+
+# Export all as 300-dpi TIFF
+for (d in diseases) {
+  ggsave(
+    filename = paste0("Figures/Fig_APC_yoy_", str_replace_all(d, "[^A-Za-z0-9]+", "_"), "_300dpi.tiff"),
+    plot = plots[[d]],
+    device = "tiff",
+    dpi = 300,
+    width = 12,
+    height = 6,
+    units = "in",
+    compression = "lzw"
+  )
+}
+```
+# Join point
+```{r}
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(tidyr)
+  library(stringr)
+  library(broom)
+})
+
+# -----------------------------
+# 1) Convert wide aamr_tbl -> long with Disease + AgeGroup
+# -----------------------------
+aamr_long <- aamr_tbl %>%
+  mutate(YearKey = as.integer(YearKey)) %>%
+  pivot_longer(
+    cols = -YearKey,
+    names_to = "series",
+    values_to = "AAMR"
+  ) %>%
+  mutate(
+    Disease = case_when(
+      str_starts(series, "AKI_Sepsis_") ~ "AKI/sepsis",
+      str_starts(series, "AKI_")        ~ "AKI",
+      str_starts(series, "Sepsis_")     ~ "Sepsis",
+      TRUE ~ NA_character_
+    ),
+    AgeGroup = case_when(
+      str_ends(series, "_lt20")    ~ "<20",
+      str_ends(series, "_20_44")   ~ "20–44",
+      str_ends(series, "_45_64")   ~ "45–64",
+      str_ends(series, "_65_plus") ~ "65+",
+      TRUE ~ NA_character_
+    )
+  ) %>%
+  filter(!is.na(Disease), !is.na(AgeGroup)) %>%
+  filter(YearKey >= 2010, YearKey <= 2025) %>%
+  arrange(Disease, AgeGroup, YearKey)
+
+# -----------------------------
+# 2) Fit log-linear model and compute APC + 95% CI
+#    ln(AAMR) = a + b*Year
+#    APC = 100*(exp(b)-1)
+# -----------------------------
+fit_single_apc <- function(df) {
+  d <- df %>%
+    filter(!is.na(AAMR), AAMR > 0) %>%           # must be >0 for log
+    mutate(ln_rate = log(AAMR))
+
+  if (nrow(d) < 3 || dplyr::n_distinct(d$YearKey) < 3) {
+    return(tibble(
+      n_years = nrow(d),
+      start_year = ifelse(nrow(d) > 0, min(d$YearKey), NA_integer_),
+      end_year   = ifelse(nrow(d) > 0, max(d$YearKey), NA_integer_),
+      APC = NA_real_,
+      APC_low = NA_real_,
+      APC_high = NA_real_
+    ))
+  }
+
+  m <- lm(ln_rate ~ YearKey, data = d)
+  b <- coef(m)[["YearKey"]]
+
+  # 95% CI for slope -> transform to APC CI
+  ci_b <- confint(m, "YearKey", level = 0.95)
+  tibble(
+    n_years = nrow(d),
+    start_year = min(d$YearKey),
+    end_year   = max(d$YearKey),
+    APC = 100 * (exp(b) - 1),
+    APC_low  = 100 * (exp(ci_b[1]) - 1),
+    APC_high = 100 * (exp(ci_b[2]) - 1)
+  )
+}
+
+apc_joinpoint_single <- aamr_long %>%
+  group_by(Disease, AgeGroup) %>%
+  group_modify(~ fit_single_apc(.x)) %>%
+  ungroup() %>%
+  mutate(
+    APC_CI = ifelse(
+      is.na(APC),
+      NA_character_,
+      sprintf("%.2f (%.2f to %.2f)", APC, APC_low, APC_high)
+    )
+  ) %>%
+  arrange(Disease, AgeGroup)
+
+apc_joinpoint_single
+```
+```{r}
+apc_table_pub <- apc_joinpoint_single %>%
+  transmute(
+    Disease,
+    AgeGroup,
+    Years = ifelse(is.na(start_year), NA_character_,
+                   paste0(start_year, "–", end_year)),
+    n_years,
+    `APC (95% CI)` = APC_CI
+  )
+
+apc_table_pub
+```
+
+```{r}
+# ============================================================
+# Export apc_table_pub (nice formatted table) + apc_wide (wide APC)
+# to a Word (.docx)
+# ============================================================
+
+suppressPackageStartupMessages({
+  library(officer)
+  library(flextable)
+  library(dplyr)
+})
+
+dir.create("Tables", showWarnings = FALSE, recursive = TRUE)
+
+# ---- sanity checks (optional but helpful) ----
+stopifnot(exists("apc_table_pub"))
+stopifnot(exists("apc_wide"))
+
+# Make sure YearKey is first in apc_wide (nice for Word)
+apc_wide_out <- apc_wide %>%
+  mutate(YearKey = as.integer(YearKey)) %>%
+  relocate(YearKey)
+
+# ---- flextables ----
+ft1 <- flextable(apc_table_pub) %>%
+  autofit() %>%
+  bold(part = "header") %>%
+  align(align = "left", part = "all") %>%
+  fontsize(size = 10, part = "all")
+
+ft2 <- flextable(apc_wide_out) %>%
+  autofit() %>%
+  bold(part = "header") %>%
+  align(align = "center", part = "all") %>%
+  fontsize(size = 9, part = "all")
+
+# Optional: repeat header row on each page
+ft1 <- set_table_properties(ft1, layout = "autofit")
+ft2 <- set_table_properties(ft2, layout = "autofit")
+
+# ---- build Word doc ----
+doc <- read_docx() %>%
+  body_add_par("Table Sx. Joinpoint-style APC (single-slope) by disease and age group", style = "heading 1") %>%
+  body_add_flextable(ft1) %>%
+  body_add_par("", style = "Normal") %>%
+  body_add_par("Table Sy. Year-to-year APC (wide format)", style = "heading 1") %>%
+  body_add_flextable(ft2)
+
+# ---- save ----
+out_file <- "tables/APC_Tables.docx"
+print(doc, target = out_file)
+
+out_file
+```
+

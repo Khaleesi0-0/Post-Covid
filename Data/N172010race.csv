@@ -1,0 +1,126 @@
+"Notes","Year","Year Code","MCD - ICD Sub-Chapter","MCD - ICD Sub-Chapter Code","Race","Race Code",Deaths,Population,Crude Rate,Age Adjusted Rate
+,"2010","2010","Renal failure","N17-N19","American Indian or Alaska Native","1002-5",441,4263538,10.3,19.3
+,"2010","2010","Renal failure","N17-N19","Asian or Pacific Islander","A-PI",1416,16993326,8.3,12.5
+,"2010","2010","Renal failure","N17-N19","Black or African American","2054-5",7543,42065334,17.9,25.0
+,"2010","2010","Renal failure","N17-N19","White","2106-3",51670,245423340,21.1,18.0
+"Total","2010","2010","Renal failure","N17-N19",,,61070,308745538,19.8,18.5
+"Total","2010","2010",,,,,61070,308745538,19.8,18.5
+,"2011","2011","Renal failure","N17-N19","American Indian or Alaska Native","1002-5",446,4347413,10.3,18.6
+,"2011","2011","Renal failure","N17-N19","Asian or Pacific Islander","A-PI",1492,17471358,8.5,12.1
+,"2011","2011","Renal failure","N17-N19","Black or African American","2054-5",7388,42678815,17.3,23.6
+,"2011","2011","Renal failure","N17-N19","White","2106-3",52345,247094331,21.2,17.8
+"Total","2011","2011","Renal failure","N17-N19",,,61671,311591917,19.8,18.1
+"Total","2011","2011",,,,,61671,311591917,19.8,18.1
+,"2012","2012","Renal failure","N17-N19","American Indian or Alaska Native","1002-5",449,4398436,10.2,17.8
+,"2012","2012","Renal failure","N17-N19","Asian or Pacific Islander","A-PI",1601,18087959,8.9,12.1
+,"2012","2012","Renal failure","N17-N19","Black or African American","2054-5",7200,43203092,16.7,22.1
+,"2012","2012","Renal failure","N17-N19","White","2106-3",51209,248224553,20.6,17.0
+"Total","2012","2012","Renal failure","N17-N19",,,60459,313914040,19.3,17.4
+"Total","2012","2012",,,,,60459,313914040,19.3,17.4
+,"2013","2013","Renal failure","N17-N19","American Indian or Alaska Native","1002-5",457,4457934,10.3,16.8
+,"2013","2013","Renal failure","N17-N19","Asian or Pacific Islander","A-PI",1672,18630136,9.0,11.7
+,"2013","2013","Renal failure","N17-N19","Black or African American","2054-5",7461,43696271,17.1,22.1
+,"2013","2013","Renal failure","N17-N19","White","2106-3",51847,249344498,20.8,16.9
+"Total","2013","2013","Renal failure","N17-N19",,,61437,316128839,19.4,17.3
+"Total","2013","2013",,,,,61437,316128839,19.4,17.3
+,"2014","2014","Renal failure","N17-N19","American Indian or Alaska Native","1002-5",517,4518981,11.4,18.2
+,"2014","2014","Renal failure","N17-N19","Asian or Pacific Islander","A-PI",1701,19398214,8.8,11.1
+,"2014","2014","Renal failure","N17-N19","Black or African American","2054-5",7232,44309394,16.3,20.6
+,"2014","2014","Renal failure","N17-N19","White","2106-3",52015,250630467,20.8,16.7
+"Total","2014","2014","Renal failure","N17-N19",,,61465,318857056,19.3,16.9
+"Total","2014","2014",,,,,61465,318857056,19.3,16.9
+,"2015","2015","Renal failure","N17-N19","American Indian or Alaska Native","1002-5",531,4577853,11.6,17.3
+,"2015","2015","Renal failure","N17-N19","Asian or Pacific Islander","A-PI",1703,20102717,8.5,10.4
+,"2015","2015","Renal failure","N17-N19","Black or African American","2054-5",7679,44863196,17.1,21.1
+,"2015","2015","Renal failure","N17-N19","White","2106-3",52884,251875054,21.0,16.6
+"Total","2015","2015","Renal failure","N17-N19",,,62797,321418820,19.5,16.8
+"Total","2015","2015",,,,,62797,321418820,19.5,16.8
+,"2016","2016","Renal failure","N17-N19","American Indian or Alaska Native","1002-5",529,4630155,11.4,16.1
+,"2016","2016","Renal failure","N17-N19","Asian or Pacific Islander","A-PI",1754,20487524,8.6,10.1
+,"2016","2016","Renal failure","N17-N19","Black or African American","2054-5",7768,45307020,17.1,20.6
+,"2016","2016","Renal failure","N17-N19","White","2106-3",52439,252702814,20.8,16.3
+"Total","2016","2016","Renal failure","N17-N19",,,62490,323127513,19.3,16.4
+"Total","2016","2016",,,,,62490,323127513,19.3,16.4
+,"2017","2017","Renal failure","N17-N19","American Indian or Alaska Native","1002-5",553,4689047,11.8,16.4
+,"2017","2017","Renal failure","N17-N19","Asian or Pacific Islander","A-PI",1920,21210673,9.1,10.3
+,"2017","2017","Renal failure","N17-N19","Black or African American","2054-5",7740,45883808,16.9,19.8
+,"2017","2017","Renal failure","N17-N19","White","2106-3",52981,253935650,20.9,16.1
+"Total","2017","2017","Renal failure","N17-N19",,,63194,325719178,19.4,16.3
+"Total","2017","2017",,,,,63194,325719178,19.4,16.3
+"Total",,,,,,,494583,2539502901,19.5,17.2
+"---"
+"Dataset: Multiple Cause of Death, 1999-2020"
+"Query Parameters:"
+"MCD - ICD-10 Codes: N17.0 (Acute renal failure with tubular necrosis); N17.1 (Acute renal failure with acute cortical necrosis);"
+"N17.2 (Acute renal failure with medullary necrosis); N17.8 (Other acute renal failure); N17.9 (Acute renal failure, unspecified)"
+"Year/Month: 2010; 2011; 2012; 2013; 2014; 2015; 2016; 2017"
+"Group By: Year; MCD - ICD Sub-Chapter; Race"
+"Show Totals: True"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Standard Population: 2000 U.S. Std. Population"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/mcd.html for more information."
+"---"
+"Query Date: Feb 25, 2026 2:24:18 AM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/mcd-icd10.html on Feb 25, 2026 2:24:18 AM"
+"---"
+Footnotes:
+"1. Totals and sub-totals show the frequency of the selected causes of death, which may be greater than the number of deaths."
+"Note that any single death record may have up to 20 causes. More information."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#2014-Revision."
+"2. These items in the results table are not fully selected: Renal failure. The Query Description lists the actual values"
+"selected."
+"3. The populations used to calculate standard age-adjusted rates are documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#2000 Standard Population."
+"4. The method used to calculate age-adjusted rates is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#Age-Adjusted Rates."
+"5. Deaths for persons of unknown age are included in counts and crude rates, but are not included in age-adjusted rates."
+"6. Information included on the death certificate about the race and Hispanic ethnicity of the decedent is reported by the"
+"funeral director as provided by an informant, often the surviving next of kin, or, in the absence of an informant, on the basis"
+"of observation. Race and ethnicity information from the census is by self-report. To the extent that race and Hispanic origin"
+"are inconsistent between these two data sources, death rates will be biased. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#Racial Differences."
+"7. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. Population figures for 2011 are bridged-race estimates of the July 1"
+"resident population, from the county-level postcensal Vintage 2011 series released by NCHS on July 18, 2012. Population figures"
+"for 2010 are April 1 Census counts. The population figures for years 2001 - 2009, are bridged-race estimates of the July 1"
+"resident population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012."
+"Population figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of"
+"July 1 estimates. Population figures for Infant Age Groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"8. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/mcd.html#Age Group."
+"9. Beginning with the 2018 data, changes have been implemented that affect the counts for ICD-10 cause of death codes O00-O99"
+"compared to previous practice. In addition, data for the cause of death codes O00-O99 for 2003 through 2017 reflect differences"
+"in information available to individual states and probable errors. Caution should be used in interpreting these data. More"
+"information can be found at: https://www.cdc.gov/nchs/maternal-mortality/."
+"10. On March 11, 2021, the 2019 mortality data on CDC WONDER was updated with the 2019 mortality data updated by NCHS on March"
+"4, 2021 to include corrected information for residents of Texas affecting 5 records previously coded to cause code *U01.4,"
+"Terrorism involving firearms (homicide). The underlying and multiple cause of death codes for 5 records were corrected in the"
+"2019 data. Underlying and multiple cause of death codes for those 5 records were recoded to Assault (homicide) by other and"
+"unspecified firearm discharge, ICD-10 code X95. The corrected final death records replaces the data released on December 22,"
+"2020."
+"11. Changes to cause of death classification affect reporting trends. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#ICD-10 Changes."

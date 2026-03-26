@@ -1,0 +1,897 @@
+"Notes","Census Region","Census Region Code","State","State Code","Year","Year Code","MCD - ICD Sub-Chapter","MCD - ICD Sub-Chapter Code",Deaths,Population,Crude Rate,Age Adjusted Rate
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2010","2010","Other bacterial diseases","A30-A49",168,3574097,4.7,3.8
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2010","2010","Renal failure","N17-N19",168,3574097,4.7,3.8
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2011","2011","Other bacterial diseases","A30-A49",161,3580709,4.5,3.6
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2011","2011","Renal failure","N17-N19",162,3580709,4.5,3.6
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2012","2012","Other bacterial diseases","A30-A49",134,3590347,3.7,2.9
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2012","2012","Renal failure","N17-N19",135,3590347,3.8,2.9
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2013","2013","Other bacterial diseases","A30-A49",130,3596080,3.6,2.9
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2013","2013","Renal failure","N17-N19",130,3596080,3.6,2.9
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2014","2014","Other bacterial diseases","A30-A49",122,3596677,3.4,2.7
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2014","2014","Renal failure","N17-N19",123,3596677,3.4,2.7
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2015","2015","Other bacterial diseases","A30-A49",115,3590886,3.2,2.4
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2015","2015","Renal failure","N17-N19",116,3590886,3.2,2.4
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2016","2016","Other bacterial diseases","A30-A49",124,3576452,3.5,2.7
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2016","2016","Renal failure","N17-N19",125,3576452,3.5,2.7
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2017","2017","Other bacterial diseases","A30-A49",90,3588184,2.5,1.9
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2017","2017","Renal failure","N17-N19",90,3588184,2.5,1.9
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2010","2010","Other bacterial diseases","A30-A49",52,1328361,3.9,3.0
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2010","2010","Renal failure","N17-N19",52,1328361,3.9,3.0
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2011","2011","Other bacterial diseases","A30-A49",43,1328188,3.2,2.4
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2011","2011","Renal failure","N17-N19",43,1328188,3.2,2.4
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2012","2012","Other bacterial diseases","A30-A49",40,1329192,3.0,2.2
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2012","2012","Renal failure","N17-N19",40,1329192,3.0,2.2
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2013","2013","Other bacterial diseases","A30-A49",59,1328302,4.4,3.2
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2013","2013","Renal failure","N17-N19",60,1328302,4.5,3.2
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2014","2014","Other bacterial diseases","A30-A49",53,1330089,4.0,2.8
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2014","2014","Renal failure","N17-N19",53,1330089,4.0,2.8
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2015","2015","Other bacterial diseases","A30-A49",47,1329328,3.5,2.5
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2015","2015","Renal failure","N17-N19",47,1329328,3.5,2.5
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2016","2016","Other bacterial diseases","A30-A49",52,1331479,3.9,2.9
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2016","2016","Renal failure","N17-N19",53,1331479,4.0,2.9
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2017","2017","Other bacterial diseases","A30-A49",37,1335907,2.8,1.8
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2017","2017","Renal failure","N17-N19",37,1335907,2.8,1.8
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2010","2010","Other bacterial diseases","A30-A49",304,6547629,4.6,3.9
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2010","2010","Renal failure","N17-N19",305,6547629,4.7,3.9
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2011","2011","Other bacterial diseases","A30-A49",333,6587536,5.1,4.2
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2011","2011","Renal failure","N17-N19",335,6587536,5.1,4.2
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2012","2012","Other bacterial diseases","A30-A49",260,6646144,3.9,3.2
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2012","2012","Renal failure","N17-N19",261,6646144,3.9,3.2
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2013","2013","Other bacterial diseases","A30-A49",319,6692824,4.8,3.9
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2013","2013","Renal failure","N17-N19",319,6692824,4.8,3.9
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2014","2014","Other bacterial diseases","A30-A49",295,6745408,4.4,3.6
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2014","2014","Renal failure","N17-N19",296,6745408,4.4,3.6
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2015","2015","Other bacterial diseases","A30-A49",333,6794422,4.9,4.0
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2015","2015","Renal failure","N17-N19",334,6794422,4.9,4.0
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2016","2016","Other bacterial diseases","A30-A49",339,6811779,5.0,4.0
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2016","2016","Renal failure","N17-N19",341,6811779,5.0,4.0
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2017","2017","Other bacterial diseases","A30-A49",306,6859819,4.5,3.5
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2017","2017","Renal failure","N17-N19",307,6859819,4.5,3.5
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2010","2010","Other bacterial diseases","A30-A49",62,1316470,4.7,4.3
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2010","2010","Renal failure","N17-N19",64,1316470,4.9,4.4
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2011","2011","Other bacterial diseases","A30-A49",63,1318194,4.8,4.1
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2011","2011","Renal failure","N17-N19",63,1318194,4.8,4.1
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2012","2012","Other bacterial diseases","A30-A49",59,1320718,4.5,3.8
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2012","2012","Renal failure","N17-N19",59,1320718,4.5,3.8
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2013","2013","Other bacterial diseases","A30-A49",61,1323459,4.6,3.8
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2013","2013","Renal failure","N17-N19",61,1323459,4.6,3.8
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2014","2014","Other bacterial diseases","A30-A49",61,1326813,4.6,3.9
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2014","2014","Renal failure","N17-N19",61,1326813,4.6,3.9
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2015","2015","Other bacterial diseases","A30-A49",67,1330608,5.0,3.9
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2015","2015","Renal failure","N17-N19",67,1330608,5.0,3.9
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2016","2016","Other bacterial diseases","A30-A49",62,1334795,4.6,3.6
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2016","2016","Renal failure","N17-N19",63,1334795,4.7,3.7
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2017","2017","Other bacterial diseases","A30-A49",57,1342795,4.2,3.2
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2017","2017","Renal failure","N17-N19",58,1342795,4.3,3.2
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2010","2010","Other bacterial diseases","A30-A49",75,1052567,7.1,5.7
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2010","2010","Renal failure","N17-N19",75,1052567,7.1,5.7
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2011","2011","Other bacterial diseases","A30-A49",85,1051302,8.1,6.2
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2011","2011","Renal failure","N17-N19",86,1051302,8.2,6.3
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2012","2012","Other bacterial diseases","A30-A49",86,1050292,8.2,6.1
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2012","2012","Renal failure","N17-N19",88,1050292,8.4,6.2
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2013","2013","Other bacterial diseases","A30-A49",73,1051511,6.9,5.2
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2013","2013","Renal failure","N17-N19",74,1051511,7.0,5.3
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2014","2014","Other bacterial diseases","A30-A49",51,1055173,4.8,3.5
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2014","2014","Renal failure","N17-N19",51,1055173,4.8,3.5
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2015","2015","Other bacterial diseases","A30-A49",51,1056298,4.8,3.7
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2015","2015","Renal failure","N17-N19",53,1056298,5.0,3.8
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2016","2016","Other bacterial diseases","A30-A49",50,1056426,4.7,3.7
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2016","2016","Renal failure","N17-N19",51,1056426,4.8,3.7
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2017","2017","Other bacterial diseases","A30-A49",54,1059639,5.1,4.0
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2017","2017","Renal failure","N17-N19",54,1059639,5.1,4.0
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2010","2010","Other bacterial diseases","A30-A49",18,625741,Unreliable,Unreliable
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2010","2010","Renal failure","N17-N19",19,625741,Unreliable,Unreliable
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2011","2011","Other bacterial diseases","A30-A49",20,626431,3.2,2.6
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2011","2011","Renal failure","N17-N19",20,626431,3.2,2.6
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2012","2012","Other bacterial diseases","A30-A49",25,626011,4.0,3.1
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2012","2012","Renal failure","N17-N19",25,626011,4.0,3.1
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2013","2013","Other bacterial diseases","A30-A49",26,626630,4.1,3.3
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2013","2013","Renal failure","N17-N19",27,626630,4.3,3.4
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2014","2014","Other bacterial diseases","A30-A49",22,626562,3.5,2.6
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2014","2014","Renal failure","N17-N19",24,626562,3.8,2.9
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2015","2015","Other bacterial diseases","A30-A49",25,626042,4.0,2.9
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2015","2015","Renal failure","N17-N19",25,626042,4.0,2.9
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2016","2016","Other bacterial diseases","A30-A49",24,624594,3.8,2.9
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2016","2016","Renal failure","N17-N19",24,624594,3.8,2.9
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2017","2017","Other bacterial diseases","A30-A49",15,623657,Unreliable,Unreliable
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2017","2017","Renal failure","N17-N19",15,623657,Unreliable,Unreliable
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2010","2010","Other bacterial diseases","A30-A49",527,8791894,6.0,5.2
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2010","2010","Renal failure","N17-N19",528,8791894,6.0,5.3
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2011","2011","Other bacterial diseases","A30-A49",515,8821155,5.8,5.0
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2011","2011","Renal failure","N17-N19",518,8821155,5.9,5.0
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2012","2012","Other bacterial diseases","A30-A49",478,8864590,5.4,4.6
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2012","2012","Renal failure","N17-N19",479,8864590,5.4,4.6
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2013","2013","Other bacterial diseases","A30-A49",534,8899339,6.0,5.1
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2013","2013","Renal failure","N17-N19",534,8899339,6.0,5.1
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2014","2014","Other bacterial diseases","A30-A49",506,8938175,5.7,4.7
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2014","2014","Renal failure","N17-N19",507,8938175,5.7,4.7
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2015","2015","Other bacterial diseases","A30-A49",483,8958013,5.4,4.5
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2015","2015","Renal failure","N17-N19",485,8958013,5.4,4.5
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2016","2016","Other bacterial diseases","A30-A49",501,8944469,5.6,4.6
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2016","2016","Renal failure","N17-N19",504,8944469,5.6,4.6
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2017","2017","Other bacterial diseases","A30-A49",494,9005644,5.5,4.4
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2017","2017","Renal failure","N17-N19",495,9005644,5.5,4.4
+,"Census Region 1: Northeast","CENS-R1","New York","36","2010","2010","Other bacterial diseases","A30-A49",666,19378102,3.4,3.0
+,"Census Region 1: Northeast","CENS-R1","New York","36","2010","2010","Renal failure","N17-N19",667,19378102,3.4,3.0
+,"Census Region 1: Northeast","CENS-R1","New York","36","2011","2011","Other bacterial diseases","A30-A49",731,19465197,3.8,3.2
+,"Census Region 1: Northeast","CENS-R1","New York","36","2011","2011","Renal failure","N17-N19",736,19465197,3.8,3.2
+,"Census Region 1: Northeast","CENS-R1","New York","36","2012","2012","Other bacterial diseases","A30-A49",667,19570261,3.4,2.9
+,"Census Region 1: Northeast","CENS-R1","New York","36","2012","2012","Renal failure","N17-N19",669,19570261,3.4,2.9
+,"Census Region 1: Northeast","CENS-R1","New York","36","2013","2013","Other bacterial diseases","A30-A49",610,19651127,3.1,2.6
+,"Census Region 1: Northeast","CENS-R1","New York","36","2013","2013","Renal failure","N17-N19",611,19651127,3.1,2.6
+,"Census Region 1: Northeast","CENS-R1","New York","36","2014","2014","Other bacterial diseases","A30-A49",616,19746227,3.1,2.6
+,"Census Region 1: Northeast","CENS-R1","New York","36","2014","2014","Renal failure","N17-N19",618,19746227,3.1,2.6
+,"Census Region 1: Northeast","CENS-R1","New York","36","2015","2015","Other bacterial diseases","A30-A49",576,19795791,2.9,2.4
+,"Census Region 1: Northeast","CENS-R1","New York","36","2015","2015","Renal failure","N17-N19",582,19795791,2.9,2.4
+,"Census Region 1: Northeast","CENS-R1","New York","36","2016","2016","Other bacterial diseases","A30-A49",526,19745289,2.7,2.2
+,"Census Region 1: Northeast","CENS-R1","New York","36","2016","2016","Renal failure","N17-N19",529,19745289,2.7,2.2
+,"Census Region 1: Northeast","CENS-R1","New York","36","2017","2017","Other bacterial diseases","A30-A49",549,19849399,2.8,2.2
+,"Census Region 1: Northeast","CENS-R1","New York","36","2017","2017","Renal failure","N17-N19",550,19849399,2.8,2.2
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2010","2010","Other bacterial diseases","A30-A49",697,12702379,5.5,4.3
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2010","2010","Renal failure","N17-N19",698,12702379,5.5,4.3
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2011","2011","Other bacterial diseases","A30-A49",668,12742886,5.2,4.0
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2011","2011","Renal failure","N17-N19",671,12742886,5.3,4.1
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2012","2012","Other bacterial diseases","A30-A49",677,12763536,5.3,4.0
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2012","2012","Renal failure","N17-N19",682,12763536,5.3,4.0
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2013","2013","Other bacterial diseases","A30-A49",689,12773801,5.4,4.0
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2013","2013","Renal failure","N17-N19",691,12773801,5.4,4.0
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2014","2014","Other bacterial diseases","A30-A49",645,12787209,5.0,3.7
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2014","2014","Renal failure","N17-N19",646,12787209,5.1,3.7
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2015","2015","Other bacterial diseases","A30-A49",684,12802503,5.3,3.8
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2015","2015","Renal failure","N17-N19",688,12802503,5.4,3.9
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2016","2016","Other bacterial diseases","A30-A49",695,12784227,5.4,4.0
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2016","2016","Renal failure","N17-N19",699,12784227,5.5,4.0
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2017","2017","Other bacterial diseases","A30-A49",665,12805537,5.2,3.7
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2017","2017","Renal failure","N17-N19",670,12805537,5.2,3.8
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2010","2010","Other bacterial diseases","A30-A49",572,12830632,4.5,4.2
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2010","2010","Renal failure","N17-N19",572,12830632,4.5,4.2
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2011","2011","Other bacterial diseases","A30-A49",575,12869257,4.5,4.1
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2011","2011","Renal failure","N17-N19",578,12869257,4.5,4.1
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2012","2012","Other bacterial diseases","A30-A49",534,12875255,4.1,3.8
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2012","2012","Renal failure","N17-N19",536,12875255,4.2,3.8
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2013","2013","Other bacterial diseases","A30-A49",532,12882135,4.1,3.8
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2013","2013","Renal failure","N17-N19",533,12882135,4.1,3.8
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2014","2014","Other bacterial diseases","A30-A49",617,12880580,4.8,4.3
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2014","2014","Renal failure","N17-N19",621,12880580,4.8,4.3
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2015","2015","Other bacterial diseases","A30-A49",606,12859995,4.7,4.1
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2015","2015","Renal failure","N17-N19",609,12859995,4.7,4.2
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2016","2016","Other bacterial diseases","A30-A49",574,12801539,4.5,3.9
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2016","2016","Renal failure","N17-N19",575,12801539,4.5,3.9
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2017","2017","Other bacterial diseases","A30-A49",543,12802023,4.2,3.5
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2017","2017","Renal failure","N17-N19",544,12802023,4.2,3.5
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2010","2010","Other bacterial diseases","A30-A49",309,6483802,4.8,4.4
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2010","2010","Renal failure","N17-N19",308,6483802,4.8,4.4
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2011","2011","Other bacterial diseases","A30-A49",470,6516922,7.2,6.6
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2011","2011","Renal failure","N17-N19",474,6516922,7.3,6.7
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2012","2012","Other bacterial diseases","A30-A49",506,6537334,7.7,7.0
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2012","2012","Renal failure","N17-N19",508,6537334,7.8,7.1
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2013","2013","Other bacterial diseases","A30-A49",557,6570902,8.5,7.6
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2013","2013","Renal failure","N17-N19",565,6570902,8.6,7.7
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2014","2014","Other bacterial diseases","A30-A49",583,6596855,8.8,7.8
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2014","2014","Renal failure","N17-N19",592,6596855,9.0,7.9
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2015","2015","Other bacterial diseases","A30-A49",603,6619680,9.1,7.9
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2015","2015","Renal failure","N17-N19",609,6619680,9.2,8.0
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2016","2016","Other bacterial diseases","A30-A49",576,6633053,8.7,7.6
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2016","2016","Renal failure","N17-N19",579,6633053,8.7,7.6
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2017","2017","Other bacterial diseases","A30-A49",572,6666818,8.6,7.4
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2017","2017","Renal failure","N17-N19",581,6666818,8.7,7.5
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2010","2010","Other bacterial diseases","A30-A49",519,9883640,5.3,4.7
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2010","2010","Renal failure","N17-N19",526,9883640,5.3,4.7
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2011","2011","Other bacterial diseases","A30-A49",527,9876187,5.3,4.7
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2011","2011","Renal failure","N17-N19",542,9876187,5.5,4.8
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2012","2012","Other bacterial diseases","A30-A49",444,9883360,4.5,3.8
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2012","2012","Renal failure","N17-N19",451,9883360,4.6,3.9
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2013","2013","Other bacterial diseases","A30-A49",440,9895622,4.4,3.7
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2013","2013","Renal failure","N17-N19",443,9895622,4.5,3.7
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2014","2014","Other bacterial diseases","A30-A49",396,9909877,4.0,3.2
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2014","2014","Renal failure","N17-N19",402,9909877,4.1,3.3
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2015","2015","Other bacterial diseases","A30-A49",439,9922576,4.4,3.6
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2015","2015","Renal failure","N17-N19",443,9922576,4.5,3.6
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2016","2016","Other bacterial diseases","A30-A49",413,9928300,4.2,3.3
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2016","2016","Renal failure","N17-N19",414,9928300,4.2,3.3
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2017","2017","Other bacterial diseases","A30-A49",399,9962311,4.0,3.2
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2017","2017","Renal failure","N17-N19",403,9962311,4.0,3.2
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2010","2010","Other bacterial diseases","A30-A49",638,11536504,5.5,4.8
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2010","2010","Renal failure","N17-N19",640,11536504,5.5,4.8
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2011","2011","Other bacterial diseases","A30-A49",607,11544951,5.3,4.5
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2011","2011","Renal failure","N17-N19",608,11544951,5.3,4.5
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2012","2012","Other bacterial diseases","A30-A49",601,11544225,5.2,4.4
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2012","2012","Renal failure","N17-N19",603,11544225,5.2,4.4
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2013","2013","Other bacterial diseases","A30-A49",586,11570808,5.1,4.3
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2013","2013","Renal failure","N17-N19",585,11570808,5.1,4.2
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2014","2014","Other bacterial diseases","A30-A49",572,11594163,4.9,4.0
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2014","2014","Renal failure","N17-N19",573,11594163,4.9,4.0
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2015","2015","Other bacterial diseases","A30-A49",557,11613423,4.8,3.9
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2015","2015","Renal failure","N17-N19",559,11613423,4.8,3.9
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2016","2016","Other bacterial diseases","A30-A49",580,11614373,5.0,3.9
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2016","2016","Renal failure","N17-N19",581,11614373,5.0,3.9
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2017","2017","Other bacterial diseases","A30-A49",515,11658609,4.4,3.5
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2017","2017","Renal failure","N17-N19",518,11658609,4.4,3.5
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2010","2010","Other bacterial diseases","A30-A49",240,5686986,4.2,3.7
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2010","2010","Renal failure","N17-N19",242,5686986,4.3,3.7
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2011","2011","Other bacterial diseases","A30-A49",229,5711767,4.0,3.5
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2011","2011","Renal failure","N17-N19",230,5711767,4.0,3.5
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2012","2012","Other bacterial diseases","A30-A49",238,5726398,4.2,3.5
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2012","2012","Renal failure","N17-N19",238,5726398,4.2,3.5
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2013","2013","Other bacterial diseases","A30-A49",236,5742713,4.1,3.5
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2013","2013","Renal failure","N17-N19",237,5742713,4.1,3.5
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2014","2014","Other bacterial diseases","A30-A49",287,5757564,5.0,4.0
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2014","2014","Renal failure","N17-N19",288,5757564,5.0,4.0
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2015","2015","Other bacterial diseases","A30-A49",294,5771337,5.1,4.1
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2015","2015","Renal failure","N17-N19",296,5771337,5.1,4.2
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2016","2016","Other bacterial diseases","A30-A49",318,5778708,5.5,4.4
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2016","2016","Renal failure","N17-N19",321,5778708,5.6,4.4
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2017","2017","Other bacterial diseases","A30-A49",306,5795483,5.3,4.1
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2017","2017","Renal failure","N17-N19",314,5795483,5.4,4.2
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2010","2010","Other bacterial diseases","A30-A49",110,3046355,3.6,2.9
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2010","2010","Renal failure","N17-N19",111,3046355,3.6,3.0
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2011","2011","Other bacterial diseases","A30-A49",116,3062309,3.8,3.0
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2011","2011","Renal failure","N17-N19",118,3062309,3.9,3.1
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2012","2012","Other bacterial diseases","A30-A49",128,3074186,4.2,3.2
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2012","2012","Renal failure","N17-N19",129,3074186,4.2,3.3
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2013","2013","Other bacterial diseases","A30-A49",125,3090416,4.0,3.1
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2013","2013","Renal failure","N17-N19",127,3090416,4.1,3.2
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2014","2014","Other bacterial diseases","A30-A49",163,3107126,5.2,4.0
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2014","2014","Renal failure","N17-N19",164,3107126,5.3,4.0
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2015","2015","Other bacterial diseases","A30-A49",149,3123899,4.8,3.7
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2015","2015","Renal failure","N17-N19",149,3123899,4.8,3.7
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2016","2016","Other bacterial diseases","A30-A49",145,3134693,4.6,3.5
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2016","2016","Renal failure","N17-N19",147,3134693,4.7,3.5
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2017","2017","Other bacterial diseases","A30-A49",202,3145711,6.4,4.9
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2017","2017","Renal failure","N17-N19",205,3145711,6.5,5.0
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2010","2010","Other bacterial diseases","A30-A49",121,2853118,4.2,3.8
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2010","2010","Renal failure","N17-N19",121,2853118,4.2,3.8
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2011","2011","Other bacterial diseases","A30-A49",133,2871238,4.6,4.1
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2011","2011","Renal failure","N17-N19",133,2871238,4.6,4.1
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2012","2012","Other bacterial diseases","A30-A49",118,2885905,4.1,3.7
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2012","2012","Renal failure","N17-N19",119,2885905,4.1,3.7
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2013","2013","Other bacterial diseases","A30-A49",136,2893957,4.7,4.0
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2013","2013","Renal failure","N17-N19",137,2893957,4.7,4.0
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2014","2014","Other bacterial diseases","A30-A49",108,2904021,3.7,3.2
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2014","2014","Renal failure","N17-N19",111,2904021,3.8,3.2
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2015","2015","Other bacterial diseases","A30-A49",147,2911641,5.0,4.4
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2015","2015","Renal failure","N17-N19",147,2911641,5.0,4.4
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2016","2016","Other bacterial diseases","A30-A49",169,2907289,5.8,4.8
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2016","2016","Renal failure","N17-N19",170,2907289,5.8,4.8
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2017","2017","Other bacterial diseases","A30-A49",183,2913123,6.3,5.1
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2017","2017","Renal failure","N17-N19",183,2913123,6.3,5.1
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2010","2010","Other bacterial diseases","A30-A49",204,5303925,3.8,3.4
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2010","2010","Renal failure","N17-N19",207,5303925,3.9,3.5
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2011","2011","Other bacterial diseases","A30-A49",204,5344861,3.8,3.5
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2011","2011","Renal failure","N17-N19",205,5344861,3.8,3.5
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2012","2012","Other bacterial diseases","A30-A49",161,5379139,3.0,2.6
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2012","2012","Renal failure","N17-N19",162,5379139,3.0,2.6
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2013","2013","Other bacterial diseases","A30-A49",171,5420380,3.2,2.7
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2013","2013","Renal failure","N17-N19",172,5420380,3.2,2.7
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2014","2014","Other bacterial diseases","A30-A49",178,5457173,3.3,2.8
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2014","2014","Renal failure","N17-N19",181,5457173,3.3,2.8
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2015","2015","Other bacterial diseases","A30-A49",216,5489594,3.9,3.3
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2015","2015","Renal failure","N17-N19",218,5489594,4.0,3.3
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2016","2016","Other bacterial diseases","A30-A49",209,5519952,3.8,3.2
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2016","2016","Renal failure","N17-N19",212,5519952,3.8,3.2
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2017","2017","Other bacterial diseases","A30-A49",208,5576606,3.7,3.0
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2017","2017","Renal failure","N17-N19",213,5576606,3.8,3.1
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2010","2010","Other bacterial diseases","A30-A49",313,5988927,5.2,4.6
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2010","2010","Renal failure","N17-N19",313,5988927,5.2,4.6
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2011","2011","Other bacterial diseases","A30-A49",380,6010688,6.3,5.6
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2011","2011","Renal failure","N17-N19",381,6010688,6.3,5.6
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2012","2012","Other bacterial diseases","A30-A49",315,6021988,5.2,4.5
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2012","2012","Renal failure","N17-N19",315,6021988,5.2,4.5
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2013","2013","Other bacterial diseases","A30-A49",379,6044171,6.3,5.3
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2013","2013","Renal failure","N17-N19",382,6044171,6.3,5.4
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2014","2014","Other bacterial diseases","A30-A49",386,6063589,6.4,5.3
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2014","2014","Renal failure","N17-N19",387,6063589,6.4,5.3
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2015","2015","Other bacterial diseases","A30-A49",384,6083672,6.3,5.2
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2015","2015","Renal failure","N17-N19",388,6083672,6.4,5.2
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2016","2016","Other bacterial diseases","A30-A49",411,6093000,6.7,5.4
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2016","2016","Renal failure","N17-N19",417,6093000,6.8,5.5
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2017","2017","Other bacterial diseases","A30-A49",413,6113532,6.8,5.3
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2017","2017","Renal failure","N17-N19",415,6113532,6.8,5.4
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2010","2010","Other bacterial diseases","A30-A49",72,1826341,3.9,3.5
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2010","2010","Renal failure","N17-N19",71,1826341,3.9,3.5
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2011","2011","Other bacterial diseases","A30-A49",61,1842641,3.3,3.0
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2011","2011","Renal failure","N17-N19",61,1842641,3.3,3.0
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2012","2012","Other bacterial diseases","A30-A49",61,1855525,3.3,2.9
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2012","2012","Renal failure","N17-N19",62,1855525,3.3,2.9
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2013","2013","Other bacterial diseases","A30-A49",82,1868516,4.4,3.9
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2013","2013","Renal failure","N17-N19",82,1868516,4.4,3.9
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2014","2014","Other bacterial diseases","A30-A49",79,1881503,4.2,3.6
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2014","2014","Renal failure","N17-N19",78,1881503,4.1,3.5
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2015","2015","Other bacterial diseases","A30-A49",111,1896190,5.9,5.0
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2015","2015","Renal failure","N17-N19",111,1896190,5.9,5.0
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2016","2016","Other bacterial diseases","A30-A49",120,1907116,6.3,5.4
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2016","2016","Renal failure","N17-N19",120,1907116,6.3,5.4
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2017","2017","Other bacterial diseases","A30-A49",108,1920076,5.6,4.6
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2017","2017","Renal failure","N17-N19",109,1920076,5.7,4.6
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2010","2010","Other bacterial diseases","A30-A49",39,672591,5.8,4.7
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2010","2010","Renal failure","N17-N19",39,672591,5.8,4.7
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2011","2011","Other bacterial diseases","A30-A49",36,683932,5.3,4.4
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2011","2011","Renal failure","N17-N19",37,683932,5.4,4.5
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2012","2012","Other bacterial diseases","A30-A49",49,699628,7.0,5.7
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2012","2012","Renal failure","N17-N19",49,699628,7.0,5.7
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2013","2013","Other bacterial diseases","A30-A49",53,723393,7.3,6.2
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2013","2013","Renal failure","N17-N19",53,723393,7.3,6.2
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2014","2014","Other bacterial diseases","A30-A49",52,739482,7.0,6.1
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2014","2014","Renal failure","N17-N19",51,739482,6.9,6.0
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2015","2015","Other bacterial diseases","A30-A49",59,756927,7.8,6.7
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2015","2015","Renal failure","N17-N19",60,756927,7.9,6.8
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2016","2016","Other bacterial diseases","A30-A49",46,757952,6.1,5.1
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2016","2016","Renal failure","N17-N19",46,757952,6.1,5.1
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2017","2017","Other bacterial diseases","A30-A49",39,755393,5.2,4.4
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2017","2017","Renal failure","N17-N19",40,755393,5.3,4.5
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2010","2010","Other bacterial diseases","A30-A49",20,814180,2.5,1.8
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2010","2010","Renal failure","N17-N19",20,814180,2.5,1.8
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2011","2011","Other bacterial diseases","A30-A49",26,824082,3.2,2.6
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2011","2011","Renal failure","N17-N19",26,824082,3.2,2.6
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2012","2012","Other bacterial diseases","A30-A49",34,833354,4.1,3.3
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2012","2012","Renal failure","N17-N19",34,833354,4.1,3.3
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2013","2013","Other bacterial diseases","A30-A49",36,844877,4.3,3.5
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2013","2013","Renal failure","N17-N19",36,844877,4.3,3.5
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2014","2014","Other bacterial diseases","A30-A49",48,853175,5.6,4.8
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2014","2014","Renal failure","N17-N19",47,853175,5.5,4.7
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2015","2015","Other bacterial diseases","A30-A49",37,858469,4.3,3.2
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2015","2015","Renal failure","N17-N19",38,858469,4.4,3.3
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2016","2016","Other bacterial diseases","A30-A49",54,865454,6.2,5.4
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2016","2016","Renal failure","N17-N19",54,865454,6.2,5.4
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2017","2017","Other bacterial diseases","A30-A49",52,869666,6.0,5.2
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2017","2017","Renal failure","N17-N19",52,869666,6.0,5.2
+,"Census Region 3: South","CENS-R3","Delaware","10","2010","2010","Other bacterial diseases","A30-A49",53,897934,5.9,5.3
+,"Census Region 3: South","CENS-R3","Delaware","10","2010","2010","Renal failure","N17-N19",53,897934,5.9,5.3
+,"Census Region 3: South","CENS-R3","Delaware","10","2011","2011","Other bacterial diseases","A30-A49",57,907135,6.3,5.5
+,"Census Region 3: South","CENS-R3","Delaware","10","2011","2011","Renal failure","N17-N19",57,907135,6.3,5.5
+,"Census Region 3: South","CENS-R3","Delaware","10","2012","2012","Other bacterial diseases","A30-A49",58,917092,6.3,5.2
+,"Census Region 3: South","CENS-R3","Delaware","10","2012","2012","Renal failure","N17-N19",59,917092,6.4,5.3
+,"Census Region 3: South","CENS-R3","Delaware","10","2013","2013","Other bacterial diseases","A30-A49",65,925749,7.0,5.8
+,"Census Region 3: South","CENS-R3","Delaware","10","2013","2013","Renal failure","N17-N19",65,925749,7.0,5.8
+,"Census Region 3: South","CENS-R3","Delaware","10","2014","2014","Other bacterial diseases","A30-A49",55,935614,5.9,4.9
+,"Census Region 3: South","CENS-R3","Delaware","10","2014","2014","Renal failure","N17-N19",56,935614,6.0,5.0
+,"Census Region 3: South","CENS-R3","Delaware","10","2015","2015","Other bacterial diseases","A30-A49",64,945934,6.8,5.4
+,"Census Region 3: South","CENS-R3","Delaware","10","2015","2015","Renal failure","N17-N19",64,945934,6.8,5.4
+,"Census Region 3: South","CENS-R3","Delaware","10","2016","2016","Other bacterial diseases","A30-A49",76,952065,8.0,6.2
+,"Census Region 3: South","CENS-R3","Delaware","10","2016","2016","Renal failure","N17-N19",77,952065,8.1,6.3
+,"Census Region 3: South","CENS-R3","Delaware","10","2017","2017","Other bacterial diseases","A30-A49",65,961939,6.8,5.2
+,"Census Region 3: South","CENS-R3","Delaware","10","2017","2017","Renal failure","N17-N19",66,961939,6.9,5.3
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2010","2010","Other bacterial diseases","A30-A49",52,601723,8.6,9.3
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2010","2010","Renal failure","N17-N19",52,601723,8.6,9.3
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2011","2011","Other bacterial diseases","A30-A49",30,617996,4.9,5.2
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2011","2011","Renal failure","N17-N19",30,617996,4.9,5.2
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2012","2012","Other bacterial diseases","A30-A49",30,632323,4.7,4.7
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2012","2012","Renal failure","N17-N19",31,632323,4.9,4.8
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2013","2013","Other bacterial diseases","A30-A49",19,646449,Unreliable,Unreliable
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2013","2013","Renal failure","N17-N19",19,646449,Unreliable,Unreliable
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2014","2014","Other bacterial diseases","A30-A49",22,658893,3.3,3.5
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2014","2014","Renal failure","N17-N19",22,658893,3.3,3.5
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2015","2015","Other bacterial diseases","A30-A49",19,672228,Unreliable,Unreliable
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2015","2015","Renal failure","N17-N19",19,672228,Unreliable,Unreliable
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2016","2016","Other bacterial diseases","A30-A49",22,681170,3.2,3.3
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2016","2016","Renal failure","N17-N19",22,681170,3.2,3.3
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2017","2017","Other bacterial diseases","A30-A49",23,693972,3.3,3.5
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2017","2017","Renal failure","N17-N19",23,693972,3.3,3.5
+,"Census Region 3: South","CENS-R3","Florida","12","2010","2010","Other bacterial diseases","A30-A49",735,18801310,3.9,2.9
+,"Census Region 3: South","CENS-R3","Florida","12","2010","2010","Renal failure","N17-N19",739,18801310,3.9,2.9
+,"Census Region 3: South","CENS-R3","Florida","12","2011","2011","Other bacterial diseases","A30-A49",771,19057542,4.0,2.9
+,"Census Region 3: South","CENS-R3","Florida","12","2011","2011","Renal failure","N17-N19",773,19057542,4.1,3.0
+,"Census Region 3: South","CENS-R3","Florida","12","2012","2012","Other bacterial diseases","A30-A49",794,19317568,4.1,3.0
+,"Census Region 3: South","CENS-R3","Florida","12","2012","2012","Renal failure","N17-N19",795,19317568,4.1,3.0
+,"Census Region 3: South","CENS-R3","Florida","12","2013","2013","Other bacterial diseases","A30-A49",846,19552860,4.3,3.1
+,"Census Region 3: South","CENS-R3","Florida","12","2013","2013","Renal failure","N17-N19",847,19552860,4.3,3.1
+,"Census Region 3: South","CENS-R3","Florida","12","2014","2014","Other bacterial diseases","A30-A49",862,19893297,4.3,3.1
+,"Census Region 3: South","CENS-R3","Florida","12","2014","2014","Renal failure","N17-N19",868,19893297,4.4,3.1
+,"Census Region 3: South","CENS-R3","Florida","12","2015","2015","Other bacterial diseases","A30-A49",908,20271272,4.5,3.1
+,"Census Region 3: South","CENS-R3","Florida","12","2015","2015","Renal failure","N17-N19",913,20271272,4.5,3.1
+,"Census Region 3: South","CENS-R3","Florida","12","2016","2016","Other bacterial diseases","A30-A49",933,20612439,4.5,3.1
+,"Census Region 3: South","CENS-R3","Florida","12","2016","2016","Renal failure","N17-N19",940,20612439,4.6,3.1
+,"Census Region 3: South","CENS-R3","Florida","12","2017","2017","Other bacterial diseases","A30-A49",973,20984400,4.6,3.2
+,"Census Region 3: South","CENS-R3","Florida","12","2017","2017","Renal failure","N17-N19",982,20984400,4.7,3.2
+,"Census Region 3: South","CENS-R3","Georgia","13","2010","2010","Other bacterial diseases","A30-A49",439,9687653,4.5,5.3
+,"Census Region 3: South","CENS-R3","Georgia","13","2010","2010","Renal failure","N17-N19",440,9687653,4.5,5.3
+,"Census Region 3: South","CENS-R3","Georgia","13","2011","2011","Other bacterial diseases","A30-A49",451,9815210,4.6,5.2
+,"Census Region 3: South","CENS-R3","Georgia","13","2011","2011","Renal failure","N17-N19",452,9815210,4.6,5.2
+,"Census Region 3: South","CENS-R3","Georgia","13","2012","2012","Other bacterial diseases","A30-A49",411,9919945,4.1,4.5
+,"Census Region 3: South","CENS-R3","Georgia","13","2012","2012","Renal failure","N17-N19",412,9919945,4.2,4.5
+,"Census Region 3: South","CENS-R3","Georgia","13","2013","2013","Other bacterial diseases","A30-A49",415,9992167,4.2,4.3
+,"Census Region 3: South","CENS-R3","Georgia","13","2013","2013","Renal failure","N17-N19",415,9992167,4.2,4.3
+,"Census Region 3: South","CENS-R3","Georgia","13","2014","2014","Other bacterial diseases","A30-A49",397,10097343,3.9,4.0
+,"Census Region 3: South","CENS-R3","Georgia","13","2014","2014","Renal failure","N17-N19",397,10097343,3.9,4.0
+,"Census Region 3: South","CENS-R3","Georgia","13","2015","2015","Other bacterial diseases","A30-A49",372,10214860,3.6,3.7
+,"Census Region 3: South","CENS-R3","Georgia","13","2015","2015","Renal failure","N17-N19",372,10214860,3.6,3.7
+,"Census Region 3: South","CENS-R3","Georgia","13","2016","2016","Other bacterial diseases","A30-A49",381,10310371,3.7,3.6
+,"Census Region 3: South","CENS-R3","Georgia","13","2016","2016","Renal failure","N17-N19",381,10310371,3.7,3.6
+,"Census Region 3: South","CENS-R3","Georgia","13","2017","2017","Other bacterial diseases","A30-A49",417,10429379,4.0,3.9
+,"Census Region 3: South","CENS-R3","Georgia","13","2017","2017","Renal failure","N17-N19",419,10429379,4.0,3.9
+,"Census Region 3: South","CENS-R3","Maryland","24","2010","2010","Other bacterial diseases","A30-A49",336,5773552,5.8,5.6
+,"Census Region 3: South","CENS-R3","Maryland","24","2010","2010","Renal failure","N17-N19",336,5773552,5.8,5.6
+,"Census Region 3: South","CENS-R3","Maryland","24","2011","2011","Other bacterial diseases","A30-A49",290,5828289,5.0,4.8
+,"Census Region 3: South","CENS-R3","Maryland","24","2011","2011","Renal failure","N17-N19",290,5828289,5.0,4.8
+,"Census Region 3: South","CENS-R3","Maryland","24","2012","2012","Other bacterial diseases","A30-A49",261,5884563,4.4,4.2
+,"Census Region 3: South","CENS-R3","Maryland","24","2012","2012","Renal failure","N17-N19",261,5884563,4.4,4.2
+,"Census Region 3: South","CENS-R3","Maryland","24","2013","2013","Other bacterial diseases","A30-A49",303,5928814,5.1,4.7
+,"Census Region 3: South","CENS-R3","Maryland","24","2013","2013","Renal failure","N17-N19",301,5928814,5.1,4.7
+,"Census Region 3: South","CENS-R3","Maryland","24","2014","2014","Other bacterial diseases","A30-A49",240,5976407,4.0,3.7
+,"Census Region 3: South","CENS-R3","Maryland","24","2014","2014","Renal failure","N17-N19",241,5976407,4.0,3.7
+,"Census Region 3: South","CENS-R3","Maryland","24","2015","2015","Other bacterial diseases","A30-A49",265,6006401,4.4,3.9
+,"Census Region 3: South","CENS-R3","Maryland","24","2015","2015","Renal failure","N17-N19",266,6006401,4.4,3.9
+,"Census Region 3: South","CENS-R3","Maryland","24","2016","2016","Other bacterial diseases","A30-A49",240,6016447,4.0,3.5
+,"Census Region 3: South","CENS-R3","Maryland","24","2016","2016","Renal failure","N17-N19",241,6016447,4.0,3.6
+,"Census Region 3: South","CENS-R3","Maryland","24","2017","2017","Other bacterial diseases","A30-A49",236,6052177,3.9,3.3
+,"Census Region 3: South","CENS-R3","Maryland","24","2017","2017","Renal failure","N17-N19",236,6052177,3.9,3.3
+,"Census Region 3: South","CENS-R3","North Carolina","37","2010","2010","Other bacterial diseases","A30-A49",598,9535483,6.3,6.1
+,"Census Region 3: South","CENS-R3","North Carolina","37","2010","2010","Renal failure","N17-N19",600,9535483,6.3,6.2
+,"Census Region 3: South","CENS-R3","North Carolina","37","2011","2011","Other bacterial diseases","A30-A49",639,9656401,6.6,6.3
+,"Census Region 3: South","CENS-R3","North Carolina","37","2011","2011","Renal failure","N17-N19",638,9656401,6.6,6.3
+,"Census Region 3: South","CENS-R3","North Carolina","37","2012","2012","Other bacterial diseases","A30-A49",686,9752073,7.0,6.5
+,"Census Region 3: South","CENS-R3","North Carolina","37","2012","2012","Renal failure","N17-N19",687,9752073,7.0,6.5
+,"Census Region 3: South","CENS-R3","North Carolina","37","2013","2013","Other bacterial diseases","A30-A49",646,9848060,6.6,5.9
+,"Census Region 3: South","CENS-R3","North Carolina","37","2013","2013","Renal failure","N17-N19",653,9848060,6.6,6.0
+,"Census Region 3: South","CENS-R3","North Carolina","37","2014","2014","Other bacterial diseases","A30-A49",719,9943964,7.2,6.5
+,"Census Region 3: South","CENS-R3","North Carolina","37","2014","2014","Renal failure","N17-N19",723,9943964,7.3,6.5
+,"Census Region 3: South","CENS-R3","North Carolina","37","2015","2015","Other bacterial diseases","A30-A49",673,10042802,6.7,6.0
+,"Census Region 3: South","CENS-R3","North Carolina","37","2015","2015","Renal failure","N17-N19",675,10042802,6.7,6.0
+,"Census Region 3: South","CENS-R3","North Carolina","37","2016","2016","Other bacterial diseases","A30-A49",660,10146788,6.5,5.6
+,"Census Region 3: South","CENS-R3","North Carolina","37","2016","2016","Renal failure","N17-N19",665,10146788,6.6,5.7
+,"Census Region 3: South","CENS-R3","North Carolina","37","2017","2017","Other bacterial diseases","A30-A49",639,10273419,6.2,5.3
+,"Census Region 3: South","CENS-R3","North Carolina","37","2017","2017","Renal failure","N17-N19",640,10273419,6.2,5.3
+,"Census Region 3: South","CENS-R3","South Carolina","45","2010","2010","Other bacterial diseases","A30-A49",327,4625364,7.1,6.7
+,"Census Region 3: South","CENS-R3","South Carolina","45","2010","2010","Renal failure","N17-N19",329,4625364,7.1,6.7
+,"Census Region 3: South","CENS-R3","South Carolina","45","2011","2011","Other bacterial diseases","A30-A49",302,4679230,6.5,6.0
+,"Census Region 3: South","CENS-R3","South Carolina","45","2011","2011","Renal failure","N17-N19",303,4679230,6.5,6.0
+,"Census Region 3: South","CENS-R3","South Carolina","45","2012","2012","Other bacterial diseases","A30-A49",342,4723723,7.2,6.5
+,"Census Region 3: South","CENS-R3","South Carolina","45","2012","2012","Renal failure","N17-N19",346,4723723,7.3,6.6
+,"Census Region 3: South","CENS-R3","South Carolina","45","2013","2013","Other bacterial diseases","A30-A49",387,4774839,8.1,7.2
+,"Census Region 3: South","CENS-R3","South Carolina","45","2013","2013","Renal failure","N17-N19",396,4774839,8.3,7.4
+,"Census Region 3: South","CENS-R3","South Carolina","45","2014","2014","Other bacterial diseases","A30-A49",409,4832482,8.5,7.3
+,"Census Region 3: South","CENS-R3","South Carolina","45","2014","2014","Renal failure","N17-N19",416,4832482,8.6,7.5
+,"Census Region 3: South","CENS-R3","South Carolina","45","2015","2015","Other bacterial diseases","A30-A49",472,4896146,9.6,8.2
+,"Census Region 3: South","CENS-R3","South Carolina","45","2015","2015","Renal failure","N17-N19",482,4896146,9.8,8.4
+,"Census Region 3: South","CENS-R3","South Carolina","45","2016","2016","Other bacterial diseases","A30-A49",474,4961119,9.6,7.9
+,"Census Region 3: South","CENS-R3","South Carolina","45","2016","2016","Renal failure","N17-N19",501,4961119,10.1,8.4
+,"Census Region 3: South","CENS-R3","South Carolina","45","2017","2017","Other bacterial diseases","A30-A49",481,5024369,9.6,7.8
+,"Census Region 3: South","CENS-R3","South Carolina","45","2017","2017","Renal failure","N17-N19",510,5024369,10.2,8.3
+,"Census Region 3: South","CENS-R3","Virginia","51","2010","2010","Other bacterial diseases","A30-A49",417,8001024,5.2,5.3
+,"Census Region 3: South","CENS-R3","Virginia","51","2010","2010","Renal failure","N17-N19",415,8001024,5.2,5.2
+,"Census Region 3: South","CENS-R3","Virginia","51","2011","2011","Other bacterial diseases","A30-A49",378,8096604,4.7,4.7
+,"Census Region 3: South","CENS-R3","Virginia","51","2011","2011","Renal failure","N17-N19",379,8096604,4.7,4.7
+,"Census Region 3: South","CENS-R3","Virginia","51","2012","2012","Other bacterial diseases","A30-A49",368,8185867,4.5,4.4
+,"Census Region 3: South","CENS-R3","Virginia","51","2012","2012","Renal failure","N17-N19",369,8185867,4.5,4.4
+,"Census Region 3: South","CENS-R3","Virginia","51","2013","2013","Other bacterial diseases","A30-A49",425,8260405,5.1,4.9
+,"Census Region 3: South","CENS-R3","Virginia","51","2013","2013","Renal failure","N17-N19",424,8260405,5.1,4.9
+,"Census Region 3: South","CENS-R3","Virginia","51","2014","2014","Other bacterial diseases","A30-A49",377,8326289,4.5,4.3
+,"Census Region 3: South","CENS-R3","Virginia","51","2014","2014","Renal failure","N17-N19",377,8326289,4.5,4.3
+,"Census Region 3: South","CENS-R3","Virginia","51","2015","2015","Other bacterial diseases","A30-A49",477,8382993,5.7,5.2
+,"Census Region 3: South","CENS-R3","Virginia","51","2015","2015","Renal failure","N17-N19",480,8382993,5.7,5.3
+,"Census Region 3: South","CENS-R3","Virginia","51","2016","2016","Other bacterial diseases","A30-A49",402,8411808,4.8,4.3
+,"Census Region 3: South","CENS-R3","Virginia","51","2016","2016","Renal failure","N17-N19",403,8411808,4.8,4.3
+,"Census Region 3: South","CENS-R3","Virginia","51","2017","2017","Other bacterial diseases","A30-A49",409,8470020,4.8,4.2
+,"Census Region 3: South","CENS-R3","Virginia","51","2017","2017","Renal failure","N17-N19",410,8470020,4.8,4.2
+,"Census Region 3: South","CENS-R3","West Virginia","54","2010","2010","Other bacterial diseases","A30-A49",105,1852994,5.7,4.4
+,"Census Region 3: South","CENS-R3","West Virginia","54","2010","2010","Renal failure","N17-N19",105,1852994,5.7,4.4
+,"Census Region 3: South","CENS-R3","West Virginia","54","2011","2011","Other bacterial diseases","A30-A49",129,1855364,7.0,5.6
+,"Census Region 3: South","CENS-R3","West Virginia","54","2011","2011","Renal failure","N17-N19",129,1855364,7.0,5.6
+,"Census Region 3: South","CENS-R3","West Virginia","54","2012","2012","Other bacterial diseases","A30-A49",139,1855413,7.5,5.8
+,"Census Region 3: South","CENS-R3","West Virginia","54","2012","2012","Renal failure","N17-N19",139,1855413,7.5,5.8
+,"Census Region 3: South","CENS-R3","West Virginia","54","2013","2013","Other bacterial diseases","A30-A49",115,1854304,6.2,4.8
+,"Census Region 3: South","CENS-R3","West Virginia","54","2013","2013","Renal failure","N17-N19",115,1854304,6.2,4.8
+,"Census Region 3: South","CENS-R3","West Virginia","54","2014","2014","Other bacterial diseases","A30-A49",165,1850326,8.9,6.6
+,"Census Region 3: South","CENS-R3","West Virginia","54","2014","2014","Renal failure","N17-N19",166,1850326,9.0,6.7
+,"Census Region 3: South","CENS-R3","West Virginia","54","2015","2015","Other bacterial diseases","A30-A49",168,1844128,9.1,6.7
+,"Census Region 3: South","CENS-R3","West Virginia","54","2015","2015","Renal failure","N17-N19",168,1844128,9.1,6.7
+,"Census Region 3: South","CENS-R3","West Virginia","54","2016","2016","Other bacterial diseases","A30-A49",158,1831102,8.6,6.5
+,"Census Region 3: South","CENS-R3","West Virginia","54","2016","2016","Renal failure","N17-N19",159,1831102,8.7,6.5
+,"Census Region 3: South","CENS-R3","West Virginia","54","2017","2017","Other bacterial diseases","A30-A49",127,1815857,7.0,5.0
+,"Census Region 3: South","CENS-R3","West Virginia","54","2017","2017","Renal failure","N17-N19",128,1815857,7.0,5.0
+,"Census Region 3: South","CENS-R3","Alabama","01","2010","2010","Other bacterial diseases","A30-A49",320,4779736,6.7,6.2
+,"Census Region 3: South","CENS-R3","Alabama","01","2010","2010","Renal failure","N17-N19",319,4779736,6.7,6.2
+,"Census Region 3: South","CENS-R3","Alabama","01","2011","2011","Other bacterial diseases","A30-A49",335,4802740,7.0,6.3
+,"Census Region 3: South","CENS-R3","Alabama","01","2011","2011","Renal failure","N17-N19",336,4802740,7.0,6.4
+,"Census Region 3: South","CENS-R3","Alabama","01","2012","2012","Other bacterial diseases","A30-A49",324,4822023,6.7,6.1
+,"Census Region 3: South","CENS-R3","Alabama","01","2012","2012","Renal failure","N17-N19",327,4822023,6.8,6.1
+,"Census Region 3: South","CENS-R3","Alabama","01","2013","2013","Other bacterial diseases","A30-A49",301,4833722,6.2,5.5
+,"Census Region 3: South","CENS-R3","Alabama","01","2013","2013","Renal failure","N17-N19",302,4833722,6.2,5.5
+,"Census Region 3: South","CENS-R3","Alabama","01","2014","2014","Other bacterial diseases","A30-A49",288,4849377,5.9,5.0
+,"Census Region 3: South","CENS-R3","Alabama","01","2014","2014","Renal failure","N17-N19",291,4849377,6.0,5.1
+,"Census Region 3: South","CENS-R3","Alabama","01","2015","2015","Other bacterial diseases","A30-A49",302,4858979,6.2,5.2
+,"Census Region 3: South","CENS-R3","Alabama","01","2015","2015","Renal failure","N17-N19",303,4858979,6.2,5.2
+,"Census Region 3: South","CENS-R3","Alabama","01","2016","2016","Other bacterial diseases","A30-A49",281,4863300,5.8,4.8
+,"Census Region 3: South","CENS-R3","Alabama","01","2016","2016","Renal failure","N17-N19",281,4863300,5.8,4.8
+,"Census Region 3: South","CENS-R3","Alabama","01","2017","2017","Other bacterial diseases","A30-A49",285,4874747,5.8,4.8
+,"Census Region 3: South","CENS-R3","Alabama","01","2017","2017","Renal failure","N17-N19",289,4874747,5.9,4.8
+,"Census Region 3: South","CENS-R3","Kentucky","21","2010","2010","Other bacterial diseases","A30-A49",356,4339367,8.2,7.8
+,"Census Region 3: South","CENS-R3","Kentucky","21","2010","2010","Renal failure","N17-N19",356,4339367,8.2,7.8
+,"Census Region 3: South","CENS-R3","Kentucky","21","2011","2011","Other bacterial diseases","A30-A49",364,4369356,8.3,7.7
+,"Census Region 3: South","CENS-R3","Kentucky","21","2011","2011","Renal failure","N17-N19",367,4369356,8.4,7.8
+,"Census Region 3: South","CENS-R3","Kentucky","21","2012","2012","Other bacterial diseases","A30-A49",357,4380415,8.1,7.4
+,"Census Region 3: South","CENS-R3","Kentucky","21","2012","2012","Renal failure","N17-N19",358,4380415,8.2,7.4
+,"Census Region 3: South","CENS-R3","Kentucky","21","2013","2013","Other bacterial diseases","A30-A49",295,4395295,6.7,5.9
+,"Census Region 3: South","CENS-R3","Kentucky","21","2013","2013","Renal failure","N17-N19",296,4395295,6.7,6.0
+,"Census Region 3: South","CENS-R3","Kentucky","21","2014","2014","Other bacterial diseases","A30-A49",358,4413457,8.1,7.1
+,"Census Region 3: South","CENS-R3","Kentucky","21","2014","2014","Renal failure","N17-N19",359,4413457,8.1,7.1
+,"Census Region 3: South","CENS-R3","Kentucky","21","2015","2015","Other bacterial diseases","A30-A49",482,4425092,10.9,9.5
+,"Census Region 3: South","CENS-R3","Kentucky","21","2015","2015","Renal failure","N17-N19",487,4425092,11.0,9.6
+,"Census Region 3: South","CENS-R3","Kentucky","21","2016","2016","Other bacterial diseases","A30-A49",450,4436974,10.1,8.7
+,"Census Region 3: South","CENS-R3","Kentucky","21","2016","2016","Renal failure","N17-N19",457,4436974,10.3,8.8
+,"Census Region 3: South","CENS-R3","Kentucky","21","2017","2017","Other bacterial diseases","A30-A49",452,4454189,10.1,8.4
+,"Census Region 3: South","CENS-R3","Kentucky","21","2017","2017","Renal failure","N17-N19",463,4454189,10.4,8.6
+,"Census Region 3: South","CENS-R3","Mississippi","28","2010","2010","Other bacterial diseases","A30-A49",153,2967297,5.2,5.1
+,"Census Region 3: South","CENS-R3","Mississippi","28","2010","2010","Renal failure","N17-N19",154,2967297,5.2,5.2
+,"Census Region 3: South","CENS-R3","Mississippi","28","2011","2011","Other bacterial diseases","A30-A49",193,2978512,6.5,6.2
+,"Census Region 3: South","CENS-R3","Mississippi","28","2011","2011","Renal failure","N17-N19",196,2978512,6.6,6.3
+,"Census Region 3: South","CENS-R3","Mississippi","28","2012","2012","Other bacterial diseases","A30-A49",143,2984926,4.8,4.4
+,"Census Region 3: South","CENS-R3","Mississippi","28","2012","2012","Renal failure","N17-N19",143,2984926,4.8,4.4
+,"Census Region 3: South","CENS-R3","Mississippi","28","2013","2013","Other bacterial diseases","A30-A49",195,2991207,6.5,6.1
+,"Census Region 3: South","CENS-R3","Mississippi","28","2013","2013","Renal failure","N17-N19",196,2991207,6.6,6.1
+,"Census Region 3: South","CENS-R3","Mississippi","28","2014","2014","Other bacterial diseases","A30-A49",211,2994079,7.0,6.5
+,"Census Region 3: South","CENS-R3","Mississippi","28","2014","2014","Renal failure","N17-N19",213,2994079,7.1,6.6
+,"Census Region 3: South","CENS-R3","Mississippi","28","2015","2015","Other bacterial diseases","A30-A49",227,2992333,7.6,6.7
+,"Census Region 3: South","CENS-R3","Mississippi","28","2015","2015","Renal failure","N17-N19",228,2992333,7.6,6.7
+,"Census Region 3: South","CENS-R3","Mississippi","28","2016","2016","Other bacterial diseases","A30-A49",177,2988726,5.9,5.2
+,"Census Region 3: South","CENS-R3","Mississippi","28","2016","2016","Renal failure","N17-N19",178,2988726,6.0,5.2
+,"Census Region 3: South","CENS-R3","Mississippi","28","2017","2017","Other bacterial diseases","A30-A49",202,2984100,6.8,5.9
+,"Census Region 3: South","CENS-R3","Mississippi","28","2017","2017","Renal failure","N17-N19",202,2984100,6.8,5.9
+,"Census Region 3: South","CENS-R3","Tennessee","47","2010","2010","Other bacterial diseases","A30-A49",455,6346105,7.2,6.7
+,"Census Region 3: South","CENS-R3","Tennessee","47","2010","2010","Renal failure","N17-N19",458,6346105,7.2,6.8
+,"Census Region 3: South","CENS-R3","Tennessee","47","2011","2011","Other bacterial diseases","A30-A49",450,6403353,7.0,6.5
+,"Census Region 3: South","CENS-R3","Tennessee","47","2011","2011","Renal failure","N17-N19",453,6403353,7.1,6.6
+,"Census Region 3: South","CENS-R3","Tennessee","47","2012","2012","Other bacterial diseases","A30-A49",439,6456243,6.8,6.2
+,"Census Region 3: South","CENS-R3","Tennessee","47","2012","2012","Renal failure","N17-N19",437,6456243,6.8,6.2
+,"Census Region 3: South","CENS-R3","Tennessee","47","2013","2013","Other bacterial diseases","A30-A49",407,6495978,6.3,5.7
+,"Census Region 3: South","CENS-R3","Tennessee","47","2013","2013","Renal failure","N17-N19",409,6495978,6.3,5.7
+,"Census Region 3: South","CENS-R3","Tennessee","47","2014","2014","Other bacterial diseases","A30-A49",405,6549352,6.2,5.5
+,"Census Region 3: South","CENS-R3","Tennessee","47","2014","2014","Renal failure","N17-N19",405,6549352,6.2,5.5
+,"Census Region 3: South","CENS-R3","Tennessee","47","2015","2015","Other bacterial diseases","A30-A49",402,6600299,6.1,5.4
+,"Census Region 3: South","CENS-R3","Tennessee","47","2015","2015","Renal failure","N17-N19",408,6600299,6.2,5.4
+,"Census Region 3: South","CENS-R3","Tennessee","47","2016","2016","Other bacterial diseases","A30-A49",421,6651194,6.3,5.4
+,"Census Region 3: South","CENS-R3","Tennessee","47","2016","2016","Renal failure","N17-N19",423,6651194,6.4,5.4
+,"Census Region 3: South","CENS-R3","Tennessee","47","2017","2017","Other bacterial diseases","A30-A49",409,6715984,6.1,5.1
+,"Census Region 3: South","CENS-R3","Tennessee","47","2017","2017","Renal failure","N17-N19",410,6715984,6.1,5.1
+,"Census Region 3: South","CENS-R3","Arkansas","05","2010","2010","Other bacterial diseases","A30-A49",151,2915918,5.2,4.6
+,"Census Region 3: South","CENS-R3","Arkansas","05","2010","2010","Renal failure","N17-N19",151,2915918,5.2,4.6
+,"Census Region 3: South","CENS-R3","Arkansas","05","2011","2011","Other bacterial diseases","A30-A49",169,2937979,5.8,5.0
+,"Census Region 3: South","CENS-R3","Arkansas","05","2011","2011","Renal failure","N17-N19",169,2937979,5.8,5.0
+,"Census Region 3: South","CENS-R3","Arkansas","05","2012","2012","Other bacterial diseases","A30-A49",196,2949131,6.6,5.8
+,"Census Region 3: South","CENS-R3","Arkansas","05","2012","2012","Renal failure","N17-N19",197,2949131,6.7,5.8
+,"Census Region 3: South","CENS-R3","Arkansas","05","2013","2013","Other bacterial diseases","A30-A49",241,2959373,8.1,7.0
+,"Census Region 3: South","CENS-R3","Arkansas","05","2013","2013","Renal failure","N17-N19",243,2959373,8.2,7.0
+,"Census Region 3: South","CENS-R3","Arkansas","05","2014","2014","Other bacterial diseases","A30-A49",227,2966369,7.7,6.5
+,"Census Region 3: South","CENS-R3","Arkansas","05","2014","2014","Renal failure","N17-N19",228,2966369,7.7,6.5
+,"Census Region 3: South","CENS-R3","Arkansas","05","2015","2015","Other bacterial diseases","A30-A49",258,2978204,8.7,7.3
+,"Census Region 3: South","CENS-R3","Arkansas","05","2015","2015","Renal failure","N17-N19",259,2978204,8.7,7.3
+,"Census Region 3: South","CENS-R3","Arkansas","05","2016","2016","Other bacterial diseases","A30-A49",265,2988248,8.9,7.4
+,"Census Region 3: South","CENS-R3","Arkansas","05","2016","2016","Renal failure","N17-N19",265,2988248,8.9,7.4
+,"Census Region 3: South","CENS-R3","Arkansas","05","2017","2017","Other bacterial diseases","A30-A49",251,3004279,8.4,6.8
+,"Census Region 3: South","CENS-R3","Arkansas","05","2017","2017","Renal failure","N17-N19",259,3004279,8.6,7.0
+,"Census Region 3: South","CENS-R3","Louisiana","22","2010","2010","Other bacterial diseases","A30-A49",226,4533372,5.0,5.1
+,"Census Region 3: South","CENS-R3","Louisiana","22","2010","2010","Renal failure","N17-N19",228,4533372,5.0,5.1
+,"Census Region 3: South","CENS-R3","Louisiana","22","2011","2011","Other bacterial diseases","A30-A49",223,4574836,4.9,4.8
+,"Census Region 3: South","CENS-R3","Louisiana","22","2011","2011","Renal failure","N17-N19",223,4574836,4.9,4.8
+,"Census Region 3: South","CENS-R3","Louisiana","22","2012","2012","Other bacterial diseases","A30-A49",186,4601893,4.0,3.9
+,"Census Region 3: South","CENS-R3","Louisiana","22","2012","2012","Renal failure","N17-N19",186,4601893,4.0,3.9
+,"Census Region 3: South","CENS-R3","Louisiana","22","2013","2013","Other bacterial diseases","A30-A49",220,4625470,4.8,4.6
+,"Census Region 3: South","CENS-R3","Louisiana","22","2013","2013","Renal failure","N17-N19",220,4625470,4.8,4.6
+,"Census Region 3: South","CENS-R3","Louisiana","22","2014","2014","Other bacterial diseases","A30-A49",213,4649676,4.6,4.4
+,"Census Region 3: South","CENS-R3","Louisiana","22","2014","2014","Renal failure","N17-N19",213,4649676,4.6,4.4
+,"Census Region 3: South","CENS-R3","Louisiana","22","2015","2015","Other bacterial diseases","A30-A49",205,4670724,4.4,4.1
+,"Census Region 3: South","CENS-R3","Louisiana","22","2015","2015","Renal failure","N17-N19",205,4670724,4.4,4.1
+,"Census Region 3: South","CENS-R3","Louisiana","22","2016","2016","Other bacterial diseases","A30-A49",202,4681666,4.3,3.9
+,"Census Region 3: South","CENS-R3","Louisiana","22","2016","2016","Renal failure","N17-N19",204,4681666,4.4,3.9
+,"Census Region 3: South","CENS-R3","Louisiana","22","2017","2017","Other bacterial diseases","A30-A49",233,4684333,5.0,4.5
+,"Census Region 3: South","CENS-R3","Louisiana","22","2017","2017","Renal failure","N17-N19",234,4684333,5.0,4.5
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2010","2010","Other bacterial diseases","A30-A49",261,3751351,7.0,6.5
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2010","2010","Renal failure","N17-N19",262,3751351,7.0,6.5
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2011","2011","Other bacterial diseases","A30-A49",236,3791508,6.2,5.6
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2011","2011","Renal failure","N17-N19",236,3791508,6.2,5.6
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2012","2012","Other bacterial diseases","A30-A49",275,3814820,7.2,6.7
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2012","2012","Renal failure","N17-N19",277,3814820,7.3,6.7
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2013","2013","Other bacterial diseases","A30-A49",298,3850568,7.7,6.9
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2013","2013","Renal failure","N17-N19",299,3850568,7.8,6.9
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2014","2014","Other bacterial diseases","A30-A49",255,3878051,6.6,5.8
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2014","2014","Renal failure","N17-N19",259,3878051,6.7,5.9
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2015","2015","Other bacterial diseases","A30-A49",225,3911338,5.8,5.1
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2015","2015","Renal failure","N17-N19",226,3911338,5.8,5.2
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2016","2016","Other bacterial diseases","A30-A49",261,3923561,6.7,5.9
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2016","2016","Renal failure","N17-N19",263,3923561,6.7,5.9
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2017","2017","Other bacterial diseases","A30-A49",242,3930864,6.2,5.4
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2017","2017","Renal failure","N17-N19",247,3930864,6.3,5.5
+,"Census Region 3: South","CENS-R3","Texas","48","2010","2010","Other bacterial diseases","A30-A49",1527,25145561,6.1,7.1
+,"Census Region 3: South","CENS-R3","Texas","48","2010","2010","Renal failure","N17-N19",1540,25145561,6.1,7.2
+,"Census Region 3: South","CENS-R3","Texas","48","2011","2011","Other bacterial diseases","A30-A49",1453,25674681,5.7,6.6
+,"Census Region 3: South","CENS-R3","Texas","48","2011","2011","Renal failure","N17-N19",1468,25674681,5.7,6.7
+,"Census Region 3: South","CENS-R3","Texas","48","2012","2012","Other bacterial diseases","A30-A49",1500,26059203,5.8,6.5
+,"Census Region 3: South","CENS-R3","Texas","48","2012","2012","Renal failure","N17-N19",1519,26059203,5.8,6.6
+,"Census Region 3: South","CENS-R3","Texas","48","2013","2013","Other bacterial diseases","A30-A49",1836,26448193,6.9,7.7
+,"Census Region 3: South","CENS-R3","Texas","48","2013","2013","Renal failure","N17-N19",1851,26448193,7.0,7.8
+,"Census Region 3: South","CENS-R3","Texas","48","2014","2014","Other bacterial diseases","A30-A49",2155,26956958,8.0,8.7
+,"Census Region 3: South","CENS-R3","Texas","48","2014","2014","Renal failure","N17-N19",2191,26956958,8.1,8.9
+,"Census Region 3: South","CENS-R3","Texas","48","2015","2015","Other bacterial diseases","A30-A49",2438,27469114,8.9,9.6
+,"Census Region 3: South","CENS-R3","Texas","48","2015","2015","Renal failure","N17-N19",2489,27469114,9.1,9.7
+,"Census Region 3: South","CENS-R3","Texas","48","2016","2016","Other bacterial diseases","A30-A49",2380,27862596,8.5,8.9
+,"Census Region 3: South","CENS-R3","Texas","48","2016","2016","Renal failure","N17-N19",2452,27862596,8.8,9.2
+,"Census Region 3: South","CENS-R3","Texas","48","2017","2017","Other bacterial diseases","A30-A49",2552,28304596,9.0,9.5
+,"Census Region 3: South","CENS-R3","Texas","48","2017","2017","Renal failure","N17-N19",2636,28304596,9.3,9.7
+,"Census Region 4: West","CENS-R4","Arizona","04","2010","2010","Other bacterial diseases","A30-A49",273,6392017,4.3,4.0
+,"Census Region 4: West","CENS-R4","Arizona","04","2010","2010","Renal failure","N17-N19",277,6392017,4.3,4.1
+,"Census Region 4: West","CENS-R4","Arizona","04","2011","2011","Other bacterial diseases","A30-A49",270,6482505,4.2,3.8
+,"Census Region 4: West","CENS-R4","Arizona","04","2011","2011","Renal failure","N17-N19",278,6482505,4.3,3.9
+,"Census Region 4: West","CENS-R4","Arizona","04","2012","2012","Other bacterial diseases","A30-A49",247,6553255,3.8,3.4
+,"Census Region 4: West","CENS-R4","Arizona","04","2012","2012","Renal failure","N17-N19",247,6553255,3.8,3.4
+,"Census Region 4: West","CENS-R4","Arizona","04","2013","2013","Other bacterial diseases","A30-A49",317,6626624,4.8,4.3
+,"Census Region 4: West","CENS-R4","Arizona","04","2013","2013","Renal failure","N17-N19",324,6626624,4.9,4.4
+,"Census Region 4: West","CENS-R4","Arizona","04","2014","2014","Other bacterial diseases","A30-A49",345,6731484,5.1,4.4
+,"Census Region 4: West","CENS-R4","Arizona","04","2014","2014","Renal failure","N17-N19",347,6731484,5.2,4.4
+,"Census Region 4: West","CENS-R4","Arizona","04","2015","2015","Other bacterial diseases","A30-A49",409,6828065,6.0,5.0
+,"Census Region 4: West","CENS-R4","Arizona","04","2015","2015","Renal failure","N17-N19",409,6828065,6.0,5.0
+,"Census Region 4: West","CENS-R4","Arizona","04","2016","2016","Other bacterial diseases","A30-A49",403,6931071,5.8,4.7
+,"Census Region 4: West","CENS-R4","Arizona","04","2016","2016","Renal failure","N17-N19",409,6931071,5.9,4.8
+,"Census Region 4: West","CENS-R4","Arizona","04","2017","2017","Other bacterial diseases","A30-A49",335,7016270,4.8,3.9
+,"Census Region 4: West","CENS-R4","Arizona","04","2017","2017","Renal failure","N17-N19",335,7016270,4.8,3.9
+,"Census Region 4: West","CENS-R4","Colorado","08","2010","2010","Other bacterial diseases","A30-A49",95,5029196,1.9,2.1
+,"Census Region 4: West","CENS-R4","Colorado","08","2010","2010","Renal failure","N17-N19",95,5029196,1.9,2.1
+,"Census Region 4: West","CENS-R4","Colorado","08","2011","2011","Other bacterial diseases","A30-A49",97,5116796,1.9,2.0
+,"Census Region 4: West","CENS-R4","Colorado","08","2011","2011","Renal failure","N17-N19",97,5116796,1.9,2.0
+,"Census Region 4: West","CENS-R4","Colorado","08","2012","2012","Other bacterial diseases","A30-A49",87,5187582,1.7,1.7
+,"Census Region 4: West","CENS-R4","Colorado","08","2012","2012","Renal failure","N17-N19",87,5187582,1.7,1.7
+,"Census Region 4: West","CENS-R4","Colorado","08","2013","2013","Other bacterial diseases","A30-A49",115,5268367,2.2,2.3
+,"Census Region 4: West","CENS-R4","Colorado","08","2013","2013","Renal failure","N17-N19",115,5268367,2.2,2.3
+,"Census Region 4: West","CENS-R4","Colorado","08","2014","2014","Other bacterial diseases","A30-A49",142,5355866,2.7,2.6
+,"Census Region 4: West","CENS-R4","Colorado","08","2014","2014","Renal failure","N17-N19",142,5355866,2.7,2.6
+,"Census Region 4: West","CENS-R4","Colorado","08","2015","2015","Other bacterial diseases","A30-A49",135,5456574,2.5,2.5
+,"Census Region 4: West","CENS-R4","Colorado","08","2015","2015","Renal failure","N17-N19",135,5456574,2.5,2.5
+,"Census Region 4: West","CENS-R4","Colorado","08","2016","2016","Other bacterial diseases","A30-A49",171,5540545,3.1,3.0
+,"Census Region 4: West","CENS-R4","Colorado","08","2016","2016","Renal failure","N17-N19",172,5540545,3.1,3.0
+,"Census Region 4: West","CENS-R4","Colorado","08","2017","2017","Other bacterial diseases","A30-A49",233,5607154,4.2,3.9
+,"Census Region 4: West","CENS-R4","Colorado","08","2017","2017","Renal failure","N17-N19",237,5607154,4.2,4.0
+,"Census Region 4: West","CENS-R4","Idaho","16","2010","2010","Other bacterial diseases","A30-A49",44,1567582,2.8,2.8
+,"Census Region 4: West","CENS-R4","Idaho","16","2010","2010","Renal failure","N17-N19",44,1567582,2.8,2.9
+,"Census Region 4: West","CENS-R4","Idaho","16","2011","2011","Other bacterial diseases","A30-A49",59,1584985,3.7,3.6
+,"Census Region 4: West","CENS-R4","Idaho","16","2011","2011","Renal failure","N17-N19",60,1584985,3.8,3.7
+,"Census Region 4: West","CENS-R4","Idaho","16","2012","2012","Other bacterial diseases","A30-A49",60,1595728,3.8,3.6
+,"Census Region 4: West","CENS-R4","Idaho","16","2012","2012","Renal failure","N17-N19",61,1595728,3.8,3.7
+,"Census Region 4: West","CENS-R4","Idaho","16","2013","2013","Other bacterial diseases","A30-A49",60,1612136,3.7,3.4
+,"Census Region 4: West","CENS-R4","Idaho","16","2013","2013","Renal failure","N17-N19",62,1612136,3.8,3.6
+,"Census Region 4: West","CENS-R4","Idaho","16","2014","2014","Other bacterial diseases","A30-A49",61,1634464,3.7,3.5
+,"Census Region 4: West","CENS-R4","Idaho","16","2014","2014","Renal failure","N17-N19",61,1634464,3.7,3.5
+,"Census Region 4: West","CENS-R4","Idaho","16","2015","2015","Other bacterial diseases","A30-A49",60,1654930,3.6,3.4
+,"Census Region 4: West","CENS-R4","Idaho","16","2015","2015","Renal failure","N17-N19",63,1654930,3.8,3.5
+,"Census Region 4: West","CENS-R4","Idaho","16","2016","2016","Other bacterial diseases","A30-A49",52,1683140,3.1,2.7
+,"Census Region 4: West","CENS-R4","Idaho","16","2016","2016","Renal failure","N17-N19",55,1683140,3.3,2.8
+,"Census Region 4: West","CENS-R4","Idaho","16","2017","2017","Other bacterial diseases","A30-A49",72,1716943,4.2,3.7
+,"Census Region 4: West","CENS-R4","Idaho","16","2017","2017","Renal failure","N17-N19",77,1716943,4.5,4.0
+,"Census Region 4: West","CENS-R4","Montana","30","2010","2010","Other bacterial diseases","A30-A49",31,989415,3.1,2.6
+,"Census Region 4: West","CENS-R4","Montana","30","2010","2010","Renal failure","N17-N19",32,989415,3.2,2.7
+,"Census Region 4: West","CENS-R4","Montana","30","2011","2011","Other bacterial diseases","A30-A49",32,998199,3.2,2.7
+,"Census Region 4: West","CENS-R4","Montana","30","2011","2011","Renal failure","N17-N19",32,998199,3.2,2.7
+,"Census Region 4: West","CENS-R4","Montana","30","2012","2012","Other bacterial diseases","A30-A49",34,1005141,3.4,2.7
+,"Census Region 4: West","CENS-R4","Montana","30","2012","2012","Renal failure","N17-N19",34,1005141,3.4,2.7
+,"Census Region 4: West","CENS-R4","Montana","30","2013","2013","Other bacterial diseases","A30-A49",45,1015165,4.4,3.7
+,"Census Region 4: West","CENS-R4","Montana","30","2013","2013","Renal failure","N17-N19",45,1015165,4.4,3.7
+,"Census Region 4: West","CENS-R4","Montana","30","2014","2014","Other bacterial diseases","A30-A49",50,1023579,4.9,3.7
+,"Census Region 4: West","CENS-R4","Montana","30","2014","2014","Renal failure","N17-N19",50,1023579,4.9,3.7
+,"Census Region 4: West","CENS-R4","Montana","30","2015","2015","Other bacterial diseases","A30-A49",53,1032949,5.1,4.1
+,"Census Region 4: West","CENS-R4","Montana","30","2015","2015","Renal failure","N17-N19",53,1032949,5.1,4.1
+,"Census Region 4: West","CENS-R4","Montana","30","2016","2016","Other bacterial diseases","A30-A49",40,1042520,3.8,2.9
+,"Census Region 4: West","CENS-R4","Montana","30","2016","2016","Renal failure","N17-N19",40,1042520,3.8,2.9
+,"Census Region 4: West","CENS-R4","Montana","30","2017","2017","Other bacterial diseases","A30-A49",40,1050493,3.8,2.9
+,"Census Region 4: West","CENS-R4","Montana","30","2017","2017","Renal failure","N17-N19",42,1050493,4.0,3.0
+,"Census Region 4: West","CENS-R4","Nevada","32","2010","2010","Other bacterial diseases","A30-A49",121,2700551,4.5,4.9
+,"Census Region 4: West","CENS-R4","Nevada","32","2010","2010","Renal failure","N17-N19",121,2700551,4.5,4.9
+,"Census Region 4: West","CENS-R4","Nevada","32","2011","2011","Other bacterial diseases","A30-A49",143,2723322,5.3,5.3
+,"Census Region 4: West","CENS-R4","Nevada","32","2011","2011","Renal failure","N17-N19",143,2723322,5.3,5.3
+,"Census Region 4: West","CENS-R4","Nevada","32","2012","2012","Other bacterial diseases","A30-A49",112,2758931,4.1,4.2
+,"Census Region 4: West","CENS-R4","Nevada","32","2012","2012","Renal failure","N17-N19",112,2758931,4.1,4.2
+,"Census Region 4: West","CENS-R4","Nevada","32","2013","2013","Other bacterial diseases","A30-A49",105,2790136,3.8,3.7
+,"Census Region 4: West","CENS-R4","Nevada","32","2013","2013","Renal failure","N17-N19",105,2790136,3.8,3.7
+,"Census Region 4: West","CENS-R4","Nevada","32","2014","2014","Other bacterial diseases","A30-A49",109,2839099,3.8,3.7
+,"Census Region 4: West","CENS-R4","Nevada","32","2014","2014","Renal failure","N17-N19",110,2839099,3.9,3.7
+,"Census Region 4: West","CENS-R4","Nevada","32","2015","2015","Other bacterial diseases","A30-A49",127,2890845,4.4,4.1
+,"Census Region 4: West","CENS-R4","Nevada","32","2015","2015","Renal failure","N17-N19",130,2890845,4.5,4.2
+,"Census Region 4: West","CENS-R4","Nevada","32","2016","2016","Other bacterial diseases","A30-A49",165,2940058,5.6,5.1
+,"Census Region 4: West","CENS-R4","Nevada","32","2016","2016","Renal failure","N17-N19",166,2940058,5.6,5.1
+,"Census Region 4: West","CENS-R4","Nevada","32","2017","2017","Other bacterial diseases","A30-A49",175,2998039,5.8,5.2
+,"Census Region 4: West","CENS-R4","Nevada","32","2017","2017","Renal failure","N17-N19",177,2998039,5.9,5.3
+,"Census Region 4: West","CENS-R4","New Mexico","35","2010","2010","Other bacterial diseases","A30-A49",86,2059179,4.2,3.9
+,"Census Region 4: West","CENS-R4","New Mexico","35","2010","2010","Renal failure","N17-N19",87,2059179,4.2,4.0
+,"Census Region 4: West","CENS-R4","New Mexico","35","2011","2011","Other bacterial diseases","A30-A49",93,2082224,4.5,4.3
+,"Census Region 4: West","CENS-R4","New Mexico","35","2011","2011","Renal failure","N17-N19",93,2082224,4.5,4.3
+,"Census Region 4: West","CENS-R4","New Mexico","35","2012","2012","Other bacterial diseases","A30-A49",83,2085538,4.0,3.6
+,"Census Region 4: West","CENS-R4","New Mexico","35","2012","2012","Renal failure","N17-N19",84,2085538,4.0,3.7
+,"Census Region 4: West","CENS-R4","New Mexico","35","2013","2013","Other bacterial diseases","A30-A49",86,2085287,4.1,3.8
+,"Census Region 4: West","CENS-R4","New Mexico","35","2013","2013","Renal failure","N17-N19",86,2085287,4.1,3.8
+,"Census Region 4: West","CENS-R4","New Mexico","35","2014","2014","Other bacterial diseases","A30-A49",97,2085572,4.7,4.1
+,"Census Region 4: West","CENS-R4","New Mexico","35","2014","2014","Renal failure","N17-N19",98,2085572,4.7,4.2
+,"Census Region 4: West","CENS-R4","New Mexico","35","2015","2015","Other bacterial diseases","A30-A49",116,2085109,5.6,4.8
+,"Census Region 4: West","CENS-R4","New Mexico","35","2015","2015","Renal failure","N17-N19",117,2085109,5.6,4.9
+,"Census Region 4: West","CENS-R4","New Mexico","35","2016","2016","Other bacterial diseases","A30-A49",118,2081015,5.7,4.9
+,"Census Region 4: West","CENS-R4","New Mexico","35","2016","2016","Renal failure","N17-N19",122,2081015,5.9,5.1
+,"Census Region 4: West","CENS-R4","New Mexico","35","2017","2017","Other bacterial diseases","A30-A49",122,2088070,5.8,5.0
+,"Census Region 4: West","CENS-R4","New Mexico","35","2017","2017","Renal failure","N17-N19",127,2088070,6.1,5.2
+,"Census Region 4: West","CENS-R4","Utah","49","2010","2010","Other bacterial diseases","A30-A49",43,2763885,1.6,2.1
+,"Census Region 4: West","CENS-R4","Utah","49","2010","2010","Renal failure","N17-N19",44,2763885,1.6,2.1
+,"Census Region 4: West","CENS-R4","Utah","49","2011","2011","Other bacterial diseases","A30-A49",46,2817222,1.6,2.1
+,"Census Region 4: West","CENS-R4","Utah","49","2011","2011","Renal failure","N17-N19",47,2817222,1.7,2.2
+,"Census Region 4: West","CENS-R4","Utah","49","2012","2012","Other bacterial diseases","A30-A49",53,2855287,1.9,2.4
+,"Census Region 4: West","CENS-R4","Utah","49","2012","2012","Renal failure","N17-N19",53,2855287,1.9,2.4
+,"Census Region 4: West","CENS-R4","Utah","49","2013","2013","Other bacterial diseases","A30-A49",75,2900872,2.6,3.2
+,"Census Region 4: West","CENS-R4","Utah","49","2013","2013","Renal failure","N17-N19",77,2900872,2.7,3.3
+,"Census Region 4: West","CENS-R4","Utah","49","2014","2014","Other bacterial diseases","A30-A49",78,2942902,2.7,3.3
+,"Census Region 4: West","CENS-R4","Utah","49","2014","2014","Renal failure","N17-N19",79,2942902,2.7,3.4
+,"Census Region 4: West","CENS-R4","Utah","49","2015","2015","Other bacterial diseases","A30-A49",68,2995919,2.3,2.8
+,"Census Region 4: West","CENS-R4","Utah","49","2015","2015","Renal failure","N17-N19",69,2995919,2.3,2.8
+,"Census Region 4: West","CENS-R4","Utah","49","2016","2016","Other bacterial diseases","A30-A49",90,3051217,2.9,3.5
+,"Census Region 4: West","CENS-R4","Utah","49","2016","2016","Renal failure","N17-N19",90,3051217,2.9,3.5
+,"Census Region 4: West","CENS-R4","Utah","49","2017","2017","Other bacterial diseases","A30-A49",100,3101833,3.2,3.9
+,"Census Region 4: West","CENS-R4","Utah","49","2017","2017","Renal failure","N17-N19",101,3101833,3.3,3.9
+,"Census Region 4: West","CENS-R4","Wyoming","56","2010","2010","Other bacterial diseases","A30-A49",12,563626,Unreliable,Unreliable
+,"Census Region 4: West","CENS-R4","Wyoming","56","2010","2010","Renal failure","N17-N19",12,563626,Unreliable,Unreliable
+,"Census Region 4: West","CENS-R4","Wyoming","56","2011","2011","Other bacterial diseases","A30-A49",14,568158,Unreliable,Unreliable
+,"Census Region 4: West","CENS-R4","Wyoming","56","2011","2011","Renal failure","N17-N19",14,568158,Unreliable,Unreliable
+,"Census Region 4: West","CENS-R4","Wyoming","56","2012","2012","Other bacterial diseases","A30-A49",20,576412,3.5,3.3
+,"Census Region 4: West","CENS-R4","Wyoming","56","2012","2012","Renal failure","N17-N19",20,576412,3.5,3.3
+,"Census Region 4: West","CENS-R4","Wyoming","56","2013","2013","Other bacterial diseases","A30-A49",23,582658,3.9,3.3
+,"Census Region 4: West","CENS-R4","Wyoming","56","2013","2013","Renal failure","N17-N19",23,582658,3.9,3.3
+,"Census Region 4: West","CENS-R4","Wyoming","56","2014","2014","Other bacterial diseases","A30-A49",30,584153,5.1,4.7
+,"Census Region 4: West","CENS-R4","Wyoming","56","2014","2014","Renal failure","N17-N19",30,584153,5.1,4.7
+,"Census Region 4: West","CENS-R4","Wyoming","56","2015","2015","Other bacterial diseases","A30-A49",25,586107,4.3,4.0
+,"Census Region 4: West","CENS-R4","Wyoming","56","2015","2015","Renal failure","N17-N19",25,586107,4.3,4.0
+,"Census Region 4: West","CENS-R4","Wyoming","56","2016","2016","Other bacterial diseases","A30-A49",18,585501,Unreliable,Unreliable
+,"Census Region 4: West","CENS-R4","Wyoming","56","2016","2016","Renal failure","N17-N19",18,585501,Unreliable,Unreliable
+,"Census Region 4: West","CENS-R4","Wyoming","56","2017","2017","Other bacterial diseases","A30-A49",33,579315,5.7,4.8
+,"Census Region 4: West","CENS-R4","Wyoming","56","2017","2017","Renal failure","N17-N19",33,579315,5.7,4.8
+,"Census Region 4: West","CENS-R4","Alaska","02","2010","2010","Other bacterial diseases","A30-A49",19,710231,Unreliable,Unreliable
+,"Census Region 4: West","CENS-R4","Alaska","02","2010","2010","Renal failure","N17-N19",19,710231,Unreliable,Unreliable
+,"Census Region 4: West","CENS-R4","Alaska","02","2011","2011","Other bacterial diseases","A30-A49",12,722718,Unreliable,Unreliable
+,"Census Region 4: West","CENS-R4","Alaska","02","2011","2011","Renal failure","N17-N19",13,722718,Unreliable,Unreliable
+,"Census Region 4: West","CENS-R4","Alaska","02","2012","2012","Other bacterial diseases","A30-A49",23,731449,3.1,4.5
+,"Census Region 4: West","CENS-R4","Alaska","02","2012","2012","Renal failure","N17-N19",23,731449,3.1,4.5
+,"Census Region 4: West","CENS-R4","Alaska","02","2013","2013","Other bacterial diseases","A30-A49",14,735132,Unreliable,Unreliable
+,"Census Region 4: West","CENS-R4","Alaska","02","2013","2013","Renal failure","N17-N19",14,735132,Unreliable,Unreliable
+,"Census Region 4: West","CENS-R4","Alaska","02","2014","2014","Other bacterial diseases","A30-A49",13,736732,Unreliable,Unreliable
+,"Census Region 4: West","CENS-R4","Alaska","02","2014","2014","Renal failure","N17-N19",13,736732,Unreliable,Unreliable
+,"Census Region 4: West","CENS-R4","Alaska","02","2015","2015","Other bacterial diseases","A30-A49",14,738432,Unreliable,Unreliable
+,"Census Region 4: West","CENS-R4","Alaska","02","2015","2015","Renal failure","N17-N19",14,738432,Unreliable,Unreliable
+,"Census Region 4: West","CENS-R4","Alaska","02","2016","2016","Other bacterial diseases","A30-A49",20,741894,2.7,3.0
+,"Census Region 4: West","CENS-R4","Alaska","02","2016","2016","Renal failure","N17-N19",20,741894,2.7,3.0
+,"Census Region 4: West","CENS-R4","Alaska","02","2017","2017","Other bacterial diseases","A30-A49",15,739795,Unreliable,Unreliable
+,"Census Region 4: West","CENS-R4","Alaska","02","2017","2017","Renal failure","N17-N19",16,739795,Unreliable,Unreliable
+,"Census Region 4: West","CENS-R4","California","06","2010","2010","Other bacterial diseases","A30-A49",2014,37253956,5.4,5.6
+,"Census Region 4: West","CENS-R4","California","06","2010","2010","Renal failure","N17-N19",2022,37253956,5.4,5.6
+,"Census Region 4: West","CENS-R4","California","06","2011","2011","Other bacterial diseases","A30-A49",2210,37691912,5.9,6.0
+,"Census Region 4: West","CENS-R4","California","06","2011","2011","Renal failure","N17-N19",2217,37691912,5.9,6.0
+,"Census Region 4: West","CENS-R4","California","06","2012","2012","Other bacterial diseases","A30-A49",2119,38041430,5.6,5.5
+,"Census Region 4: West","CENS-R4","California","06","2012","2012","Renal failure","N17-N19",2126,38041430,5.6,5.5
+,"Census Region 4: West","CENS-R4","California","06","2013","2013","Other bacterial diseases","A30-A49",2073,38332521,5.4,5.3
+,"Census Region 4: West","CENS-R4","California","06","2013","2013","Renal failure","N17-N19",2083,38332521,5.4,5.3
+,"Census Region 4: West","CENS-R4","California","06","2014","2014","Other bacterial diseases","A30-A49",2215,38802500,5.7,5.4
+,"Census Region 4: West","CENS-R4","California","06","2014","2014","Renal failure","N17-N19",2227,38802500,5.7,5.5
+,"Census Region 4: West","CENS-R4","California","06","2015","2015","Other bacterial diseases","A30-A49",2418,39144818,6.2,5.8
+,"Census Region 4: West","CENS-R4","California","06","2015","2015","Renal failure","N17-N19",2443,39144818,6.2,5.9
+,"Census Region 4: West","CENS-R4","California","06","2016","2016","Other bacterial diseases","A30-A49",2410,39250017,6.1,5.7
+,"Census Region 4: West","CENS-R4","California","06","2016","2016","Renal failure","N17-N19",2432,39250017,6.2,5.7
+,"Census Region 4: West","CENS-R4","California","06","2017","2017","Other bacterial diseases","A30-A49",2577,39536653,6.5,6.0
+,"Census Region 4: West","CENS-R4","California","06","2017","2017","Renal failure","N17-N19",2615,39536653,6.6,6.0
+,"Census Region 4: West","CENS-R4","Hawaii","15","2010","2010","Other bacterial diseases","A30-A49",73,1360301,5.4,4.5
+,"Census Region 4: West","CENS-R4","Hawaii","15","2010","2010","Renal failure","N17-N19",73,1360301,5.4,4.5
+,"Census Region 4: West","CENS-R4","Hawaii","15","2011","2011","Other bacterial diseases","A30-A49",60,1374810,4.4,3.5
+,"Census Region 4: West","CENS-R4","Hawaii","15","2011","2011","Renal failure","N17-N19",62,1374810,4.5,3.6
+,"Census Region 4: West","CENS-R4","Hawaii","15","2012","2012","Other bacterial diseases","A30-A49",77,1392313,5.5,4.4
+,"Census Region 4: West","CENS-R4","Hawaii","15","2012","2012","Renal failure","N17-N19",78,1392313,5.6,4.5
+,"Census Region 4: West","CENS-R4","Hawaii","15","2013","2013","Other bacterial diseases","A30-A49",79,1404054,5.6,4.5
+,"Census Region 4: West","CENS-R4","Hawaii","15","2013","2013","Renal failure","N17-N19",78,1404054,5.6,4.4
+,"Census Region 4: West","CENS-R4","Hawaii","15","2014","2014","Other bacterial diseases","A30-A49",65,1419561,4.6,3.4
+,"Census Region 4: West","CENS-R4","Hawaii","15","2014","2014","Renal failure","N17-N19",68,1419561,4.8,3.6
+,"Census Region 4: West","CENS-R4","Hawaii","15","2015","2015","Other bacterial diseases","A30-A49",52,1431603,3.6,2.8
+,"Census Region 4: West","CENS-R4","Hawaii","15","2015","2015","Renal failure","N17-N19",53,1431603,3.7,2.9
+,"Census Region 4: West","CENS-R4","Hawaii","15","2016","2016","Other bacterial diseases","A30-A49",46,1428557,3.2,2.5
+,"Census Region 4: West","CENS-R4","Hawaii","15","2016","2016","Renal failure","N17-N19",46,1428557,3.2,2.5
+,"Census Region 4: West","CENS-R4","Hawaii","15","2017","2017","Other bacterial diseases","A30-A49",46,1427538,3.2,2.4
+,"Census Region 4: West","CENS-R4","Hawaii","15","2017","2017","Renal failure","N17-N19",46,1427538,3.2,2.4
+,"Census Region 4: West","CENS-R4","Oregon","41","2010","2010","Other bacterial diseases","A30-A49",115,3831074,3.0,2.6
+,"Census Region 4: West","CENS-R4","Oregon","41","2010","2010","Renal failure","N17-N19",115,3831074,3.0,2.6
+,"Census Region 4: West","CENS-R4","Oregon","41","2011","2011","Other bacterial diseases","A30-A49",127,3871859,3.3,2.9
+,"Census Region 4: West","CENS-R4","Oregon","41","2011","2011","Renal failure","N17-N19",130,3871859,3.4,3.0
+,"Census Region 4: West","CENS-R4","Oregon","41","2012","2012","Other bacterial diseases","A30-A49",141,3899353,3.6,3.0
+,"Census Region 4: West","CENS-R4","Oregon","41","2012","2012","Renal failure","N17-N19",143,3899353,3.7,3.1
+,"Census Region 4: West","CENS-R4","Oregon","41","2013","2013","Other bacterial diseases","A30-A49",160,3930065,4.1,3.3
+,"Census Region 4: West","CENS-R4","Oregon","41","2013","2013","Renal failure","N17-N19",162,3930065,4.1,3.4
+,"Census Region 4: West","CENS-R4","Oregon","41","2014","2014","Other bacterial diseases","A30-A49",191,3970239,4.8,3.9
+,"Census Region 4: West","CENS-R4","Oregon","41","2014","2014","Renal failure","N17-N19",193,3970239,4.9,4.0
+,"Census Region 4: West","CENS-R4","Oregon","41","2015","2015","Other bacterial diseases","A30-A49",216,4028977,5.4,4.4
+,"Census Region 4: West","CENS-R4","Oregon","41","2015","2015","Renal failure","N17-N19",217,4028977,5.4,4.5
+,"Census Region 4: West","CENS-R4","Oregon","41","2016","2016","Other bacterial diseases","A30-A49",205,4093465,5.0,4.0
+,"Census Region 4: West","CENS-R4","Oregon","41","2016","2016","Renal failure","N17-N19",210,4093465,5.1,4.1
+,"Census Region 4: West","CENS-R4","Oregon","41","2017","2017","Other bacterial diseases","A30-A49",238,4142776,5.7,4.5
+,"Census Region 4: West","CENS-R4","Oregon","41","2017","2017","Renal failure","N17-N19",238,4142776,5.7,4.5
+,"Census Region 4: West","CENS-R4","Washington","53","2010","2010","Other bacterial diseases","A30-A49",351,6724540,5.2,5.1
+,"Census Region 4: West","CENS-R4","Washington","53","2010","2010","Renal failure","N17-N19",356,6724540,5.3,5.1
+,"Census Region 4: West","CENS-R4","Washington","53","2011","2011","Other bacterial diseases","A30-A49",395,6830038,5.8,5.6
+,"Census Region 4: West","CENS-R4","Washington","53","2011","2011","Renal failure","N17-N19",396,6830038,5.8,5.6
+,"Census Region 4: West","CENS-R4","Washington","53","2012","2012","Other bacterial diseases","A30-A49",416,6897012,6.0,5.6
+,"Census Region 4: West","CENS-R4","Washington","53","2012","2012","Renal failure","N17-N19",424,6897012,6.1,5.7
+,"Census Region 4: West","CENS-R4","Washington","53","2013","2013","Other bacterial diseases","A30-A49",479,6971406,6.9,6.3
+,"Census Region 4: West","CENS-R4","Washington","53","2013","2013","Renal failure","N17-N19",485,6971406,7.0,6.4
+,"Census Region 4: West","CENS-R4","Washington","53","2014","2014","Other bacterial diseases","A30-A49",473,7061530,6.7,6.1
+,"Census Region 4: West","CENS-R4","Washington","53","2014","2014","Renal failure","N17-N19",477,7061530,6.8,6.2
+,"Census Region 4: West","CENS-R4","Washington","53","2015","2015","Other bacterial diseases","A30-A49",521,7170351,7.3,6.5
+,"Census Region 4: West","CENS-R4","Washington","53","2015","2015","Renal failure","N17-N19",526,7170351,7.3,6.6
+,"Census Region 4: West","CENS-R4","Washington","53","2016","2016","Other bacterial diseases","A30-A49",463,7288000,6.4,5.6
+,"Census Region 4: West","CENS-R4","Washington","53","2016","2016","Renal failure","N17-N19",474,7288000,6.5,5.7
+,"Census Region 4: West","CENS-R4","Washington","53","2017","2017","Other bacterial diseases","A30-A49",458,7405743,6.2,5.4
+,"Census Region 4: West","CENS-R4","Washington","53","2017","2017","Renal failure","N17-N19",465,7405743,6.3,5.5
+"---"
+"Dataset: Multiple Cause of Death, 1999-2020"
+"Query Parameters:"
+"MCD - ICD-10 Codes: N17.0 (Acute renal failure with tubular necrosis); N17.1 (Acute renal failure with acute cortical necrosis);"
+"N17.2 (Acute renal failure with medullary necrosis); N17.8 (Other acute renal failure); N17.9 (Acute renal failure, unspecified)"
+"MCD - ICD-10 Codes: AND"
+"MCD - ICD-10 Codes: A40.0 (Septicaemia due to streptococcus, group A); A40.1 (Septicaemia due to streptococcus, group B); A40.2"
+"(Septicaemia due to streptococcus, group D); A40.3 (Septicaemia due to Streptococcus pneumoniae); A40.8 (Other streptococcal"
+"septicaemia); A40.9 (Streptococcal septicaemia, unspecified); A41.0 (Septicaemia due to Staphylococcus aureus); A41.1"
+"(Septicaemia due to other specified staphylococcus); A41.2 (Septicaemia due to unspecified staphylococcus); A41.3 (Septicaemia"
+"due to Haemophilus influenzae); A41.4 (Septicaemia due to anaerobes); A41.5 (Septicaemia due to other Gram-negative organisms);"
+"A41.8 (Other specified septicaemia); A41.9 (Septicaemia, unspecified)"
+"Year/Month: 2010; 2011; 2012; 2013; 2014; 2015; 2016; 2017"
+"Group By: Census Region; State; Year; MCD - ICD Sub-Chapter"
+"Show Totals: False"
+"Show Zero Values: False"
+"Show Suppressed: True"
+"Standard Population: 2000 U.S. Std. Population"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/mcd.html for more information."
+"---"
+"Query Date: Feb 8, 2026 6:14:09 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/mcd-icd10.html on Feb 8, 2026 6:14:09 PM"
+"---"
+Footnotes:
+"1. Totals and sub-totals show the frequency of the selected causes of death, which may be greater than the number of deaths."
+"Note that any single death record may have up to 20 causes. More information."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#2014-Revision."
+"2. These items in the results table are not fully selected: Other bacterial diseases, Renal failure. The Query Description lists"
+"the actual values selected."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#Unreliable."
+"4. The populations used to calculate standard age-adjusted rates are documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#2000 Standard Population."
+"5. The method used to calculate age-adjusted rates is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#Age-Adjusted Rates."
+"6. Deaths for persons of unknown age are included in counts and crude rates, but are not included in age-adjusted rates."
+"7. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. Population figures for 2011 are bridged-race estimates of the July 1"
+"resident population, from the county-level postcensal Vintage 2011 series released by NCHS on July 18, 2012. Population figures"
+"for 2010 are April 1 Census counts. The population figures for years 2001 - 2009, are bridged-race estimates of the July 1"
+"resident population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012."
+"Population figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of"
+"July 1 estimates. Population figures for Infant Age Groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"8. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/mcd.html#Age Group."
+"9. Beginning with the 2018 data, changes have been implemented that affect the counts for ICD-10 cause of death codes O00-O99"
+"compared to previous practice. In addition, data for the cause of death codes O00-O99 for 2003 through 2017 reflect differences"
+"in information available to individual states and probable errors. Caution should be used in interpreting these data. More"
+"information can be found at: https://www.cdc.gov/nchs/maternal-mortality/."
+"10. On March 11, 2021, the 2019 mortality data on CDC WONDER was updated with the 2019 mortality data updated by NCHS on March"
+"4, 2021 to include corrected information for residents of Texas affecting 5 records previously coded to cause code *U01.4,"
+"Terrorism involving firearms (homicide). The underlying and multiple cause of death codes for 5 records were corrected in the"
+"2019 data. Underlying and multiple cause of death codes for those 5 records were recoded to Assault (homicide) by other and"
+"unspecified firearm discharge, ICD-10 code X95. The corrected final death records replaces the data released on December 22,"
+"2020."
+"11. Changes to cause of death classification affect reporting trends. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#ICD-10 Changes."

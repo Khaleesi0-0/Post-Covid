@@ -1,0 +1,513 @@
+---
+title: "APC"
+format: html
+editor: visual
+---
+```{r}
+library(readr)
+library(tidyverse)
+library(lubridate)
+library(splines)
+library(broom)
+library(usmap)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(readr)
+library(officer)
+library(flextable)
+```
+
+```{r}
+N172010 <- read_csv("Data/N172010.csv")
+N172018 <- read_csv("Data/N172018.csv")
+clean_year <- function(df) {
+  df %>%
+    mutate(
+      Year_raw = as.character(Year),
+      # pull the first 4-digit year (e.g., "2024 (provisional)" -> 2024)
+      Year = readr::parse_number(Year_raw),
+      # keep any extra text as a note (optional)
+      Year_note = str_squish(str_remove(Year_raw, "^\\d{4}"))
+    )
+}
+
+N17 <- bind_rows(
+  clean_year(N172010 ),
+  clean_year(N172018 )
+) %>%
+  select(-Year_raw)
+```
+
+```{r}
+A402010 <- read_csv("Data/A402010.csv")
+A402018 <- read_csv("Data/A402018.csv")
+A40 <- bind_rows(
+  clean_year(A402010 ),
+  clean_year(A402018 )
+) %>%
+  select(-Year_raw)
+```
+
+```{r}
+N17A402010 <- read_csv("Data/N17A402010.csv")
+N17A402018 <- read_csv("Data/N17A402018.csv")
+
+N17A40 <- bind_rows(
+  clean_year(N17A402010 ),
+  clean_year(N17A402018 )
+) %>%
+  select(-Year_raw)
+```
+
+```{r}
+glimpse(N17)
+glimpse(A40)
+glimpse(N17A40)
+```
+```{r}
+
+prep_yearly_rate <- function(df) {
+  df %>%
+    filter(
+      !is.na(Deaths),
+      !is.na(Population),
+      !is.na(Year),
+      !(`Ten-Year Age Groups Code` %in% c("Under 1","1-4","5-14","15-24"))
+    ) %>%
+    group_by(Year) %>%
+    summarise(
+      deaths = sum(Deaths),
+      pop    = sum(Population),
+      rate   = deaths / pop * 1e5,
+      .groups = "drop"
+    )
+}
+
+N17_rate    <- prep_yearly_rate(N17)
+A40_rate    <- prep_yearly_rate(A40)
+N17A40_rate <- prep_yearly_rate(N17A40)
+```
+
+```{r}
+library(segmented)
+library(dplyr)
+library(tibble)
+
+calc_joinpoint_apc <- function(df, outcome, max_k = 1) {
+
+  lm0 <- lm(log(rate) ~ Year, data = df)
+
+  seg <- segmented(
+    lm0,
+    seg.Z = ~Year,
+    npsi  = max_k
+  )
+
+  slopes <- slope(seg)$Year
+  joins  <- seg$psi[, "Est."]
+
+  tibble(
+    Outcome = outcome,
+    Segment = seq_len(nrow(slopes)),
+    Start_Year = c(min(df$Year), round(joins)),
+    End_Year   = c(round(joins), max(df$Year)),
+    APC = (exp(slopes[,1]) - 1) * 100
+  )
+}
+
+
+```
+```{r}
+joinpoint_apc_tbl <- bind_rows(
+  calc_joinpoint_apc(N17_rate,    "Renal failure (N17–N19)"),
+  calc_joinpoint_apc(A40_rate,    "Sepsis (A30–A49)"),
+  calc_joinpoint_apc(N17A40_rate, "Renal failure + Sepsis")
+)
+
+joinpoint_apc_tbl
+
+
+```
+## APC by time period
+```{r}
+calc_period_apc <- function(df, outcome, start, end, label) {
+
+  df_sub <- df %>%
+    filter(Year >= start, Year <= end)
+
+  # Guard against single-year periods
+  if (n_distinct(df_sub$Year) < 2) {
+    return(
+      tibble(
+        Outcome = outcome,
+        Period  = label,
+        Start_Year = start,
+        End_Year   = end,
+        APC   = NA_real_,
+        Lower = NA_real_,
+        Upper = NA_real_
+      )
+    )
+  }
+
+  fit <- lm(log(rate) ~ Year, data = df_sub)
+
+  beta <- coef(fit)[2]
+  se   <- summary(fit)$coef[2, 2]
+
+  tibble(
+    Outcome = outcome,
+    Period  = label,
+    Start_Year = start,
+    End_Year   = end,
+    APC   = (exp(beta) - 1) * 100,
+    Lower = (exp(beta - 1.96 * se) - 1) * 100,
+    Upper = (exp(beta + 1.96 * se) - 1) * 100
+  )
+}
+
+
+
+```
+
+```{r}
+apc_period_tbl <- bind_rows(
+
+  # --------------------
+  # Renal failure (N17–N19)
+  # --------------------
+  calc_period_apc(N17_rate, "Renal failure", 2010, 2019, "Pre-pandemic"),
+  calc_period_apc(N17_rate, "Renal failure", 2020, 2022, "Pandemic"),
+  calc_period_apc(N17_rate, "Renal failure", 2023, 2025, "Post-pandemic"),
+
+  # --------------------
+  # Sepsis (A30–A49)
+  # --------------------
+  calc_period_apc(A40_rate, "Sepsis ", 2010, 2019, "Pre-pandemic"),
+  calc_period_apc(A40_rate, "Sepsis", 2020, 2022, "Pandemic"),
+  calc_period_apc(A40_rate, "Sepsis", 2023, 2025, "Post-pandemic"),
+
+  # --------------------
+  # Renal failure + Sepsis
+  # --------------------
+  calc_period_apc(N17A40_rate, "Renal failure & Sepsis", 2010, 2019, "Pre-pandemic"),
+  calc_period_apc(N17A40_rate, "Renal failure & Sepsis", 2020, 2022, "Pandemic"),
+  calc_period_apc(N17A40_rate, "Renal failure & Sepsis", 2023, 2025, "Post-pandemic")
+)
+
+apc_period_tbl
+
+
+```
+```{r}
+apc_period_tbl_fmt <- apc_period_tbl %>%
+  mutate(
+    APC_CI = ifelse(
+      is.na(APC),
+      "NA",
+      sprintf("%.2f (%.2f, %.2f)", APC, Lower, Upper)
+    )
+  ) %>%
+  dplyr::select(Outcome, Period, Start_Year, End_Year, APC_CI)
+```
+
+```{r}
+library(kableExtra)
+
+apc_period_tbl_fmt %>%
+  kbl(
+    caption = "Annual Percent Change (APC) in Mortality Rates by Pandemic Period",
+    align = "lcccc"
+  ) %>%
+  kable_styling(full_width = FALSE)
+
+```
+```{r}
+library(officer)
+library(flextable)
+library(dplyr)
+apc_ft <- flextable(apc_period_tbl_fmt) |>
+  autofit() |>
+  set_caption("Annual Percent Change (APC) in Mortality Rates by Pandemic Period") |>
+  align(align = "center", part = "all") |>
+  bold(part = "header") |>
+  fontsize(size = 11, part = "all")
+doc <- read_docx() |>
+  body_add_par("Supplementary Table: APC by Pandemic Period", style = "heading 1") |>
+  body_add_flextable(apc_ft)
+
+print(doc, target = "APC_by_pandemic_period.docx")
+
+```
+
+## Plot
+```{r}
+library(ggplot2)
+
+plot_apc_trend <- function(df, outcome, apc_tbl) {
+
+  apc_val <- apc_tbl %>% filter(Outcome == outcome)
+
+  ggplot(df, aes(Year, rate)) +
+    geom_line(linewidth = 1.1, color = "#00468B") +
+    geom_point(size = 2) +
+    geom_smooth(
+      method = "lm",
+      formula = y ~ exp(x),
+      se = FALSE,
+      linetype = "dashed",
+      color = "black"
+    ) +
+    labs(
+      title = outcome,
+      subtitle = paste0(
+        "APC = ",
+        round(apc_val$APC, 2), "% (",
+        round(apc_val$Lower, 2), ", ",
+        round(apc_val$Upper, 2), ")"
+      ),
+      y = "Mortality rate per 100,000",
+      x = "Year"
+    ) +
+    theme_minimal(base_size = 13)
+}
+
+```
+
+```{r}
+plot_apc_trend(N17_rate, "Renal failure", pandemic_apc_tbl)
+```
+
+```{r}
+library(dplyr)
+library(tibble)
+
+rates_all <- bind_rows(
+  N17_rate    %>% mutate(Outcome = "Renal failure"),
+  A40_rate    %>% mutate(Outcome = "Sepsis"),
+  N17A40_rate %>% mutate(Outcome = "Renal failure & Sepsis")
+) %>%
+  dplyr::select(Outcome, Year, rate)
+
+```
+
+```{r}
+calc_period_apc <- function(df, outcome, start, end, label) {
+
+  df_sub <- df %>%
+    dplyr::filter(Year >= start, Year <= end) %>%
+    dplyr::filter(!is.na(rate), is.finite(rate), rate > 0)
+
+  # Need >=2 distinct years to estimate a slope
+  if (nrow(df_sub) < 2 || dplyr::n_distinct(df_sub$Year) < 2) {
+    return(
+      tibble(
+        Outcome = outcome,
+        Period = label,
+        Start_Year = start,
+        End_Year = end,
+        APC = NA_real_,
+        Lower = NA_real_,
+        Upper = NA_real_
+      )
+    )
+  }
+
+  fit <- lm(log(rate) ~ Year, data = df_sub)
+
+  beta <- coef(fit)[2]
+  se   <- summary(fit)$coef[2, 2]
+
+  tibble(
+    Outcome = outcome,
+    Period = label,
+    Start_Year = start,
+    End_Year = end,
+    APC   = (exp(beta) - 1) * 100,
+    Lower = (exp(beta - 1.96 * se) - 1) * 100,
+    Upper = (exp(beta + 1.96 * se) - 1) * 100
+  )
+}
+
+```
+
+```{r}
+apc_period_tbl <- dplyr::bind_rows(
+
+  # Renal failure (N17–N19)
+  calc_period_apc(N17_rate, "Renal failure", 2010, 2019, "Pre-pandemic"),
+  calc_period_apc(N17_rate, "Renal failure", 2020, 2022, "Pandemic"),
+  calc_period_apc(N17_rate, "Renal failure", 2023, 2025, "Post-pandemic"),
+
+  # Sepsis (A30–A49)
+  calc_period_apc(A40_rate, "Sepsis", 2010, 2019, "Pre-pandemic"),
+  calc_period_apc(A40_rate, "Sepsis", 2020, 2022, "Pandemic"),
+  calc_period_apc(A40_rate, "Sepsis", 2023, 2025, "Post-pandemic"),
+
+  # Renal failure & Sepsis
+  calc_period_apc(N17A40_rate, "Renal failure & Sepsis", 2010, 2019, "Pre-pandemic"),
+  calc_period_apc(N17A40_rate, "Renal failure & Sepsis", 2020, 2022, "Pandemic"),
+  calc_period_apc(N17A40_rate, "Renal failure & Sepsis", 2023, 2025, "Post-pandemic")
+)
+
+```
+
+```{r}
+apc_period_tbl_fmt <- apc_period_tbl %>%
+  dplyr::mutate(
+    APC_CI = ifelse(
+      is.na(APC),
+      "NA",
+      sprintf("%.2f (%.2f, %.2f)", APC, Lower, Upper)
+    )
+  ) %>%
+  dplyr::select(Outcome, Period, Start_Year, End_Year, APC_CI)
+
+
+
+# ----------------------------
+# 4) Combine yearly rate series (3 outcomes) for plotting
+# ----------------------------
+rates_all <- dplyr::bind_rows(
+  N17_rate    %>% dplyr::mutate(Outcome = "Renal failure"),
+  A40_rate    %>% dplyr::mutate(Outcome = "Sepsis"),
+  N17A40_rate %>% dplyr::mutate(Outcome = "Renal failure & Sepsis")
+) %>%
+  dplyr::select(Outcome, Year, rate) %>%
+  dplyr::filter(!is.na(rate), is.finite(rate), rate > 0)
+
+```
+
+```{r}
+make_period_fit_lines <- function(rates_all, apc_period_tbl) {
+
+  apc_period_tbl %>%
+    dplyr::filter(Period %in% c("Pre-pandemic", "Pandemic", "Post-pandemic")) %>%
+    dplyr::filter(!is.na(APC)) %>%   # exclude periods not estimable
+    rowwise() %>%
+    do({
+      out   <- .$Outcome
+      start <- .$Start_Year
+      end   <- .$End_Year
+      per   <- .$Period
+
+      df_sub <- rates_all %>%
+        dplyr::filter(
+          Outcome == out,
+          Year >= start, Year <= end,
+          !is.na(rate), is.finite(rate), rate > 0
+        )
+
+      # Guard: need >=2 years
+      if (nrow(df_sub) < 2 || dplyr::n_distinct(df_sub$Year) < 2) {
+        return(tibble(Outcome = character(), Period = character(),
+                      Year = integer(), fit_rate = double()))
+      }
+
+      fit <- lm(log(rate) ~ Year, data = df_sub)
+
+      yrs <- tibble(Year = seq(min(df_sub$Year), max(df_sub$Year), by = 1))
+      pred <- exp(predict(fit, newdata = yrs))
+
+      tibble(
+        Outcome = out,
+        Period  = per,
+        Year    = yrs$Year,
+        fit_rate = pred
+      )
+    }) %>%
+    ungroup()
+}
+
+fit_lines <- make_period_fit_lines(rates_all, apc_period_tbl)
+
+```
+
+```{r}
+apc_labels <- apc_period_tbl %>%
+  dplyr::filter(Period %in% c("Pre-pandemic", "Pandemic", "Post-pandemic")) %>%
+  dplyr::mutate(
+    mid_year = (Start_Year + End_Year) / 2,
+    label = sprintf("%s: %.1f%% (%.1f, %.1f)", Period, APC, Lower, Upper)
+  ) %>%
+  dplyr::left_join(
+    rates_all %>%
+      dplyr::group_by(Outcome) %>%
+      dplyr::summarise(y_top = max(rate, na.rm = TRUE), .groups = "drop"),
+    by = "Outcome"
+  ) %>%
+  dplyr::mutate(y = y_top * 0.92) %>%   # place labels near top
+  dplyr::select(Outcome, mid_year, y, label)
+
+```
+
+```{r}
+apc_subtitles <- apc_period_tbl %>%
+  filter(Period %in% c("Pre-pandemic", "Pandemic", "Post-pandemic")) %>%
+  mutate(
+    txt = sprintf(
+      "%s: %.1f%% (%.1f, %.1f)",
+      Period, APC, Lower, Upper
+    )
+  ) %>%
+  group_by(Outcome) %>%
+  summarise(
+    subtitle = paste(txt, collapse = "  |  "),
+    .groups = "drop"
+  )
+
+# ---- Plot ----
+apc_trend_plot_clean <- ggplot(rates_all, aes(Year, rate)) +
+
+  # Pandemic shading
+  annotate("rect", xmin = 2020, xmax = 2022.5,
+           ymin = -Inf, ymax = Inf,
+           fill = "grey80", alpha = 0.4) +
+  annotate("rect", xmin = 2022.5, xmax = 2025,
+           ymin = -Inf, ymax = Inf,
+           fill = "grey90", alpha = 0.4) +
+
+  # Raw trend
+  geom_line(linewidth = 1.1) +
+  geom_point(size = 2) +
+
+  # APC fitted slopes (lighter, secondary)
+  geom_line(
+    data = fit_lines,
+    aes(y = fit_rate),
+    linewidth = 0.9,
+    linetype = "dashed",
+    color = "grey30"
+  ) +
+
+  facet_wrap(~Outcome, scales = "free_y", ncol = 1) +
+
+  labs(
+    title = "Mortality rate trends with period-specific APC fits",
+    subtitle = "Shaded regions indicate pandemic (2020–2022) and post-pandemic (2023–2025) periods",
+    x = "Year",
+    y = "Rate per 100,000"
+  ) +
+
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title = element_text(face = "bold"),
+    strip.text = element_text(face = "bold"),
+    panel.grid.minor = element_blank()
+  )
+
+# ---- Add APC subtitles to each facet ----
+apc_trend_plot_clean +
+  geom_text(
+    data = apc_subtitles,
+    aes(x = -Inf, y = Inf, label = subtitle),
+    hjust = -0.02, vjust = 1.2,
+    inherit.aes = FALSE,
+    size = 3.2
+  )
+```
+```{r}
+ggsave("figures/APC_trends_3panel.png", apc_trend_plot_clean, width = 12, height = 10, dpi = 600)
+```
+

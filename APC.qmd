@@ -1,0 +1,1424 @@
+---
+title: "APC"
+format: html
+editor: visual
+---
+
+```{r}
+library(readr)
+library(tidyverse)
+library(lubridate)
+library(splines)
+library(broom)
+library(usmap)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(readr)
+library(officer)
+library(flextable)
+library(dplyr)
+library(conflicted)
+conflicts_prefer(dplyr::select)
+```
+
+```{r}
+N172010 <- read_csv("Data/N172010-1.csv") %>%
+  filter(`Year Code` < 2018)
+N172018 <- read_csv("Data/N172018-1.csv")
+clean_year <- function(df) {
+  df %>%
+    mutate(
+      Year_raw = as.character(Year),
+      # pull the first 4-digit year (e.g., "2024 (provisional)" -> 2024)
+      Year = readr::parse_number(Year_raw),
+      # keep any extra text as a note (optional)
+      Year_note = str_squish(str_remove(Year_raw, "^\\d{4}"))
+    )
+}
+
+N17 <- bind_rows(
+  clean_year(N172010 ),
+  clean_year(N172018 )
+) %>%
+  select(-Year_raw)
+
+glimpse(N17)
+```
+
+```{r}
+A402010 <- read_csv("Data/A402010-1.csv")%>%
+  filter(`Year Code` < 2018)
+A402018 <- read_csv("Data/A402018-1.csv")
+A40 <- bind_rows(
+  clean_year(A402010 ),
+  clean_year(A402018 )
+) %>%
+  select(-Year_raw)
+```
+
+```{r}
+N17A402010 <- read_csv("Data/N17A402010-1.csv")%>%
+  filter(`Year Code` < 2018)
+N17A402018 <- read_csv("Data/N17A402018-1.csv")
+
+N17A40 <- bind_rows(
+  clean_year(N17A402010 ),
+  clean_year(N17A402018 )
+) %>%
+  select(-Year_raw)
+N17A40_RF <- N17A40 %>%
+  dplyr::filter(`MCD - ICD Sub-Chapter` == "Renal failure")
+```
+
+```{r}
+std2000_allages <- tibble(
+  age_code = c(
+    "1","1-4",
+    "5-9","10-14",
+    "15-19","20-24",
+    "25-29","30-34",
+    "35-39","40-44",
+    "45-49","50-54",
+    "55-59","60-64",
+    "65-69","70-74",
+    "75-79","80-84",
+    "85+"
+  ),
+  std_million = c(
+    13818, 55317,
+    145565/2, 145565/2,
+    138646/2, 138646/2,
+    135573/2, 135573/2,
+    162613/2, 162613/2,
+    134834/2, 134834/2,
+    87247/2,  87247/2,
+    66037/2,  66037/2,
+    44842/2,  44842/2,
+    15508
+  )
+) %>%
+  mutate(
+    std_million = round(std_million),
+    weight = std_million / sum(std_million)
+  )
+
+# ---- collapse detailed elderly bins to "85+" for standardization ----
+recode_to_std_age <- function(age_code) {
+  dplyr::case_when(
+    age_code %in% c("85-89", "90-94", "95-99", "100+") ~ "85+",
+    TRUE ~ age_code
+  )
+}
+
+# ---- mapping to 4 broad age bands ----
+age_group_map <- list(
+  "<20"   = c("1","1-4","5-9","10-14","15-19"),
+  "20–44" = c("20-24","25-29","30-34","35-39","40-44"),
+  "45–64" = c("45-49","50-54","55-59","60-64"),
+  "65+"   = c("65-69","70-74","75-79","80-84","85-89","90-94","95-99","100+","85+")
+)
+
+# ✅ IMPORTANT: joinable map used by AAMR functions
+age_band_map <- tibble(
+  age_code = std2000_allages$age_code,
+  age4 = case_when(
+    age_code %in% age_group_map[["<20"]]   ~ "<20",
+    age_code %in% age_group_map[["20–44"]] ~ "20_44",
+    age_code %in% age_group_map[["45–64"]] ~ "45_64",
+    age_code %in% age_group_map[["65+"]]   ~ "65+",
+    TRUE ~ NA_character_
+  )
+) %>%
+  filter(!is.na(age4))
+
+# ---- safe numeric parsing for Population ("Not Applicable" -> NA) ----
+parse_pop_safe <- function(x) {
+  x <- na_if(as.character(x), "Not Applicable")
+  readr::parse_number(x, na = c("", "NA", "Not Applicable"))
+}
+
+# ============================================================
+# Core: compute within-band AAMR by Year Code (YearKey)
+# (weights re-normalized within each band)
+# ============================================================
+calc_band_aamr_by_yearcode <- function(df, year_min = 2010, year_max = 2025) {
+
+  df %>%
+    filter(is.na(Notes) | Notes != "Total") %>%
+    mutate(
+      YearCode = as.integer(`Year Code`),
+      YearKey  = as.character(YearCode),
+      Deaths   = suppressWarnings(as.numeric(Deaths)),
+      Population = parse_pop_safe(Population),
+      age_code_raw = `Five-Year Age Groups Code`,
+      age_code = recode_to_std_age(age_code_raw)
+    ) %>%
+    filter(YearCode >= year_min, YearCode <= year_max) %>%
+    filter(age_code %in% std2000_allages$age_code) %>%
+    left_join(age_band_map, by = "age_code") %>%
+    filter(!is.na(age4)) %>%
+    group_by(YearKey, age4, age_code) %>%
+    summarise(
+      deaths = sum(Deaths, na.rm = TRUE),
+      pop    = sum(Population, na.rm = TRUE),
+      .groups = "drop"
+    ) %>%
+    left_join(std2000_allages, by = "age_code") %>%
+    group_by(YearKey, age4) %>%
+    mutate(
+      w_band   = weight / sum(weight),
+      age_rate = ifelse(pop > 0, (deaths / pop) * 1e5, NA_real_)
+    ) %>%
+    summarise(
+      AAMR_band = sum(age_rate * w_band, na.rm = TRUE),
+      .groups = "drop"
+    ) %>%
+    complete(
+      YearKey = as.character(year_min:year_max),
+      age4 = c("<20", "20_44", "45_64", "65+"),
+      fill = list(AAMR_band = NA_real_)
+    )
+}
+
+# ============================================================
+# Total row for within-band AAMR (YearKey = "Total")
+# ============================================================
+calc_band_aamr_total_yearcode <- function(df, year_min = 2010, year_max = 2025) {
+
+  df %>%
+    filter(is.na(Notes) | Notes != "Total") %>%
+    mutate(
+      YearCode = as.integer(`Year Code`),
+      Deaths   = suppressWarnings(as.numeric(Deaths)),
+      Population = parse_pop_safe(Population),
+      age_code_raw = `Five-Year Age Groups Code`,
+      age_code = recode_to_std_age(age_code_raw)
+    ) %>%
+    filter(YearCode >= year_min, YearCode <= year_max) %>%
+    filter(age_code %in% std2000_allages$age_code) %>%
+    left_join(age_band_map, by = "age_code") %>%
+    filter(!is.na(age4)) %>%
+    group_by(age4, age_code) %>%
+    summarise(
+      deaths = sum(Deaths, na.rm = TRUE),
+      pop    = sum(Population, na.rm = TRUE),
+      .groups = "drop"
+    ) %>%
+    left_join(std2000_allages, by = "age_code") %>%
+    group_by(age4) %>%
+    mutate(
+      w_band   = weight / sum(weight),
+      age_rate = ifelse(pop > 0, (deaths / pop) * 1e5, NA_real_)
+    ) %>%
+    summarise(
+      YearKey = "Total",
+      AAMR_band = sum(age_rate * w_band, na.rm = TRUE),
+      .groups = "drop"
+    )
+}
+
+# ============================================================
+# Final: deaths by band + within-band AAMR by YearKey + Total
+# Returns list(deaths = ..., rates = ...)
+# ============================================================
+year_age_deaths_band_aamr <- function(df, prefix, year_min = 2010, year_max = 2025) {
+
+  # ---- deaths by bands (YearKey) ----
+  by_year_age <- df %>%
+    filter(is.na(Notes) | Notes != "Total") %>%
+    mutate(
+      YearCode = as.integer(`Year Code`),
+      YearKey  = as.character(YearCode),
+      Deaths   = suppressWarnings(as.numeric(Deaths)),
+      age_code_raw = `Five-Year Age Groups Code`,
+      age_code = recode_to_std_age(age_code_raw),
+      age4 = case_when(
+        age_code %in% age_group_map[["<20"]]   ~ "<20",
+        age_code %in% age_group_map[["20–44"]] ~ "20_44",
+        age_code %in% age_group_map[["45–64"]] ~ "45_64",
+        age_code %in% age_group_map[["65+"]]   ~ "65+",
+        TRUE ~ NA_character_
+      )
+    ) %>%
+    filter(YearCode >= year_min, YearCode <= year_max, !is.na(age4)) %>%
+    group_by(YearKey, age4) %>%
+    summarise(deaths = sum(Deaths, na.rm = TRUE), .groups = "drop") %>%
+    complete(
+      YearKey = as.character(year_min:year_max),
+      age4 = c("<20", "20_44", "45_64", "65+"),
+      fill = list(deaths = 0)
+    )
+
+  total_deaths_rows <- by_year_age %>%
+    group_by(age4) %>%
+    summarise(YearKey = "Total", deaths = sum(deaths, na.rm = TRUE), .groups = "drop")
+
+  deaths_wide <- bind_rows(by_year_age, total_deaths_rows) %>%
+    pivot_wider(names_from = age4, values_from = deaths, values_fill = 0) %>%
+    rename(
+      !!paste0(prefix, "_deaths_lt20")     := `<20`,
+      !!paste0(prefix, "_deaths_20_44")    := `20_44`,
+      !!paste0(prefix, "_deaths_45_64")    := `45_64`,
+      !!paste0(prefix, "_deaths_65_plus")  := `65+`
+    )
+
+  # ---- within-band AAMR by YearKey + Total ----
+  aamr_year  <- calc_band_aamr_by_yearcode(df, year_min, year_max)
+  aamr_total <- calc_band_aamr_total_yearcode(df, year_min, year_max)
+  aamr_all   <- bind_rows(aamr_year, aamr_total)
+
+  rates_wide <- aamr_all %>%
+    pivot_wider(names_from = age4, values_from = AAMR_band) %>%
+    rename(
+      !!paste0(prefix, "_<20")   := `<20`,
+      !!paste0(prefix, "_20_44") := `20_44`,
+      !!paste0(prefix, "_45_64") := `45_64`,
+      !!paste0(prefix, "_65+")   := `65+`)
+
+  list(deaths = deaths_wide, rates = rates_wide)
+}
+```
+
+```{r}
+
+# ---- Build for the 3 datasets ----
+arf   <- year_age_deaths_band_aamr(N17, "AKI")
+sepsis  <- year_age_deaths_band_aamr(A40, "Sepsis")
+both <- year_age_deaths_band_aamr(N17A40_RF, "AKI/sepsis")
+
+# ---- Combine into one deaths table ----
+deaths_table_age <- arf$deaths %>%
+  full_join(sepsis$deaths, by = "YearKey") %>%
+  full_join(both$deaths,   by = "YearKey") %>%
+  mutate(YearKey = factor(YearKey, levels = c(as.character(2010:2025), "Total"))) %>%
+  arrange(YearKey)
+
+# ---- Combine into one crude-rate table ----
+rate_table_age <- arf$rates %>%
+  full_join(sepsis$rates, by = "YearKey") %>%
+  full_join(both$rates,   by = "YearKey") %>%
+  mutate(YearKey = factor(YearKey, levels = c(as.character(2010:2025), "Total"))) %>%
+  arrange(YearKey) %>%
+  # Optional: round rates nicely
+  mutate(across(where(is.numeric), ~ round(.x, 2)))
+
+deaths_table_age
+rate_table_age
+```
+
+```{r}
+apc_yearly_from_aamr <- rate_table_age %>%
+  mutate(
+    Year = suppressWarnings(as.integer(as.character(YearKey)))
+  ) %>%
+  filter(!is.na(Year), Year >= 2010, Year <= 2025) %>%   # drop "Total"
+  select(Year, where(is.numeric)) %>%
+  pivot_longer(
+    cols = -Year,
+    names_to = "series",
+    values_to = "AAMR"
+  ) %>%
+  # defensive: keep only AAMR-like columns (no deaths)
+  filter(!str_detect(series, "_deaths_")) %>%
+  mutate(
+    series = str_trim(series),
+
+    # ---- Detect outcome robustly (handles slash OR underscore naming) ----
+    outcome = case_when(
+      str_starts(series, "AKI/sepsis_") ~ "AKI/sepsis",
+      str_starts(series, "AKI_Sepsis_") ~ "AKI/sepsis",
+      str_starts(series, "Sepsis_")     ~ "Sepsis",
+      str_starts(series, "AKI_")        ~ "AKI",
+      TRUE ~ NA_character_
+    ),
+
+    # ---- Remove the detected prefix to isolate the age token ----
+    age_token = case_when(
+      str_starts(series, "AKI/sepsis_") ~ str_remove(series, "^AKI/sepsis_"),
+      str_starts(series, "AKI_Sepsis_") ~ str_remove(series, "^AKI_Sepsis_"),
+      str_starts(series, "Sepsis_")     ~ str_remove(series, "^Sepsis_"),
+      str_starts(series, "AKI_")        ~ str_remove(series, "^AKI_"),
+      TRUE ~ NA_character_
+    ),
+
+    # ---- Standardize age labels ----
+    age4 = recode(age_token,
+      "lt20"    = "<20",
+      "<20"     = "<20",
+      "20_44"   = "20–44",
+      "20–44"   = "20–44",
+      "45_64"   = "45–64",
+      "45–64"   = "45–64",
+      "65_plus" = "65+",
+      "65+"     = "65+"
+    )
+  ) %>%
+  filter(!is.na(outcome), !is.na(age4)) %>%
+  arrange(outcome, age4, Year) %>%
+  group_by(outcome, age4) %>%
+  mutate(
+    APC = dplyr::if_else(
+      !is.na(lag(AAMR)) & lag(AAMR) > 0 & !is.na(AAMR),
+      100 * (AAMR / lag(AAMR) - 1),
+      NA_real_
+    )
+  ) %>%
+  ungroup()
+
+# your output
+apc_yearly_from_aamr
+```
+
+```{r}
+make_apc_table_one_outcome <- function(apc_df, outcome_name) {
+  apc_df %>%
+    filter(outcome == outcome_name, age4 %in% c("20–44", "45–64", "65+")) %>%
+    mutate(
+      Year = as.integer(Year),
+      APC  = round(APC, 2)
+    ) %>%
+    select(Year, age4, APC) %>%
+    tidyr::pivot_wider(names_from = age4, values_from = APC) %>%
+    arrange(Year)
+}
+```
+
+```{r}
+style_journal_table <- function(ft) {
+  ft %>%
+    theme_booktabs() %>%                  # clean top/mid/bottom rules; no vertical grid
+    fontsize(size = 10, part = "all") %>% # within typical 10–12 pt manuscript norms :contentReference[oaicite:3]{index=3}
+    bold(part = "header") %>%
+    align(align = "center", part = "all") %>%
+    align(j = 1, align = "left", part = "all") %>%  # Year left-aligned like many journals
+    autofit()
+}
+
+
+```
+
+```{r}
+# Make the three disease tables
+tab_aki   <- make_apc_table_one_outcome(apc_yearly_from_aamr, "AKI")
+tab_sep   <- make_apc_table_one_outcome(apc_yearly_from_aamr, "Sepsis")
+tab_both  <- make_apc_table_one_outcome(apc_yearly_from_aamr, "AKI/sepsis")
+
+# Convert to flextables + style
+ft_aki  <- style_journal_table(flextable(tab_aki))
+ft_sep  <- style_journal_table(flextable(tab_sep))
+ft_both <- style_journal_table(flextable(tab_both))
+
+# Add captions (manual numbering is safest across officer versions)
+cap_common <- "Year-over-year annual percent change (APC, %) derived from age-adjusted mortality rates (AAMR), 2010–2025."
+
+ft_aki  <- set_caption(ft_aki,  paste0("Table 1. AKI (N17). ", cap_common))
+ft_sep  <- set_caption(ft_sep,  paste0("Table 2. Sepsis (A40). ", cap_common))
+ft_both <- set_caption(ft_both, paste0("Table 3. AKI/sepsis (N17 & A40). ", cap_common))
+
+# Optional footnote line (AMA-style notes/abbrev under table) :contentReference[oaicite:4]{index=4}
+note_line <- "Note: APC(t) = 100 × (AAMR_t / AAMR_{t−1} − 1). AAMR standardized to the projected 2000 US standard population."
+
+doc <- read_docx() %>%
+  body_add_par("APC tables (AAMR-based)", style = "heading 1") %>%
+
+  body_add_flextable(ft_aki) %>%
+  body_add_par(note_line, style = "Normal") %>%
+  body_add_break() %>%
+
+  body_add_flextable(ft_sep) %>%
+  body_add_par(note_line, style = "Normal") %>%
+  body_add_break() %>%
+
+  body_add_flextable(ft_both) %>%
+  body_add_par(note_line, style = "Normal")
+
+#print(doc, target = "tables/APC_AAMR_Tables_JAMA_NEJM_CJASN.docx")
+
+```
+
+```{r}
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(tidyr)
+  library(flextable)
+  library(officer)
+  library(stringr)
+})
+
+# ---------------- settings ----------------
+age_order     <- c("20–44","45–64","≥65")
+outcome_order <- c("AKI","Sepsis","AKI/sepsis")
+
+fmt2 <- function(x) ifelse(is.na(x), "–", formatC(x, format = "f", digits = 2))
+
+# ---------------- 1) Build a clean long table ----------------
+# Use `series` to determine outcome + age (most reliable)
+tab_long <- apc_yearly_from_aamr %>%
+  mutate(
+    Year = as.character(Year),
+
+    series = trimws(series),
+
+    # ---- outcome from series ----
+    outcome = case_when(
+      str_detect(series, "^AKI_") ~ "AKI",
+      str_detect(series, "^Sepsis_") ~ "Sepsis",
+      str_detect(series, "^AKI[_/ ]*Sepsis_") | str_detect(series, "^AKI.*Sepsis_") ~ "AKI/sepsis",
+      TRUE ~ trimws(outcome)
+    ),
+
+    # ---- age from series (preferred), fallback to age4 ----
+    age4_from_series = case_when(
+      str_detect(series, "_20_44$") ~ "20–44",
+      str_detect(series, "_45_64$") ~ "45–64",
+      str_detect(series, "_65\\+$") | str_detect(series, "_65_plus$") ~ "≥65",
+      str_detect(series, "_lt20$") | str_detect(series, "_<20$") ~ "<20",
+      TRUE ~ NA_character_
+    ),
+
+    age4_raw = trimws(age4),
+    age4 = coalesce(
+      age4_from_series,
+      case_when(
+        age4_raw %in% c("20_44", "20–44", "20-44") ~ "20–44",
+        age4_raw %in% c("45_64", "45–64", "45-64") ~ "45–64",
+        age4_raw %in% c("65+", "65_plus", "≥65") ~ "≥65",
+        age4_raw %in% c("lt20", "<20", "< 20") ~ "<20",
+        TRUE ~ age4_raw
+      )
+    ),
+
+    APC = as.numeric(APC)
+  ) %>%
+  filter(age4 %in% age_order, outcome %in% outcome_order) %>%
+  select(Year, outcome, age4, APC)
+
+# ---- quick sanity check (prints in console) ----
+message("Outcomes present after cleaning: ", paste(sort(unique(tab_long$outcome)), collapse = ", "))
+message("Age groups present after cleaning: ", paste(sort(unique(tab_long$age4)), collapse = ", "))
+
+# ---------------- 2) wide: condition blocks ----------------
+tab_wide_num <- tab_long %>%
+  mutate(
+    age4    = factor(age4, levels = age_order),
+    outcome = factor(outcome, levels = outcome_order)
+  ) %>%
+  pivot_wider(
+    names_from  = c(outcome, age4),
+    values_from = APC,
+    names_sep   = "__"
+  )
+
+# IMPORTANT:
+# use any_of() so you never crash; if combined outcome truly missing, you'll see it as blank columns
+need_cols <- c(
+  "Year",
+  paste0("AKI__", age_order),
+  paste0("Sepsis__", age_order),
+  paste0("AKI/sepsis__", age_order)
+)
+
+tab_wide_num <- tab_wide_num %>%
+  select(any_of(need_cols))
+
+# If the AKI/sepsis columns are still missing, create them as NA so the header build won't fail
+for (nm in paste0("AKI/sepsis__", age_order)) {
+  if (!nm %in% names(tab_wide_num)) tab_wide_num[[nm]] <- NA_real_
+}
+
+# Re-order columns exactly as desired
+tab_wide_num <- tab_wide_num %>%
+  select(
+    Year,
+    all_of(paste0("AKI__", age_order)),
+    all_of(paste0("Sepsis__", age_order)),
+    all_of(paste0("AKI/sepsis__", age_order))
+  )
+
+# --- format APC cells as text (2 decimals; NA -> dash) ---
+num_cols <- setdiff(names(tab_wide_num), "Year")
+tab_wide <- tab_wide_num %>%
+  mutate(across(all_of(num_cols), fmt2))
+
+# ---------------- 3) flextable with 2-row header ----------------
+ft <- flextable(tab_wide)
+
+# second header row: age labels repeated under each condition
+age_row <- c("Year", rep(age_order, 3))
+ft <- set_header_labels(ft, values = setNames(age_row, names(tab_wide)))
+
+# top header row: group headers spanning
+ft <- add_header_row(
+  ft,
+  values    = c("", "AKI", "Sepsis", "AKI/sepsis"),
+  colwidths = c(1, 3, 3, 3)
+)
+
+ft <- merge_h(ft, part = "header")
+ft <- theme_booktabs(ft)
+ft <- bold(ft, part = "header")
+ft <- fontsize(ft, size = 11, part = "all")
+ft <- align(ft, part = "header", align = "center")
+ft <- align(ft, j = "Year", part = "body", align = "left")
+ft <- align(ft, j = num_cols, part = "body", align = "right")
+ft <- padding(ft, padding = 3, part = "all")
+ft <- autofit(ft)
+
+# ---------------- 4) export to Word ----------------
+dir.create("tables", showWarnings = FALSE)
+
+doc <- read_docx() %>%
+  body_add_par(
+    "Table. Annual percent change (APC) by condition and age group, 2010–2025",
+    style = "heading 1"
+  ) %>%
+  body_add_par(
+    "APC(t) = 100 × (AAMR_t / AAMR_{t−1} − 1). AAMR standardized to the 2000 U.S. standard population.",
+    style = "Normal"
+  ) %>%
+  body_add_flextable(ft)
+
+print(doc, target = "tables/APC_table_by_condition_age_2010_2025.docx")
+```
+
+## Plot
+
+```{r}
+apc_plot_data <- apc_yearly_from_aamr %>%
+  filter(age4 %in% c("20–44", "45–64", "65+"))
+
+```
+
+```{r}
+p_apc_age <- ggplot(
+  apc_plot_data,
+  aes(x = Year, y = APC, color = age4)
+) +
+  geom_hline(yintercept = 0, linewidth = 0.4, color = "grey60") +
+  geom_line(linewidth = 0.9) +
+  geom_point(size = 2) +
+  facet_wrap(~ outcome, ncol = 1, scales = "free_y") +
+  scale_color_manual(
+    values = c(
+      "20–44" = "#1b9e77",
+      "45–64" = "#d95f02",
+      "65+"   = "#7570b3"
+    ),
+    name = "Age group"
+  ) +
+  labs(
+    title = "Year-over-year APC in Age-Adjusted Mortality Rates (2010–2025)",
+    subtitle = "Computed from AAMR standardized to the 2000 U.S. population",
+    x = NULL,
+    y = "Annual percent change (APC, %)"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    panel.grid.minor = element_blank(),
+    legend.position = "top",
+    legend.title = element_text(face = "bold"),
+    strip.text = element_text(face = "bold"),
+    plot.title = element_text(face = "bold")
+  )
+
+p_apc_age
+```
+
+```{r}
+ggsave(
+  filename = "figures/APC_AAMR_by_age_and_disease.tiff",
+  plot     = p_apc_age,
+  device   = "tiff",
+  dpi      = 600,
+  width    = 7.5,
+  height   = 9,
+  units    = "in",
+  compression = "lzw"
+)
+
+```
+
+```{r}
+plot_apc_one_outcome <- function(df, outcome_name) {
+
+  ggplot(
+    df %>% filter(outcome == outcome_name),
+    aes(x = Year, y = APC, color = age4)
+  ) +
+
+    # ---- COVID shading (behind data) ----
+    annotate(
+      "rect",
+      xmin = 2019.5, xmax = 2022.5,
+      ymin = -Inf, ymax = Inf,
+      fill = "grey70", alpha = 0.18
+    ) +
+    annotate(
+      "rect",
+      xmin = 2022.5, xmax = 2023.5,
+      ymin = -Inf, ymax = Inf,
+      fill = "grey40", alpha = 0.14
+    ) +
+
+    # ---- reference line ----
+    geom_hline(yintercept = 0, linewidth = 0.4, color = "grey60") +
+
+    # ---- APC lines ----
+    geom_line(linewidth = 0.8) +
+    geom_point(size = 2) +
+
+    scale_color_manual(
+      values = c(
+        "20–44" = "#1b9e77",
+        "45–64" = "#d95f02",
+        "65+"   = "#7570b3"
+      ),
+      name = "Age group"
+    ) +
+    scale_x_continuous(breaks = seq(2010, 2025, 3)) +
+
+    labs(
+      x = "Year",
+      y = "Annual percent change (APC, %)",
+      caption = "Light grey: COVID-19 pandemic (2020–2022); darker grey: transition year (2023)."
+    ) +
+
+    theme_minimal(base_size = 13) +
+    theme(
+      panel.grid.minor = element_blank(),
+      legend.position = "top",
+      legend.title = element_text(face = "bold"),
+      plot.title = element_text(face = "bold"),
+      axis.title = element_text(face = "bold")
+    )
+}
+```
+
+```{r}
+p_apc_aki <- plot_apc_one_outcome(apc_plot_data, "AKI")
+p_apc_sepsis <- plot_apc_one_outcome(apc_plot_data, "Sepsis")
+p_apc_both <- plot_apc_one_outcome(apc_plot_data, "AKI/sepsis")
+p_apc_aki
+p_apc_sepsis
+p_apc_both
+```
+```{r}
+p_apc_all <- ggplot(
+  apc_plot_data,
+  aes(x = Year, y = APC, color = age4)
+) +
+
+  # ---- COVID shading ----
+  annotate(
+    "rect",
+    xmin = 2019.5, xmax = 2022.5,
+    ymin = -Inf, ymax = Inf,
+    fill = "grey70", alpha = 0.18
+  ) +
+  annotate(
+    "rect",
+    xmin = 2022.5, xmax = 2023.5,
+    ymin = -Inf, ymax = Inf,
+    fill = "grey40", alpha = 0.14
+  ) +
+
+  geom_hline(yintercept = 0, linewidth = 0.4, color = "grey60") +
+  geom_line(linewidth = 0.8) +
+  geom_point(size = 2) +
+
+  facet_wrap(~ outcome, nrow = 1) +   # 👈 horizontal facet
+
+  scale_color_manual(
+    values = c(
+      "20–44" = "#1b9e77",
+      "45–64" = "#d95f02",
+      "65+"   = "#7570b3"
+    ),
+    name = "Age group"
+  ) +
+
+  scale_x_continuous(breaks = seq(2010, 2025, 3)) +
+
+  labs(
+    x = "Year",
+    y = "Annual percent change (APC, %)",
+    caption = "Light grey: COVID-19 pandemic (2020–2022); darker grey: transition year (2023)."
+  ) +
+
+  theme_minimal(base_size = 13) +
+  theme(
+    panel.grid.minor = element_blank(),
+    legend.position = "top",
+    legend.title = element_text(face = "bold"),
+    plot.title = element_text(face = "bold"),
+    axis.title = element_text(face = "bold"),
+    strip.text = element_text(face = "bold")
+  )
+
+p_apc_all
+
+```
+```{r}
+ggsave("figures/APC_ALL.png", p_apc_all, width = 10, height = 5.2, dpi = 600)
+```
+
+```{r}
+library(ggrepel)
+apc_plot_data <- apc_plot_data %>%
+  mutate(
+    outcome = factor(outcome, levels = c("AKI", "Sepsis", "AKI/sepsis")),
+    age4    = factor(age4,    levels = c("20–44", "45–64", "65+"))
+  )
+
+# ------------------------------------------------------------
+# Function: build ONE disease APC plot (with repelled labels)
+# ------------------------------------------------------------
+plot_apc_one_outcome <- function(df,
+                                 outcome_name,
+                                 label_years = 2020:2022,
+                                 pandemic_alpha = 0.12,
+                                 transition_alpha = 0.10) {
+
+  df1 <- df %>% filter(outcome == outcome_name)
+
+  label_df <- df1 %>%
+    filter(Year %in% label_years, !is.na(APC), is.finite(APC)) %>%
+    mutate(lab = sprintf("%.1f", APC))
+
+  ggplot(df1, aes(x = Year, y = APC, color = age4, group = age4)) +
+
+    # ---- background shading ----
+    annotate("rect",
+             xmin = 2019.5, xmax = 2022.5,
+             ymin = -Inf, ymax = Inf,
+             fill = "grey70", alpha = pandemic_alpha) +
+    annotate("rect",
+             xmin = 2022.5, xmax = 2023.5,
+             ymin = -Inf, ymax = Inf,
+             fill = "grey40", alpha = transition_alpha) +
+
+    # ---- reference line ----
+    geom_hline(yintercept = 0, linewidth = 0.4, color = "grey60") +
+
+    # ---- lines + points ----
+    geom_line(linewidth = 0.8, alpha = 0.85) +
+    geom_point(size = 1.9) +
+
+    # ---- NON-overlapping numeric labels (pandemic years only) ----
+    geom_text_repel(
+      data = label_df,
+      aes(label = lab),
+      inherit.aes = TRUE,
+      size = 3.0,
+      fontface = "bold",
+      color = "black",
+
+      # label placement tuning
+      box.padding = 0.25,
+      point.padding = 0.15,
+
+      # subtle leader lines (kept light & thin)
+      segment.color = "grey70",
+      segment.size = 0.3,
+      min.segment.length = 0,
+
+      # ensure labels always appear
+      max.overlaps = Inf,
+      seed = 123,
+      show.legend = FALSE
+    ) +
+
+    scale_color_manual(
+      values = c(
+        "20–44" = "#1b9e77",
+        "45–64" = "#d95f02",
+        "65+"   = "#7570b3"
+      ),
+      name = "Age group"
+    ) +
+
+    scale_x_continuous(breaks = seq(2010, 2025, 3)) +
+
+    labs(
+      x = "Year",
+      y = "Annual percent change (APC, %)",
+      caption = "Light grey: COVID-19 pandemic (2020–2022); darker grey: transition year (2023)."
+    ) +
+
+    theme_minimal(base_size = 13) +
+    theme(
+      panel.grid.minor = element_blank(),
+      panel.grid.major.x = element_blank(),
+      legend.position = "top",
+      legend.title = element_text(face = "bold", size = 11),
+      legend.text  = element_text(face = "bold", size = 11),
+      plot.title = element_text(face = "bold"),
+      axis.title = element_text(face = "bold")
+    )
+}
+
+
+
+```
+
+```{r}
+p_apc_aki    <- plot_apc_one_outcome(apc_plot_data, "AKI")
+p_apc_sepsis <- plot_apc_one_outcome(apc_plot_data, "Sepsis")
+p_apc_both   <- plot_apc_one_outcome(apc_plot_data, "AKI/sepsis")
+
+p_apc_aki
+p_apc_sepsis
+p_apc_both
+
+```
+
+
+```{r}
+ggsave("figures/APC_AKI_pandemic_labels.png", p_apc_aki, width = 10, height = 5.2, dpi = 600)
+ggsave("figures/APC_Sepsis_pandemic_labels.png", p_apc_sepsis, width = 10, height = 5.2, dpi = 600)
+ggsave("figures/APC_Both_pandemic_labels.png", p_apc_both, width = 10, height = 5.2, dpi = 600)
+```
+
+## Joinpoint
+
+```{r}
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(tidyr)
+  library(purrr)
+  library(stringr)
+  library(broom)
+  library(strucchange)
+})
+
+# --- APC + CI helper (your same) ---
+apc_from_slope <- function(beta, se) {
+  APC <- 100 * (exp(beta) - 1)
+  LCL <- 100 * (exp(beta - 1.96 * se) - 1)
+  UCL <- 100 * (exp(beta + 1.96 * se) - 1)
+  tibble(APC = APC, LCL = LCL, UCL = UCL)
+}
+
+# --- long series helper (your same) ---
+make_series_long <- function(rate_table_age, year_min = 2010, year_max = 2025) {
+  rate_table_age %>%
+    mutate(Year = suppressWarnings(as.integer(as.character(YearKey)))) %>%
+    filter(!is.na(Year), Year >= year_min, Year <= year_max) %>%
+    select(Year, where(is.numeric)) %>%
+    pivot_longer(-Year, names_to = "series", values_to = "rate") %>%
+    mutate(
+      series = str_replace_all(series, "\\s+", ""),
+      rate   = as.numeric(rate)
+    )
+}
+
+# ============================================================
+# A) Pick k_selected (number of joinpoints) by BIC using breakpoints()
+# - fits: log(rate) ~ Year
+# - chooses k in 0..max_k by minimum BIC
+# - enforces minimum segment size via h = min_seg_n
+# ============================================================
+select_k_by_aicc_breakpoints <- function(series_df, max_k = 3, min_seg_n = 3) {
+
+  df <- series_df %>%
+    dplyr::filter(!is.na(rate), rate > 0) %>%
+    dplyr::arrange(Year)
+
+  if (nrow(df) < (2 * min_seg_n + 1)) {
+    return(tibble(k_selected = 0L, join_years = list(integer(0))))
+  }
+
+  bp <- strucchange::breakpoints(log(rate) ~ Year, data = df, h = min_seg_n)
+
+  # AIC for each k (0..K)
+  aic_all <- stats::AIC(bp)
+
+  # AICc correction: AIC + (2p(p+1))/(n-p-1)
+  # p for k breaks in segmented regression on Year:
+  # each segment has intercept+slope -> 2*(k+1)
+  n <- nrow(df)
+  k_max_possible <- length(aic_all) - 1L
+  k_cap <- min(max_k, k_max_possible)
+
+  aicc <- sapply(0:k_cap, function(k) {
+    p <- 2 * (k + 1)
+    aic_all[k + 1] + (2 * p * (p + 1)) / max(1, (n - p - 1))
+  })
+
+  k_sel <- which.min(aicc) - 1L
+
+  if (k_sel == 0L) {
+    join_years <- integer(0)
+  } else {
+    idx <- strucchange::breakpoints(bp, breaks = k_sel)$breakpoints
+    join_years <- as.integer(df$Year[idx])
+  }
+
+  tibble(k_selected = as.integer(k_sel), join_years = list(join_years))
+}
+# build k_table for ALL series in rate_table_age
+make_k_table <- function(rate_table_age, year_min = 2010, year_max = 2025,
+                         max_k = 3, min_seg_n = 3) {
+
+  long <- make_series_long(rate_table_age, year_min, year_max)
+
+  long %>%
+    group_by(series) %>%
+    group_modify(~ select_k_by_aicc_breakpoints(.x, max_k = max_k, min_seg_n = min_seg_n)) %>%
+    ungroup()
+}
+```
+
+```{r}
+# ============================================================
+# B) Compute APC per segment given joinpoint years
+# ============================================================
+joinpoint_segments_traditional <- function(series_df, k_selected = 0, join_years = integer(0),
+                                          year_min = 2010, year_max = 2025) {
+
+  # keep for modeling (log needs >0)
+  df_fit <- series_df %>%
+    dplyr::filter(!is.na(rate), rate > 0) %>%
+    dplyr::arrange(Year)
+
+  # If no usable points, return the full window
+  if (nrow(df_fit) < 3) {
+    return(tibble(
+      start_year = year_min, end_year = year_max,
+      APC = NA_real_, LCL = NA_real_, UCL = NA_real_,
+      k_selected = 0L
+    ))
+  }
+
+  # segment cutpoints always anchored to full window
+  if (is.null(join_years) || length(join_years) == 0 || k_selected == 0) {
+    cuts <- c(year_min, year_max)
+  } else {
+    jy <- sort(unique(as.integer(join_years)))
+    jy <- jy[jy > year_min & jy < year_max]
+    cuts <- c(year_min, jy, year_max)
+  }
+
+  seg_ranges <- tibble(
+    start_year = cuts[-length(cuts)],
+    end_year   = cuts[-1]
+  )
+
+  purrr::pmap_dfr(seg_ranges, function(start_year, end_year) {
+
+    seg_df <- df_fit %>% dplyr::filter(Year >= start_year, Year <= end_year)
+
+    if (nrow(seg_df) < 3) {
+      return(tibble(
+        start_year = start_year, end_year = end_year,
+        APC = NA_real_, LCL = NA_real_, UCL = NA_real_
+      ))
+    }
+
+    fit <- lm(log(rate) ~ Year, data = seg_df)
+    beta <- coef(fit)[["Year"]]
+    se   <- summary(fit)$coefficients["Year", "Std. Error"]
+    ci <- apc_from_slope(beta, se)
+
+    tibble(
+      start_year = start_year, end_year = end_year,
+      APC = ci$APC, LCL = ci$LCL, UCL = ci$UCL
+    )
+  }) %>%
+    dplyr::mutate(k_selected = as.integer(k_selected))
+}
+```
+
+```{r}
+make_joinpoint_results_table <- function(rate_table_age,
+                                         year_min = 2010,
+                                         year_max = 2025,
+                                         max_k = 3,
+                                         min_seg_n = 4) {
+
+  long <- make_series_long(rate_table_age, year_min, year_max)
+
+  # compute k_selected + join_years for each series
+  k_table <- make_k_table(rate_table_age, year_min, year_max, max_k, min_seg_n)
+
+  segs <- long %>%
+    group_by(series) %>%
+    group_split() %>%
+    purrr::map_dfr(function(df_s) {
+
+      s <- df_s$series[1]
+
+      k_row <- k_table %>% filter(series == s)
+      k <- ifelse(nrow(k_row) == 0, 0L, k_row$k_selected[1])
+      jy <- if (nrow(k_row) == 0) integer(0) else k_row$join_years[[1]]
+
+     joinpoint_segments_traditional(df_s, k_selected = k, join_years = jy,
+                              year_min = year_min, year_max = year_max) %>%
+        mutate(series = s) %>%
+        select(series, k_selected, start_year, end_year, APC, LCL, UCL)
+    })
+
+  segs %>%
+    mutate(
+      Segment = ifelse(!is.na(start_year) & !is.na(end_year),
+                       paste0(start_year, "–", end_year),
+                       NA_character_),
+      APC_CI = ifelse(is.na(APC),
+                      "–",
+                      sprintf("%.2f (%.2f to %.2f)", APC, LCL, UCL))
+    ) %>%
+    arrange(series, start_year) %>%
+    select(series, k_selected, Segment, APC_CI)
+}
+```
+
+```{r}
+# This will compute k_selected by BIC and produce segments + APC
+jp_results <- make_joinpoint_results_table(
+  rate_table_age,
+  year_min = 2010,
+  year_max = 2025,
+  max_k = 3,      # allow up to 3 joinpoints
+  min_seg_n = 4   # min 4 points per segment (tunable)
+)
+
+jp_results
+```
+```{r}
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(tidyr)
+  library(purrr)
+  library(flextable)
+  library(officer)
+})
+
+# ============================================================
+# Text: model + segment explanation
+# ============================================================
+model_explain <- paste0(
+  "Joinpoint-style trend analysis.\n",
+  "We modeled annual age-adjusted mortality rates (AAMR) on the log scale using piecewise log-linear regression. ",
+  "Within each segment, the model assumes a constant log-linear trend over time; the annual percent change (APC) ",
+  "was derived from the segment-specific slope as APC = 100 × (exp(β) − 1), with 95% confidence intervals based on ",
+  "the standard error of β.\n\n",
+  "Model selection.\n",
+  "The number of joinpoints (k_selected) was selected by Bayesian Information Criterion (BIC) among models with 0 to ",
+  3,
+  " joinpoints, subject to a minimum of ",
+  4,
+  " years (points) per segment. ",
+  "When k_selected = 0, the entire period (", 2010, "–", 2025,
+  ") is summarized by a single APC. ",
+  "When k_selected > 0, the period is partitioned into k_selected + 1 contiguous segments.\n\n",
+  "Segment timespan.\n",
+  "Each segment corresponds to a contiguous calendar-year interval (e.g., 2010–2016). ",
+  "Segment boundaries are the joinpoint years implied by k_selected (the internal boundaries between adjacent segments). ",
+  "Segments are reported in chronological order."
+)
+
+# ============================================================
+# Helper: compute k_selected per series (for footnotes)
+# ============================================================
+k_map <- jp_results %>%
+  distinct(series, k_selected)
+
+k_footnote_text <- function(k_df) {
+  # Example: "k_selected (BIC): AKI_20_44=2; AKI_45_64=1; ..."
+  paste0(
+    "k_selected (BIC-selected number of joinpoints): ",
+    paste0(k_df$series, "=", k_df$k_selected, collapse = "; "),
+    "."
+  )
+}
+
+k_note_all <- k_footnote_text(k_map)
+
+# ============================================================
+# TABLE S2: Outcome × Age band (segment APC columns)
+# ============================================================
+table_S2 <- jp_results %>%
+  tidyr::extract(
+    col   = series,
+    into  = c("Outcome", "AgeToken"),
+    regex = "^(.*)_([^_]+)$",
+    remove = FALSE
+  ) %>%
+  mutate(
+    Outcome = case_when(
+      Outcome %in% c("AKI_Sepsis", "AKI/sepsis") ~ "AKI & sepsis",
+      TRUE ~ Outcome
+    ),
+    AgeBand = case_when(
+      AgeToken == "<20"   ~ "<20",
+      AgeToken == "20_44" ~ "20–44",
+      AgeToken == "45_64" ~ "45–64",
+      AgeToken == "65+"   ~ "65+",
+      TRUE ~ AgeToken
+    )
+  ) %>%
+  arrange(Outcome, AgeBand, Segment) %>%
+  group_by(Outcome, AgeBand, series) %>%
+  mutate(
+    segment_number = row_number(),
+    seg_col = paste0("Segment ", segment_number)
+  ) %>%
+  ungroup() %>%
+  select(Outcome, AgeBand, series, seg_col, APC_CI) %>%
+  pivot_wider(names_from = seg_col, values_from = APC_CI) %>%
+  arrange(Outcome, AgeBand)
+
+# ============================================================
+# TABLE S3: Full segment info (NO k_selected column)
+# ============================================================
+table_S3 <- jp_results %>%
+  tidyr::extract(
+    col   = Segment,
+    into  = c("seg_start", "seg_end"),
+    regex = "^(\\d{4})–(\\d{4})$",
+    remove = FALSE
+  ) %>%
+  mutate(
+    seg_start = as.integer(seg_start),
+    seg_end   = as.integer(seg_end)
+  ) %>%
+  group_by(series) %>%
+  arrange(seg_start, .by_group = TRUE) %>%
+  mutate(segment_number = row_number()) %>%
+  ungroup() %>%
+  select(series, segment_number, Segment, seg_start, seg_end, APC_CI)
+
+# ============================================================
+# TABLE S4: Joinpoint years (NO k_selected column)
+# ============================================================
+table_S4 <- table_S3 %>%
+  group_by(series) %>%
+  summarise(
+    joinpoint_years = list(seg_end[segment_number < max(segment_number)]),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    joinpoint_years = purrr::map_chr(
+      joinpoint_years,
+      ~ if (length(.x) == 0) "None" else paste(.x, collapse = ", ")
+    )
+  ) %>%
+  arrange(series)
+
+# ============================================================
+# Flextable styling + table-specific footnotes
+# ============================================================
+
+ft_S2 <- flextable(table_S2) %>%
+  theme_booktabs() %>%
+  autofit() %>%
+  bold(part = "header") %>%
+  align(align = "left", part = "all") %>%
+  set_caption("Table S2. Joinpoint-style APC (95% CI) by outcome and age band.") %>%
+  add_footer_lines(values = k_note_all)
+
+ft_S3 <- flextable(table_S3) %>%
+  theme_booktabs() %>%
+  autofit() %>%
+  bold(part = "header") %>%
+  align(align = "left", part = "all") %>%
+  set_caption("Table S3. Segment time spans and APC (95% CI) for each series.") %>%
+  add_footer_lines(values = k_note_all) %>%
+  add_footer_lines(values = "Segment is the calendar-year interval for the fitted log-linear trend; APC (95% CI) is reported per segment.")
+
+ft_S4 <- flextable(table_S4) %>%
+  theme_booktabs() %>%
+  autofit() %>%
+  bold(part = "header") %>%
+  align(align = "left", part = "all") %>%
+  set_caption("Table S4. Joinpoint years (internal boundaries) implied by the selected model.") %>%
+  add_footer_lines(values = k_note_all) %>%
+  add_footer_lines(values = "Joinpoint years correspond to the end year of each segment except the final segment (i.e., internal boundaries).")
+
+# ============================================================
+# Export Word doc
+# ============================================================
+doc <- read_docx() %>%
+  body_add_par("Statistical Appendix: Joinpoint-style Trend Modeling", style = "heading 1") %>%
+  body_add_par(model_explain, style = "Normal") %>%
+  body_add_par("", style = "Normal") %>%
+  body_add_flextable(ft_S2) %>%
+  body_add_par("", style = "Normal") %>%
+  body_add_flextable(ft_S3) %>%
+  body_add_par("", style = "Normal") %>%
+  body_add_flextable(ft_S4)
+
+print(doc, target = "Joinpoint_Tables_clean_footnotes.docx")
+
+```
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(purrr)
+library(stringr)
+library(broom)
+
+# ---- reshape wide rate table to long ----
+rate_long <- rate_table_age %>%
+  mutate(Year = suppressWarnings(as.integer(as.character(YearKey)))) %>%
+  filter(!is.na(Year), Year >= 2010, Year <= 2025) %>%
+  select(Year, where(is.numeric)) %>%
+  pivot_longer(-Year, names_to = "series", values_to = "rate") %>%
+  mutate(rate = as.numeric(rate)) %>%
+  filter(!is.na(rate), rate > 0)
+```
+
+```{r}
+rate_long <- rate_long %>%
+  mutate(
+    period = case_when(
+      Year >= 2010 & Year <= 2019 ~ "Pre-pandemic (2010–2019)",
+      Year >= 2020 & Year <= 2022 ~ "Pandemic (2020–2022)",
+      Year >= 2023 & Year <= 2025 ~ "Post-pandemic (2023–2025)"
+    )
+  )
+```
+
+```{r}
+apc_by_period <- function(df) {
+
+  if (nrow(df) < 3) {
+    return(tibble(APC = NA_real_, LCL = NA_real_, UCL = NA_real_))
+  }
+
+  fit <- lm(log(rate) ~ Year, data = df)
+
+  beta <- coef(fit)[["Year"]]
+  se   <- summary(fit)$coefficients["Year", "Std. Error"]
+
+  APC <- 100 * (exp(beta) - 1)
+  LCL <- 100 * (exp(beta - 1.96 * se) - 1)
+  UCL <- 100 * (exp(beta + 1.96 * se) - 1)
+
+  tibble(APC = APC, LCL = LCL, UCL = UCL)
+}
+```
+
+```{r}
+apc_period_results <- rate_long %>%
+  group_by(series, period) %>%
+  group_modify(~ apc_by_period(.x)) %>%
+  ungroup() %>%
+  mutate(
+    APC_CI = ifelse(
+      is.na(APC),
+      "–",
+      sprintf("%.2f (%.2f to %.2f)", APC, LCL, UCL)
+    )
+  ) %>%
+  arrange(series, period)
+
+apc_period_results
+```
+
+```{r}
+# ============================================================
+# APC period results -> wide publication table -> Word export
+# Assumes you already created:
+#   apc_period_results with columns: series, period, APC, LCL, UCL, APC_CI
+# ============================================================
+
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(tidyr)
+  library(stringr)
+  library(flextable)
+  library(officer)
+})
+
+# ----------------------------
+# 0) Define nice ordering + labels
+# ----------------------------
+period_levels <- c("Pre-pandemic (2010–2019)", "Pandemic (2020–2022)", "Post-pandemic (2023–2025)")
+period_labels <- c("2010–2019", "2020–2022", "2023–2025")
+
+# Optional: pretty series labels (edit as you like)
+pretty_series <- function(x) {
+  x %>%
+    str_replace("^AKI/sepsis_", "AKI & Sepsis: ") %>%
+    str_replace("^AKI_", "AKI: ") %>%
+    str_replace("^Sepsis_", "Sepsis: ") %>%
+    str_replace("_", " ") %>%
+    str_replace(" 20 44$", "20–44") %>%
+    str_replace(" 45 64$", "45–64") %>%
+    str_replace(" 65\\+$", "≥65") %>%
+    str_replace(" <20$", "<20")
+}
+
+# ----------------------------
+# 1) Ensure the long table is clean + formatted text cell
+# ----------------------------
+apc_long_pub <- apc_period_results %>%
+  mutate(
+    period = factor(period, levels = period_levels),
+    series_label = pretty_series(series),
+    APC_CI = ifelse(
+      is.na(APC) | is.na(LCL) | is.na(UCL),
+      "–",
+      sprintf("%.2f (%.2f to %.2f)", APC, LCL, UCL)
+    )
+  ) %>%
+  select(series, series_label, period, APC_CI) %>%
+  arrange(series_label, period)
+
+# ----------------------------
+# 2) Wide publication table (one row per series, one col per period)
+# ----------------------------
+apc_wide_pub <- apc_long_pub %>%
+  select(series_label, period, APC_CI) %>%
+  pivot_wider(
+    names_from  = period,
+    values_from = APC_CI
+  ) %>%
+  # rename period columns to short journal headers
+  rename_with(
+    ~ period_labels[match(.x, period_levels)],
+    .cols = all_of(period_levels)
+  ) %>%
+  rename(`Series` = series_label)
+
+# ----------------------------
+# 3) Flextable (journal-ish formatting)
+# ----------------------------
+ft <- flextable(apc_wide_pub)
+
+ft <- theme_booktabs(ft)
+ft <- fontsize(ft, size = 11, part = "all")
+ft <- bold(ft, part = "header")
+ft <- align(ft, align = "left",  j = "Series", part = "all")
+ft <- align(ft, align = "center", j = setdiff(names(apc_wide_pub), "Series"), part = "all")
+ft <- valign(ft, valign = "center", part = "all")
+ft <- padding(ft, padding = 3, part = "all")
+ft <- autofit(ft)
+
+# Optional: make header slightly larger
+ft <- fontsize(ft, size = 12, part = "header")
+
+# ----------------------------
+# 4) Export to Word
+# ----------------------------
+dir.create("tables", showWarnings = FALSE)
+
+doc <- read_docx() %>%
+  body_add_par(
+    "Table. Joinpoint-style annual percent change (APC) by period, 2010–2025",
+    style = "heading 1"
+  ) %>%
+  body_add_par(
+    "Values are APC% (95% CI) estimated from log-linear models fit within each period: 2010–2019, 2020–2022, and 2023–2025.",
+    style = "Normal"
+  ) %>%
+  body_add_flextable(ft)
+
+print(doc, target = "tables/APC_period_wide_publication_table.docx")
+```
+
+
+

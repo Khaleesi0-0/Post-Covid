@@ -1,0 +1,151 @@
+---
+title: "pod"
+format: html
+editor: visual
+---
+```{r}
+library(readr)
+library(tidyverse)
+library(lubridate)
+library(splines)
+library(broom)
+library(usmap)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(readr)
+library(officer)
+library(flextable)
+library(dplyr)
+library(conflicted)
+conflicts_prefer(dplyr::select)
+```
+
+```{r}
+pN172010 <- read_csv("Data/podN172010.csv") %>%
+  filter(`Year Code` < 2018)
+pN172018 <- read_csv("Data/podN172018.csv")
+clean_year <- function(df) {
+  df %>%
+    mutate(
+      Year_raw = as.character(Year),
+      # pull the first 4-digit year (e.g., "2024 (provisional)" -> 2024)
+      Year = readr::parse_number(Year_raw),
+      # keep any extra text as a note (optional)
+      Year_note = str_squish(str_remove(Year_raw, "^\\d{4}"))
+    )
+}
+
+pN17 <- bind_rows(
+  clean_year(pN172010 ),
+  clean_year(pN172018 )
+) %>%
+  select(-Year_raw)
+
+glimpse(pN17)
+unique(pN17$`Place of Death`)
+```
+```{r}
+pN17A402010 <- read_csv("Data/podN17A402010.csv") %>%
+  filter(`Year Code` < 2018)
+pN17A402018 <- read_csv("Data/podN17A402018.csv")
+
+pN17A40 <- bind_rows(
+  clean_year(pN17A402010 ),
+  clean_year(pN17A402018 )
+) %>%
+  select(-Year_raw)
+
+pN17A40_RF <- pN17A40 %>%
+  dplyr::filter(`MCD - ICD Sub-Chapter` == "Renal failure")
+```
+
+```{r}
+pA402010 <- read_csv("Data/podA402010.csv") %>%
+  filter(`Year Code` < 2018)
+pA402018 <- read_csv("Data/podA402018.csv")
+
+pA40 <- bind_rows(
+  clean_year(pA402010 ),
+  clean_year(pA402018 )
+) %>%
+  select(-Year_raw)
+```
+
+```{r}
+period_4 <- function(year) {
+  case_when(
+    year >= 2010 & year <= 2019 ~ "Pre-pandemic (2010–2019)",
+    year >= 2020 & year <= 2022 ~ "Pandemic (2020–2022)",
+    year == 2023                ~ "Transition (2023)",
+    year >= 2024 & year <= 2025 ~ "Post-pandemic (2024–2025)",
+    TRUE ~ NA_character_
+  )
+}
+
+place_medical_flag <- function(place) {
+  case_when(
+    is.na(place) ~ NA_character_,
+    str_detect(place, "^Medical Facility\\s*-") ~ "Medical Facility",
+    TRUE ~ "Non-medical facility"
+  )
+}
+
+summarize_total_deaths_by_period_place <- function(df, dataset_label = NULL) {
+  
+  df %>%
+    mutate(
+      year = as.integer(`Year Code`),
+      period = period_4(year),
+      place_group = place_medical_flag(`Place of Death`)
+    ) %>%
+    
+    # ✅ exclude missing period OR missing place
+    filter(!is.na(period),
+       !is.na(place_group),
+       `Place of Death` != "Place of death unknown",
+      `Place of Death` != "Other") %>%
+    
+    group_by(period, place_group) %>%
+    summarise(
+      total_deaths = sum(Deaths, na.rm = TRUE),
+      .groups = "drop"
+    ) %>%
+    
+    mutate(
+      dataset = dataset_label,
+      period = factor(period, levels = c(
+        "Pre-pandemic (2010–2019)",
+        "Pandemic (2020–2022)",
+        "Transition (2023)",
+        "Post-pandemic (2024–2025)"
+      )),
+      place_group = factor(place_group,
+                           levels = c("Medical Facility", "Non-medical facility"))
+    ) %>%
+    
+    arrange(period, place_group)
+}
+
+```
+
+```{r}
+tot_pN17    <- summarize_total_deaths_by_period_place(pN17,    "AKI")
+tot_pN17A40 <- summarize_total_deaths_by_period_place(pN17A40_RF, "AKI & Sepsis")
+tot_pA40    <- summarize_total_deaths_by_period_place(pA40,    "Sepsis")
+
+tot_all <- bind_rows(tot_pN17, tot_pN17A40, tot_pA40)
+
+tot_all
+
+
+```
+
+```{r}
+write.csv(
+  tot_all,
+  file = "Data/pod.csv",
+  row.names = FALSE
+)
+```
+

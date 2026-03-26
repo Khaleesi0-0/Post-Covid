@@ -1,0 +1,944 @@
+"Notes","Census Region","Census Region Code","State","State Code","Year","Year Code","MCD - ICD Sub-Chapter","MCD - ICD Sub-Chapter Code",Deaths,Population,Crude Rate,Age Adjusted Rate
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2010","2010","Renal failure","N17-N19",673,3574097,18.8,15.2
+"Total","Census Region 1: Northeast","CENS-R1","Connecticut","09","2010","2010",,,673,3574097,18.8,15.2
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2011","2011","Renal failure","N17-N19",748,3580709,20.9,16.4
+"Total","Census Region 1: Northeast","CENS-R1","Connecticut","09","2011","2011",,,748,3580709,20.9,16.4
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2012","2012","Renal failure","N17-N19",621,3590347,17.3,13.4
+"Total","Census Region 1: Northeast","CENS-R1","Connecticut","09","2012","2012",,,621,3590347,17.3,13.4
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2013","2013","Renal failure","N17-N19",602,3596080,16.7,13.1
+"Total","Census Region 1: Northeast","CENS-R1","Connecticut","09","2013","2013",,,602,3596080,16.7,13.1
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2014","2014","Renal failure","N17-N19",513,3596677,14.3,10.8
+"Total","Census Region 1: Northeast","CENS-R1","Connecticut","09","2014","2014",,,513,3596677,14.3,10.8
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2015","2015","Renal failure","N17-N19",520,3590886,14.5,10.9
+"Total","Census Region 1: Northeast","CENS-R1","Connecticut","09","2015","2015",,,520,3590886,14.5,10.9
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2016","2016","Renal failure","N17-N19",500,3576452,14.0,10.7
+"Total","Census Region 1: Northeast","CENS-R1","Connecticut","09","2016","2016",,,500,3576452,14.0,10.7
+,"Census Region 1: Northeast","CENS-R1","Connecticut","09","2017","2017","Renal failure","N17-N19",507,3588184,14.1,10.2
+"Total","Census Region 1: Northeast","CENS-R1","Connecticut","09","2017","2017",,,507,3588184,14.1,10.2
+"Total","Census Region 1: Northeast","CENS-R1","Connecticut","09",,,,,4684,28693432,16.3,12.6
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2010","2010","Renal failure","N17-N19",303,1328361,22.8,17.6
+"Total","Census Region 1: Northeast","CENS-R1","Maine","23","2010","2010",,,303,1328361,22.8,17.6
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2011","2011","Renal failure","N17-N19",242,1328188,18.2,13.8
+"Total","Census Region 1: Northeast","CENS-R1","Maine","23","2011","2011",,,242,1328188,18.2,13.8
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2012","2012","Renal failure","N17-N19",260,1329192,19.6,14.3
+"Total","Census Region 1: Northeast","CENS-R1","Maine","23","2012","2012",,,260,1329192,19.6,14.3
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2013","2013","Renal failure","N17-N19",278,1328302,20.9,15.0
+"Total","Census Region 1: Northeast","CENS-R1","Maine","23","2013","2013",,,278,1328302,20.9,15.0
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2014","2014","Renal failure","N17-N19",267,1330089,20.1,14.3
+"Total","Census Region 1: Northeast","CENS-R1","Maine","23","2014","2014",,,267,1330089,20.1,14.3
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2015","2015","Renal failure","N17-N19",268,1329328,20.2,14.2
+"Total","Census Region 1: Northeast","CENS-R1","Maine","23","2015","2015",,,268,1329328,20.2,14.2
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2016","2016","Renal failure","N17-N19",273,1331479,20.5,14.4
+"Total","Census Region 1: Northeast","CENS-R1","Maine","23","2016","2016",,,273,1331479,20.5,14.4
+,"Census Region 1: Northeast","CENS-R1","Maine","23","2017","2017","Renal failure","N17-N19",255,1335907,19.1,13.0
+"Total","Census Region 1: Northeast","CENS-R1","Maine","23","2017","2017",,,255,1335907,19.1,13.0
+"Total","Census Region 1: Northeast","CENS-R1","Maine","23",,,,,2146,10640846,20.2,14.5
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2010","2010","Renal failure","N17-N19",1462,6547629,22.3,18.5
+"Total","Census Region 1: Northeast","CENS-R1","Massachusetts","25","2010","2010",,,1462,6547629,22.3,18.5
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2011","2011","Renal failure","N17-N19",1496,6587536,22.7,18.5
+"Total","Census Region 1: Northeast","CENS-R1","Massachusetts","25","2011","2011",,,1496,6587536,22.7,18.5
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2012","2012","Renal failure","N17-N19",1364,6646144,20.5,16.6
+"Total","Census Region 1: Northeast","CENS-R1","Massachusetts","25","2012","2012",,,1364,6646144,20.5,16.6
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2013","2013","Renal failure","N17-N19",1300,6692824,19.4,15.7
+"Total","Census Region 1: Northeast","CENS-R1","Massachusetts","25","2013","2013",,,1300,6692824,19.4,15.7
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2014","2014","Renal failure","N17-N19",1253,6745408,18.6,14.9
+"Total","Census Region 1: Northeast","CENS-R1","Massachusetts","25","2014","2014",,,1253,6745408,18.6,14.9
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2015","2015","Renal failure","N17-N19",1384,6794422,20.4,16.1
+"Total","Census Region 1: Northeast","CENS-R1","Massachusetts","25","2015","2015",,,1384,6794422,20.4,16.1
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2016","2016","Renal failure","N17-N19",1276,6811779,18.7,14.7
+"Total","Census Region 1: Northeast","CENS-R1","Massachusetts","25","2016","2016",,,1276,6811779,18.7,14.7
+,"Census Region 1: Northeast","CENS-R1","Massachusetts","25","2017","2017","Renal failure","N17-N19",1245,6859819,18.1,14.1
+"Total","Census Region 1: Northeast","CENS-R1","Massachusetts","25","2017","2017",,,1245,6859819,18.1,14.1
+"Total","Census Region 1: Northeast","CENS-R1","Massachusetts","25",,,,,10780,53685561,20.1,16.1
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2010","2010","Renal failure","N17-N19",288,1316470,21.9,19.5
+"Total","Census Region 1: Northeast","CENS-R1","New Hampshire","33","2010","2010",,,288,1316470,21.9,19.5
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2011","2011","Renal failure","N17-N19",265,1318194,20.1,17.4
+"Total","Census Region 1: Northeast","CENS-R1","New Hampshire","33","2011","2011",,,265,1318194,20.1,17.4
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2012","2012","Renal failure","N17-N19",259,1320718,19.6,16.7
+"Total","Census Region 1: Northeast","CENS-R1","New Hampshire","33","2012","2012",,,259,1320718,19.6,16.7
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2013","2013","Renal failure","N17-N19",268,1323459,20.2,16.7
+"Total","Census Region 1: Northeast","CENS-R1","New Hampshire","33","2013","2013",,,268,1323459,20.2,16.7
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2014","2014","Renal failure","N17-N19",274,1326813,20.7,16.5
+"Total","Census Region 1: Northeast","CENS-R1","New Hampshire","33","2014","2014",,,274,1326813,20.7,16.5
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2015","2015","Renal failure","N17-N19",254,1330608,19.1,15.0
+"Total","Census Region 1: Northeast","CENS-R1","New Hampshire","33","2015","2015",,,254,1330608,19.1,15.0
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2016","2016","Renal failure","N17-N19",213,1334795,16.0,12.3
+"Total","Census Region 1: Northeast","CENS-R1","New Hampshire","33","2016","2016",,,213,1334795,16.0,12.3
+,"Census Region 1: Northeast","CENS-R1","New Hampshire","33","2017","2017","Renal failure","N17-N19",239,1342795,17.8,13.4
+"Total","Census Region 1: Northeast","CENS-R1","New Hampshire","33","2017","2017",,,239,1342795,17.8,13.4
+"Total","Census Region 1: Northeast","CENS-R1","New Hampshire","33",,,,,2060,10613852,19.4,15.8
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2010","2010","Renal failure","N17-N19",258,1052567,24.5,18.9
+"Total","Census Region 1: Northeast","CENS-R1","Rhode Island","44","2010","2010",,,258,1052567,24.5,18.9
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2011","2011","Renal failure","N17-N19",285,1051302,27.1,20.4
+"Total","Census Region 1: Northeast","CENS-R1","Rhode Island","44","2011","2011",,,285,1051302,27.1,20.4
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2012","2012","Renal failure","N17-N19",266,1050292,25.3,18.7
+"Total","Census Region 1: Northeast","CENS-R1","Rhode Island","44","2012","2012",,,266,1050292,25.3,18.7
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2013","2013","Renal failure","N17-N19",233,1051511,22.2,16.2
+"Total","Census Region 1: Northeast","CENS-R1","Rhode Island","44","2013","2013",,,233,1051511,22.2,16.2
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2014","2014","Renal failure","N17-N19",203,1055173,19.2,14.4
+"Total","Census Region 1: Northeast","CENS-R1","Rhode Island","44","2014","2014",,,203,1055173,19.2,14.4
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2015","2015","Renal failure","N17-N19",229,1056298,21.7,15.9
+"Total","Census Region 1: Northeast","CENS-R1","Rhode Island","44","2015","2015",,,229,1056298,21.7,15.9
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2016","2016","Renal failure","N17-N19",170,1056426,16.1,12.4
+"Total","Census Region 1: Northeast","CENS-R1","Rhode Island","44","2016","2016",,,170,1056426,16.1,12.4
+,"Census Region 1: Northeast","CENS-R1","Rhode Island","44","2017","2017","Renal failure","N17-N19",208,1059639,19.6,14.1
+"Total","Census Region 1: Northeast","CENS-R1","Rhode Island","44","2017","2017",,,208,1059639,19.6,14.1
+"Total","Census Region 1: Northeast","CENS-R1","Rhode Island","44",,,,,1852,8433208,22.0,16.3
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2010","2010","Renal failure","N17-N19",104,625741,16.6,13.6
+"Total","Census Region 1: Northeast","CENS-R1","Vermont","50","2010","2010",,,104,625741,16.6,13.6
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2011","2011","Renal failure","N17-N19",117,626431,18.7,15.0
+"Total","Census Region 1: Northeast","CENS-R1","Vermont","50","2011","2011",,,117,626431,18.7,15.0
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2012","2012","Renal failure","N17-N19",118,626011,18.8,14.7
+"Total","Census Region 1: Northeast","CENS-R1","Vermont","50","2012","2012",,,118,626011,18.8,14.7
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2013","2013","Renal failure","N17-N19",118,626630,18.8,14.8
+"Total","Census Region 1: Northeast","CENS-R1","Vermont","50","2013","2013",,,118,626630,18.8,14.8
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2014","2014","Renal failure","N17-N19",128,626562,20.4,15.7
+"Total","Census Region 1: Northeast","CENS-R1","Vermont","50","2014","2014",,,128,626562,20.4,15.7
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2015","2015","Renal failure","N17-N19",117,626042,18.7,13.7
+"Total","Census Region 1: Northeast","CENS-R1","Vermont","50","2015","2015",,,117,626042,18.7,13.7
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2016","2016","Renal failure","N17-N19",101,624594,16.2,12.2
+"Total","Census Region 1: Northeast","CENS-R1","Vermont","50","2016","2016",,,101,624594,16.2,12.2
+,"Census Region 1: Northeast","CENS-R1","Vermont","50","2017","2017","Renal failure","N17-N19",107,623657,17.2,12.6
+"Total","Census Region 1: Northeast","CENS-R1","Vermont","50","2017","2017",,,107,623657,17.2,12.6
+"Total","Census Region 1: Northeast","CENS-R1","Vermont","50",,,,,910,5005668,18.2,14.0
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2010","2010","Renal failure","N17-N19",1802,8791894,20.5,17.8
+"Total","Census Region 1: Northeast","CENS-R1","New Jersey","34","2010","2010",,,1802,8791894,20.5,17.8
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2011","2011","Renal failure","N17-N19",1742,8821155,19.7,16.9
+"Total","Census Region 1: Northeast","CENS-R1","New Jersey","34","2011","2011",,,1742,8821155,19.7,16.9
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2012","2012","Renal failure","N17-N19",1624,8864590,18.3,15.5
+"Total","Census Region 1: Northeast","CENS-R1","New Jersey","34","2012","2012",,,1624,8864590,18.3,15.5
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2013","2013","Renal failure","N17-N19",1690,8899339,19.0,15.8
+"Total","Census Region 1: Northeast","CENS-R1","New Jersey","34","2013","2013",,,1690,8899339,19.0,15.8
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2014","2014","Renal failure","N17-N19",1667,8938175,18.7,15.3
+"Total","Census Region 1: Northeast","CENS-R1","New Jersey","34","2014","2014",,,1667,8938175,18.7,15.3
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2015","2015","Renal failure","N17-N19",1601,8958013,17.9,14.6
+"Total","Census Region 1: Northeast","CENS-R1","New Jersey","34","2015","2015",,,1601,8958013,17.9,14.6
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2016","2016","Renal failure","N17-N19",1670,8944469,18.7,15.1
+"Total","Census Region 1: Northeast","CENS-R1","New Jersey","34","2016","2016",,,1670,8944469,18.7,15.1
+,"Census Region 1: Northeast","CENS-R1","New Jersey","34","2017","2017","Renal failure","N17-N19",1705,9005644,18.9,15.0
+"Total","Census Region 1: Northeast","CENS-R1","New Jersey","34","2017","2017",,,1705,9005644,18.9,15.0
+"Total","Census Region 1: Northeast","CENS-R1","New Jersey","34",,,,,13501,71223279,19.0,15.7
+,"Census Region 1: Northeast","CENS-R1","New York","36","2010","2010","Renal failure","N17-N19",3044,19378102,15.7,13.6
+"Total","Census Region 1: Northeast","CENS-R1","New York","36","2010","2010",,,3044,19378102,15.7,13.6
+,"Census Region 1: Northeast","CENS-R1","New York","36","2011","2011","Renal failure","N17-N19",3090,19465197,15.9,13.6
+"Total","Census Region 1: Northeast","CENS-R1","New York","36","2011","2011",,,3090,19465197,15.9,13.6
+,"Census Region 1: Northeast","CENS-R1","New York","36","2012","2012","Renal failure","N17-N19",2863,19570261,14.6,12.4
+"Total","Census Region 1: Northeast","CENS-R1","New York","36","2012","2012",,,2863,19570261,14.6,12.4
+,"Census Region 1: Northeast","CENS-R1","New York","36","2013","2013","Renal failure","N17-N19",2719,19651127,13.8,11.5
+"Total","Census Region 1: Northeast","CENS-R1","New York","36","2013","2013",,,2719,19651127,13.8,11.5
+,"Census Region 1: Northeast","CENS-R1","New York","36","2014","2014","Renal failure","N17-N19",2564,19746227,13.0,10.7
+"Total","Census Region 1: Northeast","CENS-R1","New York","36","2014","2014",,,2564,19746227,13.0,10.7
+,"Census Region 1: Northeast","CENS-R1","New York","36","2015","2015","Renal failure","N17-N19",2411,19795791,12.2,9.9
+"Total","Census Region 1: Northeast","CENS-R1","New York","36","2015","2015",,,2411,19795791,12.2,9.9
+,"Census Region 1: Northeast","CENS-R1","New York","36","2016","2016","Renal failure","N17-N19",2286,19745289,11.6,9.3
+"Total","Census Region 1: Northeast","CENS-R1","New York","36","2016","2016",,,2286,19745289,11.6,9.3
+,"Census Region 1: Northeast","CENS-R1","New York","36","2017","2017","Renal failure","N17-N19",2421,19849399,12.2,9.6
+"Total","Census Region 1: Northeast","CENS-R1","New York","36","2017","2017",,,2421,19849399,12.2,9.6
+"Total","Census Region 1: Northeast","CENS-R1","New York","36",,,,,21398,157201393,13.6,11.3
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2010","2010","Renal failure","N17-N19",3060,12702379,24.1,18.3
+"Total","Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2010","2010",,,3060,12702379,24.1,18.3
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2011","2011","Renal failure","N17-N19",3097,12742886,24.3,18.2
+"Total","Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2011","2011",,,3097,12742886,24.3,18.2
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2012","2012","Renal failure","N17-N19",3147,12763536,24.7,18.2
+"Total","Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2012","2012",,,3147,12763536,24.7,18.2
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2013","2013","Renal failure","N17-N19",3058,12773801,23.9,17.3
+"Total","Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2013","2013",,,3058,12773801,23.9,17.3
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2014","2014","Renal failure","N17-N19",2867,12787209,22.4,16.2
+"Total","Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2014","2014",,,2867,12787209,22.4,16.2
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2015","2015","Renal failure","N17-N19",2883,12802503,22.5,16.1
+"Total","Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2015","2015",,,2883,12802503,22.5,16.1
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2016","2016","Renal failure","N17-N19",2923,12784227,22.9,16.3
+"Total","Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2016","2016",,,2923,12784227,22.9,16.3
+,"Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2017","2017","Renal failure","N17-N19",2717,12805537,21.2,15.1
+"Total","Census Region 1: Northeast","CENS-R1","Pennsylvania","42","2017","2017",,,2717,12805537,21.2,15.1
+"Total","Census Region 1: Northeast","CENS-R1","Pennsylvania","42",,,,,23752,102162078,23.2,16.9
+"Total","Census Region 1: Northeast","CENS-R1",,,,,,,81083,447659317,18.1,14.3
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2010","2010","Renal failure","N17-N19",2351,12830632,18.3,17.4
+"Total","Census Region 2: Midwest","CENS-R2","Illinois","17","2010","2010",,,2351,12830632,18.3,17.4
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2011","2011","Renal failure","N17-N19",2337,12869257,18.2,16.9
+"Total","Census Region 2: Midwest","CENS-R2","Illinois","17","2011","2011",,,2337,12869257,18.2,16.9
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2012","2012","Renal failure","N17-N19",2257,12875255,17.5,16.0
+"Total","Census Region 2: Midwest","CENS-R2","Illinois","17","2012","2012",,,2257,12875255,17.5,16.0
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2013","2013","Renal failure","N17-N19",2237,12882135,17.4,15.6
+"Total","Census Region 2: Midwest","CENS-R2","Illinois","17","2013","2013",,,2237,12882135,17.4,15.6
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2014","2014","Renal failure","N17-N19",2329,12880580,18.1,15.9
+"Total","Census Region 2: Midwest","CENS-R2","Illinois","17","2014","2014",,,2329,12880580,18.1,15.9
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2015","2015","Renal failure","N17-N19",2310,12859995,18.0,15.7
+"Total","Census Region 2: Midwest","CENS-R2","Illinois","17","2015","2015",,,2310,12859995,18.0,15.7
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2016","2016","Renal failure","N17-N19",2179,12801539,17.0,14.7
+"Total","Census Region 2: Midwest","CENS-R2","Illinois","17","2016","2016",,,2179,12801539,17.0,14.7
+,"Census Region 2: Midwest","CENS-R2","Illinois","17","2017","2017","Renal failure","N17-N19",2054,12802023,16.0,13.3
+"Total","Census Region 2: Midwest","CENS-R2","Illinois","17","2017","2017",,,2054,12802023,16.0,13.3
+"Total","Census Region 2: Midwest","CENS-R2","Illinois","17",,,,,18054,102801416,17.6,15.7
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2010","2010","Renal failure","N17-N19",1468,6483802,22.6,21.2
+"Total","Census Region 2: Midwest","CENS-R2","Indiana","18","2010","2010",,,1468,6483802,22.6,21.2
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2011","2011","Renal failure","N17-N19",1882,6516922,28.9,26.6
+"Total","Census Region 2: Midwest","CENS-R2","Indiana","18","2011","2011",,,1882,6516922,28.9,26.6
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2012","2012","Renal failure","N17-N19",1959,6537334,30.0,27.3
+"Total","Census Region 2: Midwest","CENS-R2","Indiana","18","2012","2012",,,1959,6537334,30.0,27.3
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2013","2013","Renal failure","N17-N19",2085,6570902,31.7,28.4
+"Total","Census Region 2: Midwest","CENS-R2","Indiana","18","2013","2013",,,2085,6570902,31.7,28.4
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2014","2014","Renal failure","N17-N19",2067,6596855,31.3,27.8
+"Total","Census Region 2: Midwest","CENS-R2","Indiana","18","2014","2014",,,2067,6596855,31.3,27.8
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2015","2015","Renal failure","N17-N19",2063,6619680,31.2,27.2
+"Total","Census Region 2: Midwest","CENS-R2","Indiana","18","2015","2015",,,2063,6619680,31.2,27.2
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2016","2016","Renal failure","N17-N19",2070,6633053,31.2,27.1
+"Total","Census Region 2: Midwest","CENS-R2","Indiana","18","2016","2016",,,2070,6633053,31.2,27.1
+,"Census Region 2: Midwest","CENS-R2","Indiana","18","2017","2017","Renal failure","N17-N19",2029,6666818,30.4,25.9
+"Total","Census Region 2: Midwest","CENS-R2","Indiana","18","2017","2017",,,2029,6666818,30.4,25.9
+"Total","Census Region 2: Midwest","CENS-R2","Indiana","18",,,,,15623,52625366,29.7,26.5
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2010","2010","Renal failure","N17-N19",2277,9883640,23.0,20.3
+"Total","Census Region 2: Midwest","CENS-R2","Michigan","26","2010","2010",,,2277,9883640,23.0,20.3
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2011","2011","Renal failure","N17-N19",2063,9876187,20.9,18.1
+"Total","Census Region 2: Midwest","CENS-R2","Michigan","26","2011","2011",,,2063,9876187,20.9,18.1
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2012","2012","Renal failure","N17-N19",1946,9883360,19.7,16.5
+"Total","Census Region 2: Midwest","CENS-R2","Michigan","26","2012","2012",,,1946,9883360,19.7,16.5
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2013","2013","Renal failure","N17-N19",1784,9895622,18.0,14.9
+"Total","Census Region 2: Midwest","CENS-R2","Michigan","26","2013","2013",,,1784,9895622,18.0,14.9
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2014","2014","Renal failure","N17-N19",1804,9909877,18.2,14.8
+"Total","Census Region 2: Midwest","CENS-R2","Michigan","26","2014","2014",,,1804,9909877,18.2,14.8
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2015","2015","Renal failure","N17-N19",1784,9922576,18.0,14.5
+"Total","Census Region 2: Midwest","CENS-R2","Michigan","26","2015","2015",,,1784,9922576,18.0,14.5
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2016","2016","Renal failure","N17-N19",1701,9928300,17.1,13.6
+"Total","Census Region 2: Midwest","CENS-R2","Michigan","26","2016","2016",,,1701,9928300,17.1,13.6
+,"Census Region 2: Midwest","CENS-R2","Michigan","26","2017","2017","Renal failure","N17-N19",1611,9962311,16.2,12.8
+"Total","Census Region 2: Midwest","CENS-R2","Michigan","26","2017","2017",,,1611,9962311,16.2,12.8
+"Total","Census Region 2: Midwest","CENS-R2","Michigan","26",,,,,14970,79261873,18.9,15.6
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2010","2010","Renal failure","N17-N19",2823,11536504,24.5,21.0
+"Total","Census Region 2: Midwest","CENS-R2","Ohio","39","2010","2010",,,2823,11536504,24.5,21.0
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2011","2011","Renal failure","N17-N19",2819,11544951,24.4,20.5
+"Total","Census Region 2: Midwest","CENS-R2","Ohio","39","2011","2011",,,2819,11544951,24.4,20.5
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2012","2012","Renal failure","N17-N19",2590,11544225,22.4,18.6
+"Total","Census Region 2: Midwest","CENS-R2","Ohio","39","2012","2012",,,2590,11544225,22.4,18.6
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2013","2013","Renal failure","N17-N19",2523,11570808,21.8,17.9
+"Total","Census Region 2: Midwest","CENS-R2","Ohio","39","2013","2013",,,2523,11570808,21.8,17.9
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2014","2014","Renal failure","N17-N19",2492,11594163,21.5,17.3
+"Total","Census Region 2: Midwest","CENS-R2","Ohio","39","2014","2014",,,2492,11594163,21.5,17.3
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2015","2015","Renal failure","N17-N19",2294,11613423,19.8,15.7
+"Total","Census Region 2: Midwest","CENS-R2","Ohio","39","2015","2015",,,2294,11613423,19.8,15.7
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2016","2016","Renal failure","N17-N19",2323,11614373,20.0,15.8
+"Total","Census Region 2: Midwest","CENS-R2","Ohio","39","2016","2016",,,2323,11614373,20.0,15.8
+,"Census Region 2: Midwest","CENS-R2","Ohio","39","2017","2017","Renal failure","N17-N19",2221,11658609,19.1,14.9
+"Total","Census Region 2: Midwest","CENS-R2","Ohio","39","2017","2017",,,2221,11658609,19.1,14.9
+"Total","Census Region 2: Midwest","CENS-R2","Ohio","39",,,,,20085,92677056,21.7,17.6
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2010","2010","Renal failure","N17-N19",1111,5686986,19.5,16.9
+"Total","Census Region 2: Midwest","CENS-R2","Wisconsin","55","2010","2010",,,1111,5686986,19.5,16.9
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2011","2011","Renal failure","N17-N19",1124,5711767,19.7,16.7
+"Total","Census Region 2: Midwest","CENS-R2","Wisconsin","55","2011","2011",,,1124,5711767,19.7,16.7
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2012","2012","Renal failure","N17-N19",1174,5726398,20.5,17.0
+"Total","Census Region 2: Midwest","CENS-R2","Wisconsin","55","2012","2012",,,1174,5726398,20.5,17.0
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2013","2013","Renal failure","N17-N19",1123,5742713,19.6,16.1
+"Total","Census Region 2: Midwest","CENS-R2","Wisconsin","55","2013","2013",,,1123,5742713,19.6,16.1
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2014","2014","Renal failure","N17-N19",1218,5757564,21.2,17.2
+"Total","Census Region 2: Midwest","CENS-R2","Wisconsin","55","2014","2014",,,1218,5757564,21.2,17.2
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2015","2015","Renal failure","N17-N19",1249,5771337,21.6,17.4
+"Total","Census Region 2: Midwest","CENS-R2","Wisconsin","55","2015","2015",,,1249,5771337,21.6,17.4
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2016","2016","Renal failure","N17-N19",1238,5778708,21.4,16.9
+"Total","Census Region 2: Midwest","CENS-R2","Wisconsin","55","2016","2016",,,1238,5778708,21.4,16.9
+,"Census Region 2: Midwest","CENS-R2","Wisconsin","55","2017","2017","Renal failure","N17-N19",1208,5795483,20.8,16.2
+"Total","Census Region 2: Midwest","CENS-R2","Wisconsin","55","2017","2017",,,1208,5795483,20.8,16.2
+"Total","Census Region 2: Midwest","CENS-R2","Wisconsin","55",,,,,9445,45970956,20.5,16.8
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2010","2010","Renal failure","N17-N19",580,3046355,19.0,14.9
+"Total","Census Region 2: Midwest","CENS-R2","Iowa","19","2010","2010",,,580,3046355,19.0,14.9
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2011","2011","Renal failure","N17-N19",646,3062309,21.1,16.3
+"Total","Census Region 2: Midwest","CENS-R2","Iowa","19","2011","2011",,,646,3062309,21.1,16.3
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2012","2012","Renal failure","N17-N19",660,3074186,21.5,16.5
+"Total","Census Region 2: Midwest","CENS-R2","Iowa","19","2012","2012",,,660,3074186,21.5,16.5
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2013","2013","Renal failure","N17-N19",687,3090416,22.2,16.7
+"Total","Census Region 2: Midwest","CENS-R2","Iowa","19","2013","2013",,,687,3090416,22.2,16.7
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2014","2014","Renal failure","N17-N19",698,3107126,22.5,16.9
+"Total","Census Region 2: Midwest","CENS-R2","Iowa","19","2014","2014",,,698,3107126,22.5,16.9
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2015","2015","Renal failure","N17-N19",640,3123899,20.5,15.3
+"Total","Census Region 2: Midwest","CENS-R2","Iowa","19","2015","2015",,,640,3123899,20.5,15.3
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2016","2016","Renal failure","N17-N19",704,3134693,22.5,16.8
+"Total","Census Region 2: Midwest","CENS-R2","Iowa","19","2016","2016",,,704,3134693,22.5,16.8
+,"Census Region 2: Midwest","CENS-R2","Iowa","19","2017","2017","Renal failure","N17-N19",765,3145711,24.3,18.5
+"Total","Census Region 2: Midwest","CENS-R2","Iowa","19","2017","2017",,,765,3145711,24.3,18.5
+"Total","Census Region 2: Midwest","CENS-R2","Iowa","19",,,,,5380,24784695,21.7,16.5
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2010","2010","Renal failure","N17-N19",574,2853118,20.1,17.7
+"Total","Census Region 2: Midwest","CENS-R2","Kansas","20","2010","2010",,,574,2853118,20.1,17.7
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2011","2011","Renal failure","N17-N19",589,2871238,20.5,17.7
+"Total","Census Region 2: Midwest","CENS-R2","Kansas","20","2011","2011",,,589,2871238,20.5,17.7
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2012","2012","Renal failure","N17-N19",564,2885905,19.5,16.8
+"Total","Census Region 2: Midwest","CENS-R2","Kansas","20","2012","2012",,,564,2885905,19.5,16.8
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2013","2013","Renal failure","N17-N19",624,2893957,21.6,18.2
+"Total","Census Region 2: Midwest","CENS-R2","Kansas","20","2013","2013",,,624,2893957,21.6,18.2
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2014","2014","Renal failure","N17-N19",565,2904021,19.5,16.4
+"Total","Census Region 2: Midwest","CENS-R2","Kansas","20","2014","2014",,,565,2904021,19.5,16.4
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2015","2015","Renal failure","N17-N19",585,2911641,20.1,17.1
+"Total","Census Region 2: Midwest","CENS-R2","Kansas","20","2015","2015",,,585,2911641,20.1,17.1
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2016","2016","Renal failure","N17-N19",634,2907289,21.8,18.0
+"Total","Census Region 2: Midwest","CENS-R2","Kansas","20","2016","2016",,,634,2907289,21.8,18.0
+,"Census Region 2: Midwest","CENS-R2","Kansas","20","2017","2017","Renal failure","N17-N19",740,2913123,25.4,20.9
+"Total","Census Region 2: Midwest","CENS-R2","Kansas","20","2017","2017",,,740,2913123,25.4,20.9
+"Total","Census Region 2: Midwest","CENS-R2","Kansas","20",,,,,4875,23140292,21.1,17.9
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2010","2010","Renal failure","N17-N19",956,5303925,18.0,16.2
+"Total","Census Region 2: Midwest","CENS-R2","Minnesota","27","2010","2010",,,956,5303925,18.0,16.2
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2011","2011","Renal failure","N17-N19",1028,5344861,19.2,17.1
+"Total","Census Region 2: Midwest","CENS-R2","Minnesota","27","2011","2011",,,1028,5344861,19.2,17.1
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2012","2012","Renal failure","N17-N19",856,5379139,15.9,13.9
+"Total","Census Region 2: Midwest","CENS-R2","Minnesota","27","2012","2012",,,856,5379139,15.9,13.9
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2013","2013","Renal failure","N17-N19",823,5420380,15.2,13.0
+"Total","Census Region 2: Midwest","CENS-R2","Minnesota","27","2013","2013",,,823,5420380,15.2,13.0
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2014","2014","Renal failure","N17-N19",881,5457173,16.1,13.6
+"Total","Census Region 2: Midwest","CENS-R2","Minnesota","27","2014","2014",,,881,5457173,16.1,13.6
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2015","2015","Renal failure","N17-N19",846,5489594,15.4,12.9
+"Total","Census Region 2: Midwest","CENS-R2","Minnesota","27","2015","2015",,,846,5489594,15.4,12.9
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2016","2016","Renal failure","N17-N19",860,5519952,15.6,13.0
+"Total","Census Region 2: Midwest","CENS-R2","Minnesota","27","2016","2016",,,860,5519952,15.6,13.0
+,"Census Region 2: Midwest","CENS-R2","Minnesota","27","2017","2017","Renal failure","N17-N19",878,5576606,15.7,12.8
+"Total","Census Region 2: Midwest","CENS-R2","Minnesota","27","2017","2017",,,878,5576606,15.7,12.8
+"Total","Census Region 2: Midwest","CENS-R2","Minnesota","27",,,,,7128,43491630,16.4,14.0
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2010","2010","Renal failure","N17-N19",1492,5988927,24.9,21.9
+"Total","Census Region 2: Midwest","CENS-R2","Missouri","29","2010","2010",,,1492,5988927,24.9,21.9
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2011","2011","Renal failure","N17-N19",1509,6010688,25.1,21.8
+"Total","Census Region 2: Midwest","CENS-R2","Missouri","29","2011","2011",,,1509,6010688,25.1,21.8
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2012","2012","Renal failure","N17-N19",1440,6021988,23.9,20.4
+"Total","Census Region 2: Midwest","CENS-R2","Missouri","29","2012","2012",,,1440,6021988,23.9,20.4
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2013","2013","Renal failure","N17-N19",1479,6044171,24.5,20.7
+"Total","Census Region 2: Midwest","CENS-R2","Missouri","29","2013","2013",,,1479,6044171,24.5,20.7
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2014","2014","Renal failure","N17-N19",1602,6063589,26.4,21.9
+"Total","Census Region 2: Midwest","CENS-R2","Missouri","29","2014","2014",,,1602,6063589,26.4,21.9
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2015","2015","Renal failure","N17-N19",1648,6083672,27.1,22.2
+"Total","Census Region 2: Midwest","CENS-R2","Missouri","29","2015","2015",,,1648,6083672,27.1,22.2
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2016","2016","Renal failure","N17-N19",1627,6093000,26.7,21.4
+"Total","Census Region 2: Midwest","CENS-R2","Missouri","29","2016","2016",,,1627,6093000,26.7,21.4
+,"Census Region 2: Midwest","CENS-R2","Missouri","29","2017","2017","Renal failure","N17-N19",1719,6113532,28.1,22.2
+"Total","Census Region 2: Midwest","CENS-R2","Missouri","29","2017","2017",,,1719,6113532,28.1,22.2
+"Total","Census Region 2: Midwest","CENS-R2","Missouri","29",,,,,12516,48419567,25.8,21.6
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2010","2010","Renal failure","N17-N19",403,1826341,22.1,19.2
+"Total","Census Region 2: Midwest","CENS-R2","Nebraska","31","2010","2010",,,403,1826341,22.1,19.2
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2011","2011","Renal failure","N17-N19",374,1842641,20.3,17.4
+"Total","Census Region 2: Midwest","CENS-R2","Nebraska","31","2011","2011",,,374,1842641,20.3,17.4
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2012","2012","Renal failure","N17-N19",351,1855525,18.9,15.9
+"Total","Census Region 2: Midwest","CENS-R2","Nebraska","31","2012","2012",,,351,1855525,18.9,15.9
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2013","2013","Renal failure","N17-N19",386,1868516,20.7,17.6
+"Total","Census Region 2: Midwest","CENS-R2","Nebraska","31","2013","2013",,,386,1868516,20.7,17.6
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2014","2014","Renal failure","N17-N19",382,1881503,20.3,17.1
+"Total","Census Region 2: Midwest","CENS-R2","Nebraska","31","2014","2014",,,382,1881503,20.3,17.1
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2015","2015","Renal failure","N17-N19",444,1896190,23.4,19.8
+"Total","Census Region 2: Midwest","CENS-R2","Nebraska","31","2015","2015",,,444,1896190,23.4,19.8
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2016","2016","Renal failure","N17-N19",416,1907116,21.8,17.8
+"Total","Census Region 2: Midwest","CENS-R2","Nebraska","31","2016","2016",,,416,1907116,21.8,17.8
+,"Census Region 2: Midwest","CENS-R2","Nebraska","31","2017","2017","Renal failure","N17-N19",433,1920076,22.6,18.1
+"Total","Census Region 2: Midwest","CENS-R2","Nebraska","31","2017","2017",,,433,1920076,22.6,18.1
+"Total","Census Region 2: Midwest","CENS-R2","Nebraska","31",,,,,3189,14997908,21.3,17.8
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2010","2010","Renal failure","N17-N19",220,672591,32.7,25.3
+"Total","Census Region 2: Midwest","CENS-R2","North Dakota","38","2010","2010",,,220,672591,32.7,25.3
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2011","2011","Renal failure","N17-N19",231,683932,33.8,26.4
+"Total","Census Region 2: Midwest","CENS-R2","North Dakota","38","2011","2011",,,231,683932,33.8,26.4
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2012","2012","Renal failure","N17-N19",218,699628,31.2,24.9
+"Total","Census Region 2: Midwest","CENS-R2","North Dakota","38","2012","2012",,,218,699628,31.2,24.9
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2013","2013","Renal failure","N17-N19",231,723393,31.9,26.3
+"Total","Census Region 2: Midwest","CENS-R2","North Dakota","38","2013","2013",,,231,723393,31.9,26.3
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2014","2014","Renal failure","N17-N19",180,739482,24.3,20.1
+"Total","Census Region 2: Midwest","CENS-R2","North Dakota","38","2014","2014",,,180,739482,24.3,20.1
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2015","2015","Renal failure","N17-N19",187,756927,24.7,20.6
+"Total","Census Region 2: Midwest","CENS-R2","North Dakota","38","2015","2015",,,187,756927,24.7,20.6
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2016","2016","Renal failure","N17-N19",210,757952,27.7,23.4
+"Total","Census Region 2: Midwest","CENS-R2","North Dakota","38","2016","2016",,,210,757952,27.7,23.4
+,"Census Region 2: Midwest","CENS-R2","North Dakota","38","2017","2017","Renal failure","N17-N19",160,755393,21.2,17.8
+"Total","Census Region 2: Midwest","CENS-R2","North Dakota","38","2017","2017",,,160,755393,21.2,17.8
+"Total","Census Region 2: Midwest","CENS-R2","North Dakota","38",,,,,1637,5789298,28.3,23.0
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2010","2010","Renal failure","N17-N19",169,814180,20.8,16.2
+"Total","Census Region 2: Midwest","CENS-R2","South Dakota","46","2010","2010",,,169,814180,20.8,16.2
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2011","2011","Renal failure","N17-N19",167,824082,20.3,16.0
+"Total","Census Region 2: Midwest","CENS-R2","South Dakota","46","2011","2011",,,167,824082,20.3,16.0
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2012","2012","Renal failure","N17-N19",159,833354,19.1,15.2
+"Total","Census Region 2: Midwest","CENS-R2","South Dakota","46","2012","2012",,,159,833354,19.1,15.2
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2013","2013","Renal failure","N17-N19",184,844877,21.8,17.4
+"Total","Census Region 2: Midwest","CENS-R2","South Dakota","46","2013","2013",,,184,844877,21.8,17.4
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2014","2014","Renal failure","N17-N19",216,853175,25.3,20.3
+"Total","Census Region 2: Midwest","CENS-R2","South Dakota","46","2014","2014",,,216,853175,25.3,20.3
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2015","2015","Renal failure","N17-N19",184,858469,21.4,16.7
+"Total","Census Region 2: Midwest","CENS-R2","South Dakota","46","2015","2015",,,184,858469,21.4,16.7
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2016","2016","Renal failure","N17-N19",205,865454,23.7,18.3
+"Total","Census Region 2: Midwest","CENS-R2","South Dakota","46","2016","2016",,,205,865454,23.7,18.3
+,"Census Region 2: Midwest","CENS-R2","South Dakota","46","2017","2017","Renal failure","N17-N19",223,869666,25.6,20.9
+"Total","Census Region 2: Midwest","CENS-R2","South Dakota","46","2017","2017",,,223,869666,25.6,20.9
+"Total","Census Region 2: Midwest","CENS-R2","South Dakota","46",,,,,1507,6763257,22.3,17.6
+"Total","Census Region 2: Midwest","CENS-R2",,,,,,,114409,540723314,21.2,17.8
+,"Census Region 3: South","CENS-R3","Delaware","10","2010","2010","Renal failure","N17-N19",223,897934,24.8,22.1
+"Total","Census Region 3: South","CENS-R3","Delaware","10","2010","2010",,,223,897934,24.8,22.1
+,"Census Region 3: South","CENS-R3","Delaware","10","2011","2011","Renal failure","N17-N19",223,907135,24.6,21.4
+"Total","Census Region 3: South","CENS-R3","Delaware","10","2011","2011",,,223,907135,24.6,21.4
+,"Census Region 3: South","CENS-R3","Delaware","10","2012","2012","Renal failure","N17-N19",216,917092,23.6,19.9
+"Total","Census Region 3: South","CENS-R3","Delaware","10","2012","2012",,,216,917092,23.6,19.9
+,"Census Region 3: South","CENS-R3","Delaware","10","2013","2013","Renal failure","N17-N19",222,925749,24.0,19.8
+"Total","Census Region 3: South","CENS-R3","Delaware","10","2013","2013",,,222,925749,24.0,19.8
+,"Census Region 3: South","CENS-R3","Delaware","10","2014","2014","Renal failure","N17-N19",208,935614,22.2,18.1
+"Total","Census Region 3: South","CENS-R3","Delaware","10","2014","2014",,,208,935614,22.2,18.1
+,"Census Region 3: South","CENS-R3","Delaware","10","2015","2015","Renal failure","N17-N19",177,945934,18.7,15.0
+"Total","Census Region 3: South","CENS-R3","Delaware","10","2015","2015",,,177,945934,18.7,15.0
+,"Census Region 3: South","CENS-R3","Delaware","10","2016","2016","Renal failure","N17-N19",216,952065,22.7,17.6
+"Total","Census Region 3: South","CENS-R3","Delaware","10","2016","2016",,,216,952065,22.7,17.6
+,"Census Region 3: South","CENS-R3","Delaware","10","2017","2017","Renal failure","N17-N19",219,961939,22.8,17.6
+"Total","Census Region 3: South","CENS-R3","Delaware","10","2017","2017",,,219,961939,22.8,17.6
+"Total","Census Region 3: South","CENS-R3","Delaware","10",,,,,1704,7443462,22.9,18.8
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2010","2010","Renal failure","N17-N19",118,601723,19.6,20.5
+"Total","Census Region 3: South","CENS-R3","District of Columbia","11","2010","2010",,,118,601723,19.6,20.5
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2011","2011","Renal failure","N17-N19",106,617996,17.2,17.6
+"Total","Census Region 3: South","CENS-R3","District of Columbia","11","2011","2011",,,106,617996,17.2,17.6
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2012","2012","Renal failure","N17-N19",96,632323,15.2,15.4
+"Total","Census Region 3: South","CENS-R3","District of Columbia","11","2012","2012",,,96,632323,15.2,15.4
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2013","2013","Renal failure","N17-N19",73,646449,11.3,11.8
+"Total","Census Region 3: South","CENS-R3","District of Columbia","11","2013","2013",,,73,646449,11.3,11.8
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2014","2014","Renal failure","N17-N19",68,658893,10.3,10.9
+"Total","Census Region 3: South","CENS-R3","District of Columbia","11","2014","2014",,,68,658893,10.3,10.9
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2015","2015","Renal failure","N17-N19",81,672228,12.0,12.1
+"Total","Census Region 3: South","CENS-R3","District of Columbia","11","2015","2015",,,81,672228,12.0,12.1
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2016","2016","Renal failure","N17-N19",82,681170,12.0,12.6
+"Total","Census Region 3: South","CENS-R3","District of Columbia","11","2016","2016",,,82,681170,12.0,12.6
+,"Census Region 3: South","CENS-R3","District of Columbia","11","2017","2017","Renal failure","N17-N19",63,693972,9.1,9.5
+"Total","Census Region 3: South","CENS-R3","District of Columbia","11","2017","2017",,,63,693972,9.1,9.5
+"Total","Census Region 3: South","CENS-R3","District of Columbia","11",,,,,687,5204754,13.2,13.7
+,"Census Region 3: South","CENS-R3","Florida","12","2010","2010","Renal failure","N17-N19",3073,18801310,16.3,12.1
+"Total","Census Region 3: South","CENS-R3","Florida","12","2010","2010",,,3073,18801310,16.3,12.1
+,"Census Region 3: South","CENS-R3","Florida","12","2011","2011","Renal failure","N17-N19",3045,19057542,16.0,11.5
+"Total","Census Region 3: South","CENS-R3","Florida","12","2011","2011",,,3045,19057542,16.0,11.5
+,"Census Region 3: South","CENS-R3","Florida","12","2012","2012","Renal failure","N17-N19",3007,19317568,15.6,11.1
+"Total","Census Region 3: South","CENS-R3","Florida","12","2012","2012",,,3007,19317568,15.6,11.1
+,"Census Region 3: South","CENS-R3","Florida","12","2013","2013","Renal failure","N17-N19",3124,19552860,16.0,11.2
+"Total","Census Region 3: South","CENS-R3","Florida","12","2013","2013",,,3124,19552860,16.0,11.2
+,"Census Region 3: South","CENS-R3","Florida","12","2014","2014","Renal failure","N17-N19",3086,19893297,15.5,10.8
+"Total","Census Region 3: South","CENS-R3","Florida","12","2014","2014",,,3086,19893297,15.5,10.8
+,"Census Region 3: South","CENS-R3","Florida","12","2015","2015","Renal failure","N17-N19",3203,20271272,15.8,10.8
+"Total","Census Region 3: South","CENS-R3","Florida","12","2015","2015",,,3203,20271272,15.8,10.8
+,"Census Region 3: South","CENS-R3","Florida","12","2016","2016","Renal failure","N17-N19",3242,20612439,15.7,10.6
+"Total","Census Region 3: South","CENS-R3","Florida","12","2016","2016",,,3242,20612439,15.7,10.6
+,"Census Region 3: South","CENS-R3","Florida","12","2017","2017","Renal failure","N17-N19",3332,20984400,15.9,10.8
+"Total","Census Region 3: South","CENS-R3","Florida","12","2017","2017",,,3332,20984400,15.9,10.8
+"Total","Census Region 3: South","CENS-R3","Florida","12",,,,,25112,158490688,15.8,11.1
+,"Census Region 3: South","CENS-R3","Georgia","13","2010","2010","Renal failure","N17-N19",1525,9687653,15.7,18.7
+"Total","Census Region 3: South","CENS-R3","Georgia","13","2010","2010",,,1525,9687653,15.7,18.7
+,"Census Region 3: South","CENS-R3","Georgia","13","2011","2011","Renal failure","N17-N19",1505,9815210,15.3,17.6
+"Total","Census Region 3: South","CENS-R3","Georgia","13","2011","2011",,,1505,9815210,15.3,17.6
+,"Census Region 3: South","CENS-R3","Georgia","13","2012","2012","Renal failure","N17-N19",1417,9919945,14.3,15.9
+"Total","Census Region 3: South","CENS-R3","Georgia","13","2012","2012",,,1417,9919945,14.3,15.9
+,"Census Region 3: South","CENS-R3","Georgia","13","2013","2013","Renal failure","N17-N19",1445,9992167,14.5,15.6
+"Total","Census Region 3: South","CENS-R3","Georgia","13","2013","2013",,,1445,9992167,14.5,15.6
+,"Census Region 3: South","CENS-R3","Georgia","13","2014","2014","Renal failure","N17-N19",1343,10097343,13.3,14.0
+"Total","Census Region 3: South","CENS-R3","Georgia","13","2014","2014",,,1343,10097343,13.3,14.0
+,"Census Region 3: South","CENS-R3","Georgia","13","2015","2015","Renal failure","N17-N19",1265,10214860,12.4,12.8
+"Total","Census Region 3: South","CENS-R3","Georgia","13","2015","2015",,,1265,10214860,12.4,12.8
+,"Census Region 3: South","CENS-R3","Georgia","13","2016","2016","Renal failure","N17-N19",1338,10310371,13.0,13.1
+"Total","Census Region 3: South","CENS-R3","Georgia","13","2016","2016",,,1338,10310371,13.0,13.1
+,"Census Region 3: South","CENS-R3","Georgia","13","2017","2017","Renal failure","N17-N19",1342,10429379,12.9,12.7
+"Total","Census Region 3: South","CENS-R3","Georgia","13","2017","2017",,,1342,10429379,12.9,12.7
+"Total","Census Region 3: South","CENS-R3","Georgia","13",,,,,11180,80466928,13.9,14.9
+,"Census Region 3: South","CENS-R3","Maryland","24","2010","2010","Renal failure","N17-N19",1192,5773552,20.6,20.1
+"Total","Census Region 3: South","CENS-R3","Maryland","24","2010","2010",,,1192,5773552,20.6,20.1
+,"Census Region 3: South","CENS-R3","Maryland","24","2011","2011","Renal failure","N17-N19",1061,5828289,18.2,17.3
+"Total","Census Region 3: South","CENS-R3","Maryland","24","2011","2011",,,1061,5828289,18.2,17.3
+,"Census Region 3: South","CENS-R3","Maryland","24","2012","2012","Renal failure","N17-N19",910,5884563,15.5,14.6
+"Total","Census Region 3: South","CENS-R3","Maryland","24","2012","2012",,,910,5884563,15.5,14.6
+,"Census Region 3: South","CENS-R3","Maryland","24","2013","2013","Renal failure","N17-N19",966,5928814,16.3,15.0
+"Total","Census Region 3: South","CENS-R3","Maryland","24","2013","2013",,,966,5928814,16.3,15.0
+,"Census Region 3: South","CENS-R3","Maryland","24","2014","2014","Renal failure","N17-N19",877,5976407,14.7,13.4
+"Total","Census Region 3: South","CENS-R3","Maryland","24","2014","2014",,,877,5976407,14.7,13.4
+,"Census Region 3: South","CENS-R3","Maryland","24","2015","2015","Renal failure","N17-N19",913,6006401,15.2,13.6
+"Total","Census Region 3: South","CENS-R3","Maryland","24","2015","2015",,,913,6006401,15.2,13.6
+,"Census Region 3: South","CENS-R3","Maryland","24","2016","2016","Renal failure","N17-N19",860,6016447,14.3,12.5
+"Total","Census Region 3: South","CENS-R3","Maryland","24","2016","2016",,,860,6016447,14.3,12.5
+,"Census Region 3: South","CENS-R3","Maryland","24","2017","2017","Renal failure","N17-N19",885,6052177,14.6,12.6
+"Total","Census Region 3: South","CENS-R3","Maryland","24","2017","2017",,,885,6052177,14.6,12.6
+"Total","Census Region 3: South","CENS-R3","Maryland","24",,,,,7664,47466650,16.1,14.8
+,"Census Region 3: South","CENS-R3","North Carolina","37","2010","2010","Renal failure","N17-N19",2327,9535483,24.4,23.9
+"Total","Census Region 3: South","CENS-R3","North Carolina","37","2010","2010",,,2327,9535483,24.4,23.9
+,"Census Region 3: South","CENS-R3","North Carolina","37","2011","2011","Renal failure","N17-N19",2350,9656401,24.3,23.4
+"Total","Census Region 3: South","CENS-R3","North Carolina","37","2011","2011",,,2350,9656401,24.3,23.4
+,"Census Region 3: South","CENS-R3","North Carolina","37","2012","2012","Renal failure","N17-N19",2460,9752073,25.2,23.6
+"Total","Census Region 3: South","CENS-R3","North Carolina","37","2012","2012",,,2460,9752073,25.2,23.6
+,"Census Region 3: South","CENS-R3","North Carolina","37","2013","2013","Renal failure","N17-N19",2382,9848060,24.2,22.2
+"Total","Census Region 3: South","CENS-R3","North Carolina","37","2013","2013",,,2382,9848060,24.2,22.2
+,"Census Region 3: South","CENS-R3","North Carolina","37","2014","2014","Renal failure","N17-N19",2428,9943964,24.4,21.9
+"Total","Census Region 3: South","CENS-R3","North Carolina","37","2014","2014",,,2428,9943964,24.4,21.9
+,"Census Region 3: South","CENS-R3","North Carolina","37","2015","2015","Renal failure","N17-N19",2238,10042802,22.3,19.7
+"Total","Census Region 3: South","CENS-R3","North Carolina","37","2015","2015",,,2238,10042802,22.3,19.7
+,"Census Region 3: South","CENS-R3","North Carolina","37","2016","2016","Renal failure","N17-N19",2140,10146788,21.1,18.3
+"Total","Census Region 3: South","CENS-R3","North Carolina","37","2016","2016",,,2140,10146788,21.1,18.3
+,"Census Region 3: South","CENS-R3","North Carolina","37","2017","2017","Renal failure","N17-N19",2181,10273419,21.2,18.1
+"Total","Census Region 3: South","CENS-R3","North Carolina","37","2017","2017",,,2181,10273419,21.2,18.1
+"Total","Census Region 3: South","CENS-R3","North Carolina","37",,,,,18506,79198990,23.4,21.3
+,"Census Region 3: South","CENS-R3","South Carolina","45","2010","2010","Renal failure","N17-N19",1205,4625364,26.1,24.9
+"Total","Census Region 3: South","CENS-R3","South Carolina","45","2010","2010",,,1205,4625364,26.1,24.9
+,"Census Region 3: South","CENS-R3","South Carolina","45","2011","2011","Renal failure","N17-N19",1080,4679230,23.1,21.7
+"Total","Census Region 3: South","CENS-R3","South Carolina","45","2011","2011",,,1080,4679230,23.1,21.7
+,"Census Region 3: South","CENS-R3","South Carolina","45","2012","2012","Renal failure","N17-N19",1136,4723723,24.0,21.8
+"Total","Census Region 3: South","CENS-R3","South Carolina","45","2012","2012",,,1136,4723723,24.0,21.8
+,"Census Region 3: South","CENS-R3","South Carolina","45","2013","2013","Renal failure","N17-N19",1240,4774839,26.0,23.0
+"Total","Census Region 3: South","CENS-R3","South Carolina","45","2013","2013",,,1240,4774839,26.0,23.0
+,"Census Region 3: South","CENS-R3","South Carolina","45","2014","2014","Renal failure","N17-N19",1294,4832482,26.8,23.4
+"Total","Census Region 3: South","CENS-R3","South Carolina","45","2014","2014",,,1294,4832482,26.8,23.4
+,"Census Region 3: South","CENS-R3","South Carolina","45","2015","2015","Renal failure","N17-N19",1357,4896146,27.7,23.8
+"Total","Census Region 3: South","CENS-R3","South Carolina","45","2015","2015",,,1357,4896146,27.7,23.8
+,"Census Region 3: South","CENS-R3","South Carolina","45","2016","2016","Renal failure","N17-N19",1463,4961119,29.5,24.9
+"Total","Census Region 3: South","CENS-R3","South Carolina","45","2016","2016",,,1463,4961119,29.5,24.9
+,"Census Region 3: South","CENS-R3","South Carolina","45","2017","2017","Renal failure","N17-N19",1433,5024369,28.5,23.3
+"Total","Census Region 3: South","CENS-R3","South Carolina","45","2017","2017",,,1433,5024369,28.5,23.3
+"Total","Census Region 3: South","CENS-R3","South Carolina","45",,,,,10208,38517272,26.5,23.4
+,"Census Region 3: South","CENS-R3","Virginia","51","2010","2010","Renal failure","N17-N19",1468,8001024,18.3,18.6
+"Total","Census Region 3: South","CENS-R3","Virginia","51","2010","2010",,,1468,8001024,18.3,18.6
+,"Census Region 3: South","CENS-R3","Virginia","51","2011","2011","Renal failure","N17-N19",1378,8096604,17.0,17.1
+"Total","Census Region 3: South","CENS-R3","Virginia","51","2011","2011",,,1378,8096604,17.0,17.1
+,"Census Region 3: South","CENS-R3","Virginia","51","2012","2012","Renal failure","N17-N19",1353,8185867,16.5,16.3
+"Total","Census Region 3: South","CENS-R3","Virginia","51","2012","2012",,,1353,8185867,16.5,16.3
+,"Census Region 3: South","CENS-R3","Virginia","51","2013","2013","Renal failure","N17-N19",1417,8260405,17.2,16.5
+"Total","Census Region 3: South","CENS-R3","Virginia","51","2013","2013",,,1417,8260405,17.2,16.5
+,"Census Region 3: South","CENS-R3","Virginia","51","2014","2014","Renal failure","N17-N19",1387,8326289,16.7,15.7
+"Total","Census Region 3: South","CENS-R3","Virginia","51","2014","2014",,,1387,8326289,16.7,15.7
+,"Census Region 3: South","CENS-R3","Virginia","51","2015","2015","Renal failure","N17-N19",1507,8382993,18.0,16.6
+"Total","Census Region 3: South","CENS-R3","Virginia","51","2015","2015",,,1507,8382993,18.0,16.6
+,"Census Region 3: South","CENS-R3","Virginia","51","2016","2016","Renal failure","N17-N19",1447,8411808,17.2,15.5
+"Total","Census Region 3: South","CENS-R3","Virginia","51","2016","2016",,,1447,8411808,17.2,15.5
+,"Census Region 3: South","CENS-R3","Virginia","51","2017","2017","Renal failure","N17-N19",1401,8470020,16.5,14.6
+"Total","Census Region 3: South","CENS-R3","Virginia","51","2017","2017",,,1401,8470020,16.5,14.6
+"Total","Census Region 3: South","CENS-R3","Virginia","51",,,,,11358,66135010,17.2,16.3
+,"Census Region 3: South","CENS-R3","West Virginia","54","2010","2010","Renal failure","N17-N19",532,1852994,28.7,22.7
+"Total","Census Region 3: South","CENS-R3","West Virginia","54","2010","2010",,,532,1852994,28.7,22.7
+,"Census Region 3: South","CENS-R3","West Virginia","54","2011","2011","Renal failure","N17-N19",554,1855364,29.9,23.9
+"Total","Census Region 3: South","CENS-R3","West Virginia","54","2011","2011",,,554,1855364,29.9,23.9
+,"Census Region 3: South","CENS-R3","West Virginia","54","2012","2012","Renal failure","N17-N19",553,1855413,29.8,23.2
+"Total","Census Region 3: South","CENS-R3","West Virginia","54","2012","2012",,,553,1855413,29.8,23.2
+,"Census Region 3: South","CENS-R3","West Virginia","54","2013","2013","Renal failure","N17-N19",504,1854304,27.2,20.9
+"Total","Census Region 3: South","CENS-R3","West Virginia","54","2013","2013",,,504,1854304,27.2,20.9
+,"Census Region 3: South","CENS-R3","West Virginia","54","2014","2014","Renal failure","N17-N19",544,1850326,29.4,22.1
+"Total","Census Region 3: South","CENS-R3","West Virginia","54","2014","2014",,,544,1850326,29.4,22.1
+,"Census Region 3: South","CENS-R3","West Virginia","54","2015","2015","Renal failure","N17-N19",526,1844128,28.5,21.1
+"Total","Census Region 3: South","CENS-R3","West Virginia","54","2015","2015",,,526,1844128,28.5,21.1
+,"Census Region 3: South","CENS-R3","West Virginia","54","2016","2016","Renal failure","N17-N19",489,1831102,26.7,19.5
+"Total","Census Region 3: South","CENS-R3","West Virginia","54","2016","2016",,,489,1831102,26.7,19.5
+,"Census Region 3: South","CENS-R3","West Virginia","54","2017","2017","Renal failure","N17-N19",390,1815857,21.5,15.4
+"Total","Census Region 3: South","CENS-R3","West Virginia","54","2017","2017",,,390,1815857,21.5,15.4
+"Total","Census Region 3: South","CENS-R3","West Virginia","54",,,,,4092,14759488,27.7,21.0
+,"Census Region 3: South","CENS-R3","Alabama","01","2010","2010","Renal failure","N17-N19",1244,4779736,26.0,24.3
+"Total","Census Region 3: South","CENS-R3","Alabama","01","2010","2010",,,1244,4779736,26.0,24.3
+,"Census Region 3: South","CENS-R3","Alabama","01","2011","2011","Renal failure","N17-N19",1262,4802740,26.3,24.1
+"Total","Census Region 3: South","CENS-R3","Alabama","01","2011","2011",,,1262,4802740,26.3,24.1
+,"Census Region 3: South","CENS-R3","Alabama","01","2012","2012","Renal failure","N17-N19",1177,4822023,24.4,22.0
+"Total","Census Region 3: South","CENS-R3","Alabama","01","2012","2012",,,1177,4822023,24.4,22.0
+,"Census Region 3: South","CENS-R3","Alabama","01","2013","2013","Renal failure","N17-N19",1134,4833722,23.5,20.7
+"Total","Census Region 3: South","CENS-R3","Alabama","01","2013","2013",,,1134,4833722,23.5,20.7
+,"Census Region 3: South","CENS-R3","Alabama","01","2014","2014","Renal failure","N17-N19",934,4849377,19.3,16.6
+"Total","Census Region 3: South","CENS-R3","Alabama","01","2014","2014",,,934,4849377,19.3,16.6
+,"Census Region 3: South","CENS-R3","Alabama","01","2015","2015","Renal failure","N17-N19",967,4858979,19.9,16.8
+"Total","Census Region 3: South","CENS-R3","Alabama","01","2015","2015",,,967,4858979,19.9,16.8
+,"Census Region 3: South","CENS-R3","Alabama","01","2016","2016","Renal failure","N17-N19",898,4863300,18.5,15.5
+"Total","Census Region 3: South","CENS-R3","Alabama","01","2016","2016",,,898,4863300,18.5,15.5
+,"Census Region 3: South","CENS-R3","Alabama","01","2017","2017","Renal failure","N17-N19",898,4874747,18.4,15.1
+"Total","Census Region 3: South","CENS-R3","Alabama","01","2017","2017",,,898,4874747,18.4,15.1
+"Total","Census Region 3: South","CENS-R3","Alabama","01",,,,,8514,38684624,22.0,19.3
+,"Census Region 3: South","CENS-R3","Kentucky","21","2010","2010","Renal failure","N17-N19",1201,4339367,27.7,26.4
+"Total","Census Region 3: South","CENS-R3","Kentucky","21","2010","2010",,,1201,4339367,27.7,26.4
+,"Census Region 3: South","CENS-R3","Kentucky","21","2011","2011","Renal failure","N17-N19",1250,4369356,28.6,26.9
+"Total","Census Region 3: South","CENS-R3","Kentucky","21","2011","2011",,,1250,4369356,28.6,26.9
+,"Census Region 3: South","CENS-R3","Kentucky","21","2012","2012","Renal failure","N17-N19",1160,4380415,26.5,24.3
+"Total","Census Region 3: South","CENS-R3","Kentucky","21","2012","2012",,,1160,4380415,26.5,24.3
+,"Census Region 3: South","CENS-R3","Kentucky","21","2013","2013","Renal failure","N17-N19",1115,4395295,25.4,22.8
+"Total","Census Region 3: South","CENS-R3","Kentucky","21","2013","2013",,,1115,4395295,25.4,22.8
+,"Census Region 3: South","CENS-R3","Kentucky","21","2014","2014","Renal failure","N17-N19",1201,4413457,27.2,24.2
+"Total","Census Region 3: South","CENS-R3","Kentucky","21","2014","2014",,,1201,4413457,27.2,24.2
+,"Census Region 3: South","CENS-R3","Kentucky","21","2015","2015","Renal failure","N17-N19",1431,4425092,32.3,28.1
+"Total","Census Region 3: South","CENS-R3","Kentucky","21","2015","2015",,,1431,4425092,32.3,28.1
+,"Census Region 3: South","CENS-R3","Kentucky","21","2016","2016","Renal failure","N17-N19",1415,4436974,31.9,27.5
+"Total","Census Region 3: South","CENS-R3","Kentucky","21","2016","2016",,,1415,4436974,31.9,27.5
+,"Census Region 3: South","CENS-R3","Kentucky","21","2017","2017","Renal failure","N17-N19",1340,4454189,30.1,25.3
+"Total","Census Region 3: South","CENS-R3","Kentucky","21","2017","2017",,,1340,4454189,30.1,25.3
+"Total","Census Region 3: South","CENS-R3","Kentucky","21",,,,,10113,35214145,28.7,25.7
+,"Census Region 3: South","CENS-R3","Mississippi","28","2010","2010","Renal failure","N17-N19",652,2967297,22.0,21.7
+"Total","Census Region 3: South","CENS-R3","Mississippi","28","2010","2010",,,652,2967297,22.0,21.7
+,"Census Region 3: South","CENS-R3","Mississippi","28","2011","2011","Renal failure","N17-N19",745,2978512,25.0,24.3
+"Total","Census Region 3: South","CENS-R3","Mississippi","28","2011","2011",,,745,2978512,25.0,24.3
+,"Census Region 3: South","CENS-R3","Mississippi","28","2012","2012","Renal failure","N17-N19",638,2984926,21.4,20.2
+"Total","Census Region 3: South","CENS-R3","Mississippi","28","2012","2012",,,638,2984926,21.4,20.2
+,"Census Region 3: South","CENS-R3","Mississippi","28","2013","2013","Renal failure","N17-N19",672,2991207,22.5,21.0
+"Total","Census Region 3: South","CENS-R3","Mississippi","28","2013","2013",,,672,2991207,22.5,21.0
+,"Census Region 3: South","CENS-R3","Mississippi","28","2014","2014","Renal failure","N17-N19",667,2994079,22.3,20.6
+"Total","Census Region 3: South","CENS-R3","Mississippi","28","2014","2014",,,667,2994079,22.3,20.6
+,"Census Region 3: South","CENS-R3","Mississippi","28","2015","2015","Renal failure","N17-N19",787,2992333,26.3,23.5
+"Total","Census Region 3: South","CENS-R3","Mississippi","28","2015","2015",,,787,2992333,26.3,23.5
+,"Census Region 3: South","CENS-R3","Mississippi","28","2016","2016","Renal failure","N17-N19",599,2988726,20.0,17.8
+"Total","Census Region 3: South","CENS-R3","Mississippi","28","2016","2016",,,599,2988726,20.0,17.8
+,"Census Region 3: South","CENS-R3","Mississippi","28","2017","2017","Renal failure","N17-N19",628,2984100,21.0,18.2
+"Total","Census Region 3: South","CENS-R3","Mississippi","28","2017","2017",,,628,2984100,21.0,18.2
+"Total","Census Region 3: South","CENS-R3","Mississippi","28",,,,,5388,23881180,22.6,20.9
+,"Census Region 3: South","CENS-R3","Tennessee","47","2010","2010","Renal failure","N17-N19",1720,6346105,27.1,25.8
+"Total","Census Region 3: South","CENS-R3","Tennessee","47","2010","2010",,,1720,6346105,27.1,25.8
+,"Census Region 3: South","CENS-R3","Tennessee","47","2011","2011","Renal failure","N17-N19",1680,6403353,26.2,24.4
+"Total","Census Region 3: South","CENS-R3","Tennessee","47","2011","2011",,,1680,6403353,26.2,24.4
+,"Census Region 3: South","CENS-R3","Tennessee","47","2012","2012","Renal failure","N17-N19",1641,6456243,25.4,23.4
+"Total","Census Region 3: South","CENS-R3","Tennessee","47","2012","2012",,,1641,6456243,25.4,23.4
+,"Census Region 3: South","CENS-R3","Tennessee","47","2013","2013","Renal failure","N17-N19",1573,6495978,24.2,21.9
+"Total","Census Region 3: South","CENS-R3","Tennessee","47","2013","2013",,,1573,6495978,24.2,21.9
+,"Census Region 3: South","CENS-R3","Tennessee","47","2014","2014","Renal failure","N17-N19",1472,6549352,22.5,20.1
+"Total","Census Region 3: South","CENS-R3","Tennessee","47","2014","2014",,,1472,6549352,22.5,20.1
+,"Census Region 3: South","CENS-R3","Tennessee","47","2015","2015","Renal failure","N17-N19",1404,6600299,21.3,18.7
+"Total","Census Region 3: South","CENS-R3","Tennessee","47","2015","2015",,,1404,6600299,21.3,18.7
+,"Census Region 3: South","CENS-R3","Tennessee","47","2016","2016","Renal failure","N17-N19",1455,6651194,21.9,18.8
+"Total","Census Region 3: South","CENS-R3","Tennessee","47","2016","2016",,,1455,6651194,21.9,18.8
+,"Census Region 3: South","CENS-R3","Tennessee","47","2017","2017","Renal failure","N17-N19",1395,6715984,20.8,17.6
+"Total","Census Region 3: South","CENS-R3","Tennessee","47","2017","2017",,,1395,6715984,20.8,17.6
+"Total","Census Region 3: South","CENS-R3","Tennessee","47",,,,,12340,52218508,23.6,21.2
+,"Census Region 3: South","CENS-R3","Arkansas","05","2010","2010","Renal failure","N17-N19",665,2915918,22.8,20.3
+"Total","Census Region 3: South","CENS-R3","Arkansas","05","2010","2010",,,665,2915918,22.8,20.3
+,"Census Region 3: South","CENS-R3","Arkansas","05","2011","2011","Renal failure","N17-N19",743,2937979,25.3,22.3
+"Total","Census Region 3: South","CENS-R3","Arkansas","05","2011","2011",,,743,2937979,25.3,22.3
+,"Census Region 3: South","CENS-R3","Arkansas","05","2012","2012","Renal failure","N17-N19",735,2949131,24.9,21.7
+"Total","Census Region 3: South","CENS-R3","Arkansas","05","2012","2012",,,735,2949131,24.9,21.7
+,"Census Region 3: South","CENS-R3","Arkansas","05","2013","2013","Renal failure","N17-N19",788,2959373,26.6,22.8
+"Total","Census Region 3: South","CENS-R3","Arkansas","05","2013","2013",,,788,2959373,26.6,22.8
+,"Census Region 3: South","CENS-R3","Arkansas","05","2014","2014","Renal failure","N17-N19",796,2966369,26.8,22.8
+"Total","Census Region 3: South","CENS-R3","Arkansas","05","2014","2014",,,796,2966369,26.8,22.8
+,"Census Region 3: South","CENS-R3","Arkansas","05","2015","2015","Renal failure","N17-N19",852,2978204,28.6,23.7
+"Total","Census Region 3: South","CENS-R3","Arkansas","05","2015","2015",,,852,2978204,28.6,23.7
+,"Census Region 3: South","CENS-R3","Arkansas","05","2016","2016","Renal failure","N17-N19",889,2988248,29.7,24.6
+"Total","Census Region 3: South","CENS-R3","Arkansas","05","2016","2016",,,889,2988248,29.7,24.6
+,"Census Region 3: South","CENS-R3","Arkansas","05","2017","2017","Renal failure","N17-N19",883,3004279,29.4,24.1
+"Total","Census Region 3: South","CENS-R3","Arkansas","05","2017","2017",,,883,3004279,29.4,24.1
+"Total","Census Region 3: South","CENS-R3","Arkansas","05",,,,,6351,23699501,26.8,22.8
+,"Census Region 3: South","CENS-R3","Louisiana","22","2010","2010","Renal failure","N17-N19",787,4533372,17.4,17.7
+"Total","Census Region 3: South","CENS-R3","Louisiana","22","2010","2010",,,787,4533372,17.4,17.7
+,"Census Region 3: South","CENS-R3","Louisiana","22","2011","2011","Renal failure","N17-N19",749,4574836,16.4,16.5
+"Total","Census Region 3: South","CENS-R3","Louisiana","22","2011","2011",,,749,4574836,16.4,16.5
+,"Census Region 3: South","CENS-R3","Louisiana","22","2012","2012","Renal failure","N17-N19",780,4601893,16.9,16.7
+"Total","Census Region 3: South","CENS-R3","Louisiana","22","2012","2012",,,780,4601893,16.9,16.7
+,"Census Region 3: South","CENS-R3","Louisiana","22","2013","2013","Renal failure","N17-N19",784,4625470,16.9,16.4
+"Total","Census Region 3: South","CENS-R3","Louisiana","22","2013","2013",,,784,4625470,16.9,16.4
+,"Census Region 3: South","CENS-R3","Louisiana","22","2014","2014","Renal failure","N17-N19",761,4649676,16.4,15.6
+"Total","Census Region 3: South","CENS-R3","Louisiana","22","2014","2014",,,761,4649676,16.4,15.6
+,"Census Region 3: South","CENS-R3","Louisiana","22","2015","2015","Renal failure","N17-N19",745,4670724,16.0,15.0
+"Total","Census Region 3: South","CENS-R3","Louisiana","22","2015","2015",,,745,4670724,16.0,15.0
+,"Census Region 3: South","CENS-R3","Louisiana","22","2016","2016","Renal failure","N17-N19",668,4681666,14.3,13.0
+"Total","Census Region 3: South","CENS-R3","Louisiana","22","2016","2016",,,668,4681666,14.3,13.0
+,"Census Region 3: South","CENS-R3","Louisiana","22","2017","2017","Renal failure","N17-N19",725,4684333,15.5,13.7
+"Total","Census Region 3: South","CENS-R3","Louisiana","22","2017","2017",,,725,4684333,15.5,13.7
+"Total","Census Region 3: South","CENS-R3","Louisiana","22",,,,,5999,37021970,16.2,15.5
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2010","2010","Renal failure","N17-N19",917,3751351,24.4,23.0
+"Total","Census Region 3: South","CENS-R3","Oklahoma","40","2010","2010",,,917,3751351,24.4,23.0
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2011","2011","Renal failure","N17-N19",888,3791508,23.4,21.5
+"Total","Census Region 3: South","CENS-R3","Oklahoma","40","2011","2011",,,888,3791508,23.4,21.5
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2012","2012","Renal failure","N17-N19",993,3814820,26.0,23.9
+"Total","Census Region 3: South","CENS-R3","Oklahoma","40","2012","2012",,,993,3814820,26.0,23.9
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2013","2013","Renal failure","N17-N19",1094,3850568,28.4,25.8
+"Total","Census Region 3: South","CENS-R3","Oklahoma","40","2013","2013",,,1094,3850568,28.4,25.8
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2014","2014","Renal failure","N17-N19",905,3878051,23.3,21.0
+"Total","Census Region 3: South","CENS-R3","Oklahoma","40","2014","2014",,,905,3878051,23.3,21.0
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2015","2015","Renal failure","N17-N19",864,3911338,22.1,19.7
+"Total","Census Region 3: South","CENS-R3","Oklahoma","40","2015","2015",,,864,3911338,22.1,19.7
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2016","2016","Renal failure","N17-N19",861,3923561,21.9,19.2
+"Total","Census Region 3: South","CENS-R3","Oklahoma","40","2016","2016",,,861,3923561,21.9,19.2
+,"Census Region 3: South","CENS-R3","Oklahoma","40","2017","2017","Renal failure","N17-N19",827,3930864,21.0,18.3
+"Total","Census Region 3: South","CENS-R3","Oklahoma","40","2017","2017",,,827,3930864,21.0,18.3
+"Total","Census Region 3: South","CENS-R3","Oklahoma","40",,,,,7349,30852061,23.8,21.5
+,"Census Region 3: South","CENS-R3","Texas","48","2010","2010","Renal failure","N17-N19",4954,25145561,19.7,23.5
+"Total","Census Region 3: South","CENS-R3","Texas","48","2010","2010",,,4954,25145561,19.7,23.5
+,"Census Region 3: South","CENS-R3","Texas","48","2011","2011","Renal failure","N17-N19",4620,25674681,18.0,21.0
+"Total","Census Region 3: South","CENS-R3","Texas","48","2011","2011",,,4620,25674681,18.0,21.0
+,"Census Region 3: South","CENS-R3","Texas","48","2012","2012","Renal failure","N17-N19",4874,26059203,18.7,21.4
+"Total","Census Region 3: South","CENS-R3","Texas","48","2012","2012",,,4874,26059203,18.7,21.4
+,"Census Region 3: South","CENS-R3","Texas","48","2013","2013","Renal failure","N17-N19",5813,26448193,22.0,24.6
+"Total","Census Region 3: South","CENS-R3","Texas","48","2013","2013",,,5813,26448193,22.0,24.6
+,"Census Region 3: South","CENS-R3","Texas","48","2014","2014","Renal failure","N17-N19",6263,26956958,23.2,25.6
+"Total","Census Region 3: South","CENS-R3","Texas","48","2014","2014",,,6263,26956958,23.2,25.6
+,"Census Region 3: South","CENS-R3","Texas","48","2015","2015","Renal failure","N17-N19",6812,27469114,24.8,26.9
+"Total","Census Region 3: South","CENS-R3","Texas","48","2015","2015",,,6812,27469114,24.8,26.9
+,"Census Region 3: South","CENS-R3","Texas","48","2016","2016","Renal failure","N17-N19",6816,27862596,24.5,26.0
+"Total","Census Region 3: South","CENS-R3","Texas","48","2016","2016",,,6816,27862596,24.5,26.0
+,"Census Region 3: South","CENS-R3","Texas","48","2017","2017","Renal failure","N17-N19",7384,28304596,26.1,27.5
+"Total","Census Region 3: South","CENS-R3","Texas","48","2017","2017",,,7384,28304596,26.1,27.5
+"Total","Census Region 3: South","CENS-R3","Texas","48",,,,,47536,213920902,22.2,24.7
+"Total","Census Region 3: South","CENS-R3",,,,,,,194101,953176133,20.4,18.5
+,"Census Region 4: West","CENS-R4","Arizona","04","2010","2010","Renal failure","N17-N19",966,6392017,15.1,14.2
+"Total","Census Region 4: West","CENS-R4","Arizona","04","2010","2010",,,966,6392017,15.1,14.2
+,"Census Region 4: West","CENS-R4","Arizona","04","2011","2011","Renal failure","N17-N19",1104,6482505,17.0,15.6
+"Total","Census Region 4: West","CENS-R4","Arizona","04","2011","2011",,,1104,6482505,17.0,15.6
+,"Census Region 4: West","CENS-R4","Arizona","04","2012","2012","Renal failure","N17-N19",999,6553255,15.2,13.7
+"Total","Census Region 4: West","CENS-R4","Arizona","04","2012","2012",,,999,6553255,15.2,13.7
+,"Census Region 4: West","CENS-R4","Arizona","04","2013","2013","Renal failure","N17-N19",1063,6626624,16.0,14.1
+"Total","Census Region 4: West","CENS-R4","Arizona","04","2013","2013",,,1063,6626624,16.0,14.1
+,"Census Region 4: West","CENS-R4","Arizona","04","2014","2014","Renal failure","N17-N19",1079,6731484,16.0,13.7
+"Total","Census Region 4: West","CENS-R4","Arizona","04","2014","2014",,,1079,6731484,16.0,13.7
+,"Census Region 4: West","CENS-R4","Arizona","04","2015","2015","Renal failure","N17-N19",1189,6828065,17.4,14.6
+"Total","Census Region 4: West","CENS-R4","Arizona","04","2015","2015",,,1189,6828065,17.4,14.6
+,"Census Region 4: West","CENS-R4","Arizona","04","2016","2016","Renal failure","N17-N19",1227,6931071,17.7,14.4
+"Total","Census Region 4: West","CENS-R4","Arizona","04","2016","2016",,,1227,6931071,17.7,14.4
+,"Census Region 4: West","CENS-R4","Arizona","04","2017","2017","Renal failure","N17-N19",1201,7016270,17.1,14.0
+"Total","Census Region 4: West","CENS-R4","Arizona","04","2017","2017",,,1201,7016270,17.1,14.0
+"Total","Census Region 4: West","CENS-R4","Arizona","04",,,,,8828,53561291,16.5,14.3
+,"Census Region 4: West","CENS-R4","Colorado","08","2010","2010","Renal failure","N17-N19",540,5029196,10.7,12.1
+"Total","Census Region 4: West","CENS-R4","Colorado","08","2010","2010",,,540,5029196,10.7,12.1
+,"Census Region 4: West","CENS-R4","Colorado","08","2011","2011","Renal failure","N17-N19",521,5116796,10.2,11.0
+"Total","Census Region 4: West","CENS-R4","Colorado","08","2011","2011",,,521,5116796,10.2,11.0
+,"Census Region 4: West","CENS-R4","Colorado","08","2012","2012","Renal failure","N17-N19",481,5187582,9.3,9.8
+"Total","Census Region 4: West","CENS-R4","Colorado","08","2012","2012",,,481,5187582,9.3,9.8
+,"Census Region 4: West","CENS-R4","Colorado","08","2013","2013","Renal failure","N17-N19",520,5268367,9.9,10.3
+"Total","Census Region 4: West","CENS-R4","Colorado","08","2013","2013",,,520,5268367,9.9,10.3
+,"Census Region 4: West","CENS-R4","Colorado","08","2014","2014","Renal failure","N17-N19",616,5355866,11.5,11.7
+"Total","Census Region 4: West","CENS-R4","Colorado","08","2014","2014",,,616,5355866,11.5,11.7
+,"Census Region 4: West","CENS-R4","Colorado","08","2015","2015","Renal failure","N17-N19",572,5456574,10.5,10.5
+"Total","Census Region 4: West","CENS-R4","Colorado","08","2015","2015",,,572,5456574,10.5,10.5
+,"Census Region 4: West","CENS-R4","Colorado","08","2016","2016","Renal failure","N17-N19",734,5540545,13.2,13.0
+"Total","Census Region 4: West","CENS-R4","Colorado","08","2016","2016",,,734,5540545,13.2,13.0
+,"Census Region 4: West","CENS-R4","Colorado","08","2017","2017","Renal failure","N17-N19",997,5607154,17.8,17.3
+"Total","Census Region 4: West","CENS-R4","Colorado","08","2017","2017",,,997,5607154,17.8,17.3
+"Total","Census Region 4: West","CENS-R4","Colorado","08",,,,,4981,42562080,11.7,12.0
+,"Census Region 4: West","CENS-R4","Idaho","16","2010","2010","Renal failure","N17-N19",255,1567582,16.3,16.5
+"Total","Census Region 4: West","CENS-R4","Idaho","16","2010","2010",,,255,1567582,16.3,16.5
+,"Census Region 4: West","CENS-R4","Idaho","16","2011","2011","Renal failure","N17-N19",279,1584985,17.6,17.5
+"Total","Census Region 4: West","CENS-R4","Idaho","16","2011","2011",,,279,1584985,17.6,17.5
+,"Census Region 4: West","CENS-R4","Idaho","16","2012","2012","Renal failure","N17-N19",260,1595728,16.3,15.7
+"Total","Census Region 4: West","CENS-R4","Idaho","16","2012","2012",,,260,1595728,16.3,15.7
+,"Census Region 4: West","CENS-R4","Idaho","16","2013","2013","Renal failure","N17-N19",263,1612136,16.3,15.2
+"Total","Census Region 4: West","CENS-R4","Idaho","16","2013","2013",,,263,1612136,16.3,15.2
+,"Census Region 4: West","CENS-R4","Idaho","16","2014","2014","Renal failure","N17-N19",257,1634464,15.7,14.8
+"Total","Census Region 4: West","CENS-R4","Idaho","16","2014","2014",,,257,1634464,15.7,14.8
+,"Census Region 4: West","CENS-R4","Idaho","16","2015","2015","Renal failure","N17-N19",267,1654930,16.1,15.2
+"Total","Census Region 4: West","CENS-R4","Idaho","16","2015","2015",,,267,1654930,16.1,15.2
+,"Census Region 4: West","CENS-R4","Idaho","16","2016","2016","Renal failure","N17-N19",281,1683140,16.7,15.0
+"Total","Census Region 4: West","CENS-R4","Idaho","16","2016","2016",,,281,1683140,16.7,15.0
+,"Census Region 4: West","CENS-R4","Idaho","16","2017","2017","Renal failure","N17-N19",278,1716943,16.2,14.4
+"Total","Census Region 4: West","CENS-R4","Idaho","16","2017","2017",,,278,1716943,16.2,14.4
+"Total","Census Region 4: West","CENS-R4","Idaho","16",,,,,2140,13049908,16.4,15.5
+,"Census Region 4: West","CENS-R4","Montana","30","2010","2010","Renal failure","N17-N19",133,989415,13.4,11.3
+"Total","Census Region 4: West","CENS-R4","Montana","30","2010","2010",,,133,989415,13.4,11.3
+,"Census Region 4: West","CENS-R4","Montana","30","2011","2011","Renal failure","N17-N19",189,998199,18.9,15.5
+"Total","Census Region 4: West","CENS-R4","Montana","30","2011","2011",,,189,998199,18.9,15.5
+,"Census Region 4: West","CENS-R4","Montana","30","2012","2012","Renal failure","N17-N19",181,1005141,18.0,14.6
+"Total","Census Region 4: West","CENS-R4","Montana","30","2012","2012",,,181,1005141,18.0,14.6
+,"Census Region 4: West","CENS-R4","Montana","30","2013","2013","Renal failure","N17-N19",194,1015165,19.1,15.5
+"Total","Census Region 4: West","CENS-R4","Montana","30","2013","2013",,,194,1015165,19.1,15.5
+,"Census Region 4: West","CENS-R4","Montana","30","2014","2014","Renal failure","N17-N19",223,1023579,21.8,17.1
+"Total","Census Region 4: West","CENS-R4","Montana","30","2014","2014",,,223,1023579,21.8,17.1
+,"Census Region 4: West","CENS-R4","Montana","30","2015","2015","Renal failure","N17-N19",222,1032949,21.5,16.9
+"Total","Census Region 4: West","CENS-R4","Montana","30","2015","2015",,,222,1032949,21.5,16.9
+,"Census Region 4: West","CENS-R4","Montana","30","2016","2016","Renal failure","N17-N19",179,1042520,17.2,13.0
+"Total","Census Region 4: West","CENS-R4","Montana","30","2016","2016",,,179,1042520,17.2,13.0
+,"Census Region 4: West","CENS-R4","Montana","30","2017","2017","Renal failure","N17-N19",173,1050493,16.5,12.6
+"Total","Census Region 4: West","CENS-R4","Montana","30","2017","2017",,,173,1050493,16.5,12.6
+"Total","Census Region 4: West","CENS-R4","Montana","30",,,,,1494,8157461,18.3,14.6
+,"Census Region 4: West","CENS-R4","Nevada","32","2010","2010","Renal failure","N17-N19",369,2700551,13.7,15.1
+"Total","Census Region 4: West","CENS-R4","Nevada","32","2010","2010",,,369,2700551,13.7,15.1
+,"Census Region 4: West","CENS-R4","Nevada","32","2011","2011","Renal failure","N17-N19",421,2723322,15.5,16.4
+"Total","Census Region 4: West","CENS-R4","Nevada","32","2011","2011",,,421,2723322,15.5,16.4
+,"Census Region 4: West","CENS-R4","Nevada","32","2012","2012","Renal failure","N17-N19",395,2758931,14.3,14.7
+"Total","Census Region 4: West","CENS-R4","Nevada","32","2012","2012",,,395,2758931,14.3,14.7
+,"Census Region 4: West","CENS-R4","Nevada","32","2013","2013","Renal failure","N17-N19",357,2790136,12.8,12.6
+"Total","Census Region 4: West","CENS-R4","Nevada","32","2013","2013",,,357,2790136,12.8,12.6
+,"Census Region 4: West","CENS-R4","Nevada","32","2014","2014","Renal failure","N17-N19",367,2839099,12.9,12.8
+"Total","Census Region 4: West","CENS-R4","Nevada","32","2014","2014",,,367,2839099,12.9,12.8
+,"Census Region 4: West","CENS-R4","Nevada","32","2015","2015","Renal failure","N17-N19",410,2890845,14.2,13.6
+"Total","Census Region 4: West","CENS-R4","Nevada","32","2015","2015",,,410,2890845,14.2,13.6
+,"Census Region 4: West","CENS-R4","Nevada","32","2016","2016","Renal failure","N17-N19",468,2940058,15.9,14.3
+"Total","Census Region 4: West","CENS-R4","Nevada","32","2016","2016",,,468,2940058,15.9,14.3
+,"Census Region 4: West","CENS-R4","Nevada","32","2017","2017","Renal failure","N17-N19",498,2998039,16.6,15.0
+"Total","Census Region 4: West","CENS-R4","Nevada","32","2017","2017",,,498,2998039,16.6,15.0
+"Total","Census Region 4: West","CENS-R4","Nevada","32",,,,,3285,22640981,14.5,14.3
+,"Census Region 4: West","CENS-R4","New Mexico","35","2010","2010","Renal failure","N17-N19",333,2059179,16.2,15.5
+"Total","Census Region 4: West","CENS-R4","New Mexico","35","2010","2010",,,333,2059179,16.2,15.5
+,"Census Region 4: West","CENS-R4","New Mexico","35","2011","2011","Renal failure","N17-N19",332,2082224,15.9,15.2
+"Total","Census Region 4: West","CENS-R4","New Mexico","35","2011","2011",,,332,2082224,15.9,15.2
+,"Census Region 4: West","CENS-R4","New Mexico","35","2012","2012","Renal failure","N17-N19",333,2085538,16.0,14.5
+"Total","Census Region 4: West","CENS-R4","New Mexico","35","2012","2012",,,333,2085538,16.0,14.5
+,"Census Region 4: West","CENS-R4","New Mexico","35","2013","2013","Renal failure","N17-N19",333,2085287,16.0,14.5
+"Total","Census Region 4: West","CENS-R4","New Mexico","35","2013","2013",,,333,2085287,16.0,14.5
+,"Census Region 4: West","CENS-R4","New Mexico","35","2014","2014","Renal failure","N17-N19",328,2085572,15.7,14.0
+"Total","Census Region 4: West","CENS-R4","New Mexico","35","2014","2014",,,328,2085572,15.7,14.0
+,"Census Region 4: West","CENS-R4","New Mexico","35","2015","2015","Renal failure","N17-N19",368,2085109,17.6,15.3
+"Total","Census Region 4: West","CENS-R4","New Mexico","35","2015","2015",,,368,2085109,17.6,15.3
+,"Census Region 4: West","CENS-R4","New Mexico","35","2016","2016","Renal failure","N17-N19",374,2081015,18.0,15.3
+"Total","Census Region 4: West","CENS-R4","New Mexico","35","2016","2016",,,374,2081015,18.0,15.3
+,"Census Region 4: West","CENS-R4","New Mexico","35","2017","2017","Renal failure","N17-N19",408,2088070,19.5,16.3
+"Total","Census Region 4: West","CENS-R4","New Mexico","35","2017","2017",,,408,2088070,19.5,16.3
+"Total","Census Region 4: West","CENS-R4","New Mexico","35",,,,,2809,16651994,16.9,15.1
+,"Census Region 4: West","CENS-R4","Utah","49","2010","2010","Renal failure","N17-N19",275,2763885,9.9,13.6
+"Total","Census Region 4: West","CENS-R4","Utah","49","2010","2010",,,275,2763885,9.9,13.6
+,"Census Region 4: West","CENS-R4","Utah","49","2011","2011","Renal failure","N17-N19",270,2817222,9.6,12.8
+"Total","Census Region 4: West","CENS-R4","Utah","49","2011","2011",,,270,2817222,9.6,12.8
+,"Census Region 4: West","CENS-R4","Utah","49","2012","2012","Renal failure","N17-N19",263,2855287,9.2,12.3
+"Total","Census Region 4: West","CENS-R4","Utah","49","2012","2012",,,263,2855287,9.2,12.3
+,"Census Region 4: West","CENS-R4","Utah","49","2013","2013","Renal failure","N17-N19",321,2900872,11.1,14.2
+"Total","Census Region 4: West","CENS-R4","Utah","49","2013","2013",,,321,2900872,11.1,14.2
+,"Census Region 4: West","CENS-R4","Utah","49","2014","2014","Renal failure","N17-N19",369,2942902,12.5,16.0
+"Total","Census Region 4: West","CENS-R4","Utah","49","2014","2014",,,369,2942902,12.5,16.0
+,"Census Region 4: West","CENS-R4","Utah","49","2015","2015","Renal failure","N17-N19",363,2995919,12.1,15.4
+"Total","Census Region 4: West","CENS-R4","Utah","49","2015","2015",,,363,2995919,12.1,15.4
+,"Census Region 4: West","CENS-R4","Utah","49","2016","2016","Renal failure","N17-N19",395,3051217,12.9,16.1
+"Total","Census Region 4: West","CENS-R4","Utah","49","2016","2016",,,395,3051217,12.9,16.1
+,"Census Region 4: West","CENS-R4","Utah","49","2017","2017","Renal failure","N17-N19",411,3101833,13.3,16.3
+"Total","Census Region 4: West","CENS-R4","Utah","49","2017","2017",,,411,3101833,13.3,16.3
+"Total","Census Region 4: West","CENS-R4","Utah","49",,,,,2667,23429137,11.4,14.7
+,"Census Region 4: West","CENS-R4","Wyoming","56","2010","2010","Renal failure","N17-N19",78,563626,13.8,14.2
+"Total","Census Region 4: West","CENS-R4","Wyoming","56","2010","2010",,,78,563626,13.8,14.2
+,"Census Region 4: West","CENS-R4","Wyoming","56","2011","2011","Renal failure","N17-N19",80,568158,14.1,14.2
+"Total","Census Region 4: West","CENS-R4","Wyoming","56","2011","2011",,,80,568158,14.1,14.2
+,"Census Region 4: West","CENS-R4","Wyoming","56","2012","2012","Renal failure","N17-N19",103,576412,17.9,17.2
+"Total","Census Region 4: West","CENS-R4","Wyoming","56","2012","2012",,,103,576412,17.9,17.2
+,"Census Region 4: West","CENS-R4","Wyoming","56","2013","2013","Renal failure","N17-N19",103,582658,17.7,16.4
+"Total","Census Region 4: West","CENS-R4","Wyoming","56","2013","2013",,,103,582658,17.7,16.4
+,"Census Region 4: West","CENS-R4","Wyoming","56","2014","2014","Renal failure","N17-N19",116,584153,19.9,18.6
+"Total","Census Region 4: West","CENS-R4","Wyoming","56","2014","2014",,,116,584153,19.9,18.6
+,"Census Region 4: West","CENS-R4","Wyoming","56","2015","2015","Renal failure","N17-N19",131,586107,22.4,20.5
+"Total","Census Region 4: West","CENS-R4","Wyoming","56","2015","2015",,,131,586107,22.4,20.5
+,"Census Region 4: West","CENS-R4","Wyoming","56","2016","2016","Renal failure","N17-N19",112,585501,19.1,17.4
+"Total","Census Region 4: West","CENS-R4","Wyoming","56","2016","2016",,,112,585501,19.1,17.4
+,"Census Region 4: West","CENS-R4","Wyoming","56","2017","2017","Renal failure","N17-N19",119,579315,20.5,17.6
+"Total","Census Region 4: West","CENS-R4","Wyoming","56","2017","2017",,,119,579315,20.5,17.6
+"Total","Census Region 4: West","CENS-R4","Wyoming","56",,,,,842,4625930,18.2,17.1
+,"Census Region 4: West","CENS-R4","Alaska","02","2010","2010","Renal failure","N17-N19",64,710231,9.0,14.4
+"Total","Census Region 4: West","CENS-R4","Alaska","02","2010","2010",,,64,710231,9.0,14.4
+,"Census Region 4: West","CENS-R4","Alaska","02","2011","2011","Renal failure","N17-N19",55,722718,7.6,12.8
+"Total","Census Region 4: West","CENS-R4","Alaska","02","2011","2011",,,55,722718,7.6,12.8
+,"Census Region 4: West","CENS-R4","Alaska","02","2012","2012","Renal failure","N17-N19",69,731449,9.4,13.1
+"Total","Census Region 4: West","CENS-R4","Alaska","02","2012","2012",,,69,731449,9.4,13.1
+,"Census Region 4: West","CENS-R4","Alaska","02","2013","2013","Renal failure","N17-N19",73,735132,9.9,13.9
+"Total","Census Region 4: West","CENS-R4","Alaska","02","2013","2013",,,73,735132,9.9,13.9
+,"Census Region 4: West","CENS-R4","Alaska","02","2014","2014","Renal failure","N17-N19",68,736732,9.2,14.4
+"Total","Census Region 4: West","CENS-R4","Alaska","02","2014","2014",,,68,736732,9.2,14.4
+,"Census Region 4: West","CENS-R4","Alaska","02","2015","2015","Renal failure","N17-N19",68,738432,9.2,12.7
+"Total","Census Region 4: West","CENS-R4","Alaska","02","2015","2015",,,68,738432,9.2,12.7
+,"Census Region 4: West","CENS-R4","Alaska","02","2016","2016","Renal failure","N17-N19",66,741894,8.9,11.8
+"Total","Census Region 4: West","CENS-R4","Alaska","02","2016","2016",,,66,741894,8.9,11.8
+,"Census Region 4: West","CENS-R4","Alaska","02","2017","2017","Renal failure","N17-N19",67,739795,9.1,10.6
+"Total","Census Region 4: West","CENS-R4","Alaska","02","2017","2017",,,67,739795,9.1,10.6
+"Total","Census Region 4: West","CENS-R4","Alaska","02",,,,,530,5856383,9.0,12.9
+,"Census Region 4: West","CENS-R4","California","06","2010","2010","Renal failure","N17-N19",6602,37253956,17.7,18.4
+"Total","Census Region 4: West","CENS-R4","California","06","2010","2010",,,6602,37253956,17.7,18.4
+,"Census Region 4: West","CENS-R4","California","06","2011","2011","Renal failure","N17-N19",6832,37691912,18.1,18.4
+"Total","Census Region 4: West","CENS-R4","California","06","2011","2011",,,6832,37691912,18.1,18.4
+,"Census Region 4: West","CENS-R4","California","06","2012","2012","Renal failure","N17-N19",6906,38041430,18.2,18.1
+"Total","Census Region 4: West","CENS-R4","California","06","2012","2012",,,6906,38041430,18.2,18.1
+,"Census Region 4: West","CENS-R4","California","06","2013","2013","Renal failure","N17-N19",6780,38332521,17.7,17.3
+"Total","Census Region 4: West","CENS-R4","California","06","2013","2013",,,6780,38332521,17.7,17.3
+,"Census Region 4: West","CENS-R4","California","06","2014","2014","Renal failure","N17-N19",6867,38802500,17.7,16.9
+"Total","Census Region 4: West","CENS-R4","California","06","2014","2014",,,6867,38802500,17.7,16.9
+,"Census Region 4: West","CENS-R4","California","06","2015","2015","Renal failure","N17-N19",7220,39144818,18.4,17.4
+"Total","Census Region 4: West","CENS-R4","California","06","2015","2015",,,7220,39144818,18.4,17.4
+,"Census Region 4: West","CENS-R4","California","06","2016","2016","Renal failure","N17-N19",7453,39250017,19.0,17.5
+"Total","Census Region 4: West","CENS-R4","California","06","2016","2016",,,7453,39250017,19.0,17.5
+,"Census Region 4: West","CENS-R4","California","06","2017","2017","Renal failure","N17-N19",7474,39536653,18.9,17.2
+"Total","Census Region 4: West","CENS-R4","California","06","2017","2017",,,7474,39536653,18.9,17.2
+"Total","Census Region 4: West","CENS-R4","California","06",,,,,56134,308053807,18.2,17.6
+,"Census Region 4: West","CENS-R4","Hawaii","15","2010","2010","Renal failure","N17-N19",289,1360301,21.2,17.3
+"Total","Census Region 4: West","CENS-R4","Hawaii","15","2010","2010",,,289,1360301,21.2,17.3
+,"Census Region 4: West","CENS-R4","Hawaii","15","2011","2011","Renal failure","N17-N19",280,1374810,20.4,16.0
+"Total","Census Region 4: West","CENS-R4","Hawaii","15","2011","2011",,,280,1374810,20.4,16.0
+,"Census Region 4: West","CENS-R4","Hawaii","15","2012","2012","Renal failure","N17-N19",326,1392313,23.4,18.3
+"Total","Census Region 4: West","CENS-R4","Hawaii","15","2012","2012",,,326,1392313,23.4,18.3
+,"Census Region 4: West","CENS-R4","Hawaii","15","2013","2013","Renal failure","N17-N19",304,1404054,21.7,16.8
+"Total","Census Region 4: West","CENS-R4","Hawaii","15","2013","2013",,,304,1404054,21.7,16.8
+,"Census Region 4: West","CENS-R4","Hawaii","15","2014","2014","Renal failure","N17-N19",287,1419561,20.2,15.2
+"Total","Census Region 4: West","CENS-R4","Hawaii","15","2014","2014",,,287,1419561,20.2,15.2
+,"Census Region 4: West","CENS-R4","Hawaii","15","2015","2015","Renal failure","N17-N19",243,1431603,17.0,13.0
+"Total","Census Region 4: West","CENS-R4","Hawaii","15","2015","2015",,,243,1431603,17.0,13.0
+,"Census Region 4: West","CENS-R4","Hawaii","15","2016","2016","Renal failure","N17-N19",210,1428557,14.7,11.0
+"Total","Census Region 4: West","CENS-R4","Hawaii","15","2016","2016",,,210,1428557,14.7,11.0
+,"Census Region 4: West","CENS-R4","Hawaii","15","2017","2017","Renal failure","N17-N19",217,1427538,15.2,11.1
+"Total","Census Region 4: West","CENS-R4","Hawaii","15","2017","2017",,,217,1427538,15.2,11.1
+"Total","Census Region 4: West","CENS-R4","Hawaii","15",,,,,2156,11238737,19.2,14.7
+,"Census Region 4: West","CENS-R4","Oregon","41","2010","2010","Renal failure","N17-N19",575,3831074,15.0,12.9
+"Total","Census Region 4: West","CENS-R4","Oregon","41","2010","2010",,,575,3831074,15.0,12.9
+,"Census Region 4: West","CENS-R4","Oregon","41","2011","2011","Renal failure","N17-N19",633,3871859,16.3,14.1
+"Total","Census Region 4: West","CENS-R4","Oregon","41","2011","2011",,,633,3871859,16.3,14.1
+,"Census Region 4: West","CENS-R4","Oregon","41","2012","2012","Renal failure","N17-N19",641,3899353,16.4,13.8
+"Total","Census Region 4: West","CENS-R4","Oregon","41","2012","2012",,,641,3899353,16.4,13.8
+,"Census Region 4: West","CENS-R4","Oregon","41","2013","2013","Renal failure","N17-N19",676,3930065,17.2,14.2
+"Total","Census Region 4: West","CENS-R4","Oregon","41","2013","2013",,,676,3930065,17.2,14.2
+,"Census Region 4: West","CENS-R4","Oregon","41","2014","2014","Renal failure","N17-N19",806,3970239,20.3,16.5
+"Total","Census Region 4: West","CENS-R4","Oregon","41","2014","2014",,,806,3970239,20.3,16.5
+,"Census Region 4: West","CENS-R4","Oregon","41","2015","2015","Renal failure","N17-N19",859,4028977,21.3,17.2
+"Total","Census Region 4: West","CENS-R4","Oregon","41","2015","2015",,,859,4028977,21.3,17.2
+,"Census Region 4: West","CENS-R4","Oregon","41","2016","2016","Renal failure","N17-N19",916,4093465,22.4,17.9
+"Total","Census Region 4: West","CENS-R4","Oregon","41","2016","2016",,,916,4093465,22.4,17.9
+,"Census Region 4: West","CENS-R4","Oregon","41","2017","2017","Renal failure","N17-N19",938,4142776,22.6,18.2
+"Total","Census Region 4: West","CENS-R4","Oregon","41","2017","2017",,,938,4142776,22.6,18.2
+"Total","Census Region 4: West","CENS-R4","Oregon","41",,,,,6044,31767808,19.0,15.7
+,"Census Region 4: West","CENS-R4","Washington","53","2010","2010","Renal failure","N17-N19",1370,6724540,20.4,20.0
+"Total","Census Region 4: West","CENS-R4","Washington","53","2010","2010",,,1370,6724540,20.4,20.0
+,"Census Region 4: West","CENS-R4","Washington","53","2011","2011","Renal failure","N17-N19",1585,6830038,23.2,22.2
+"Total","Census Region 4: West","CENS-R4","Washington","53","2011","2011",,,1585,6830038,23.2,22.2
+,"Census Region 4: West","CENS-R4","Washington","53","2012","2012","Renal failure","N17-N19",1660,6897012,24.1,22.6
+"Total","Census Region 4: West","CENS-R4","Washington","53","2012","2012",,,1660,6897012,24.1,22.6
+,"Census Region 4: West","CENS-R4","Washington","53","2013","2013","Renal failure","N17-N19",1672,6971406,24.0,22.3
+"Total","Census Region 4: West","CENS-R4","Washington","53","2013","2013",,,1672,6971406,24.0,22.3
+,"Census Region 4: West","CENS-R4","Washington","53","2014","2014","Renal failure","N17-N19",1678,7061530,23.8,21.8
+"Total","Census Region 4: West","CENS-R4","Washington","53","2014","2014",,,1678,7061530,23.8,21.8
+,"Census Region 4: West","CENS-R4","Washington","53","2015","2015","Renal failure","N17-N19",1855,7170351,25.9,23.2
+"Total","Census Region 4: West","CENS-R4","Washington","53","2015","2015",,,1855,7170351,25.9,23.2
+,"Census Region 4: West","CENS-R4","Washington","53","2016","2016","Renal failure","N17-N19",1618,7288000,22.2,19.8
+"Total","Census Region 4: West","CENS-R4","Washington","53","2016","2016",,,1618,7288000,22.2,19.8
+,"Census Region 4: West","CENS-R4","Washington","53","2017","2017","Renal failure","N17-N19",1642,7405743,22.2,19.8
+"Total","Census Region 4: West","CENS-R4","Washington","53","2017","2017",,,1642,7405743,22.2,19.8
+"Total","Census Region 4: West","CENS-R4","Washington","53",,,,,13080,56348620,23.2,21.4
+"Total","Census Region 4: West","CENS-R4",,,,,,,104990,597944137,17.6,16.7
+"Total",,,,,,,,,494583,2539502901,19.5,17.2
+"---"
+"Dataset: Multiple Cause of Death, 1999-2020"
+"Query Parameters:"
+"MCD - ICD-10 Codes: N17.0 (Acute renal failure with tubular necrosis); N17.1 (Acute renal failure with acute cortical necrosis);"
+"N17.2 (Acute renal failure with medullary necrosis); N17.8 (Other acute renal failure); N17.9 (Acute renal failure, unspecified)"
+"Year/Month: 2010; 2011; 2012; 2013; 2014; 2015; 2016; 2017"
+"Group By: Census Region; State; Year; MCD - ICD Sub-Chapter"
+"Show Totals: True"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Standard Population: 2000 U.S. Std. Population"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/mcd.html for more information."
+"---"
+"Query Date: Feb 8, 2026 6:13:10 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/mcd-icd10.html on Feb 8, 2026 6:13:10 PM"
+"---"
+Footnotes:
+"1. Totals and sub-totals show the frequency of the selected causes of death, which may be greater than the number of deaths."
+"Note that any single death record may have up to 20 causes. More information."
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#2014-Revision."
+"2. These items in the results table are not fully selected: Renal failure. The Query Description lists the actual values"
+"selected."
+"3. The populations used to calculate standard age-adjusted rates are documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#2000 Standard Population."
+"4. The method used to calculate age-adjusted rates is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#Age-Adjusted Rates."
+"5. Deaths for persons of unknown age are included in counts and crude rates, but are not included in age-adjusted rates."
+"6. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. Population figures for 2011 are bridged-race estimates of the July 1"
+"resident population, from the county-level postcensal Vintage 2011 series released by NCHS on July 18, 2012. Population figures"
+"for 2010 are April 1 Census counts. The population figures for years 2001 - 2009, are bridged-race estimates of the July 1"
+"resident population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012."
+"Population figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of"
+"July 1 estimates. Population figures for Infant Age Groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"7. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/mcd.html#Age Group."
+"8. Beginning with the 2018 data, changes have been implemented that affect the counts for ICD-10 cause of death codes O00-O99"
+"compared to previous practice. In addition, data for the cause of death codes O00-O99 for 2003 through 2017 reflect differences"
+"in information available to individual states and probable errors. Caution should be used in interpreting these data. More"
+"information can be found at: https://www.cdc.gov/nchs/maternal-mortality/."
+"9. On March 11, 2021, the 2019 mortality data on CDC WONDER was updated with the 2019 mortality data updated by NCHS on March 4,"
+"2021 to include corrected information for residents of Texas affecting 5 records previously coded to cause code *U01.4,"
+"Terrorism involving firearms (homicide). The underlying and multiple cause of death codes for 5 records were corrected in the"
+"2019 data. Underlying and multiple cause of death codes for those 5 records were recoded to Assault (homicide) by other and"
+"unspecified firearm discharge, ICD-10 code X95. The corrected final death records replaces the data released on December 22,"
+"2020."
+"10. Changes to cause of death classification affect reporting trends. More information:"
+"http://wonder.cdc.gov/wonder/help/mcd.html#ICD-10 Changes."
